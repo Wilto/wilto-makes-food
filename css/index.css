@@ -1,0 +1,217 @@
+
+.feat {
+	min-height: 25em;
+	height: 50vw;
+	max-height: 30em;
+}
+.feat {
+	font-size: 3.585vw;
+}
+@media all and (min-width: 450px) {
+	.feat {
+		font-size: 1em;
+	}
+}
+
+.subfeat {
+	font-size: 3vw;
+}
+@media all and (min-width: 450px) {
+	.subfeat {
+		font-size: .85em;
+		height: auto;
+	}
+}
+.feat,
+.subfeat article {
+	background: #eaeaea;
+}
+
+.feat-header,
+.recipe-header {
+	background: rgba(255,255,255,.95);
+	display: block;
+	border: 1px dotted  rgba(255,150,0, .5);
+	box-shadow: 0 0 0 7px #fff;
+
+	position: relative;
+	text-align: center;
+	max-width: 90%;
+	width: 20em;
+	z-index: 2;
+}
+.recipe-header {
+	margin-top: 3em;
+	text-align: left;
+	border-left: none;
+	width: auto;
+	box-shadow:0 0 0 5px #fff;
+	font-size: .5em;
+	position: relative;
+	z-index: 2;
+}
+.features .recipe-header .recipe-hed a {
+	padding: .7em 1em .4em .5em;
+	display: block;
+}
+
+.item {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer; /* Prevents a janky cursor blink when hovering past the dotted header outline */
+}
+
+.item img {
+	position: absolute;
+	top: -5%;
+}
+.item > a {
+	position: static;
+	display: block;
+}
+.highlights > .item {
+	min-height: 10em;
+	margin-bottom: 2.5%;
+	overflow: hidden;
+}
+@media all and (min-width: 750px) {
+	.highlights > .item {
+		min-height: 11em;
+		height: 20vw;
+		max-height: 15em;
+	}
+}
+.feat-header {
+	margin: 3em auto 0 auto;
+}
+.recipe-hed {
+	padding: 0;
+}
+
+.feat-tag {
+	font-size: .85em;
+	margin: 0 auto;
+	display: inline-block;
+	width: auto;
+	width: 100%;
+	left: 0;
+	min-width: 5.5em;
+	top: -20px;
+	position: absolute;
+	padding: .1em 1em 0 1em;
+}
+.feat-tag a {
+	background: rgba(255,150,0, 1);
+	color: #333;
+	display: inline-block;
+	margin: 0 auto;
+	padding: .1em 1.25em .1em 1.25em;
+	position: relative;
+	text-decoration: none;
+	width: auto;
+	z-index: 2;
+	clip-path: polygon(10% 0, 0 45%, 0 60%, 10% 100%, 90% 100%, 100% 60%, 100% 45%, 90% 0);
+	-webkit-transition: background-color .1s linear;
+	transition: background-color .1s linear;
+}
+.feat-tag a:focus {
+	background-color: rgba(255,100,0, 1);
+}
+.feat-tag a:active {
+	background-color: rgba(255,150,0, 1);
+}
+
+.features .recipe-hed a {
+	display: block;
+	z-index: 2;
+	padding: .45em 0 .25em 0;
+	position: relative;
+	box-shadow: 0 0 0 7px transparent;
+}
+
+.features .recipe-hed a:focus {
+	outline: none;
+	box-shadow: 0 0 0 5px rgba(255,150,0, 1);
+}
+.features .recipe-hed a:active {
+	outline: none;
+	box-shadow: 0 0 0 5px transparent;
+}
+.features .feat-header a:focus {
+	outline: none;
+	box-shadow: 0 0 0 7px rgba(255,150,0, 1);
+}
+.features .feat-header a:active {
+	outline: none;
+	box-shadow: 0 0 0 7px transparent;
+}
+
+
+@media( min-width: 35em ) {
+	.thumb {
+		float: right;
+		width: 20%;
+		margin: .55em 0 2.5em 2em;
+	}
+}
+
+@media( min-width: 45em ) {
+	.feat-thumb {
+		width: 33%;
+		max-width: 20em;
+	}
+}
+
+.additional {
+	list-style: none;
+	padding: 0;
+}
+.additional .recipe-hed {
+	font-size: 2em;
+}
+.additional .thumb {
+	width: 5em;
+	float: right;
+	margin: 0;
+}
+
+
+.index {
+	margin: 1em 0;
+}
+.index .recipeheader {
+	font-size: .9em;
+}
+
+.features .item .feat-header {
+	top: 0;
+	position: relative;
+	-webkit-transition: transform .2s linear;
+	transition: transform .15s linear;
+}
+.features .item:hover .feat-header {
+	transform: translateY(-1.5px);
+}
+.item .recipe-header {
+	-webkit-transition: transform .2s linear;
+	transition: transform .2s linear;
+}
+.item:hover .recipe-header {
+	transform: translateX(.3em);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.features .item .feat-header {
+		-webkit-transition: none;
+		transition: none;
+	}
+	.item .recipe-header {
+		-webkit-transition: none;
+		transition: none;
+	}
+}
+
+
+.cta {
+	margin: 1.5em auto 0 auto;
+}

@@ -1,0 +1,152 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+::selection { 
+	text-shadow: none;
+	background: rgba(255,150,0, .2)
+}
+html {
+	color: #3b3b3b;
+	font-size: 1em;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+img,
+picture {
+	max-width: 100%;
+	height: auto;
+}
+a {
+	color: blue;
+}
+a:hover {
+	color: #ea4142;
+	text-decoration: none;
+}
+a:active {
+	position: relative;
+	bottom: -1px;
+}
+/* https://drafts.csswg.org/selectors-4/#the-blank-pseudo */
+p:empty,
+p:blank {
+	display: none;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	max-width: 100%;
+}
+
+@media(min-width: 35em ) {
+	body {
+	}
+}
+
+/* Helpers
+----------------------- */
+
+/* http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+.a11y-only {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.a11y-only:active,
+.a11y-only:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/* Global Layout
+----------------------- */
+body {
+	background: #fafafa;
+}
+main {
+	margin: 0 auto;
+	padding: 0 1.5%;
+	max-width: 85em;
+}
+
+@media( min-width: 55em ) {
+	main {
+		padding: 0 2.5%;
+	}
+}
+
+.col {
+	clear: both;
+}
+
+.search {
+	
+}
+
+.cta {
+	background: rgba(255,150,0, .15);
+	display: block;
+	padding: .25em 1em .2em 1em;
+	width: 33%;
+	min-width: 15em;
+	max-width: 20em;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid rgba(255,150,0, .75);
+}
+
+.primary-head {
+	background: rgba(255,150,0, .25);
+	border-top: 1px solid rgba(255,150,0, .45);
+	border-bottom: .25em solid rgba(255,150,0, .45);
+}
+
+
+.sitenav {
+	display: flex;
+}
+.sitenav li {
+	display: inline-block;
+}
+
+.primary-foot {
+	clear: both;
+	margin-top: 5em;
+}
+
+.search input {
+	border: none;
+	border-bottom: .15em solid rgba(255,150,0, .65);
+	font-size: 1.2em;
+}
+
+
+

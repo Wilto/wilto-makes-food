@@ -1,0 +1,193 @@
+.recipeheader {
+	margin-top: 1.5em;
+}
+.intro {
+	clear: both;
+	float: left;
+	margin-bottom: 2.5em;
+	width: 100%;
+}
+
+@media( max-width: 34.9375em ) {
+	.intro {
+		display: flex;
+		flex-direction: column;
+	}
+	.feat-thumb {
+		order: -1;
+	}
+}
+.intro p {
+	max-width: 40em;
+}
+
+.feat-thumb {
+	margin: 0 -5% 7.5% -5%;
+}
+@media( min-width: 35em ) {
+	.feat-thumb {
+		float: right;
+		width: 40%;
+		margin: .55em 0 2.5em 2em;
+	}
+}
+
+@media( min-width: 45em ) {
+	.feat-thumb {
+		width: 33%;
+		max-width: 20em;
+	}
+}
+
+.feat-thumb .caption {
+	padding: .5em 5%;
+}
+
+.feat-thumb span {
+	background: rgba(255,150,0, .5);
+	display: block;
+}
+.feat-thumb img {
+	margin-top: .3em;
+	display: block;
+	clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+}
+
+.meta {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin: 0 0 2em 0;
+}
+.meta:before {
+	background: rgba(255,150,0, .45);
+	border-right: .25em solid rgba(255,150,0, 1);
+	height: .35em;
+	content: "";
+	display: block;
+	margin-top: -1.75em;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+@media(min-width: 35em ) {
+	.meta:before {
+		margin-top: -.165em;
+		top: 50%;
+	}
+}
+
+.meta dt {
+	padding-right: .5em;
+}
+
+.meta dd,
+.meta dt {
+	background: #fafafa;
+	float: left;
+	margin: 0;
+	position: relative;
+}
+@media(max-width: 34.9375em ) {
+	.meta {
+		margin-top: 2.5em;
+	}
+	.meta dt {
+		padding-right: .35em;
+		float: left;
+		clear: left;
+		padding: .25em 0;
+		width: 33%;
+		max-width: 100px;
+	}
+	.meta dd {
+		padding-right: 1.5em;
+		padding-top: .1em;
+		display: block;
+	}
+}
+
+.tags {
+	position: absolute;
+	top: 0;
+}
+.tagging {
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	list-style: none;
+}
+.tagging li {
+	display: inline-block;
+}
+.tag {
+	background: #e5e5e5;
+	color: #222;
+	display: inline-block;
+	margin-top: .75em;
+	padding: .1em .75em .2em .75em;
+	border-radius: .25em;
+	text-decoration: none;
+	text-shadow: 1px 1px #fff;
+}
+
+.ingredients {
+	font-size: 1.1em;
+	list-style: none;
+	padding: 0 0 .25em 2%;
+}
+.ingredients li {
+	margin: .35em 0;
+}
+.amt {
+	display: inline-block;
+	font-style: italic;
+	font-weight: 400;
+	color: #333;
+}
+
+.subhed .direct {
+	width: 1.5em;
+	padding-top: .2em;
+	opacity: .25;
+	transition: opacity .15s linear;
+}
+.subhed:hover .direct {
+	opacity: .75;
+}
+.intro .subhed a {
+	float: right;
+}
+
+.steps {
+	clear: both;
+	list-style: none;
+	counter-reset: inst;
+	padding-left: 2%;
+}
+
+.steps li {
+	margin: 2em 0;
+	display: block;
+	position: relative;
+}
+.steps li:before {
+	background: rgba(255,150,0, .35);
+	color: #fff;
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: 1px 1px rgba(255,150,0, .5);
+	border-radius: 50%;
+	counter-increment: inst;
+	content: counter(inst);
+	font-size: 1.35em;
+	height: 1.35em;
+	left: -1em;
+	padding-top: 0em;
+	position: absolute;
+	text-align: center;
+	top: -.65em;
+	width: 1.35em;
+	z-index: -1;
+}

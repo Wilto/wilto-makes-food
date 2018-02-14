@@ -1,0 +1,191 @@
+/* Global Type
+----------------------- */
+
+@font-face {
+	font-family: "Fanwood Text";
+	src: local("Fanwood Text");
+	unicode-range: U+0x000-0x007F
+}
+@font-face {
+	font-family: "Fanwood Text";
+	font-style: italic;
+	src: local("Fanwood Text Italic");
+}
+h1, h2, h3 {
+	margin: 0;
+}
+
+p {
+	font-family: serif;
+	line-height: 1.55em;
+	font-size: .9em;
+	margin: .4em 0 .5em 0;
+	max-width: 45em;
+}
+p {
+	font-family: "Fanwood Text";
+	font-size: 1.15em;
+}
+.amp {
+	color: #999;
+	font-style: italic;
+	font-size: .75em;
+}
+[class$="-hed"] {
+	font-family: sans-serif;
+}
+
+abbr {
+	text-decoration-skip: ink;
+	text-decoration-skip-ink: auto;
+	text-decoration: underline;
+	text-decoration-color: rgba(0,0,0,.2)
+}
+
+.recipe-hed {
+	font-weight: normal;
+	font-size: 2.75em;
+	line-height: 1;
+	padding: .15em 0 .15em 0;
+	margin-bottom: 0;
+}
+.recipe-hed {
+	font-family: "Fanwood Text", serif;
+}
+.recipe-hed a {
+	color: #333;
+	text-decoration: none;
+}
+
+.section-hed {
+	font-family: "open sans";
+	font-size: .85em;
+	margin: 10% 0 5% 0;
+	letter-spacing: .1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 3.5em 0 1.5em 0;
+	width: 100%;
+	border-bottom: 2px solid rgba(255,150,0, .45);
+}
+@media( min-width: 60em ) {
+	.section-hed {
+		font-family: "open sans";
+		font-size: .85em;
+	}
+}
+
+.cta {
+	color: #333;
+	font-family: "open sans";
+	font-size: .85em;
+	letter-spacing: .05em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+.inline-hed {
+	border-bottom: 1px solid #ddd;
+	clear: both;
+	display: block;
+	letter-spacing: .1em;
+	margin: 2.5em 0 3em -.25em;
+	padding-left: .25em;
+	text-transform: uppercase;
+	font-size: .75em;
+}
+.feat-tag,
+.inline-hed {
+	font-family: "open sans";
+}
+
+.feat-tag {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px !important;
+}
+
+
+.intro p {
+	margin: .85em 0;
+}
+
+.intro .subhed {
+	font-family: "open sans";
+	font-size: 1em;
+	margin: 1.65em 0 1.2em -.7em;
+	font-weight: bold;
+	padding: 0 0 0 .5em;
+	border-left: .2em solid rgba(255,150,0, .45);
+	max-width: 45em;
+}
+
+
+.meta dd,
+.meta dt {
+	font-size: .75em;
+}
+.meta dt {
+	font-family: "open sans";
+	font-weight: bold;
+	text-transform: uppercase;
+	float: left;
+	clear: left;
+	padding: .25em 0;
+	width: 33%;
+	max-width: 100px;
+}
+.meta dt:after {
+	content: ":";
+}
+.meta dd {
+	color: #555;
+	font-size: 1em;
+	line-height: 1;
+	font-family: "Fanwood Text";
+	padding-right: 1.5em;
+	padding-top: .175em;
+	display: block;
+}
+
+@media(min-width: 35em ) {
+	.meta dt {
+		float: none;
+		width: auto;
+		clear: none;
+	}
+}
+.ingredients li {
+	font-family: "Fanwood Text", serif;
+	font-size: 1.1em;
+	/* Probably not */
+}
+
+.tag {
+	font-family: "open sans";
+	font-size: .7em;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+.caption {
+	font-size: 1.2em;
+	font-style: italic;
+	color: #777;
+}
+.caption p {
+	font-family: "Fanwood Text";
+	line-height: 1.15em;
+}
+
+/* Font scaling */
+@media( min-width: 60em ) {
+	body { 
+		font-size: 1.65vw;
+	}
+}
+@media( min-width: 70em ) {
+	body { 
+		font-size: 1.155em;
+	}
+}
