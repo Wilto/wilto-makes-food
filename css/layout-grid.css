@@ -67,11 +67,17 @@
 	}
 }
 
-.primary-head {
-	display: grid;
-	grid-template-columns: auto 33%;
-	grid-gap: 1%;
+
+@media( min-width: 55em ) {
+	.site-head {
+		display: grid;
+		grid-template-columns: 15% 85%;
+		grid-gap: 5%;
+	}
 }
-.search,
-.sitenav {
+
+.articles {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: .55%;
 }

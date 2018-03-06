@@ -17,56 +17,66 @@
 	</head>
 	<body>
 
+	<a href="#main" class="a11y-only focusable skiplink">Skip to Main Content</a>
 
-	<header class="primary-head">
-		<nav role="navigation" class="sitenav">
-			<ul>
-				<li><a href="#">Recipes</a></li>
-				<li><a href="#">Reviews</a></li>
-			</ul>
-		</nav>
+		<header role="banner" class="site-head">
 
-		<div class="search">
-			<button aria-expanded="false" aria-controls="searchbox">Search</button>
+			<h1 class="site-hed"><img src="img/wmf-draftlogo.png" alt="Wilto Makes Food"></h1>
 
-			<div class="" id="searchbox" aria-hidden="true">
-				<label>
-					Search
-					<input type="search">
-				</label>
+			<div class="bar">
+				<nav role="navigation" class="sitenav">
+					<ul>
+						<li><a href="#">Recipes</a></li>
+						<li><a href="#">Reviews</a></li>
+						<li><a href="#">Articles</a></li>
+					</ul>
+				</nav>
+
+				<form class="search">
+					<label for="search">
+						<span class="a11y-only">Search</span>
+						<input type="search" id="search" name="search" placeholder="Search for&hellip;">
+					</label>
+					<label>
+						<span class="a11y-only">Submit search query</span>
+						<svg class="icon icon-search" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 60 75" enable-background="new 0 0 60 60" xml:space="preserve">
+							<path class="mag" d="M50.317,44.678l-5.96-5.96c-1.163-1.163-2.855-1.465-4.3-0.921l-3.458-3.458  c4.615-6.061,4.172-14.739-1.358-20.279c-6.04-6.04-15.83-6.04-21.87,0c-6.03,6.04-6.03,15.82,0,21.86  c5.739,5.739,14.856,6.014,20.932,0.847l3.392,3.392c-0.544,1.446-0.242,3.137,0.921,4.3l5.96,5.96c1.586,1.586,4.156,1.586,5.742,0  C51.903,48.835,51.903,46.264,50.317,44.678z M16.34,32.96c-4.4-4.4-4.4-11.54,0-15.94c4.4-4.4,11.53-4.4,15.93,0  c4.4,4.4,4.4,11.54,0,15.94C27.87,37.36,20.74,37.36,16.34,32.96z"/>
+						</svg>
+						<input type="submit" class="a11y-only">
+					</label>
+				</form>
 			</div>
-		</div>
-	</header>
+		</header>
 
 	<main role="main" id="main">
-		<h2 class="section-hed">Featured Recipes</h2>
 
-		<div class="col features">
-			<article class="feat item" style="background: url(); background-position: center center; background-size: cover;">
+		<h2 class="section-hed" id="features">Featured Recipes</h2>
+		<div class="col features" role="region" aria-labelledby="features">
+			<article class="feat item">
 				<div class="feat-header">
-					<h2 class="recipe-hed"><a href="recipe.html">Ham <span class="amp">&amp;</span> Cheese Sandwich</a></h2>
-					<span class="feat-tag"><a href="#">Guy Fieri</a></span>
+					<h3 class="recipe-hed"><a href="recipe.html">Tartine&nbsp; Sourdough</a></h3>
+					<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Bread</a></span>
 				</div>
-				<a href="#" role="presentation" tabindex="-1">
+				<a href="#" aria-hidden="true" tabindex="-1">
 					<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/6b53925ffaa9491a190118f1c7c9181f/5B1BD286/t51.2885-15/e35/25008771_172779829976807_2518069867433689088_n.jpg" alt="Ham &amp; Cheese Sandwich">
 				</a>
 			</article>
 			<div class="subfeat">
 				<article class="item">
 					<div class="feat-header">
-						<h2 class="recipe-hed"><a href="recipe.html">Chili Oil</a></h2>
-						<span class="feat-tag"><a href="#">Sichuan</a></span>
+						<h3 class="recipe-hed"><a href="recipe.html">Chili Oil</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Sichuan</a></span>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">
+					<a href="#" aria-hidden="true" tabindex="-1">
 						<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/7d405a6c877dec41dbed716f8157ae48/5B185A01/t51.2885-15/s640x640/sh0.08/e35/22710227_1742042556099355_4960070680029691904_n.jpg" alt="Chili oil">
 					</a>
 				</article>
 				<article class="item">
 					<div class="feat-header">
-						<h2 class="recipe-hed"><a href="recipe.html">カレー</a></h2>
-						<span class="feat-tag"><a href="#">Yoshoku</a></span>
+						<h3 class="recipe-hed"><a href="recipe.html">カレー</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Yoshoku</a></span>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">
+					<a href="#" aria-hidden="true" tabindex="-1">
 						<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/13090f0217dafae591fd26f8097f1a8d/5AFFE014/t51.2885-15/e35/20394138_942407292566510_8460169774423343104_n.jpg" alt="Curry Rice">
 					</a>
 				</article>
@@ -78,78 +88,81 @@
 			<div class="features highlights">
 				<article class="item">
 					<div class="recipe-header">
-						<h2 class="recipe-hed"><a href="#">Carrot Cake</a></h2>
-						<span class="feat-tag"><a href="#">Cakes</a></span>
+						<h3 class="recipe-hed"><a href="#">Carrot Cake</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Cakes</a></span>
+						<p class="credit">From <a href="#">Bravetart</a></p>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">
+					<a href="#" aria-hidden="true" tabindex="-1">
 						<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/805e8329d679b988cbe960d2e1e565ea/5B12A55E/t51.2885-15/e35/27574679_143960952963212_7544821868943900672_n.jpg" alt="Carrot Cake">
 					</a>
 				</article>
 				<article class="item">
 					<div class="recipe-header">
-						<h2 class="recipe-hed"><a href="#">Marbled Coffee Rye</a></h2>
-						<span class="feat-tag"><a href="#">Bread</a></span>
+						<h3 class="recipe-hed"><a href="#">Marbled Coffee Rye</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Bread</a></span>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">
+					<a href="#" aria-hidden="true" tabindex="-1">
 						<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/f5b5a2dac469ffb22c7a31135b08b45d/5B12BD8D/t51.2885-15/e35/26869185_295051661026237_8096981026271657984_n.jpg" alt="Marbled Coffee Rye">
 					</a>
 				</article>
 				<article class="item">
 					<div class="recipe-header">
-						<h2 class="recipe-hed"><a href="#">S<span class="amp">&amp;</span>B Curry Powder</a></h2>
-						<span class="feat-tag"><a href="#">Yoshoku</a></span>
+						<h3 class="recipe-hed"><a href="#">S<span class="amp">&amp;</span>B Curry Powder</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Yoshoku</a></span>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">
+					<a href="#" aria-hidden="true" tabindex="-1">
 						<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/38a7b1c5338e815247d071497ed1ebd1/5B130304/t51.2885-15/e35/26872417_141218103242262_6572355949309198336_n.jpg" alt="S&B Curry Powder">
 					</a>
 				</article>
 				<article class="item">
 					<div class="recipe-header">
-						<h2 class="recipe-hed"><a href="#">Mapo Tofu</a></h2>
-						<span class="feat-tag"><a href="#">Sichuan</a></span>
+						<h3 class="recipe-hed"><a href="#">Mapo Tofu</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Sichuan</a></span>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">
+					<a href="#" aria-hidden="true" tabindex="-1">
 						<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/6d8056f47461c685b0fd136b23452d90/5B068131/t51.2885-15/e35/23594656_1774091355947788_8709079759339913216_n.jpg" alt="Mapo Tofu">
 					</a>
 				</article>
 				<article class="item">
 					<div class="recipe-header">
-						<h2 class="recipe-hed"><a href="#">Cinnamon Rolls</a></h2>
-						<span class="feat-tag"><a href="#">Desserts</a></span>
+						<h3 class="recipe-hed"><a href="#">Cinnamon Rolls</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Desserts</a></span>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">
+					<a href="#" aria-hidden="true" tabindex="-1">
 						<img src="https://instagram.fphl1-2.fna.fbcdn.net/vp/44827e1c99ae61a5ba855f2469333f33/5B1E4D7D/t51.2885-15/e35/15877179_403627779985485_4871289617212506112_n.jpg" alt="Cinnamon Rolls">
 					</a>
 				</article>
 				<article class="item">
 					<div class="recipe-header">
-						<h2 class="recipe-hed"><a href="#">Italian Bread</a></h2>
-						<span class="feat-tag"><a href="#">Bread</a></span>
+						<h3 class="recipe-hed"><a href="#">Italian Bread</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Bread</a></span>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">	
+					<a href="#" aria-hidden="true" tabindex="-1">
 						<img src="https://instagram.fphl1-2.fna.fbcdn.net/vp/106abe91394a8f3c160352d002d3f928/5B080D44/t51.2885-15/e35/22581843_136510040329191_4618344639370362880_n.jpg">
 					</a>
 				</article>
 				<article class="item">
 					<div class="recipe-header">
-						<h2 class="recipe-hed"><a href="#">Peanut Butter Cookies</a></h2>
-						<span class="feat-tag"><a href="#">Desserts</a></span>
+						<h3 class="recipe-hed"><a href="#">Peanut Butter Cookies</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Desserts</a></span>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">	
+					<a href="#" aria-hidden="true" tabindex="-1">
 						<img src="https://instagram.fphl1-2.fna.fbcdn.net/vp/d17c4dc0e43ab5ea0fc430550e6e96dd/5B2324C3/t51.2885-15/e35/21042641_771535883049030_7245964549700976640_n.jpg" alt="Peanut Butter Cookies">
 					</a>
 				</article>
 				<article class="item">
 					<div class="recipe-header">
-						<h2 class="recipe-hed"><a href="#">Miso Ramen</a></h2>
-						<span class="feat-tag"><a href="#">Washoku</a></span>
+						<h3 class="recipe-hed"><a href="#">Miso Ramen</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Washoku</a></span>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">	
+					<a href="#" aria-hidden="true" tabindex="-1">
 						<img src="https://instagram.fphl1-2.fna.fbcdn.net/vp/1fc6959d9882890a180acb0a5a2981a9/5B0AE691/t51.2885-15/e35/26866289_690115051376278_3955654606054227968_n.jpg" alt="Miso Ramen">
 					</a>
 				</article>
 			</div>
-			<a class="cta" href="#all">More Recipes</a>
+			<div class="col">
+				<a class="cta" href="#all">More Recipes</a>
+			</div>
 		</div>
 
 		<h2 class="section-hed" id="reviews">Reviews</h2>
@@ -157,53 +170,119 @@
 			<div class="features highlights">
 				<article class="item">
 					<div class="recipe-header">
-						<h2 class="recipe-hed"><a href="#">Cinnamon Rolls</a></h2>
-						<span class="feat-tag"><a href="#">Desserts</a></span>
+						<h3 class="recipe-hed"><a href="#">Cinnamon Rolls</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Desserts</a></span>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">
+					<a href="#" aria-hidden="true" tabindex="-1">
 						<img src="https://instagram.fphl1-2.fna.fbcdn.net/vp/44827e1c99ae61a5ba855f2469333f33/5B1E4D7D/t51.2885-15/e35/15877179_403627779985485_4871289617212506112_n.jpg" alt="Cinnamon Rolls">
 					</a>
 				</article>
 				<article class="item">
 					<div class="recipe-header">
-						<h2 class="recipe-hed"><a href="#">Italian Bread</a></h2>
-						<span class="feat-tag"><a href="#">Bread</a></span>
+						<h3 class="recipe-hed"><a href="#">Italian Bread</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Bread</a></span>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">	
+					<a href="#" aria-hidden="true" tabindex="-1">	
 						<img src="https://instagram.fphl1-2.fna.fbcdn.net/vp/106abe91394a8f3c160352d002d3f928/5B080D44/t51.2885-15/e35/22581843_136510040329191_4618344639370362880_n.jpg">
 					</a>
 				</article>
 				<article class="item">
 					<div class="recipe-header">
-						<h2 class="recipe-hed"><a href="#">Peanut Butter Cookies</a></h2>
-						<span class="feat-tag"><a href="#">Desserts</a></span>
+						<h3 class="recipe-hed"><a href="#">Peanut Butter Cookies</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Desserts</a></span>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">	
+					<a href="#" aria-hidden="true" tabindex="-1">	
 						<img src="https://instagram.fphl1-2.fna.fbcdn.net/vp/d17c4dc0e43ab5ea0fc430550e6e96dd/5B2324C3/t51.2885-15/e35/21042641_771535883049030_7245964549700976640_n.jpg" alt="Peanut Butter Cookies">
 					</a>
 				</article>
 				<article class="item">
 					<div class="recipe-header">
-						<h2 class="recipe-hed"><a href="#">Miso Ramen</a></h2>
-						<span class="feat-tag"><a href="#">Washoku</a></span>
+						<h3 class="recipe-hed"><a href="#">Miso Ramen</a></h3>
+						<span class="feat-tag"><a href="#"><span class="a11y-only">Category: </span>Washoku</a></span>
 					</div>
-					<a href="#" role="presentation" tabindex="-1">	
+					<a href="#" aria-hidden="true" tabindex="-1">	
 						<img src="https://instagram.fphl1-2.fna.fbcdn.net/vp/1fc6959d9882890a180acb0a5a2981a9/5B0AE691/t51.2885-15/e35/26866289_690115051376278_3955654606054227968_n.jpg" alt="Miso Ramen">
 					</a>
 				</article>
 			</div>
-			<a href="#all" class="cta">More Reviews</a>
+			<div class="col">
+				<a href="#all" class="cta">More Reviews</a>
+			</div>
 		</div>
-		<div class="insta">
-			
+
+		<h2 class="section-hed" id="art">Articles</h2>
+		<div class="col" role="region" aria-labelledby="art">
+			<div class="articles">
+				<article class="article item">
+					<div class="art-content">
+						<h3 class="article-hed"><a href="#">Cinnamon Rolls</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+					</div>
+					<a href="#" aria-hidden="true" tabindex="-1">
+						<img src="https://instagram.fphl1-2.fna.fbcdn.net/vp/1fc6959d9882890a180acb0a5a2981a9/5B0AE691/t51.2885-15/e35/26866289_690115051376278_3955654606054227968_n.jpg" alt="Miso Ramen">
+					</a>
+				</article>
+				<article class="article item">
+					<div class="art-content">
+						<h3 class="article-hed"><a href="#">Cinnamon Rolls</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<a href="#" aria-hidden="true" tabindex="-1">
+						<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/89ed84b9cda86bf073e02610a02bdaa7/5B456EE1/t51.2885-15/e35/28152844_957737944380129_4325036774356156416_n.jpg" alt="Miso Ramen">
+					</a>
+				</article>
+								<article class="article item">
+					<div class="art-content">
+						<h3 class="article-hed"><a href="#">Cinnamon Rolls</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<a href="#" aria-hidden="true" tabindex="-1">
+						<img src="https://instagram.fphl1-2.fna.fbcdn.net/vp/1fc6959d9882890a180acb0a5a2981a9/5B0AE691/t51.2885-15/e35/26866289_690115051376278_3955654606054227968_n.jpg" alt="Miso Ramen">
+					</a>
+				</article>
+				<article class="article item">
+					<div class="art-content">
+						<h3 class="article-hed"><a href="#">Cinnamon Rolls</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<a href="#" aria-hidden="true" tabindex="-1">
+						<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/89ed84b9cda86bf073e02610a02bdaa7/5B456EE1/t51.2885-15/e35/28152844_957737944380129_4325036774356156416_n.jpg" alt="Miso Ramen">
+					</a>
+				</article>
+								<article class="article item">
+					<div class="art-content">
+						<h3 class="article-hed"><a href="#">Cinnamon Rolls</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+					</div>
+					<a href="#" aria-hidden="true" tabindex="-1">
+						<img src="https://instagram.fphl1-2.fna.fbcdn.net/vp/1fc6959d9882890a180acb0a5a2981a9/5B0AE691/t51.2885-15/e35/26866289_690115051376278_3955654606054227968_n.jpg" alt="Miso Ramen">
+					</a>
+				</article>
+				<article class="article item">
+					<div class="art-content">
+						<h3 class="article-hed"><a href="#">Cinnamon Rolls</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<a href="#" aria-hidden="true" tabindex="-1">
+						<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/89ed84b9cda86bf073e02610a02bdaa7/5B456EE1/t51.2885-15/e35/28152844_957737944380129_4325036774356156416_n.jpg" alt="Miso Ramen">
+					</a>
+				</article>
+			</div>
+			<div class="col">
+				<a href="#all" class="cta">More Reviews</a>
+			</div>
 		</div>
 
 		<footer class="primary-foot">
-			<nav>
-				<ul>
-					<li><a href="#">Instagram</a></li>
-				</ul>
-			</nav>
+
 		</footer>
 	</body>
 </html>

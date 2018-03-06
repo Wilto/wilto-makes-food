@@ -11,6 +11,8 @@
 	font-style: italic;
 	src: local("Fanwood Text Italic");
 }
+
+
 h1, h2, h3 {
 	margin: 0;
 }
@@ -42,7 +44,9 @@ abbr {
 	text-decoration-color: rgba(0,0,0,.2)
 }
 
-.recipe-hed {
+
+.recipe-hed,
+.article-hed {
 	font-weight: normal;
 	font-size: 2.75em;
 	line-height: 1;
@@ -57,7 +61,22 @@ abbr {
 	text-decoration: none;
 }
 
+.article-hed {
+	font-size: 2em;
+	margin-top: .25em;
+}
+.article-hed {
+	font-family: "Fanwood Text", serif;
+}
+.article-hed a {
+	color: #333;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+}
+
 .section-hed {
+	clear: both;
 	font-family: "open sans";
 	font-size: .85em;
 	margin: 10% 0 5% 0;
@@ -176,6 +195,34 @@ abbr {
 .caption p {
 	font-family: "Fanwood Text";
 	line-height: 1.15em;
+}
+
+.sitenav a {
+	font-family: "open sans";
+	font-weight: bold;
+	padding: 0 1.25em;
+	text-transform: uppercase;
+	font-size: .8em;
+	line-height: .9;
+	color: #333;
+	letter-spacing: .025em;
+	text-decoration: none;
+}
+
+.search input {
+	font-family: "Fanwood Text";
+}
+
+.search input::placeholder {
+	color: #999;
+	font-style: italic;
+}
+
+.skiplink {
+	font-family: "open sans";
+	font-weight: bold;
+	font-size: .85em;
+	color: #333;
 }
 
 /* Font scaling */
