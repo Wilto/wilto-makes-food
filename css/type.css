@@ -41,7 +41,7 @@ abbr {
 	text-decoration-skip: ink;
 	text-decoration-skip-ink: auto;
 	text-decoration: underline;
-	text-decoration-color: rgba(0,0,0,.2)
+	text-decoration-color: rgba(255,150,0, .35);
 }
 
 
@@ -57,22 +57,125 @@ abbr {
 	font-family: "Fanwood Text", serif;
 }
 .recipe-hed a {
-	color: #333;
+	color: #444;
 	text-decoration: none;
 }
 
-.article-hed {
-	font-size: 2em;
-	margin-top: .25em;
-}
-.article-hed {
-	font-family: "Fanwood Text", serif;
-}
-.article-hed a {
+.art-section {
+	background: #eee;
 	color: #333;
 	display: inline-block;
+	padding: .15em .65em .125em .65em ;
+	text-transform: uppercase;
+	font-size: .7em;
+	font-weight: bold;
 	text-decoration: none;
-	text-align: center;
+	font-family: "open sans";
+	border-radius: .35em;
+}
+.art-section:focus {
+	background: rgba(255,150,0, .5);
+	outline: none;
+}
+
+
+.article-hed {
+	font-size: 1.8em;
+	margin-top: .35em;
+	padding: 0;
+}
+
+.article-hed {
+	font-family: "Fanwood Text", serif;
+	font-size: 1.6em;
+	padding-bottom: .35em;
+	margin: 0 0 .25em 0;
+}
+
+.article-hed a:focus {
+	background: rgba(255,150,0, .1);
+	width: 100%;
+}
+
+.article-hed a {
+	display: block;
+	padding-bottom: .2em;
+	padding-top: .3em;
+	position: relative;
+}
+.article-hed a:before,
+.article-hed a:after {
+	background: rgba(255,150,0, .5);
+	content: " ";
+	margin-top: .25em;
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 33%;
+	height: 2px;
+	border-radius: 1px;
+}
+.article-hed a:after {
+	background: rgba(255,150,0, .95);
+	width: 0;
+	z-index: 2;
+	transition: width .2s ease-in-out, height .2s ease-in-out;
+}
+.article-hed a:focus {
+	outline: none;
+}
+.article-hed a:hover:after {
+	width: 33%;
+}
+.article-hed a:focus:after,
+.article-hed a:hover:after {
+	width: 100%;
+}
+
+.article-hed a {
+	color: #444;
+	text-decoration: none;
+}
+.article:hover .article-hed a {
+	color: #222;
+}
+
+.article-hed+.lede {
+	margin-top: -.35em;
+}
+
+p.lede {
+	color: #444;
+	margin: 0;
+	padding: 0;
+}
+
+.features .article-hed {
+	font-size: 2.2em;
+}
+
+.subfeat .article-hed {
+	font-size: 2em;
+}
+
+.features .lede {
+	font-size: 1.25em;
+	padding-bottom: .5em;
+}
+
+
+.features > .item .lede {
+	color: #555;
+	font-size: 1.1em;
+	font-weight: 600;
+	line-height: 1.3;
+	padding-bottom: .5em;
+	font-family: "open sans";
+}
+
+.features > .item p {
+	line-height: 1.35;
+	font-size: 1em;
 }
 
 .section-hed {
@@ -122,7 +225,7 @@ abbr {
 .feat-tag {
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 12px !important;
+	font-size: 12px;
 }
 
 
@@ -130,14 +233,45 @@ abbr {
 	margin: .85em 0;
 }
 
+.recipe-subhed,
+.subhed {
+	color: #444;
+	font-family: "open sans";
+	font-size: .9em;
+	font-weight: bold;
+}
+
 .intro .subhed {
 	font-family: "open sans";
 	font-size: 1em;
 	margin: 1.65em 0 1.2em -.7em;
+	max-width: 45em;
 	font-weight: bold;
 	padding: 0 0 0 .5em;
+}
+
+.recipe-subhed {
+	font-family: "open sans";
+	font-size: .8em;
+	padding-bottom: 0;
+	margin-top: 2.5em;
+}
+.recipe-subhed:after {
+	content: "";
+	display: block;
+	margin-top: .35em;
+	width: 2em;
+	height: 3px;
+	background: rgba(255,150,0, .25);
+	border-radius: 1em;
+}
+
+.intro .subhed {
 	border-left: .2em solid rgba(255,150,0, .45);
-	max-width: 45em;
+}
+
+.recipe-subhed {
+
 }
 
 
@@ -174,6 +308,31 @@ abbr {
 		width: auto;
 		clear: none;
 	}
+}
+
+.relatedprod-hed,
+.prod-hed {
+	font-family: "Fanwood Text";
+	font-size: 1.65em;
+	font-weight: normal;
+	margin: 0;
+	padding-top: .25em;
+}
+.relatedprod-hed {
+	font-size: 1.4em;
+	margin: 0 0 .75em 0;
+	padding-top: 0;
+}
+.prod-hed a {
+	color: #333;
+	text-decoration: none;
+}
+.prod-hed + p {
+	margin-top: -.2em;
+}
+.vend {
+	color: #666;
+	margin-bottom: 1em;
 }
 .ingredients li {
 	font-family: "Fanwood Text", serif;
@@ -224,6 +383,7 @@ abbr {
 	font-size: .85em;
 	color: #333;
 }
+
 
 /* Font scaling */
 @media( min-width: 60em ) {

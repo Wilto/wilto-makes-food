@@ -55,28 +55,22 @@
 
 .meta {
 	position: relative;
-	float: left;
+	clear: both;
 	width: 100%;
+	float: left;
 	margin: 0 0 2em 0;
 }
-.meta:before {
+.meta:after {
 	background: rgba(255,150,0, .45);
 	border-right: .25em solid rgba(255,150,0, 1);
-	height: .35em;
+	height: .25em;
 	content: "";
 	display: block;
-	margin-top: -1.75em;
-	position: absolute;
-	top: 0;
+	clear: both;
+	float: left;
+	margin-top: 1.5em;
 	width: 100%;
 	z-index: 0;
-}
-
-@media(min-width: 35em ) {
-	.meta:before {
-		margin-top: -.165em;
-		top: 50%;
-	}
 }
 
 .meta dt {
@@ -85,15 +79,14 @@
 
 .meta dd,
 .meta dt {
-	background: #fafafa;
 	float: left;
 	margin: 0;
 	position: relative;
 }
+.meta dt {
+	clear: left;
+}
 @media(max-width: 34.9375em ) {
-	.meta {
-		margin-top: 2.5em;
-	}
 	.meta dt {
 		padding-right: .35em;
 		float: left;
@@ -106,6 +99,18 @@
 		padding-right: 1.5em;
 		padding-top: .1em;
 		display: block;
+	}
+}
+@media( min-width: 35em ) {
+	.meta {
+		display: flex;
+	}
+	.meta:after {
+		margin-top: .55em;
+	}
+	.meta dd,
+	.meta dt {
+		white-space: nowrap;
 	}
 }
 
@@ -133,20 +138,52 @@
 }
 
 .ingredients {
+	border-left: .2em solid rgba(255,150,0, .1);
 	font-size: 1.1em;
 	list-style: none;
-	padding: 0 0 .25em 2%;
+	padding: 0;
+	margin: 0 0 .25em 0;
 }
 .ingredients li {
-	margin: .35em 0;
+	margin: .65em 0;
+	padding: 0 1em 0 5%;
+	line-height: 1.25;
+	position: relative;
+	margin-left: -.2em;
+	color: #444;
+}
+
+@media( min-width: 33em ) {
+	.ingredients li {
+		padding-left: 1em;
+	}
+}
+.ingredients li:before {
+	content: "";
+	background: rgba(255,150,0, .5);
+	position: absolute;
+	display: block;
+	width: .2em;
+	height: .3em;
+	top: .45em;
+	left: 0;
 }
 .amt {
 	display: inline-block;
-	font-style: italic;
-	font-weight: 400;
-	color: #333;
+	color: #000;
+}
+.frac {
+	font-variant-numeric: diagonal-fractions;
+	font-weight: normal;
+	display: inline-block;
+	margin-left: -3px;
+	position: relative;
+	bottom: -.15em;
 }
 
+.intro .subhed {
+	clear: both;
+}
 .subhed .direct {
 	width: 1.5em;
 	padding-top: .2em;
@@ -160,10 +197,13 @@
 	float: right;
 }
 
+.instructions {
+	counter-reset: inst;
+}
+
 .steps {
 	clear: both;
 	list-style: none;
-	counter-reset: inst;
 	padding-left: 2%;
 }
 

@@ -89,12 +89,12 @@ body {
 /* Global Layout
 ----------------------- */
 body {
-	background: #fafafa;
+	background: #f5f5f5;
 }
 main {
 	margin: 0 auto;
 	padding: 0 1.5%;
-	max-width: 85em;
+	max-width: 85em; /* Could be bigger. */
 }
 
 @media( min-width: 55em ) {
@@ -104,13 +104,13 @@ main {
 }
 
 .site-hed {
-	margin: 1.5em auto .5em auto;
+	margin: 1em auto .5em auto;
 	max-width: 4.5em;
 }
 @media( min-width: 55em) {
 	.site-hed {
 		float: left;
-		margin: 1.5em 0 1em -.15em;
+		margin: 1.5em 0 0 -.15em;
 	}
 }
 
@@ -123,20 +123,55 @@ main {
 	display: block;
 	padding: .55em 1em .45em 1em;
 	width: 33%;
-	min-width: 15em;
+	min-width: 10em;
 	max-width: 20em;
 	text-align: center;
 	text-decoration: none;
-	border: 2px solid rgba(255,150,0, .65);
+	border: 1px solid rgba(255,150,0, .65);
 	transition: all .15s ease-in-out; /* Temp */
+	overflow: hidden;
 }
 .cta:hover,
 .cta:focus {
-	background: rgba(255,150,0, .95);
-	border: 2px solid rgba(255,125,0, 1);
+	background: linear-gradient(165deg, rgba(255,250,150,.65) 0%,rgba(255,255,255,0) 100%), rgba(255,125,0, .95);
+	border: 1px solid rgba(255,125,0, 1);
 	color: #fff;
-	transform: scale(1.02);
+	outline: none;
+	text-shadow: 0 1px 1px rgba(200,105,0, 1);
+	transform: scale(1.05);
 }
+
+a.cta-prod {
+	font-size: 1.8em;
+	min-width: 5em;
+	position: relative;
+	padding: 0 .35em;
+	display: inline-block;
+}
+@media(min-width: 22.5em ) {
+	a.cta-prod {
+		width: 110%;
+	}
+}
+.vend {
+	font-size: .75em;
+	font-weight: normal;
+	letter-spacing: .02em;
+	text-transform: uppercase;
+	font-family: "open sans";
+}
+.cta-prod:hover,
+.cta-prod:focus {
+	background: rgba(255,125,0, .85);
+	transform: none;
+}
+
+@media(min-width: 45em ) {
+	a.cta-prod {
+		width: auto;
+	}
+}
+
 
 .primary-foot {
 	clear: both;
@@ -327,3 +362,151 @@ body { position: relative; }
 	border-radius: 0 0 .5em 0;
 }
 
+.listing {
+	background: #fff;
+	width: 100%;
+	max-width: 50em;
+	font-size: .9em;
+	position: relative;
+	margin: 2em 0 3.5em 0;
+	z-index: 2;
+	border: 1px dotted rgba(255,150,0, .75);
+}
+.listing+.listing {
+	margin-top: -3.55em;
+}
+.related-prod {
+	position: relative;
+}
+.related-prod .listing {
+	max-width: 100%;
+	margin: -1px 0 0 0;
+	height: auto;
+}
+.related-prod .listing:before {
+	display: none;
+}
+.related-prod .listing:nth-of-type(even) {
+	border-left: none;
+}
+.listing .cta {
+	margin-top: .5em;
+}
+
+.related-prod:before,
+.listing:before {
+	content: "";
+	display: block;
+	border: 3px solid rgba(255,150,0, .35);
+	position: absolute;
+	top: -.75em;
+	left: .75em;
+	right: .75em;
+	bottom: -.75em;
+	z-index: -1;
+}
+.listing+.listing:before {
+	top: .75em;
+}
+.listing:after {
+	content: "";
+	clear: both;
+	width: 100%;
+}
+.listing .price {
+	background: rgba(255,150,0, .15);
+	border: solid rgba(255,150,0, .15);
+	border-width: 0 1px 1px 1px;
+	position: absolute;
+	top: 0;
+	right: 5%;
+	margin: 0;
+	padding: .35em .5em .2em .5em;
+	text-align: center;
+	min-width: 2em;
+	border-radius: 0 0 .25em .25em;
+	font-size: 1.4em;
+	z-index: 2;
+}
+.price del {
+	display: block;
+	font-size: .85em;
+	color: #777;
+}
+
+.sale {
+	display: inline-block;
+	font-family: "open sans";
+	clear: none;
+	padding-top: .725em;
+}
+
+@media( min-width: 30em ) {
+	.listing .cta {
+		float: left;
+	}
+	.sale {
+		float: left;
+		margin-left: 1em;
+	}
+}
+
+
+.sale-amt {
+	color: rgba(255,100,0, 1);
+	font-weight: 600;
+}
+
+@media( min-width: 70em ) {
+	.listing {
+		float: none;
+		margin-left: 0;
+	}
+}
+
+
+
+a.prod {
+	position: relative;
+}
+a.prod,
+.product-desc {
+	display: block;
+	background: #fafafa;
+	z-index: 2;
+}
+a.prod {
+	display: block;
+	padding: 1.2em 1em 1.2em 0;
+}
+@media( min-width: 45em ) {
+	.prod {
+		width: auto;
+		float: left;
+	}
+}
+
+a.prod img {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	max-width: 10em;
+	z-index: 2;
+}
+.product-desc {
+	padding: .5em 1.5em 1em 1em;
+}
+@media( min-width: 30em ) {
+	.product-desc {
+		padding-right: 12.5%;
+	}
+}
+.product-desc p {
+	line-height: 1.2;
+}
+
+
+.navhed {
+	position: relative;
+}

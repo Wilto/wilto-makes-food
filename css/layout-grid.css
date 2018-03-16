@@ -9,8 +9,15 @@
 }
 .highlights {
 	display: grid;
-	grid-template-columns: repeat( 2, 1fr );
+	grid-template-columns: repeat( 1, 1fr );
 	grid-gap: 1.5%;
+}
+@media all and (min-width: 500px) {
+	.highlights {
+		display: grid;
+		grid-template-columns: repeat( 2, 1fr );
+		grid-gap: 1.5%;
+	}
 }
 @media all and (min-width: 750px) {
 	.highlights {
@@ -32,15 +39,16 @@
 .subfeat > .item {
 	height: 25vw;
 	min-height: 15em;
-	margin-top: 1.5%;
+	margin-top: 1%;
 }
 @media all and (min-width: 650px) {
 	.subfeat {
-		grid-column: 1 / span 2;
+		grid-template-columns: repeat( 2, 1fr );
 		width: 100%;
 	}
 	.subfeat > .item {
 		grid-column: 1;
+		margin-top: 1.5%;
 	}
 	.subfeat > .item:nth-of-type(even) {
 		grid-column: 2;
@@ -62,9 +70,9 @@
 	.subfeat > .item:nth-of-type(even) {
 		grid-column: 1 / span 2;
 		height: auto;
-		min-height: 1px;
 		margin-top: 0;
 	}
+
 }
 
 
@@ -78,6 +86,46 @@
 
 .articles {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
 	grid-gap: .55%;
+}
+.articles > .article {
+	min-height: 15em;
+}
+
+@media( min-width: 40em ) {
+	.articles {
+		grid-template-columns: repeat( 2, 1fr );
+	}
+}
+@media( min-width: 65em ) {
+	.articles {
+		grid-template-columns: repeat( 3, 1fr );
+	}
+}
+@media( min-width: 85em ) {
+	.articles {
+		grid-template-columns: repeat( 4, 1fr );
+	}
+}
+
+@media( min-width: 30em ) {
+	.listing {
+		display: grid;
+		grid-template-columns: 25% auto;
+	}
+}
+
+
+.ingredients li {
+	display: grid;
+	grid-template-columns: 4.25em auto;
+}
+
+.related-prod {
+	display: grid;
+}
+@media( min-width: 45em ) {
+	.related-prod {
+		grid-template-columns: 1fr 1fr;
+	}
 }
