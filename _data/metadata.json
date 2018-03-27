@@ -1,0 +1,15 @@
+{
+  "title": "Wilto Makes Food",
+  "url": "https://recipe.is/",
+  "feed": {
+    "subtitle": "It’s a food blog.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://recipe.is/feed/feed.xml",
+    "id": "https://recipe.is/"
+  },
+  "author": {
+    "name": "Mat Marquis",
+    "email": "mat@matmarquis.com"
+  }
+}

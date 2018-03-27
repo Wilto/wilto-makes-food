@@ -1,0 +1,28 @@
+{
+	"title" : "ham",
+	"meta" : {
+		"serves": "4",
+		"active": "1 hour",
+		"total": "2 hours"
+	},
+	"ingredients" : [
+		{
+			"name" : "salt",
+			"amt" : {
+				"whole" : "1",
+				"frac" : "1/2",
+				"measure" : "Tbsp"
+			}
+		},
+		{
+			"name" : "onions",
+			"amt" : {
+				"whole" : "2"
+			}
+		}
+	],
+	"instructions": [
+		"do the first thing",
+		"do the second thing"
+	]
+}

@@ -1,0 +1,102 @@
+{
+	"title" : "Sichuan Chili Oil",
+	"meta" : {
+		"total": "1 hour"
+	},
+	"ingredients" : [
+		{
+			"name" : "Neutral Oil (e.g. Vegetable)",
+			"amt" : {
+				"whole" : "1",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cup"
+				}
+			}
+		},
+		{
+			"name" : "Sichuan peppercorns, toasted",
+			"amt" : {
+				"whole" : "2",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			}
+		},
+		{
+			"name" : "Garlic, smashed",
+			"amt" : {
+				"whole" : "3",
+				"measure" : "Cloves"
+			}
+		},
+				{
+			"name" : "Star Anise",
+			"amt" : {
+				"whole" : "3",
+				"measure" : "Pods"
+			}
+		},
+		{
+			"name" : "Bay Leaves",
+			"amt" : {
+				"whole" : "2"
+			}
+		},
+		{
+			"name" : "Cinnamon",
+			"amt" : {
+				"whole" : "1",
+				"measure" : "Stick"
+			}
+		},
+		{
+			"name" : "Black Cardamom (Cao Guo)",
+			"amt" : {
+				"whole" : "1",
+				"measure" : "Pod"
+			}
+		},
+		{
+			"name" : "Dried Sichuan chili peppers",
+			"amt" : {
+				"whole" : "",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cup"
+				}
+			}
+		},
+		{
+			"name" : "Sichuan chili flakes",
+			"amt" : {
+				"whole" : "",
+				"frac" : "3/4",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cup"
+				}
+			}
+		},
+		{
+			"name" : "Sesame seeds",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			}
+		}
+	],
+	"instructions": [
+		"Soak the peppercorns in the oil for at least a few hours; ideally, overnight.",
+		"Fry the garlic, star anise, bay leaves, cinnamon stick (broken in half), black cardamom pod, and Sichuan chili peppers at roughly 300 degrees (f). Once the garlic cloves are a deep caramel brown, fish them out.",
+		"Maintain at ~300 degrees for twenty minutes. Meanwhile, place sesame seeds and chili flakes in a heat-safe dish.",
+		"Strain out solids and pour infused oil over chili flakes/sesame seeds; leave uncovered to cool."
+	]
+}

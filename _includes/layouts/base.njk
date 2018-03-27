@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>{{ title or metadata.title }}</title>
+
+		<link rel="stylesheet" href="{{ '/css/all.css' | url }}">
+
+		<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+	</head>
+	<body>
+		<a href="#main" class="a11y-only focusable skiplink">Skip to Main Content</a>
+
+		<header role="banner" class="site-head">
+
+			<h1 class="site-hed"><a href="{{ '/' | url }}"><img src="/img/wmf-draftlogo.png" alt="Wilto Makes Food"></a></h1>
+
+			<div class="bar">
+				<nav role="navigation" class="sitenav">
+					<ul>
+						{%- for nav in collections.nav | reverse -%}
+						{% if nav.data.navtitle.toLowerCase() != "home" %}
+							<li><a href="{{ nav.url | url }}" class="{% if nav.url == page.url %}nav-item-active{% endif %}">{{ nav.data.navtitle }}</a></li>
+						{% endif %}
+						{%- endfor -%}
+					</ul>
+				</nav>
+
+				<form class="search">
+					<label for="search">
+						<span class="a11y-only">Search</span>
+						<input type="search" id="search" name="search" placeholder="Search for&hellip;">
+					</label>
+					<label>
+						<span class="a11y-only">Submit search query</span>
+						<svg class="icon icon-search" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 60 75" enable-background="new 0 0 60 60" xml:space="preserve">
+							<path class="mag" d="M50.317,44.678l-5.96-5.96c-1.163-1.163-2.855-1.465-4.3-0.921l-3.458-3.458  c4.615-6.061,4.172-14.739-1.358-20.279c-6.04-6.04-15.83-6.04-21.87,0c-6.03,6.04-6.03,15.82,0,21.86  c5.739,5.739,14.856,6.014,20.932,0.847l3.392,3.392c-0.544,1.446-0.242,3.137,0.921,4.3l5.96,5.96c1.586,1.586,4.156,1.586,5.742,0  C51.903,48.835,51.903,46.264,50.317,44.678z M16.34,32.96c-4.4-4.4-4.4-11.54,0-15.94c4.4-4.4,11.53-4.4,15.93,0  c4.4,4.4,4.4,11.54,0,15.94C27.87,37.36,20.74,37.36,16.34,32.96z"/>
+						</svg>
+						<input type="submit" class="a11y-only">
+					</label>
+				</form>
+			</div>
+		</header>
+
+		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+			{{ layoutContent | safe }}
+		</main>
+
+		<footer class="site-foot">
+			<div class="footwrap">
+				<div class="colophon">
+					<h4 class="section-hed">Instagram</h4>
+					<div class="insta-thumbs">
+						<a href="#">
+							<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/89ed84b9cda86bf073e02610a02bdaa7/5B456EE1/t51.2885-15/e35/28152844_957737944380129_4325036774356156416_n.jpg" alt="Miso Ramen">
+						</a>
+						<a href="#">
+							<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/89ed84b9cda86bf073e02610a02bdaa7/5B456EE1/t51.2885-15/e35/28152844_957737944380129_4325036774356156416_n.jpg" alt="Miso Ramen">
+						</a>
+						<a href="#">
+							<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/89ed84b9cda86bf073e02610a02bdaa7/5B456EE1/t51.2885-15/e35/28152844_957737944380129_4325036774356156416_n.jpg" alt="Miso Ramen">
+						</a>
+						<a href="#">
+							<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/89ed84b9cda86bf073e02610a02bdaa7/5B456EE1/t51.2885-15/e35/28152844_957737944380129_4325036774356156416_n.jpg" alt="Miso Ramen">
+						</a>
+					</div>
+				</div>
+				<div class="colophon">
+					<h4 class="section-hed">Colophon</h4>
+					<p><em>Wilto Makes Food</em> is set in <a href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a> and <a href="https://www.theleagueofmoveabletype.com/fanwood">Fanwood</a>.</p>
+					<p>Built with <a href="https://www.11ty.io/">Eleventy</a>. The source is available <a href="https://github.com/Wilto/haute-garbage">on GitHub.</a> For questions, comments, or problems using the site, <a href="https://github.com/Wilto/haute-garbage/issues">report an issue</a>.</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Current page: {{ page.url | url }} -->
+	</body>
+</html>

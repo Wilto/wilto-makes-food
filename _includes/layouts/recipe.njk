@@ -1,0 +1,67 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+<div class="col">
+	<div class="intro">
+		<header role="banner" class="recipeheader">
+			<h2 class="recipe-hed">{{ title }}</h2>
+			<dl class="meta">
+				{% if meta.serves %}
+				<dt>Serves</dt>
+				<dd>{{meta.serves}}</dd>
+				{% endif %}
+				{% if meta.active %}
+				<dt>Active Time</dt>
+				<dd>{{meta.active}}</dd>
+				{% endif %}
+				{% if meta.total %}
+				<dt>Total Time</dt>
+				<dd>{{meta.total}}</dd>
+				{% endif %}
+			</dl>
+		</header>
+
+		<figure class="feat-thumb">
+			<span>
+				<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/69cdfe3a169f6bbcf08e7ade8dbc70d1/5AF6CFEA/t51.2885-15/e35/26870750_198662694018560_1326976192443580416_n.jpg" aria-describedby="capt-1">
+			</span>
+		</figure>
+
+		{{ layoutContent | safe }}
+
+	</div>
+
+	<h3 class="inline-hed" id="recipe-sub0">Ingredients</h3>
+	<ul class="ingredients" aria-labelledby="recipe-sub0">
+		{%- for ing in ingredients -%}
+		<li>
+			<p><span class="amt">{{ing.amt.whole}}<b class="frac" role="presentation">{{ing.amt.frac}}</b> {% if ing.amt.measure.abbr %}<abbr title="{{ing.amt.measure.full}}" role="presentation">{{ing.amt.measure.abbr}}</abbr>{% else %}{{ing.amt.measure}}{% endif %}</span>
+			{{ing.name}}</p>
+		</li>
+		{%- endfor -%}
+	</ul>
+
+		<div class="instructions">
+			<h3 class="inline-hed">Instructions</h3>
+
+		{% if instructions[0].stage %}
+			{%- for ins in instructions -%}
+			<h4 class="recipe-subhed"><span class="a11y-only">Instructions </span>for the {{ins.stage}}</h4>
+			<ol class="steps">
+				{%- for step in ins.steps -%}
+				<li><p>{{step}}</p></li>
+				{%- endfor -%}
+			</ol>
+			{%- endfor -%}
+		{% else %}
+			<ol class="steps">
+				{%- for ins in instructions -%}
+				<li><p>{{ins}}</p></li>
+				{%- endfor -%}
+			</ol>
+		{% endif %}
+		</div>
+
+	</div>
+</div>

@@ -72,9 +72,7 @@
 		height: auto;
 		margin-top: 0;
 	}
-
 }
-
 
 @media( min-width: 55em ) {
 	.site-head {
@@ -115,10 +113,8 @@
 	}
 }
 
-
-.ingredients li {
-	display: grid;
-	grid-template-columns: 4.25em auto;
+.ingredients .amt {
+	min-width: 4em;
 }
 
 .related-prod {
@@ -129,3 +125,29 @@
 		grid-template-columns: 1fr 1fr;
 	}
 }
+
+.footwrap {
+	display: grid;
+	grid-template-columns: auto;
+}
+@media( min-width: 60em ) {
+	.footwrap {
+		grid-template-columns: auto 40%;
+	}
+}
+
+.insta-thumbs {
+	display: grid;
+	grid-gap: 1.5%;
+}
+@media( min-width: 35em ) {
+	.insta-thumbs {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media( min-width: 55em ) {
+	.insta-thumbs {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
