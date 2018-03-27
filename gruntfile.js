@@ -12,14 +12,14 @@ module.exports = function(grunt) {
 			},
 			css: {
 				src: [
-					'css/*'
+					'_src/css/*'
 				],
 				dest: '_site/css/all.css'
 			}
 		},
 		watch: {
 			css: {
-				files: ['css/**/*'],
+				files: ['_src/css/**/*'],
 				tasks: 'watch-css'
 			}
 		},

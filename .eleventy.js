@@ -51,7 +51,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItAnchor, opts));
 
-  eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("_src/img");
 
   return {
     templateFormats: [
@@ -71,7 +71,7 @@ module.exports = function(eleventyConfig) {
     dataTemplateEngine: "njk",
     passthroughFileCopy: true,
     dir: {
-      input: ".",
+      input: "_src",
       includes: "_includes",
       data: "_data",
       output: "_site"
