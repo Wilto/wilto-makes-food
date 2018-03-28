@@ -37,10 +37,10 @@ npx eleventy --watch
 
 ### 5. Run Grunt
 ```
-$ grunt
+grunt
 ```
 
 Or build automatically when CSS changes:
 ```
-$ grunt watch
+grunt watch
 ```
