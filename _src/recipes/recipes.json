@@ -1,1 +1,4 @@
-{ "layout": "layouts/recipe.njk" }
+{ 
+	"title":"Recipes",
+	"layout": "layouts/recipe.njk"
+}

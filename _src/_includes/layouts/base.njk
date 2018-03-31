@@ -1,12 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="fonts">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>{{ title or metadata.title }}</title>
 
-		<link rel="stylesheet" href="{{ '/css/all.css' | url }}">
+		<link rel="preload" href="/_assets/css/fonts/fanwood_text-webfont.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="/_assets/css/fonts/OpenSans-Bold-webfont.woff" as="font" type="font/woff" crossorigin>
+
+		<link rel="stylesheet" href="{{ '/_assets/css/all.css' | url }}">
 
 		<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 	</head>
@@ -14,8 +17,7 @@
 		<a href="#main" class="a11y-only focusable skiplink">Skip to Main Content</a>
 
 		<header role="banner" class="site-head">
-
-			<h1 class="site-hed"><a href="{{ '/' | url }}"><img src="/img/wmf-draftlogo.png" alt="Wilto Makes Food"></a></h1>
+			<h1 class="site-hed"><a href="{{ '/' | url }}"><img src="/_src/img/wmf-draftlogo.png" alt="Wilto Makes Food"></a></h1>
 
 			<div class="bar">
 				<nav role="navigation" class="sitenav">
@@ -50,7 +52,7 @@
 
 		<footer class="site-foot">
 			<div class="footwrap">
-				<div class="colophon">
+				<div>
 					<h4 class="section-hed">Instagram</h4>
 					<div class="insta-thumbs">
 						<a href="#">
@@ -69,12 +71,18 @@
 				</div>
 				<div class="colophon">
 					<h4 class="section-hed">Colophon</h4>
-					<p><em>Wilto Makes Food</em> is set in <a href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a> and <a href="https://www.theleagueofmoveabletype.com/fanwood">Fanwood</a>.</p>
+					<p><em>Wilto Makes Food</em> is set in <a class="open-sans type" href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a> and <a class="type" href="https://www.theleagueofmoveabletype.com/fanwood">Fanwood</a>.</p>
 					<p>Built with <a href="https://www.11ty.io/">Eleventy</a>. The source is available <a href="https://github.com/Wilto/haute-garbage">on GitHub.</a> For questions, comments, or problems using the site, <a href="https://github.com/Wilto/haute-garbage/issues">report an issue</a>.</p>
 				</div>
 			</div>
 		</footer>
 
 		<!-- Current page: {{ page.url | url }} -->
+
+		<script type="text/javascript">
+			if('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/service-worker.js');
+			}
+		</script>
 	</body>
 </html>

@@ -1,3 +1,8 @@
+body {
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
 .features {
 	display: grid;
 	grid-template-columns: auto 33%;
@@ -10,25 +15,25 @@
 .highlights {
 	display: grid;
 	grid-template-columns: repeat( 1, 1fr );
-	grid-gap: 1.5%;
+	grid-gap: 2.5%;
 }
 @media all and (min-width: 500px) {
 	.highlights {
 		display: grid;
 		grid-template-columns: repeat( 2, 1fr );
-		grid-gap: 1.5%;
+		grid-gap: 2%;
 	}
 }
 @media all and (min-width: 750px) {
 	.highlights {
 		grid-template-columns: repeat( 4, 1fr );
-		grid-gap: 1%;
+		grid-gap: 1.5%;
 	}
 }
 
 @media all and (min-width: 850px) {
 	.highlights {
-		grid-gap: .5%;
+		grid-gap: 1%;
 	}
 }
 
@@ -129,6 +134,12 @@
 .footwrap {
 	display: grid;
 	grid-template-columns: auto;
+	grid-gap: 2.5%;
+}
+@media( min-width: 45em ) {
+	.footwrap {
+		grid-template-columns: auto 66%;
+	}
 }
 @media( min-width: 60em ) {
 	.footwrap {
@@ -140,12 +151,12 @@
 	display: grid;
 	grid-gap: 1.5%;
 }
-@media( min-width: 35em ) {
+@media( min-width: 45em ) {
 	.insta-thumbs {
 		grid-template-columns: 1fr 1fr;
 	}
 }
-@media( min-width: 55em ) {
+@media( min-width: 60em ) {
 	.insta-thumbs {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}

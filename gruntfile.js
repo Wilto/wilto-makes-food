@@ -12,14 +12,28 @@ module.exports = function(grunt) {
 			},
 			css: {
 				src: [
-					'_src/css/*'
+					'_src/_assets/css/*'
 				],
-				dest: '_site/css/all.css'
+				dest: '_site/_assets/css/all.css'
 			}
+		},
+		copy: {
+			main: {
+				expand: true,
+				flatten: true,
+				src: ['_src/_assets/css/fonts/*'],
+				dest: '_site/_assets/css/fonts/',
+			},
+			sw: {
+				expand: true,
+				flatten: true,
+				src: ['_src/service-worker.js'],
+				dest: '_site/',
+			},
 		},
 		watch: {
 			css: {
-				files: ['_src/css/**/*'],
+				files: ['_src/_assets/css/**/*'],
 				tasks: 'watch-css'
 			}
 		},
@@ -40,6 +54,7 @@ module.exports = function(grunt) {
 
 	// Default task.
 	grunt.registerTask('default', [
+		'copy',
 		'concat:css',
 		'cssmin'
 	]);

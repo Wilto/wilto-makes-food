@@ -18,21 +18,21 @@ module.exports = function(eleventyConfig) {
   // only content in the `recipes` directory
   eleventyConfig.addCollection("recipes", function(collection) {
     return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/recipes\//) !== null;
+      return item.inputPath.match(/^\.\/_src\/recipes\//) !== null;
     });
   });
 
     // only content in the `articles` directory
   eleventyConfig.addCollection("articles", function(collection) {
     return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/articles\//) !== null;
+      return item.inputPath.match(/^\.\/_src\/articles\//) !== null;
     });
   });
 
     // only content in the `reviews` directory
   eleventyConfig.addCollection("reviews", function(collection) {
     return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/reviews\//) !== null;
+      return item.inputPath.match(/^\.\/_src\/reviews\//) !== null;
     });
   });
 
@@ -52,6 +52,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItAnchor, opts));
 
   eleventyConfig.addPassthroughCopy("_src/img");
+  //eleventyConfig.addPassthroughCopy("_src/service-worker.js");
+  //eleventyConfig.addPassthroughCopy("_src/_assets/css/fonts");
 
   return {
     templateFormats: [

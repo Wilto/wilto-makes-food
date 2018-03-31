@@ -1,1 +1,4 @@
-{ "layout": "layouts/post.njk" }
+{ 
+	"layout": "layouts/post.njk",
+	"title":"Articles"
+}
