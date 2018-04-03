@@ -1,4 +1,5 @@
 { 
 	"layout": "layouts/post.njk",
-	"title":"Articles"
+	"title": "Articles",
+	"type": "landing"
 }

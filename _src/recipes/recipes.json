@@ -1,4 +1,5 @@
 { 
 	"title":"Recipes",
+	"type": "landing",
 	"layout": "layouts/recipe.njk"
 }

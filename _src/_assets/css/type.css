@@ -663,3 +663,8 @@ p.lede {
 .fonts .open-sans {
 	font-family: "open sans";
 }
+
+.offline-subhed {
+	color: #444;
+	font-size: 1em;
+}

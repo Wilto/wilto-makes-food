@@ -47,6 +47,9 @@
 		</header>
 
 		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+			{% if notif %}
+				{% include "notif.njk" %}
+			{% endif %}
 			{{ layoutContent | safe }}
 		</main>
 

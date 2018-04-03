@@ -10,7 +10,7 @@ https://www.filamentgroup.com/
 (function() {
 	"use strict";
 
-	const version = "v01";
+	const version = "v02";
 	const cacheName = version + "::wiltomakesfood:";
 
 	const staticCacheName = cacheName + "static";
@@ -22,9 +22,12 @@ https://www.filamentgroup.com/
 		"/offline"
 	];
 	const staticAssets = [
+		"/service-worker.js",
+		'/_assets/js/offline.min.js',
+		'/_assets/css/all.css',
 		'/_assets/css/fonts/OpenSans-Bold-webfont.woff',
 		'/_assets/css/fonts/fanwood_text-webfont.woff',
-		'/_assets/css/fonts/fanwood_text-webfont.woff'
+		'/_assets/css/fonts/fanwood_text_italic-webfont.woff'
 	];
 
 	function updateStaticCache() {
@@ -79,7 +82,7 @@ https://www.filamentgroup.com/
 			trimCache( imagesCacheName, 20 );
 		}
 
-		if ( event.data == "getPages" ) {
+		if ( event.data == "getCached" ) {
 			caches.open( pagesCacheName ).then(function(cache) {
 				return cache.keys().then(function(requests) {
 					var urls = requests.filter(function(request){
@@ -89,7 +92,10 @@ https://www.filamentgroup.com/
 					});
 					return urls.sort();
 				}).then(function(urls) {
-					event.ports[0].postMessage(urls);
+					event.ports[0].postMessage({
+						"offline" : true,
+						"urls" : urls
+					});
 				});
 			});
 		}
@@ -109,6 +115,7 @@ https://www.filamentgroup.com/
 
 	self.addEventListener( "fetch", event => {
 		let request = event.request;
+		let client = event.clientId;
 		let url = new URL( request.url );
 
 		// Ignore non-GET requests

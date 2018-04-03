@@ -35,6 +35,17 @@ module.exports = function(grunt) {
 			css: {
 				files: ['_src/_assets/css/**/*'],
 				tasks: 'watch-css'
+			},
+			js: {
+				files: ['_src/_assets/js/**/*'],
+				tasks: 'watch-js'
+			}
+		},
+		uglify: {
+			all: {
+				files: {
+					'_site/_assets/js/offline.min.js': ['_src/_assets/js/offline.js']
+				}
 			}
 		},
 		cssmin: {
@@ -56,6 +67,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		'copy',
 		'concat:css',
+		'uglify',
 		'cssmin'
 	]);
 
@@ -63,6 +75,10 @@ module.exports = function(grunt) {
 	grunt.registerTask('watch-css', [
 		'concat:css',
 		'cssmin'
+	]);
+
+	grunt.registerTask('watch-js', [
+		'uglify'
 	]);
 
 };

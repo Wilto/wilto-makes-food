@@ -3,53 +3,31 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 ---
 
-{% if( layoutContent ) %}
-{% include "notif.njk" %}
+{% if title %}
+<header role="alert" class="recipeheader" aria-labelledby="notif-hed">
+	<h2 class="recipe-hed" id="notif-hed">{{ title | safe }}</h2>
+	<span class="meta"></span>
+</header>
 {% endif %}
 
-<h2 class="section-hed" id="saved">Saved for Offline Reading</h2>
-<nav role="navigation" aria-labelledby="saved" class="offline-reader">
-</nav>
+{{ layoutContent | safe }}
+
+<div class="offline-reader">
+</div>
 
 <script>
 (function(){
 	let all = {
 {% for post in collections.posts | reverse %}
 		"{{ post.data.page.url }}" : {
-			"title" : "{{ post.data.title | safe }}"
+			"title" : "{{ post.data.title | safe }}",
+			"type" :"{{ post.data.type | safe }}"
 		},
 {% endfor %}
 	};
-
-	if( 'serviceWorker' in navigator ) {
-		let messageChannel = new MessageChannel(),
-			p = {
-				protocol: '^(http(s)?(:\/\/))?(www\.)?',
-				domain: '[a-zA-Z0-9-_\.]+',
-				tld: '(\.[a-zA-Z0-9]{2,})',
-				params: '([-a-zA-Z0-9:%_\+.~#?&//=]*)'
-			};
-
-		messageChannel.port1.onmessage = function(event) {
-			let offline = document.querySelector( '.offline-reader' ),
-				items = [];
-
-			event.data.forEach(item => {
-				let title;
-
-				if( item !== null ) {
-					var pattern = new RegExp(p.protocol + p.domain + p.tld + p.params, 'gi');
-					var res = pattern.exec(item);
-					title = all[ res[6] ].title;
-					items.push( '<li><a href="' + item + '">' + title + '</a></li>' );
-				}
-			});
-			offline.innerHTML = items.join('');
-		};
-
-		if( navigator.serviceWorker.controller ) {
-			navigator.serviceWorker.controller.postMessage( "getPages", [messageChannel.port2] );
-		}
-	}
+	window.wmf = {};
+	window.wmf.allPosts = all;
 }());
 </script>
+
+<script src="/_assets/js/offline.min.js"></script>

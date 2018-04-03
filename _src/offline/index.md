@@ -4,4 +4,4 @@ title: Looks like you’re offline.
 templateClass: tmpl-post
 ---
 
-Sucks for you.
+Any pages you visited before going offline will still be available from your browser cache, though.
