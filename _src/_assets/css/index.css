@@ -593,7 +593,7 @@ a.prod img {
 }
 
 .recipeheader {
-	margin-top: 1.5em;
+	margin-top: 2.5em;
 }
 .intro {
 	clear: both;
@@ -631,10 +631,6 @@ a.prod img {
 		width: 33%;
 		max-width: 20em;
 	}
-}
-
-.feat-thumb .caption {
-	padding: .5em 5%;
 }
 
 .feat-thumb span {
@@ -945,6 +941,12 @@ a.prod img {
 	margin-bottom: .5em;
 }
 
-.offline-section {
-
+.offline-items {
+	margin: 1em 0;
+	font-size: 1.075em;
+	padding: 0;
+	list-style: none;
+}
+.offline-items li {
+	margin: .25em 0;
 }

@@ -36,6 +36,13 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // Subnav items
+  eleventyConfig.addCollection("subnav", function(collection) {
+    return collection.getAllSorted().filter(function(item) {
+      return item.tag === "subnav";
+    });
+  });
+
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
   let options = {
@@ -52,8 +59,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItAnchor, opts));
 
   eleventyConfig.addPassthroughCopy("_src/img");
-  //eleventyConfig.addPassthroughCopy("_src/service-worker.js");
-  //eleventyConfig.addPassthroughCopy("_src/_assets/css/fonts");
 
   return {
     templateFormats: [

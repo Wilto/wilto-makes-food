@@ -10,11 +10,16 @@ templateClass: tmpl-post
 			<span class="meta"></span>
 		</header>
 
+		{% if img %}
 		<figure class="feat-thumb">
-			<span>
-				<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/69cdfe3a169f6bbcf08e7ade8dbc70d1/5AF6CFEA/t51.2885-15/e35/26870750_198662694018560_1326976192443580416_n.jpg" aria-describedby="capt-1">
-			</span>
+			<img src="{{img}}" alt="{{alt}} aria-describedby="capt-1">
+			{% if capt %}
+			<figcaption>
+				<p class="caption">{{capt}}</p> 
+			</figcaption>
+			{% endif %}
 		</figure>
+		{% endif %}
 
 		{{ layoutContent | safe }}
 

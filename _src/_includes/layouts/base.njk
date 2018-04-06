@@ -7,6 +7,7 @@
 		<title>{{ title or metadata.title }}</title>
 
 		<link rel="preload" href="/_assets/css/fonts/fanwood_text-webfont.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="/_assets/css/fonts/fanwood_text_italic-webfont.woff" as="font" type="font/woff" crossorigin>
 		<link rel="preload" href="/_assets/css/fonts/OpenSans-Bold-webfont.woff" as="font" type="font/woff" crossorigin>
 
 		<link rel="stylesheet" href="{{ '/_assets/css/all.css' | url }}">
@@ -44,6 +45,10 @@
 					</label>
 				</form>
 			</div>
+			{%- for subnav in collections.subnav | reverse -%}
+				<li><a href="{{ subnav.url | url }}" class="{% if subnav.url == page.url %}nav-item-active{% endif %}">{{ subnav.data.subnav }}</a></li>
+			{%- endfor -%}
+
 		</header>
 
 		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
@@ -74,7 +79,10 @@
 				</div>
 				<div class="colophon">
 					<h4 class="section-hed">Colophon</h4>
-					<p><em>Wilto Makes Food</em> is set in <a class="open-sans type" href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a> and <a class="type" href="https://www.theleagueofmoveabletype.com/fanwood">Fanwood</a>.</p>
+					<p>The <i>Wilto Makes Food</i> website is set in <a class="open-sans type" href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a> and <a class="type" href="https://www.theleagueofmoveabletype.com/fanwood">Fanwood</a>.</p>
+
+					<p>The logo is set in <a href="https://www.beastsofengland.co/blackbike" class="blackbike type">Blackbike</a>, <a class="open-sans type logotype" href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a>, and <a href="https://www.typography.com/fonts/champion-gothic/overview/" class="champion"><img src="/_src/img/champion.svg" alt="champion"></a>.</p>
+
 					<p>Built with <a href="https://www.11ty.io/">Eleventy</a>. The source is available <a href="https://github.com/Wilto/haute-garbage">on GitHub.</a> For questions, comments, or problems using the site, <a href="https://github.com/Wilto/haute-garbage/issues">report an issue</a>.</p>
 				</div>
 			</div>

@@ -36,11 +36,9 @@
 								return match[ 6 ] === find;
 							}
 						});
-					};
+					},
+					cachedItems = [];
 
-				render.push( '<h3 class="recipe-subhed offline-subhed offline-landing">' + landing.title + '</h3>' );
-
-				let cachedItems = [];
 
 				categorized.forEach(entry => {
 					let found = lookup( event.data.urls, entry.url );
@@ -53,11 +51,11 @@
 					}
 				});
 
-				if( cachedItems.length === 0 ) {
-					render.push( '<p>Nothing cached</p>' );
-				} else {
-					render.push( '<ul>' );
-					render.push( cachedItems );
+				if( cachedItems.length !== 0 ) {
+					render.push( '<h3 class="recipe-subhed offline-subhed offline-landing">' + landing.title + '</h3>' );
+
+					render.push( '<ul class="offline-items">' );
+					Array.prototype.push.apply( render, cachedItems );
 					render.push( '</ul>' );
 				}
 			});

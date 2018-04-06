@@ -35,7 +35,7 @@ picture {
 	height: auto;
 }
 a {
-	color: blue;
+	color: rgba(250,105,0,1);
 }
 a:hover {
 	color: #ea4142;
@@ -55,11 +55,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
 	max-width: 100%;
-}
-
-@media(min-width: 35em ) {
-	body {
-	}
 }
 
 /* Helpers

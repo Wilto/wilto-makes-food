@@ -1,5 +1,5 @@
 /*
-This is a (very, very lightly) modified version of Jeremy Keith’s service worker (https://adactio.com/serviceworker.js), with a few additional edits borrowed from Filament Group’s. (https://www.filamentgroup.com/sw.js)
+This is a modified version of Ethan Marcotte’s SW (https://ethanmarcotte.com/theworkerofservices.js), which was a modified version of Jeremy Keith’s service worker (https://adactio.com/serviceworker.js), with a few additional edits borrowed from Filament Group’s. (https://www.filamentgroup.com/sw.js)
 
 Thanks to both Jeremy and Filament Group for this, and everything else they do.
 
