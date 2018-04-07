@@ -46,12 +46,11 @@ main {
 }
 .cta:hover,
 .cta:focus {
-	background: linear-gradient(165deg, rgba(255,250,150,.65) 0%,rgba(255,255,255,0) 100%), rgba(255,125,0, .95);
+	background: rgba(255,150,0, .25);
 	border: 1px solid rgba(255,125,0, 1);
-	color: #fff;
 	outline: none;
-	text-shadow: 0 1px 1px rgba(200,105,0, 1);
-	transform: scale(1.05);
+	color: #333;
+	transform: scale(1.0125);
 }
 
 a.cta-prod {

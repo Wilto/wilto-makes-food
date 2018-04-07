@@ -2,31 +2,36 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<div class="col">
+<div class="col" itemscope itemtype="http://schema.org/Recipe">
 	<div class="intro">
 		<header role="banner" class="recipeheader">
-			<h2 class="recipe-hed">{{ title }}</h2>
+			<h2 class="recipe-hed" itemprop="name">{{ title }}</h2>
 			<dl class="meta">
 				{% if meta.serves %}
 				<dt>Serves</dt>
-				<dd>{{meta.serves}}</dd>
+				<dd itemprop="recipeYield">{{meta.serves}}</dd>
 				{% endif %}
 				{% if meta.active %}
 				<dt>Active Time</dt>
-				<dd>{{meta.active}}</dd>
+				<dd >{{meta.active}}</dd>
 				{% endif %}
 				{% if meta.total %}
 				<dt>Total Time</dt>
-				<dd>{{meta.total}}</dd>
+				<dd itemprop="totalTime">{{meta.total}}</dd>
 				{% endif %}
 			</dl>
 		</header>
 
+		{% if img %}
 		<figure class="feat-thumb">
-			<span>
-				<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/69cdfe3a169f6bbcf08e7ade8dbc70d1/5AF6CFEA/t51.2885-15/e35/26870750_198662694018560_1326976192443580416_n.jpg" aria-describedby="capt-1">
-			</span>
+			<img src="{{img}}" alt="{{alt}} aria-describedby="capt-1">
+			{% if capt %}
+			<figcaption>
+				<p class="caption">{{capt}}</p> 
+			</figcaption>
+			{% endif %}
 		</figure>
+		{% endif %}
 
 		{{ layoutContent | safe }}
 
@@ -35,7 +40,7 @@ templateClass: tmpl-post
 	<h3 class="inline-hed" id="recipe-sub0">Ingredients</h3>
 	<ul class="ingredients" aria-labelledby="recipe-sub0">
 		{%- for ing in ingredients -%}
-		<li>
+		<li itemprop="ingredients">
 			<p><span class="amt">{{ing.amt.whole}}<b class="frac" role="presentation">{{ing.amt.frac}}</b> {% if ing.amt.measure.abbr %}<abbr title="{{ing.amt.measure.full}}" role="presentation">{{ing.amt.measure.abbr}}</abbr>{% else %}{{ing.amt.measure}}{% endif %}</span>
 			{{ing.name}}</p>
 		</li>

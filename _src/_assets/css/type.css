@@ -118,7 +118,7 @@ abbr {
 	padding: .15em .65em .125em .65em ;
 	text-transform: uppercase;
 	font-size: .7em;
-	font-weight: bold;
+	font-weight: normal;
 	text-decoration: none;
 	font-family: sans-serif;
 	border-radius: .35em;
@@ -230,6 +230,7 @@ p.lede {
 }
 .fonts .features > .item .lede {
 	font-family: "open sans";
+	font-weight: normal;
 }
 
 .features > .item p {
@@ -302,7 +303,7 @@ p.lede {
 
 .feat-tag a {
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 12px;
 }
 

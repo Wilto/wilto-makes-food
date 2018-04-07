@@ -5,6 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>{{ title or metadata.title }}</title>
+		<meta property="og:site_name" content="{{ title or metadata.title }}" />
+
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="{{ title or metadata.title }}" />
+		<meta name="twitter:title" content="{{ title }}" />
+		{% if lede %}<meta name="twitter:description" content="{{lede}}" />{% endif %}
+		{% if img %}<meta name="twitter:image" content="{{img}}" />{% endif %}
+
+		<link rel="canonical" href="{{ page.url | url }}"/>
 
 		<link rel="preload" href="/_assets/css/fonts/fanwood_text-webfont.woff" as="font" type="font/woff" crossorigin>
 		<link rel="preload" href="/_assets/css/fonts/fanwood_text_italic-webfont.woff" as="font" type="font/woff" crossorigin>
