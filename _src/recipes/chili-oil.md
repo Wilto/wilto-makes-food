@@ -1,7 +1,6 @@
 ---
 title: Chili Oil
-tags:
-  - Sichuan
+tags: Sichuan
 subfeat: true
 type: recipe
 ---

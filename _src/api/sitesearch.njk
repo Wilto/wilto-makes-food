@@ -1,0 +1,15 @@
+---
+permalink: api/search.php
+---
+<?php
+$file = file_get_contents('all.json');
+$json = json_decode( $file, true);
+
+$res = array_filter( $json['posts'], function( $item ) {
+	return $item['title'] == "Chili Oil";
+});
+
+print( "<pre>" );
+print_r( $res );
+print( "</pre>" );
+?>

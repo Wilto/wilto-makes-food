@@ -2,14 +2,30 @@
 permalink: api/all.json
 ---
 {
+	"posts" : [
+{% set comma = joiner(',') %}
+
 {% for post in collections.posts | reverse %}
-{% if post.data.type %}"{{ post.data.title | safe }}" : {
+{% set ingcomma = joiner(',') %}
+
+{% if post.data.type %}
+{{ comma() }}{
+		"title" : "{{ post.data.title | safe }}",
+		"lede" : "{{ post.data.lede | safe }}",
 		"type" : "{{ post.data.type | safe }}",
+		"tags" : "{{ post.data.tags | safe }}",
 		"url" : "{{ post.data.page.url | safe }}",
 		"img" : {
 			"file" : "{{ post.data.img | safe }}",
 			"alt" : "{{ post.data.alt | safe }}"
-		}
-	},{% endif %}
+		},
+		"ingredients" : [
+			{%- for ing in post.data.ingredients %}
+			{{ ingcomma() }}
+				"{{ing.name}}"
+			{%- endfor -%}
+		]
+	}
+{% endif %}
 {% endfor %}
-}
+]}
