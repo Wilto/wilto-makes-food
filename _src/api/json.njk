@@ -1,0 +1,15 @@
+---
+permalink: api/all.json
+---
+{
+{% for post in collections.posts | reverse %}
+{% if post.data.type %}"{{ post.data.title | safe }}" : {
+		"type" : "{{ post.data.type | safe }}",
+		"url" : "{{ post.data.page.url | safe }}",
+		"img" : {
+			"file" : "{{ post.data.img | safe }}",
+			"alt" : "{{ post.data.alt | safe }}"
+		}
+	},{% endif %}
+{% endfor %}
+}
