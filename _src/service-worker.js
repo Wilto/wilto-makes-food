@@ -25,6 +25,7 @@ https://www.filamentgroup.com/
 		"/service-worker.js",
 		'/_assets/js/offline.min.js',
 		'/_assets/css/all.css',
+		'/_assets/img/wmf-draftlogo.png',
 		'/_assets/css/fonts/OpenSans-Bold-webfont.woff',
 		'/_assets/css/fonts/fanwood_text-webfont.woff',
 		'/_assets/css/fonts/fanwood_text_italic-webfont.woff'

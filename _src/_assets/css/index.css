@@ -19,7 +19,21 @@ main {
 .site-hed {
 	margin: 1em auto .5em auto;
 	max-width: 4.5em;
+	width: 100%;
+	padding-bottom: 100%;
+	position: relative;
 }
+.site-hed a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.site-hed img {
+	max-width: 100%;
+}
+ 
 @media( min-width: 55em) {
 	.site-hed {
 		float: left;
@@ -177,6 +191,12 @@ a.cta-prod {
 	background: #fafafa;
 }
 
+.subnav {
+	text-align: right;
+	margin-top: 0;
+	margin-bottom: .35em;
+}
+
 @media( min-width: 55em ) {
 	.site-head {
 		padding: 0 2.5%;
@@ -190,21 +210,45 @@ a.cta-prod {
 	width: 105%;
 }
 
+.site-head > div {
+	display: flex;
+	flex-direction: column;
+}
+.site-head > div .subnav {
+	order: -1;
+}
+
 @media( min-width: 40em ) {
+	.site-head > div {
+		align-self: center;
+	}
+	.site-head > div .subnav {
+		margin-top: .25em;
+		order: 1;
+	}
+
 	.bar {
 		align-self: center;
 		display: flex;
 		justify-content: flex-end;
 	}
+
 	.search {
-		align-self: center;
+		align-self: right;
+		width: 95%;
+		max-width: 15em;
 	}
 }
 
 @media( min-width: 55em ) {
 	.bar {
+		align-self: left;
 		width: 116.5%;
 		padding-right: 20%;
+		margin-top: 0em;
+	}
+	.subnav {
+		margin-right: 6%;
 	}
 	.search {
 		max-width: 30%;
@@ -213,8 +257,18 @@ a.cta-prod {
 
 
 .sitenav {
+	display: block;
+	width: 100%;
 	margin: 0 auto;
 	padding: .55em 2.5% .3em 2.5%;
+}
+
+.sitenav ul {
+	display: flex;
+}
+.sitenav li {
+	flex-grow: 1;
+	text-align: center;
 }
 @media( min-width: 55em ) {
 	.sitenav {
@@ -238,22 +292,30 @@ a.cta-prod {
 .sitenav > * {
 	margin-left: auto;
 }
-.sitenav li {
-	float: left;
-	text-align: center;
-}
 
 .sitenav ul {
-	display: flex;
 	margin: 0 0 .5em auto;
 	padding: 0;
 	list-style: none;
+	width: auto;
 }
 @media( min-width: 40em ){
 	.sitenav ul {
 		margin-bottom: 0;
 	}
 }
+@media( min-width: 55em ){
+	.bar {
+		margin-top: 3.5em;
+	}
+	.sitenav ul {
+		float: right;
+	}
+	.sitenav li {
+		flex-grow: 0;
+	}
+}
+
 
 
 .sitenav li a {
@@ -263,11 +325,40 @@ a.cta-prod {
 	border-left: none;
 }
 
+.subnav {
+	clear: both;
+}
+
+.subnav li {
+	display: inline-block;
+	font-size: .95em;
+}
+.subnav li+li {
+	margin-left: 10px;
+}
+.subnav li+li:before {
+	content: "";
+	display: inline-block;
+	margin-right: 10px;
+	height: 7px;
+	margin-bottom: 1px;
+	border-left: 1px solid rgba(0,0,0,.35);
+}
+
+.subnav a {
+	font-family: open sans;
+	font-size: .7em;
+	text-transform: uppercase;
+	color: #777;
+	text-decoration: none;
+}
+.subnav a:hover {
+	color: rgba(255,150,0, .9);
+}
+
 .site-head {
 	width: 100%;
 }
-
-body { position: relative; }
 
 .skiplink,
 .skiplink:focus {
@@ -615,13 +706,26 @@ a.prod img {
 }
 
 .feat-thumb {
-	margin: 0 -5% 7.5% -5%;
+	width: 105%;
+	margin: 0 0 7.5% -1.5%;
+}
+.caption {
+	padding: 0 1.5%;
 }
 @media( min-width: 35em ) {
 	.feat-thumb {
 		float: right;
 		width: 40%;
 		margin: .55em 0 2.5em 2em;
+	}
+	.feat-thumb img {
+		margin: 0;
+		margin-top: .3em;
+		display: block;
+		clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+	}
+	.caption {
+		padding: 0;
 	}
 }
 
@@ -632,15 +736,6 @@ a.prod img {
 	}
 }
 
-.feat-thumb span {
-	background: rgba(255,150,0, .5);
-	display: block;
-}
-.feat-thumb img {
-	margin-top: .3em;
-	display: block;
-	clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
-}
 
 .meta {
 	position: relative;

@@ -685,25 +685,6 @@ p.lede {
 	font-weight: normal;
 }
 
-.open-sans.logotype {
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-.champion {
-	width: 5em;
-	display: inline-block;
-}
-.champion img {
-	margin-bottom: -1.5px;
-	max-width: 100%;
-}
-
-.fonts .blackbike {
-	color: rgba(0,0,0,.72);
-	font-family: blackbike;
-}
-
 
 .offline-subhed {
 	color: #444;

@@ -59,8 +59,34 @@ module.exports = function(grunt) {
 				],
 				dest: '<%= concat.css.dest %>'
 			}
+		},
+		responsive_images: {
+			options: {
+				//newFilesOnly: true,
+				sizes: [{
+					name: '1',
+					width: 320,
+				},{
+					name: '2',
+					width: 450
+				},{
+					name: '3',
+					width: 640
+				},{
+					name: '4',
+					width: 820
+				},{
+					name: '5',
+					width: 1024
+				}]
+			},
+			files: {
+				expand: true,
+				cwd: '_src',
+				src: ['img/**.{jpg,gif,png}'],
+				dest: '_site'
+			}
 		}
-
 	});
 
 	// Default task.
@@ -68,6 +94,7 @@ module.exports = function(grunt) {
 		'copy',
 		'concat:css',
 		'uglify',
+		'responsive_images',
 		'cssmin'
 	]);
 

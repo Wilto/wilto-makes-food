@@ -36,10 +36,9 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  // Subnav items
   eleventyConfig.addCollection("subnav", function(collection) {
     return collection.getAllSorted().filter(function(item) {
-      return item.tag === "subnav";
+      return item.data.tags === "subnav";
     });
   });
 
@@ -57,8 +56,7 @@ module.exports = function(eleventyConfig) {
   };
 
   eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItAnchor, opts));
-
-  eleventyConfig.addPassthroughCopy("_src/img");
+  eleventyConfig.addPassthroughCopy("_src/_assets/img");
 
   return {
     templateFormats: [

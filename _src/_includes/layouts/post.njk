@@ -3,6 +3,22 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
+{% macro respimg(path, img, sizes, alt, capt) %}
+<img 
+	sizes="{{ sizes }}"
+	srcset="
+		{{ path }}{{ img }}-1.jpg 320w,
+		{{ path }}{{ img }}-2.jpg 450w,
+		{{ path }}{{ img }}-3.jpg 640w,
+		{{ path }}{{ img }}-4.jpg 820w,
+		{{ path }}{{ img }}-5.jpg 1024w"
+	src="{{ path }}{{ img }}-4.jpg" 
+	{% if capt %}
+	aria-describedby="capt-1"
+	{% endif %}
+	alt="{{ alt }}">
+{% endmacro %}
+
 <div class="col">
 	<div class="intro">
 		<header role="banner" class="recipeheader">
@@ -12,10 +28,10 @@ templateClass: tmpl-post
 
 		{% if img %}
 		<figure class="feat-thumb">
-			<img src="{{img}}" alt="{{alt}} aria-describedby="capt-1">
+			{{ respimg('/img/', img, '(min-width: 560px) 38vw, 100vw', alt, capt ) }}
 			{% if capt %}
-			<figcaption>
-				<p class="caption">{{capt}}</p> 
+			<figcaption id="capt-1" class="caption">
+				{{capt}}
 			</figcaption>
 			{% endif %}
 		</figure>

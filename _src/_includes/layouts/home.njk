@@ -3,7 +3,20 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 ---
 
-{% macro homeitem(post, feat=false, classes='') %}
+{% macro respimg(path, img, sizes, alt) %}
+<img 
+	sizes="{{ sizes }}"
+	srcset="
+		{{ path }}{{ img }}-1.jpg 320w,
+		{{ path }}{{ img }}-2.jpg 450w,
+		{{ path }}{{ img }}-3.jpg 640w,
+		{{ path }}{{ img }}-4.jpg 820w,
+		{{ path }}{{ img }}-5.jpg 1024w"
+	src="{{ path }}{{ img }}-4.jpg" 
+	alt="{{ alt }}">
+{% endmacro %}
+
+{% macro homeitem(post, feat=false, classes='', sizes='100vw') %}
 	<article class="{{ classes }}{% if post.data.type == "article" %} article{% endif %} item">
 		{% if ( post.data.type == "article" ) or ( post.data.type == "review" ) %}
 		<div class="art-content">
@@ -24,26 +37,27 @@ templateClass: tmpl-home
 			{% for tag in post.data.tags %}<span class="feat-tag"><a href="#category"><span class="a11y-only">Category: </span>{{ tag }}</a></span>{% endfor %}
 		</div>
 		{% endif %}
+		{% if post.data.img %}
 		<a href="{{ post.url | url }}" aria-hidden="true" tabindex="-1">
-			<img src="https://instagram.fphl1-2.fna.fbcdn.net/vp/1fc6959d9882890a180acb0a5a2981a9/5B0AE691/t51.2885-15/e35/26866289_690115051376278_3955654606054227968_n.jpg" alt="Miso Ramen">
+			{{ respimg('/img/', post.data.img, sizes, post.data.alt) }}
 		</a>
+		{% endif %}
 	</article>
 {% endmacro %}
-
 
 {% set postslist = collections.posts %}
 <h2 class="section-hed" id="features">Featured Recipes</h2>
 <section class="col features" role="region" aria-labelledby="features">
 {% for post in postslist %}
 	{% if post.data.feat %}
-		{{ homeitem(post, true, 'feat') }}
+		{{ homeitem(post, true, 'feat', '(min-width: 1480px) 935px, (min-width: 800px) 64vw, 98vw') }}
 	{% endif %}
 {% endfor %}
 
 	<div class="subfeat">
 	{% for post in postslist %}
 		{% if post.data.subfeat %}
-			{{ homeitem(post, true ) }}
+			{{ homeitem(post, true, '', '(min-width: 1480px) 465px, (min-width: 800px) 33vw, (min-width: 650px) 48vw, 98vw' ) }}
 		{% endif %}
 	{% endfor %}
 	</div>
@@ -54,7 +68,7 @@ templateClass: tmpl-home
 	<div class="highlights">
 {% for post in postslist | reverse %}
 {% if ( post.data.feat != true ) and ( post.data.subfeat != true ) and ( post.data.type == "recipe" ) %}
-	{{ homeitem(post) }}
+	{{ homeitem(post,'','','(min-width: 1480px) 935px, (min-width: 800px) 64vw, 98vw') }}
 {% endif %}
 {% endfor %}
 	</div>
