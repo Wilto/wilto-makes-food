@@ -11,20 +11,28 @@ permalink: api/all.json
 {% if post.data.type %}
 {{ comma() }}{
 		"title" : "{{ post.data.title | safe }}",
+		{% if post.data.lede %}
 		"lede" : "{{ post.data.lede | safe }}",
+		{% endif %}
 		"type" : "{{ post.data.type | safe }}",
-		"tags" : "{{ post.data.tags | safe }}",
-		"url" : "{{ post.data.page.url | safe }}",
-		"img" : {
+		"tags" : "{{ post.data.tags | safe }}"
+		{% if post.data.img %}
+		,"img" : {
 			"file" : "{{ post.data.img | safe }}",
+			{% if post.data.capt %}
+			"capt" : "{{ post.data.capt | safe }}",
+			{% endif %}
 			"alt" : "{{ post.data.alt | safe }}"
-		},
-		"ingredients" : [
+		}
+		{% endif %}
+		{% if post.data.ingredients.length %}
+		,"ingredients" : [
 			{%- for ing in post.data.ingredients %}
 			{{ ingcomma() }}
 				"{{ing.name}}"
 			{%- endfor -%}
 		]
+		{% endif %}
 	}
 {% endif %}
 {% endfor %}
