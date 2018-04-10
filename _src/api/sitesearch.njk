@@ -2,14 +2,39 @@
 permalink: api/search.php
 ---
 <?php
-$file = file_get_contents('all.json');
-$json = json_decode( $file, true);
+$file = file_get_contents( 'all.json' );
+$json = json_decode( $file, true );
+$needle = $_GET["q"];
+$matches;
 
-$res = array_filter( $json['posts'], function( $item ) {
-	return $item['title'] == "Chili Oil";
-});
+foreach( $json['posts'] as $key => $hay ) {
+	$type = strtolower( gettype( $hay ));
 
-print( "<pre>" );
-print_r( $res );
-print( "</pre>" );
+	if( $type == "string" ) {
+		if( utf8_encode( stripos( strtolower( $hay ), $needle ) ) !== "" ) {
+			$matches[] = $hay;
+		}
+	} else if ( $type == "array" ) {
+		foreach( $hay as $key => $subhay ) {
+			$type = strtolower( gettype( $subhay ));
+			if ( $type == "array" ) {
+				foreach( $subhay as $key => $subsubhay ) {
+					if( utf8_encode( stripos( strtolower( $subsubhay ), $needle ) ) !== "" ) {
+						$matches[] = $hay;
+					}
+				}
+			} else {
+				if( utf8_encode( stripos( strtolower( $subhay ), $needle ) ) !== "" ) {
+					$matches[] = $hay;
+				}
+			}
+		}
+	}
+}
+$matches = array_map("unserialize", array_unique(array_map("serialize", $matches)));
+
+
+print "<pre>";
+print_r( $matches );
+print "</pre>";
 ?>
