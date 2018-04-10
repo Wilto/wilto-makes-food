@@ -20,11 +20,11 @@ main {
 	margin: 1em auto .5em auto;
 	max-width: 4.5em;
 	width: 100%;
-	padding-bottom: 100%;
 	position: relative;
 }
 .site-hed a {
 	position: absolute;
+	padding-bottom: 100%;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -179,7 +179,7 @@ a.cta-prod {
 }
 
 .site-head {
-	margin: 0 auto;
+	margin: 0 auto 2.5em auto;
 	padding: 0 1.5%;
 	max-width: 85em;
 }
