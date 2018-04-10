@@ -62,7 +62,7 @@ module.exports = function(grunt) {
 		},
 		responsive_images: {
 			options: {
-				//newFilesOnly: true,
+				newFilesOnly: true,
 				sizes: [{
 					name: '1',
 					width: 320,
