@@ -2,10 +2,32 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
+
+{% macro respimg(path, img, sizes, alt, capt) %}
+<img 
+	sizes="{{ sizes }}"
+	srcset="
+		{{ path }}{{ img }}-1.jpg 320w,
+		{{ path }}{{ img }}-2.jpg 450w,
+		{{ path }}{{ img }}-3.jpg 640w,
+		{{ path }}{{ img }}-4.jpg 820w,
+		{{ path }}{{ img }}-5.jpg 1024w"
+	src="{{ path }}{{ img }}-4.jpg" 
+	{% if capt %}
+	aria-describedby="capt-1"
+	{% endif %}
+	alt="{{ alt }}">
+{% endmacro %}
+
 <div class="col" itemscope itemtype="http://schema.org/Recipe">
 	<div class="intro">
 		<header role="banner" class="recipeheader">
+			{% for tag in tags %}
+				<a href="/recipes/tagged/?t={{ tag }}" class="art-section"><span class="a11y-only">Category: </span>{{ tag }}</a>
+			{% endfor %}
 			<h2 class="recipe-hed" itemprop="name">{{ title }}</h2>
+
+
 			<dl class="meta">
 				{% if meta.serves %}
 				<dt>Serves</dt>
@@ -24,29 +46,36 @@ templateClass: tmpl-post
 
 		{% if img %}
 		<figure class="feat-thumb">
-			<img src="{{img}}" alt="{{alt}} aria-describedby="capt-1">
+			{{ respimg('/img/', img, '(min-width: 560px) 38vw, 100vw', alt, capt ) }}
 			{% if capt %}
-			<figcaption>
-				<p class="caption">{{capt}}</p> 
+			<figcaption id="capt-1" class="caption">
+				{{capt}}
 			</figcaption>
 			{% endif %}
 		</figure>
+		{% endif %}
+
+		{% if lede %}
+		<p class="lede">{{lede}}</p>
 		{% endif %}
 
 		{{ layoutContent | safe }}
 
 	</div>
 
+{% if ingredients %}
 	<h3 class="inline-hed" id="recipe-sub0">Ingredients</h3>
 	<ul class="ingredients" aria-labelledby="recipe-sub0">
 		{%- for ing in ingredients -%}
 		<li itemprop="ingredients">
 			<p><span class="amt">{{ing.amt.whole}}<b class="frac" role="presentation">{{ing.amt.frac}}</b> {% if ing.amt.measure.abbr %}<abbr title="{{ing.amt.measure.full}}" role="presentation">{{ing.amt.measure.abbr}}</abbr>{% else %}{{ing.amt.measure}}{% endif %}</span>
-			{{ing.name}}</p>
+			{% if ing.href %}<a href="{{ ing.href }}">{% endif %}{{ing.name}}{% if ing.href %}</a>{% endif %}{% if ing.notes %}, {{ing.notes}}{%- endif -%}</p>
+			{% if ing.optional %}<span class="opt">Optional</span>{%- endif -%}
 		</li>
 		{%- endfor -%}
 	</ul>
-
+{% endif %}
+{% if instructions %}
 		<div class="instructions">
 			<h3 class="inline-hed">Instructions</h3>
 
@@ -67,6 +96,7 @@ templateClass: tmpl-post
 			</ol>
 		{% endif %}
 		</div>
+	{% endif %}
 
 	</div>
 </div>

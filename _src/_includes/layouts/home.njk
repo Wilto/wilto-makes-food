@@ -20,10 +20,13 @@ templateClass: tmpl-home
 	<article class="{{ classes }}{% if post.data.type == "article" %} article{% endif %} item">
 		{% if ( post.data.type == "article" ) or ( post.data.type == "review" ) %}
 		<div class="art-content">
-			{% for tag in post.data.tags %}<a href="#category" class="art-section"><span class="a11y-only">Category: </span>{{ tag }}</a>{% endfor %}
+			{% if post.data.tags %}
+			{% if post.data.tags !== "subnav" %}
+			<a href="/recipes/tagged/?t={{ post.data.tags | lower }}" class="art-section"><span class="a11y-only">Category: </span>{{ post.data.tags }}</a>{% endif %}
+			{% endif %}
 			<h3 class="article-hed"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
 			<p class="lede">{{ post.data.subhed }}</p>
-			{% if feat %}
+			{% if classes != "sub" %}
 			<p>{{ post.data.lede }}</p>
 			{% endif %}
 		</div>
@@ -34,7 +37,7 @@ templateClass: tmpl-home
 		<div class="recipe-header">
 		{% endif %}
 			<h3 class="recipe-hed"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-			{% for tag in post.data.tags %}<span class="feat-tag"><a href="#category"><span class="a11y-only">Category: </span>{{ tag }}</a></span>{% endfor %}
+			{% for tag in post.data.tags %}<span class="feat-tag"><a href="/recipes/tagged/?t={{ tag | lower }}"><span class="a11y-only">Category: </span>{{ tag }}</a></span>{% endfor %}
 		</div>
 		{% endif %}
 		{% if post.data.img %}
@@ -46,7 +49,7 @@ templateClass: tmpl-home
 {% endmacro %}
 
 {% set postslist = collections.posts %}
-<h2 class="section-hed" id="features">Featured Recipes</h2>
+<h2 class="section-hed a11y-only" id="features">Features</h2>
 <section class="col features" role="region" aria-labelledby="features">
 {% for post in postslist %}
 	{% if post.data.feat %}
@@ -57,7 +60,7 @@ templateClass: tmpl-home
 	<div class="subfeat">
 	{% for post in postslist %}
 		{% if post.data.subfeat %}
-			{{ homeitem(post, true, '', '(min-width: 1480px) 465px, (min-width: 800px) 33vw, (min-width: 650px) 48vw, 98vw' ) }}
+			{{ homeitem(post, true, 'sub', '(min-width: 1480px) 465px, (min-width: 800px) 33vw, (min-width: 650px) 48vw, 98vw' ) }}
 		{% endif %}
 	{% endfor %}
 	</div>
@@ -68,7 +71,7 @@ templateClass: tmpl-home
 	<div class="highlights">
 {% for post in postslist | reverse %}
 {% if ( post.data.feat != true ) and ( post.data.subfeat != true ) and ( post.data.type == "recipe" ) %}
-	{{ homeitem(post,'','','(min-width: 1480px) 935px, (min-width: 800px) 64vw, 98vw') }}
+	{{ homeitem(post,'','','(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw') }}
 {% endif %}
 {% endfor %}
 	</div>
@@ -80,7 +83,7 @@ templateClass: tmpl-home
 	<div class="highlights">
 {% for post in postslist | reverse %}
 {% if ( post.data.feat != true ) and ( post.data.subfeat != true ) and ( post.data.type == "article" ) %}
-	{{ homeitem(post) }}
+	{{ homeitem(post, '', '', '(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw') }}
 {% endif %}
 {% endfor %}
 	</div>
@@ -92,7 +95,7 @@ templateClass: tmpl-home
 	<div class="highlights">
 {% for post in postslist | reverse %}
 {% if ( post.data.feat != true ) and ( post.data.subfeat != true ) and ( post.data.type == "review" ) %}
-	{{ homeitem(post) }}
+	{{ homeitem(post, '', '', '(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw') }}
 {% endif %}
 {% endfor %}
 	</div>

@@ -1,5 +1,5 @@
 {
-	"title" : "ham",
+	"title" : "Curry Rice",
 	"meta" : {
 		"serves": "4",
 		"active": "1 hour",
@@ -7,17 +7,111 @@
 	},
 	"ingredients" : [
 		{
-			"name" : "salt",
+			"name" : "Ginger",
 			"amt" : {
-				"whole" : "1",
-				"frac" : "1/2",
-				"measure" : "Tbsp"
+				"whole" : "20",
+				"measure" : {
+					"abbr" : "G",
+					"full" : "Grams"
+				}
 			}
 		},
 		{
-			"name" : "onions",
+			"name" : "Garlic",
 			"amt" : {
-				"whole" : "2"
+				"whole" : "20",
+				"measure" : {
+					"abbr" : "G",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Shallots",
+			"amt" : {
+				"whole" : "300",
+				"measure" : {
+					"abbr" : "G",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Onions",
+			"amt" : {
+				"whole" : "150",
+				"measure" : {
+					"abbr" : "G",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Marmite",
+			"optional" : true,
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "Teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Homemade Toridashi",
+			"href" : "/recipes/toridashi",
+			"amt" : {
+				"whole" : "1",
+				"measure" : "Quart"
+			}
+		},
+		{
+			"name" : "Tonkatsu Sauce",
+			"href" : "https://www.amazon.com/dp/B01LAX8JGC/",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			}
+		},
+		{
+			"name" : "Tomato Paste",
+			"amt" : {
+				"whole" : "1",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			}
+		},
+		{
+			"name" : "Cocoa Powder",
+			"amt" : {
+				"whole" : "1",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Honey",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoons"
+				}
+			}
+		},
+		{
+			"name" : "Bay Leaf",
+			"amt" : {
+				"whole" : "1"
 			}
 		}
 	],

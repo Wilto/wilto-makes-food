@@ -10,7 +10,7 @@ https://www.filamentgroup.com/
 (function() {
 	"use strict";
 
-	const version = "v02";
+	const version = "v00029";
 	const cacheName = version + "::wiltomakesfood:";
 
 	const staticCacheName = cacheName + "static";
@@ -19,13 +19,13 @@ https://www.filamentgroup.com/
 
 	const offlinePages = [
 		"/",
-		"/offline"
+		"/offline/"
 	];
 	const staticAssets = [
 		"/service-worker.js",
 		'/_assets/js/offline.min.js',
 		'/_assets/css/all.css',
-		'/_assets/img/wmf-draftlogo.png',
+		'/_assets/img/wmf.png',
 		'/_assets/css/fonts/OpenSans-Bold-webfont.woff',
 		'/_assets/css/fonts/fanwood_text-webfont.woff',
 		'/_assets/css/fonts/fanwood_text_italic-webfont.woff'
@@ -131,7 +131,6 @@ https://www.filamentgroup.com/
 
 		// For HTML requests, try the network first, fall back to the cache, finally the offline page
 		if ( request.headers.get( "Accept" ).indexOf( "text/html" ) !== -1 ) {
-
 			event.respondWith(
 				fetch( request )
 					.then( response => {

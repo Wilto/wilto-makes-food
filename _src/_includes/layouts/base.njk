@@ -1,4 +1,9 @@
-<!doctype html>
+{% macro field(name, value='', type='text') %}
+<div class="field">
+	<input type="{{ type }}" name="{{ name }}"
+	value="{{ value | escape }}" />
+</div>
+{% endmacro %}<!doctype html>
 <html lang="en" class="fonts">
 	<head>
 		<meta charset="utf-8">
@@ -27,7 +32,7 @@
 		<a href="#main" class="a11y-only focusable skiplink">Skip to Main Content</a>
 
 		<header role="banner" class="site-head">
-			<h1 class="site-hed"><a href="{{ '/' | url }}"><img src="/_assets/img/wmf-draftlogo.png" alt="Wilto Makes Food"></a></h1>
+			<h1 class="site-hed"><a href="{{ '/' | url }}"><img src="/_assets/img/wmf.png" alt="Wilto Makes Food"></a></h1>
 
 			<div>
 				<div class="bar">
@@ -41,7 +46,7 @@
 						</ul>
 					</nav>
 
-					<form class="search">
+					<form class="search" method="post" action="/search/">
 						<label for="search">
 							<span class="a11y-only">Search</span>
 							<input type="search" id="search" name="search" placeholder="Search for&hellip;">
@@ -58,7 +63,7 @@
 				<ul class="subnav">
 					{% set subnavs = collections.subnav | reverse %}
 					{%- for subnav in subnavs -%}
-					<li><a href="{{ subnav.url | url }}" class="{% if subnav.url == page.url %}nav-item-active{% endif %}">{{subnav.data.navtitle}}</a></ li>
+					<li><a href="{{ subnav.url | url }}"{% if subnav.url == page.url %} aria-current="true"{% endif %} class="{% if subnav.url == page.url %}subnav-item-active{% endif %}">{{subnav.data.navtitle}}</a></ li>
 					{%- endfor -%}
 				</ul>
 			</div>
@@ -78,18 +83,7 @@
 				<div>
 					<h4 class="section-hed">Instagram</h4>
 					<div class="insta-thumbs">
-						<a href="#">
-							<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/89ed84b9cda86bf073e02610a02bdaa7/5B456EE1/t51.2885-15/e35/28152844_957737944380129_4325036774356156416_n.jpg" alt="Miso Ramen">
-						</a>
-						<a href="#">
-							<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/89ed84b9cda86bf073e02610a02bdaa7/5B456EE1/t51.2885-15/e35/28152844_957737944380129_4325036774356156416_n.jpg" alt="Miso Ramen">
-						</a>
-						<a href="#">
-							<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/89ed84b9cda86bf073e02610a02bdaa7/5B456EE1/t51.2885-15/e35/28152844_957737944380129_4325036774356156416_n.jpg" alt="Miso Ramen">
-						</a>
-						<a href="#">
-							<img src="https://instagram.fnyc1-1.fna.fbcdn.net/vp/89ed84b9cda86bf073e02610a02bdaa7/5B456EE1/t51.2885-15/e35/28152844_957737944380129_4325036774356156416_n.jpg" alt="Miso Ramen">
-						</a>
+
 					</div>
 				</div>
 				<div class="colophon">
@@ -105,7 +99,7 @@
 
 		<script type="text/javascript">
 			if('serviceWorker' in navigator) {
-				navigator.serviceWorker.register('/service-worker.js');
+				//navigator.serviceWorker.register('/service-worker.js');
 			}
 		</script>
 	</body>

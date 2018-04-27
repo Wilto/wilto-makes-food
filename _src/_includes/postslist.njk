@@ -1,6 +1,6 @@
-{% macro respimg(path, img, sizes="(min-width: 750px) 25vw, (min-width: 500px) 50vw, 98vw", alt) %}
+{% macro respimg(path, img, alt) %}
 <img 
-	sizes="{{ sizes }}"
+	sizes="(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw"
 	srcset="
 		{{ path }}{{ img }}-1.jpg 320w,
 		{{ path }}{{ img }}-2.jpg 450w,
@@ -15,7 +15,7 @@
 	<article class="{{ classes }}{% if post.data.type == "article" %}article {% endif %}item">
 		{% if ( post.data.type == "article" ) or ( post.data.type == "review" ) %}
 		<div class="art-content">
-			{% for tag in post.data.tags %}<a href="#category" class="art-section"><span class="a11y-only">Category: </span>{{ tag }}</a>{% endfor %}
+			{% for tag in post.data.tags %}<a href="/recipes/tagged/?tagged={{ tag }}" class="art-section"><span class="a11y-only">Category: </span>{{ tag }}</a>{% endfor %}
 			<h3 class="article-hed"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
 			<p class="lede">{{ post.data.subhed }}</p>
 			{% if feat %}
@@ -26,12 +26,12 @@
 
 		<div class="recipe-header">
 			<h3 class="recipe-hed"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-			{% for tag in post.data.tags %}<span class="feat-tag"><a href="#category"><span class="a11y-only">Category: </span>{{ tag }}</a></span>{% endfor %}
+			{% for tag in post.data.tags %}<span class="feat-tag"><a href="/recipes/tagged/?tagged={{ tag }}"><span class="a11y-only">Category: </span>{{ tag }}</a></span>{% endfor %}
 		</div>
 		{% endif %}
 		{% if post.data.img %}
 		<a href="{{ post.url | url }}" aria-hidden="true" tabindex="-1">
-			{{ respimg('/img/', post.data.img, sizes, post.data.alt) }}
+			{{ respimg('/img/', post.data.img, post.data.alt) }}
 		</a>
 		{% endif %}
 	</article>

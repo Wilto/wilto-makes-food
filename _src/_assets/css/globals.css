@@ -36,11 +36,13 @@ picture {
 	height: auto;
 }
 a {
-	color: rgba(250,105,0,1);
+	color: rgba(250,100,0,1);
+	text-decoration-color: rgba(250,150,0,.35);
+	transition: all .15s linear;
 }
 a:hover {
 	color: #ea4142;
-	text-decoration: none;
+	text-decoration-color: rgba(250,100,0,.75);
 }
 a:active {
 	position: relative;

@@ -1,0 +1,14 @@
+{% macro amazon( string ) %}
+<figure class="listing">
+	<a href="http://www.amazon.com/dp/{{ string }}?tag=wiltomf-20&th=1" class="prod">
+		<img src="https://images-na.ssl-images-amazon.com/images/I/41%2BlOdqAwPL.jpg" data-pin-nopin="true" aria-labelledby="" aria-describedby="" alt="">
+	</a>
+	<figcaption class="product-desc">
+		<h4 class="prod-hed"><a href="http://www.amazon.com/dp/{{ string }}?tag=wiltomf-20&th=1">An inline listing</a></h4>
+		<p class="vend">Amazon.com</p>
+		<p class="price">$8</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in nisl massa.</p>
+		<a href="http://www.amazon.com/dp/{{ string }}?tag=wiltomf-20&th=1" class="cta">thing</a>
+	</figcaption>
+</figure>
+{% endmacro %}

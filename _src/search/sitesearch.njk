@@ -1,0 +1,90 @@
+---
+permalink: search/index.php
+layout: layouts/base.njk
+---
+<?php
+$file = file_get_contents( 'posts.json' );
+$json = json_decode( $file, true );
+$needle = $_POST["search"];
+$matches;
+
+foreach( $json['posts'] as $key => $hay ) {
+	$type = strtolower( gettype( $hay ));
+
+	if( $type == "string" ) {
+		if( utf8_encode( stripos( strtolower( $hay ), $needle ) ) !== "" ) {
+			$matches[] = $hay;
+		}
+	} else if ( $type == "array" ) {
+		foreach( $hay as $key => $subhay ) {
+			$type = strtolower( gettype( $subhay ));
+			if ( $type == "array" ) {
+				foreach( $subhay as $key => $subsubhay ) {
+					if( utf8_encode( stripos( strtolower( $subsubhay ), $needle ) ) !== "" ) {
+						$matches[] = $hay;
+					}
+				}
+			} else {
+				if( utf8_encode( stripos( strtolower( $subhay ), $needle ) ) !== "" ) {
+					$matches[] = $hay;
+				}
+			}
+		}
+	}
+}
+if( sizeof( $matches ) > 0 ) {
+	$matches = array_map("unserialize", array_unique(array_map("serialize", $matches)));
+}
+?>
+<form class="search lede-search" method="post" action="/search/">
+	<label for="search">
+		<span class="a11y-only">Search</span>
+		<input type="search" id="search" name="search" placeholder="Search for…" value="<?= $needle; ?>">
+	</label>
+	<label>
+		<span class="a11y-only">Submit search query</span>
+		<svg class="icon icon-search" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 60 75" enable-background="new 0 0 60 60" xml:space="preserve">
+			<path class="mag" d="M50.317,44.678l-5.96-5.96c-1.163-1.163-2.855-1.465-4.3-0.921l-3.458-3.458  c4.615-6.061,4.172-14.739-1.358-20.279c-6.04-6.04-15.83-6.04-21.87,0c-6.03,6.04-6.03,15.82,0,21.86  c5.739,5.739,14.856,6.014,20.932,0.847l3.392,3.392c-0.544,1.446-0.242,3.137,0.921,4.3l5.96,5.96c1.586,1.586,4.156,1.586,5.742,0  C51.903,48.835,51.903,46.264,50.317,44.678z M16.34,32.96c-4.4-4.4-4.4-11.54,0-15.94c4.4-4.4,11.53-4.4,15.93,0  c4.4,4.4,4.4,11.54,0,15.94C27.87,37.36,20.74,37.36,16.34,32.96z"></path>
+		</svg>
+		<input type="submit" class="a11y-only">
+	</label>
+</form>
+
+<?php if( $needle ): ?>
+<h2 class="section-hed" id="results">Search Results</h2>
+<div class="results" aria-labelledby="results">
+<?php if( sizeof( $matches ) === 0 ): ?>
+
+	<p class="bad-end">Sorry, I couldn’t find anything containing <?= $needle ?></p>
+
+<?php else: ?>
+
+<?php foreach( $matches as $post): ?>
+	<?php if( $post['type'] != "landing" ): ?>
+		<article class="item <?php if( $post['img']['file'] ) print ' result-split' ?>">
+		<?php if( $post['img']['file'] ): ?>
+			<img 
+				sizes="(min-width: 1560px) calc(-1.11vw + 332px), (min-width: 880px) calc(19.24vw + 19px), (min-width: 560px) 47.67vw, 97.08vw"
+				srcset="/img/<?= $post['img']['file']; ?>-1.jpg 320w,
+					/img/<?= $post['img']['file']; ?>-2.jpg 450w,
+					/img/<?= $post['img']['file']; ?>-3.jpg 640w"
+				src="/img/<?= $post['img']['file']; ?>-3.jpg" alt="<?= $post['img']['alt']; ?>">
+		<?php endif; ?>
+		<div class="art-content">
+			<?php if( $post['type'] ): ?>
+			<span class="art-section flag-<?= $post['type']; ?>"><?= $post['type']; ?></span>
+			<?php endif; ?>
+			<h3 class="article-hed"><a href="<?= $post['url']; ?>"><?= $post['title']; ?></a></h3>
+			<?php if( $post['subhed'] ): ?>
+			<p class="subhed"><?= $post['subhed']; ?></p>
+			<?php endif; ?>
+			<?php if( $post['lede'] ): ?>
+				<p class="lede"><?= $post['lede']; ?></p>
+			<?php endif; ?>
+			</div>
+	</article>
+	<?php endif; ?>
+<?php endforeach; ?>
+<?php endif; ?>
+</div>
+<?php endif; ?>

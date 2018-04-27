@@ -4,6 +4,8 @@ body {
 	grid-template-rows: auto 1fr auto;
 }
 .features {
+	margin-top: 3.5%;
+	padding-bottom: 1.5em;
 	display: grid;
 	grid-template-columns: auto 33%;
 	grid-gap: 1%;
@@ -78,12 +80,15 @@ body {
 		margin-top: 0;
 	}
 }
-
+.site-head {
+	overflow: hidden;
+}
 @media( min-width: 55em ) {
 	.site-head {
 		display: grid;
 		grid-template-columns: 15% 85%;
 		grid-gap: 5%;
+		overflow: visible;
 	}
 }
 
@@ -159,6 +164,53 @@ body {
 @media( min-width: 60em ) {
 	.insta-thumbs {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+
+@media( min-width: 35em ) and ( max-width: 54.9375em) {
+	.results {
+		display: grid;
+		grid-gap: 1.5%;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.results .result-split {
+	padding-bottom: 100%;
+}
+.results .result-split .art-content {
+	position: absolute;
+	bottom: 0;
+}
+.results .result-split img {
+	position: absolute;
+	line-height: .5;
+}
+
+@media( min-width: 55em ) {
+	.results .result-split {
+		padding-bottom: 0;
+	}
+	.results .result-split .art-content {
+		margin-top: 0;
+		position: relative;
+	}
+	.results .result-split img {
+		position: relative;
+	}
+
+	.results .result-split.item {
+		display: grid;
+		grid-gap: 0;
+		grid-template-columns: 33% auto;
+		grid-auto-flow: column;
+	}
+}
+
+@media( min-width: 55em ) {
+	.results .result-split.item {
+		grid-template-columns: 22.5% auto;
 	}
 }
 

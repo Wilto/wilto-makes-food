@@ -39,7 +39,6 @@
 					},
 					cachedItems = [];
 
-
 				categorized.forEach(entry => {
 					let found = lookup( event.data.urls, entry.url );
 

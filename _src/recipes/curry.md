@@ -2,10 +2,13 @@
 title: Curry Rice
 tags:
   - yoshoku
+subfeat: true
 type: recipe
+img: curry
+alt: White rice, carrots, and potatoes in a pool of brown curry sauce.
 ---
 
-butts Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in nisl massa. Aenean augue turpis, imperdiet in ligula a, faucibus mollis turpis. Curabitur non nulla at odio pulvinar vestibulum quis eu neque. Praesent luctus fringilla nisi, ac gravida nulla. In tincidunt, orci ac vulputate aliquam, enim orci commodo ex, laoreet tincidunt elit est vitae arcu. Etiam ac tincidunt magna. Proin volutpat, mauris id aliquet molestie, sem mauris scelerisque metus, at ullamcorper eros augue id felis. Proin mollis erat odio, sit amet sagittis ante porttitor in. Quisque ut quam vitae leo pulvinar tristique sit amet quis neque. Vivamus sed sem vitae lacus pharetra faucibus aliquet interdum risus. In hac habitasse platea dictumst.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in nisl massa. Aenean augue turpis, imperdiet in ligula a, faucibus mollis turpis. Curabitur non nulla at odio pulvinar vestibulum quis eu neque. Praesent luctus fringilla nisi, ac gravida nulla. In tincidunt, orci ac vulputate aliquam, enim orci commodo ex, laoreet tincidunt elit est vitae arcu. Etiam ac tincidunt magna. Proin volutpat, mauris id aliquet molestie, sem mauris scelerisque metus, at ullamcorper eros augue id felis. Proin mollis erat odio, sit amet sagittis ante porttitor in. Quisque ut quam vitae leo pulvinar tristique sit amet quis neque. Vivamus sed sem vitae lacus pharetra faucibus aliquet interdum risus. In hac habitasse platea dictumst.
 
 Etiam aliquam luctus commodo. Aliquam varius dolor mauris, a convallis nisl egestas et.
 

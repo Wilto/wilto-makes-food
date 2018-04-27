@@ -1,13 +1,14 @@
 ---
 title: Chili Oil
-tags: Sichuan
-subfeat: true
+tags: 
+    - Sichuan
+lede: If you’re ever in North Cambridge, you should make a point of stopping by my old apartment.
 type: recipe
+img: chili-oil
+alt: A bowl of bright red chili oil.
 ---
 
+It was, by any measure, an awful place to live. I didn’t cook back then, not least of all because flames spewed out from underneath the oven when it kicked on. I mostly survived on nightly runs to the convenience store on the next block over—the one I could bring my dog into, not the one on the other next-block-over side.
 
-HEY.
 
-Steal the YouTube “filter” button effect for your CTAs.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

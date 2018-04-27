@@ -1,0 +1,108 @@
+{
+	"title" : "toridashi",
+	"meta" : {
+		"serves": "4",
+		"active": "1 hour",
+		"total": "2 hours"
+	},
+	"ingredients" : [
+		{
+			"name" : "Chicken Wings",
+			"amt" : {
+				"whole" : "1",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "lb.",
+					"full" : "Pounds"
+				}
+			}
+		},
+		{
+			"name" : "Shortribs",
+			"amt" : {
+				"frac" : "1/2",
+				"measure" : "rack"
+			}
+		},
+		{
+			"name" : "Onions",
+			"amt" : {
+				"whole" : "2"
+			},
+			"notes" : "one halved, one roughly chopped"
+		},
+		{
+			"name" : "Ginger",
+			"amt" : {
+				"whole" : "15",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			},
+			"notes" : "roughly chopped"
+		},
+		{
+			"name" : "Leeks",
+			"amt" : {
+				"whole" : "2"
+			},
+			"notes": "whites and light green parts only, chopped"
+		},
+		{
+			"name" : "Carrots",
+			"amt" : {
+				"whole" : "3"
+			},
+			"notes" : "roughly chopped"
+		},
+		{
+			"name" : "Celery Stalks",
+			"amt" : {
+				"whole" : "3"
+			},
+			"notes" : "roughly chopped"
+		},
+		{
+			"name" : "Sprigs of Parsley",
+			"amt" : {
+				"whole" : "A few"
+			}
+		},
+		{
+			"name" : "Peppercorns",
+			"amt" : {
+				"whole" : "~10"
+			},
+			"notes" : "whole"
+		},
+		{
+			"name" : "Bay Leaf",
+			"amt" : {
+				"whole" : "1"
+			}
+		},
+		{
+			"name" : "Kombu",
+			"href": "https://www.amazon.com/dp/B00ZB13JHO/?tag=wiltomf-20&th=1",
+			"amt" : {
+				"whole" : "4\"x4\" square"
+			}
+		},
+		{
+			"name" : "Katsuobushi",
+			"href": "https://www.amazon.com/dp/B000UWE0AO/?tag=wiltomf-20&th=1",
+			"amt" : {
+				"whole" : "20",
+				"measure" : {
+					"abbr" : "G",
+					"full" : "Grams"
+				}
+			}
+		}
+	],
+	"instructions": [
+		"do the first thing",
+		"do the second thing"
+	]
+}

@@ -1,5 +1,5 @@
 ---
-permalink: api/all.json
+permalink: search/posts.json
 ---
 {
 	"posts" : [
@@ -10,12 +10,19 @@ permalink: api/all.json
 
 {% if post.data.type %}
 {{ comma() }}{
-		"title" : "{{ post.data.title | safe }}",
+		{% if post.data.keywords %}
+		"keywords" : "{{ post.data.keywords | safe }}",
+		{% endif %}
+		"url" : "{{ post.data.page.url | safe }}",
+		{% if post.data.subhed %}
+		"subhed" : "{{ post.data.subhed | safe }}",
+		{% endif %}
 		{% if post.data.lede %}
 		"lede" : "{{ post.data.lede | safe }}",
 		{% endif %}
 		"type" : "{{ post.data.type | safe }}",
-		"tags" : "{{ post.data.tags | safe }}"
+		"tags" : "{{ post.data.tags | safe }}",
+		"title" : "{{ post.data.title | safe }}"
 		{% if post.data.img %}
 		,"img" : {
 			"file" : "{{ post.data.img | safe }}",
