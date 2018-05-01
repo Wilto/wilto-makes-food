@@ -10,7 +10,7 @@ https://www.filamentgroup.com/
 (function() {
 	"use strict";
 
-	const version = "v00029";
+	const version = "v00040";
 	const cacheName = version + "::wiltomakesfood:";
 
 	const staticCacheName = cacheName + "static";

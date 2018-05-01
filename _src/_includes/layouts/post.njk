@@ -39,6 +39,25 @@ templateClass: tmpl-post
 		{% if lede %}
 		<p class="lede" itemprop="description">{{lede}}</p>
 		{% endif %}
+		{% if video %}
+		<figure aria-describedby="pagevid">
+			<video controls>
+				<source src="/_assets/media/{{video}}.mp4" type="video/mp4">
+				<track kind="captions" src="/_assets/media/{{video}}.vtt">
+				Sorry, I’m having trouble loading this video.
+			</video>
+			{% if capt %}
+			<figcaption id="pagevid" class="caption">
+				{{capt}}
+			</figcaption>
+			{% endif %}
+		</figure>
+		{% endif %}
+
+		{% if lede %}
+		<p class="lede" itemprop="description">{{lede}}</p>
+		{% endif %}
+
 		{{ layoutContent | safe }}
 
 	</div>

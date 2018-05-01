@@ -18,11 +18,17 @@ module.exports = function(grunt) {
 			}
 		},
 		copy: {
-			main: {
+			fonts: {
 				expand: true,
 				flatten: true,
 				src: ['_src/_assets/css/fonts/*'],
 				dest: '_site/_assets/css/fonts/',
+			},
+			media: {
+				expand: true,
+				flatten: true,
+				src: ['_src/_assets/media/*'],
+				dest: '_site/_assets/media/',
 			},
 			sw: {
 				expand: true,
@@ -62,7 +68,7 @@ module.exports = function(grunt) {
 		},
 		responsive_images: {
 			options: {
-				newFilesOnly: false,
+				newFilesOnly: true,
 				sizes: [{
 					name: '1',
 					width: 320,

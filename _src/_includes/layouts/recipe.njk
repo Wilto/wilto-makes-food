@@ -55,6 +55,21 @@ templateClass: tmpl-post
 		</figure>
 		{% endif %}
 
+		{% if video %}
+		<figure class="feat-thumb" aria-describedby="pagevid">
+			<video controls>
+				<source src="/_assets/media/{{video}}.mp4" type="video/mp4">
+				<track kind="captions" src="/_assets/media/{{video}}.vtt">
+				Sorry, I’m having trouble loading this video.
+			</video>
+			{% if capt %}
+			<figcaption id="pagevid" class="caption">
+				{{capt}}
+			</figcaption>
+			{% endif %}
+		</figure>
+		{% endif %}
+
 		{% if lede %}
 		<p class="lede">{{lede}}</p>
 		{% endif %}

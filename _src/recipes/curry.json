@@ -58,8 +58,8 @@
 			}
 		},
 		{
-			"name" : "Homemade Toridashi",
-			"href" : "/recipes/toridashi",
+			"name" : "Utility Stock",
+			"href" : "recipes/utility-stock/",
 			"amt" : {
 				"whole" : "1",
 				"measure" : "Quart"

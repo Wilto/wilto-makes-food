@@ -202,7 +202,7 @@ a.cta-prod {
 
 .site-foot {
 	margin-top: 2em;
-	padding-bottom: 5%;
+	padding-bottom: 3.5em;
 	border-top: 1px solid #ddd;
 	background: #fafafa;
 }
@@ -583,6 +583,7 @@ a.prod img {
 	.feat-thumb {
 		width: 33%;
 		max-width: 20em;
+		margin-left: 2em;
 	}
 }
 
@@ -648,6 +649,10 @@ a.prod img {
 }
 .intro .recipeheader {
 	margin-top: 1em;
+}
+
+.intro figcaption {
+	max-width: 30em;
 }
 
 .features .item .feat-header {
@@ -752,6 +757,61 @@ a.prod img {
 }
 .intro p {
 	max-width: 40em;
+}
+
+.intro table caption {
+	text-align: left;
+	font-style: italic;
+	margin-bottom: .5em;
+	font-size: 1.2em;
+	color: #555;
+}
+
+.intro table {
+	width: 100%;
+	max-width: 45em;
+	margin-bottom: 1.5em;
+	margin-top: 1.5em;
+	border-collapse: collapse;
+	font-family: "Fanwood Text", serif;
+	border: 1px solid rgba(255,150,0, .25);
+}
+.intro table tr:last-child th,
+.intro table tr:last-child td {
+	padding-bottom: .5em;
+}
+.intro thead {
+	font-size: .8em;
+	text-transform: uppercase;
+	font-family: "open sans", sans-serif;
+}
+.intro tbody th,
+.intro tbody td {
+	font-size: 1.1em;
+	padding: .25em 1em;
+}
+.intro tbody th {
+	font-family: "open sans", sans-serif;
+	font-weight: normal;
+	font-size: .9em;
+}
+.intro table .numeric {
+	text-align: right;
+}
+.intro thead th {
+	color: #444;
+	font-weight: normal;
+	padding: .65em 1.2em .1em 1.2em;
+	background: rgba(255,150,0, .075)
+}
+.intro tbody tr:first-child td,
+.intro tbody tr:first-child th {
+	padding-top: .65em;
+}
+.intro td,
+.intro th {
+	text-align: left;
+	padding: .425em 0 .1em 0;
 }
 
 .feat-thumb {
@@ -1014,7 +1074,7 @@ a.prod img {
 		padding-top: 0em;
 		position: absolute;
 		text-align: center;
-		top: -.65em;
+		top: -.15em;
 		width: 1.35em;
 		z-index: -1;
 	}
@@ -1035,7 +1095,7 @@ a.prod img {
 .footwrap .section-hed {
 	font-size: .75em;
 }
-.colophon p {
+.footwrap p {
 	font-size: 1.1em;
 	vertical-align: baseline;
 }
@@ -1105,7 +1165,6 @@ a.prod img {
 	border-top: 1px solid rgba(255,150,0,.25);
 	border-bottom: .25em solid rgba(255,150,0,.25);
 }
-
 
 .opt {
 	background: #eee;

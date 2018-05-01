@@ -10,9 +10,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>{{ title or metadata.title }}</title>
-		<meta property="og:site_name" content="{{ title or metadata.title }}" />
+		<meta property="og:site_name" content="{{ metadata.title }} - {{ title }}" />
 
-		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:site" content="{{ metadata.title }}" />
 		<meta name="twitter:title" content="{{ title }}" />
 		{% if lede %}<meta name="twitter:description" content="{{ lede or subhed }}" />{% endif %}
@@ -33,6 +33,35 @@
 
 		<header role="banner" class="site-head">
 			<h1 class="site-hed"><a href="{{ '/' | url }}"><img src="/_assets/img/wmf.png" alt="Wilto Makes Food"></a></h1>
-</header>
+		</header>
+
+
+		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+			<p>See you Friday.</p>
+		</main>
+
+		<footer class="site-foot">
+			<div class="footwrap">
+				<div>
+					<h4 class="section-hed">Sponsors</h4>
+					<div class="sponsorship">
+						<p>Hey.</p>
+						<p>Want to get previews of upcoming recipes, tips, techniques, and maybe even cook something together? Check out my <a href="https://www.patreon.com/wilto">Patreon</a>, and we can turn this into a whole <em>thing</em>.</p>
+					</div>
+				</div>
+				<div class="colophon">
+					<h4 class="section-hed">Colophon</h4>
+					<p>The <i>Wilto Makes Food</i> website is set in <a class="open-sans type" href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a> and <a class="type" href="https://www.theleagueofmoveabletype.com/fanwood">Fanwood</a>.</p>
+
+					<p>Built with <a href="https://www.11ty.io/">Eleventy</a>. The source is available <a href="https://github.com/Wilto/wilto-makes-food">on GitHub.</a> For questions, comments, or problems using the site, <a href="https://github.com/Wilto/wilto-makes-food/issues">report an issue</a>.</p>
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript">
+			if('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/service-worker.js');
+			}
+		</script>
 	</body>
 </html>

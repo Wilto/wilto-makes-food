@@ -69,8 +69,10 @@ templateClass: tmpl-home
 <h2 class="section-hed" id="latest-rec">Latest Recipes</h2>
 <section class="col" role="region" aria-labelledby="latest-rec">
 	<div class="highlights">
+{% set somerecipes = 0 %}
 {% for post in postslist | reverse %}
 {% if ( post.data.feat != true ) and ( post.data.subfeat != true ) and ( post.data.type == "recipe" ) %}
+	{% set somerecipes = 1 %}
 	{{ homeitem(post,'','','(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw') }}
 {% endif %}
 {% endfor %}
@@ -78,11 +80,14 @@ templateClass: tmpl-home
 	<a href="/recipes/" class="cta">All Recipes</a>
 </section>
 
+<!-- Just gonna hide these for a bit: -->
+<!--
 <h2 class="section-hed" id="latest-art">Latest Articles</h2>
 <section class="col" role="region" aria-labelledby="latest-art">
 	<div class="highlights">
 {% for post in postslist | reverse %}
 {% if ( post.data.feat != true ) and ( post.data.subfeat != true ) and ( post.data.type == "article" ) %}
+
 	{{ homeitem(post, '', '', '(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw') }}
 {% endif %}
 {% endfor %}
@@ -101,3 +106,4 @@ templateClass: tmpl-home
 	</div>
 	<a href="/recipes/" class="cta">All Reviews</a>
 </section>
+-->
