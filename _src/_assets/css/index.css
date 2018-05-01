@@ -746,6 +746,12 @@ a.prod img {
 	width: 100%;
 }
 
+.intro video {
+	background: rgba(255,150,0, .1);
+	border: .35em solid rgba(255,150,0, .1);
+	border-radius: .35em;
+}
+
 @media( max-width: 34.9375em ) {
 	.intro {
 		display: flex;
