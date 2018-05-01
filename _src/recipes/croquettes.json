@@ -1,0 +1,142 @@
+{
+	"title" : "Croquettes",
+	"meta" : {
+		"serves": "4",
+		"active": "1 hour",
+		"total": "1 hour"
+	},
+	"ingredients" : [
+		{
+			"name" : "Unsalted butter",
+			"amt" : {
+				"whole" : "3",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "All-purpose flour",
+			"amt" : {
+				"whole" : "3",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "Whole milk",
+			"amt" : {
+				"frac" : "3/4",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			}
+		},
+		{
+			"name" : "Heavy cream",
+			"amt" : {
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			}
+		},
+		{
+			"name" : "Yukon gold potatoes",
+			"amt" : {
+				"whole" : "4"
+			},
+			"notes" : "diced"
+		},
+		{
+			"name" : "Carrots",
+			"amt" : {
+				"whole" : "4"
+			},
+			"notes" : "brunoise"
+		},
+		{
+			"name" : "Yellow onion",
+			"amt" : {
+				"whole" : "1"
+			},
+			"notes" : "brunoise"
+		},
+		{
+			"name" : "Sake",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			}
+		},
+		{
+			"name" : "Mirin",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			}
+		},
+		{
+			"name" : "Soy sauce",
+			"amt" : {
+				"whole" : "4",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "All-purpose flour",
+			"amt" : {
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			}
+		},
+		{
+			"name" : "Potato flour",
+			"amt" : {
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			}
+		},
+		{
+			"name" : "Eggs",
+			"amt" : {
+				"whole" : "3"
+			},
+			"notes" : "lightly scrambled"
+		},
+		{
+			"name" : "Panko breadcrumbs",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			}
+		}
+	],
+	"instructions": [
+		"do the first thing",
+		"Mix together the sake, mirin, and soy sauce."
+	]
+}
