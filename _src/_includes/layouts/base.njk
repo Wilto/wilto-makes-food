@@ -33,11 +33,49 @@
 
 		<header role="banner" class="site-head">
 			<h1 class="site-hed"><a href="{{ '/' | url }}"><img src="/_assets/img/wmf.png" alt="Wilto Makes Food"></a></h1>
+
+			<div>
+				<div class="bar">
+					<nav role="navigation" class="sitenav">
+						<ul>
+							{%- for nav in collections.nav | reverse -%}
+							{% if nav.data.navtitle.toLowerCase() != "home" %}
+								<li><a href="{{ nav.url | url }}" class="{% if nav.url == page.url %}nav-item-active{% endif %}">{{ nav.data.navtitle }}</a></li>
+							{% endif %}
+							{%- endfor -%}
+						</ul>
+					</nav>
+
+					<form class="search" method="post" action="/search/">
+						<label for="search">
+							<span class="a11y-only">Search</span>
+							<input type="search" id="search" name="search" placeholder="Search for&hellip;">
+						</label>
+						<label>
+							<span class="a11y-only">Submit search query</span>
+							<svg class="icon icon-search" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 60 75" enable-background="new 0 0 60 60" xml:space="preserve">
+								<path class="mag" d="M50.317,44.678l-5.96-5.96c-1.163-1.163-2.855-1.465-4.3-0.921l-3.458-3.458  c4.615-6.061,4.172-14.739-1.358-20.279c-6.04-6.04-15.83-6.04-21.87,0c-6.03,6.04-6.03,15.82,0,21.86  c5.739,5.739,14.856,6.014,20.932,0.847l3.392,3.392c-0.544,1.446-0.242,3.137,0.921,4.3l5.96,5.96c1.586,1.586,4.156,1.586,5.742,0  C51.903,48.835,51.903,46.264,50.317,44.678z M16.34,32.96c-4.4-4.4-4.4-11.54,0-15.94c4.4-4.4,11.53-4.4,15.93,0  c4.4,4.4,4.4,11.54,0,15.94C27.87,37.36,20.74,37.36,16.34,32.96z"/>
+							</svg>
+							<input type="submit" class="a11y-only">
+						</label>
+					</form>
+				</div>
+				<ul class="subnav">
+					{% set subnavs = collections.subnav | reverse %}
+					{%- for subnav in subnavs -%}
+					<li><a href="{{ subnav.url | url }}"{% if subnav.url == page.url %} aria-current="true"{% endif %} class="{% if subnav.url == page.url %}subnav-item-active{% endif %}">{{subnav.data.navtitle}}</a></ li>
+					{%- endfor -%}
+				</ul>
+			</div>
+
 		</header>
 
 
 		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-			<p>See you Friday.</p>
+			{% if notif %}
+				{% include "notif.njk" %}
+			{% endif %}
+			{{ layoutContent | safe }}
 		</main>
 
 		<footer class="site-foot">
