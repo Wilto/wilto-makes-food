@@ -22,7 +22,7 @@ templateClass: tmpl-home
 		<div class="art-content">
 			{% if post.data.tags %}
 			{% if post.data.tags !== "subnav" %}
-			<a href="/recipes/tagged/?t={{ post.data.tags | lower }}" class="art-section"><span class="a11y-only">Category: </span>{{ post.data.tags }}</a>{% endif %}
+			<a href="/recipes/tagged/{{ post.data.tags | lower }}" class="art-section"><span class="a11y-only">Category: </span>{{ post.data.tags }}</a>{% endif %}
 			{% endif %}
 			<h3 class="article-hed"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
 			<p class="lede">{{ post.data.subhed }}</p>
@@ -37,7 +37,7 @@ templateClass: tmpl-home
 		<div class="recipe-header">
 		{% endif %}
 			<h3 class="recipe-hed"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-			{% for tag in post.data.tags %}<span class="feat-tag"><a href="/recipes/tagged/?t={{ tag | lower }}"><span class="a11y-only">Category: </span>{{ tag }}</a></span>{% endfor %}
+			{% for tag in post.data.tags %}<span class="feat-tag"><a href="/recipes/tagged/{{ tag | lower }}"><span class="a11y-only">Category: </span>{{ tag }}</a></span>{% endfor %}
 		</div>
 		{% endif %}
 		{% if post.data.img %}

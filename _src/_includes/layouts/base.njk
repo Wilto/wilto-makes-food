@@ -9,14 +9,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>{{ title or metadata.title }}</title>
+		<title>{{ metadata.title }}{% if title %} - {{ title }}{% endif %}</title>
+		
 		<meta property="og:site_name" content="{{ metadata.title }} - {{ title }}" />
 
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:site" content="{{ metadata.title }}" />
 		<meta name="twitter:title" content="{{ title }}" />
 		{% if lede %}<meta name="twitter:description" content="{{ lede or subhed }}" />{% endif %}
-		{% if img %}<meta name="twitter:image" content="/img/{{img}}-4.jpg" />{% endif %}
+		{% if img %}<meta name="twitter:image" content="https://wiltomakesfood.com/img/{{img}}-4.jpg" />{% endif %}
 
 		<link rel="canonical" href="{{ page.url | url }}"/>
 
@@ -40,7 +41,7 @@
 						<ul>
 							{%- for nav in collections.nav | reverse -%}
 							{% if nav.data.navtitle.toLowerCase() != "home" %}
-								<li><a href="{{ nav.url | url }}" class="{% if nav.url == page.url %}nav-item-active{% endif %}">{{ nav.data.navtitle }}</a></li>
+								<li><a href="{{ nav.url | url }}" class='{% if nav.url == page.url or nav.data.navtitle.toLowerCase() == type + "s" %}nav-item-active{% endif %}'{% if nav.url == page.url %} aria-current="page"{% endif %}>{{ nav.data.navtitle }}</a></li>
 							{% endif %}
 							{%- endfor -%}
 						</ul>
@@ -63,11 +64,10 @@
 				<ul class="subnav">
 					{% set subnavs = collections.subnav | reverse %}
 					{%- for subnav in subnavs -%}
-					<li><a href="{{ subnav.url | url }}"{% if subnav.url == page.url %} aria-current="true"{% endif %} class="{% if subnav.url == page.url %}subnav-item-active{% endif %}">{{subnav.data.navtitle}}</a></ li>
+					<li><a href="{{ subnav.url | url }}"{% if subnav.url == page.url %} aria-current="page"{% endif %} class="{% if subnav.url == page.url %}subnav-item-active{% endif %}">{{subnav.data.navtitle}}</a></ li>
 					{%- endfor -%}
 				</ul>
 			</div>
-
 		</header>
 
 
@@ -100,6 +100,20 @@
 			if('serviceWorker' in navigator) {
 				navigator.serviceWorker.register('/service-worker.js');
 			}
+		</script>
+
+		<script type="text/javascript">
+			var _paq = _paq || [];
+				_paq.push(['trackPageView']);
+				_paq.push(['enableLinkTracking']);
+			(function() {
+				var u="//wiltomakesfood.com/analytics/";
+
+				_paq.push(['setTrackerUrl', u+'piwik.php']);
+				_paq.push(['setSiteId', '1']);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
 		</script>
 	</body>
 </html>

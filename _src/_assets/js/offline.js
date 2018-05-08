@@ -29,24 +29,23 @@
 					categorized = filter( window.wmf.allPosts, title.substring(0, title.length - 1) ),
 					lookup = function( refObj, find ) {
 						return refObj.find( function( item ) {
-							let pattern = new RegExp(p.protocol + p.domain + p.tld + p.params, 'gi'),
-								match = pattern.exec( item );
-
-							if( match !== null ) {
-								return match[ 6 ] === find;
+							if( item !== null ) {
+								return item === find;
 							}
 						});
 					},
 					cachedItems = [];
 
 				categorized.forEach(entry => {
-					let found = lookup( event.data.urls, entry.url );
+					let found = lookup( event.data.urls, "https://wiltomakesfood.com" + entry.url );
 
 					if( found ) {
 						let pattern = new RegExp(p.protocol + p.domain + p.tld + p.params, 'gi'),
-							offline = window.wmf.allPosts[ pattern.exec( found )[ 6 ] ];
+							offline = window.wmf.allPosts[ found.substr(26) ]; // This is _terrible_.
 
-						cachedItems.push( '<li><a href="' + offline.url + '" class="offline-item">' + offline.title + '</a></li>' );
+						if( offline ) {
+							cachedItems.push( '<li><a href="' + offline.url + '" class="offline-item">' + offline.title + '</a></li>' );
+						}
 					}
 				});
 

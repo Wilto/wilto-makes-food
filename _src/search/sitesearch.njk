@@ -63,12 +63,14 @@ if( sizeof( $matches ) > 0 ) {
 	<?php if( $post['type'] != "landing" ): ?>
 		<article class="item <?php if( $post['img']['file'] ) print ' result-split' ?>">
 		<?php if( $post['img']['file'] ): ?>
-			<img 
-				sizes="(min-width: 1560px) calc(-1.11vw + 332px), (min-width: 880px) calc(19.24vw + 19px), (min-width: 560px) 47.67vw, 97.08vw"
-				srcset="/img/<?= $post['img']['file']; ?>-1.jpg 320w,
-					/img/<?= $post['img']['file']; ?>-2.jpg 450w,
-					/img/<?= $post['img']['file']; ?>-3.jpg 640w"
-				src="/img/<?= $post['img']['file']; ?>-3.jpg" alt="<?= $post['img']['alt']; ?>">
+			<a href="<?= $post['url']; ?>">
+				<img 
+					sizes="(min-width: 1560px) calc(-1.11vw + 332px), (min-width: 880px) calc(19.24vw + 19px), (min-width: 560px) 47.67vw, 97.08vw"
+					srcset="/img/<?= $post['img']['file']; ?>-1.jpg 320w,
+						/img/<?= $post['img']['file']; ?>-2.jpg 450w,
+						/img/<?= $post['img']['file']; ?>-3.jpg 640w"
+					src="/img/<?= $post['img']['file']; ?>-3.jpg" alt="<?= $post['img']['alt']; ?>">
+			</a>
 		<?php endif; ?>
 		<div class="art-content">
 			<?php if( $post['type'] ): ?>

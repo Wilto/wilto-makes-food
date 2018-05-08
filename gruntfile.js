@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 	// Project configuration.
 	grunt.initConfig({
 		pkg: '<json:package.json>',
-		banner: '/*! recipe.is - v<%= pkg.version %> - */',
+		banner: '/*! wiltomakesfood.com - v<%= pkg.version %> - */',
 		concat: {
 			options: {
 				banner: '<%= banner %>'
@@ -68,7 +68,8 @@ module.exports = function(grunt) {
 		},
 		responsive_images: {
 			options: {
-				newFilesOnly: true,
+				newFilesOnly: false,
+				quality: 60,
 				sizes: [{
 					name: '1',
 					width: 320,
@@ -92,6 +93,17 @@ module.exports = function(grunt) {
 				src: ['img/**.{jpg,gif,png}'],
 				dest: '_site'
 			}
+		},
+		clean: ['_site'],
+		imagemin: {
+			default: {
+				files: [{
+					expand: true,
+					cwd: '_site',
+					src: ['img/*.{png,jpg,gif}'],
+					dest: 'img/'
+				}]
+			}
 		}
 	});
 
@@ -101,6 +113,7 @@ module.exports = function(grunt) {
 		'concat:css',
 		'uglify',
 		'responsive_images',
+		'imagemin',
 		'cssmin'
 	]);
 
@@ -108,6 +121,12 @@ module.exports = function(grunt) {
 	grunt.registerTask('watch-css', [
 		'concat:css',
 		'cssmin'
+	]);
+
+	grunt.registerTask('rebuild', [
+		'clean',
+		'default',
+		'imagemin'
 	]);
 
 	grunt.registerTask('watch-js', [

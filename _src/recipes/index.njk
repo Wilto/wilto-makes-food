@@ -32,7 +32,7 @@ navtitle: Recipes
 
 		<div class="recipe-header">
 			<h3 class="recipe-hed"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-			{% for tag in post.data.tags %}<span class="feat-tag"><a href="tagged/?t={{ tag | lower }}"><span class="a11y-only">Category: </span>{{ tag }}</a></span>{% endfor %}
+			{% for tag in post.data.tags %}<span class="feat-tag"><a href="tagged/{{ tag | lower }}"><span class="a11y-only">Category: </span>{{ tag }}</a></span>{% endfor %}
 		</div>
 		{% endif %}
 		{% if post.data.img %}

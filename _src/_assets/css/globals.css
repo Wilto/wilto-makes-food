@@ -70,13 +70,15 @@ video {
 /* http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
 .a11y-only {
 	border: 0;
-	clip: rect(0 0 0 0);
+	clip: rect(1px 1px 1px 1px);
 	height: 1px;
 	margin: -1px;
 	overflow: hidden;
 	padding: 0;
 	position: absolute;
 	width: 1px;
+	min-width: 1px;
+	max-width: 1px;
 }
 .a11y-only.focusable:active,
 .a11y-only.focusable:focus {

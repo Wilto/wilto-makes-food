@@ -23,7 +23,7 @@ templateClass: tmpl-post
 	<div class="intro">
 		<header role="banner" class="recipeheader">
 			{% for tag in tags %}
-				<a href="/recipes/tagged/?t={{ tag }}" class="art-section"><span class="a11y-only">Category: </span>{{ tag }}</a>
+				<a href="/recipes/tagged/{{ tag }}" class="art-section"><span class="a11y-only">Category: </span>{{ tag }}</a>
 			{% endfor %}
 			<h2 class="recipe-hed" itemprop="name">{{ title }}</h2>
 
@@ -84,7 +84,7 @@ templateClass: tmpl-post
 		{%- for ing in ingredients -%}
 		<li itemprop="ingredients">
 			<p><span class="amt">{{ing.amt.whole}}<b class="frac" role="presentation">{{ing.amt.frac}}</b> {% if ing.amt.measure.abbr %}<abbr title="{{ing.amt.measure.full}}" role="presentation">{{ing.amt.measure.abbr}}</abbr>{% else %}{{ing.amt.measure}}{% endif %}</span>
-			{% if ing.href %}<a href="{{ ing.href }}">{% endif %}{{ing.name}}{% if ing.href %}</a>{% endif %}{% if ing.notes %}, {{ing.notes}}{%- endif -%}</p>
+			{% if ing.href %}<a href="{{ ing.href }}">{% endif %}{{ing.name}}{% if ing.href %}</a>{% endif %}{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes}}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
 			{% if ing.optional %}<span class="opt">Optional</span>{%- endif -%}
 		</li>
 		{%- endfor -%}

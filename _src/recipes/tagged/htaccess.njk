@@ -1,0 +1,7 @@
+---
+layout: layouts/null.njk
+permalink: /recipes/tagged/.htaccess
+type: utility
+---
+RewriteEngine on
+RewriteRule ^(.+) index.php?t=$1 [QSA]

@@ -1,0 +1,191 @@
+{
+	"title" : "Curry Rice",
+	"meta" : {
+		"serves": "4",
+		"active": "1 hour",
+		"total": "2 hours"
+	},
+	"ingredients" : [
+		{
+			"name" : "Ginger",
+			"amt" : {
+				"whole" : "20",
+				"measure" : {
+					"abbr" : "G",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Garlic",
+			"amt" : {
+				"whole" : "20",
+				"measure" : {
+					"abbr" : "G",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Marmite",
+			"optional" : true,
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "Teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Shallots",
+			"amt" : {
+				"whole" : "300",
+				"measure" : {
+					"abbr" : "G",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Onions",
+			"amt" : {
+				"whole" : "150",
+				"measure" : {
+					"abbr" : "G",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "White sugar",
+			"amt" : {
+				"whole" : "A pinch"
+			}
+		},
+		{
+			"name" : "Utility stock",
+			"href" : "/recipes/utility-stock/",
+			"amt" : {
+				"whole" : "1",
+				"measure" : "Quart"
+			}
+		},
+		{
+			"name" : "Tonkatsu sauce",
+			"href" : "https://www.amazon.com/dp/B01LAX8JGC?tag=wiltomf-20",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			}
+		},
+		{
+			"name" : "Tomato paste",
+			"amt" : {
+				"whole" : "1",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			}
+		},
+		{
+			"name" : "Cocoa powder",
+			"amt" : {
+				"whole" : "1",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Honey",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoons"
+				}
+			}
+		},
+		{
+			"name" : "Bay Leaf",
+			"amt" : {
+				"whole" : "1"
+			}
+		},
+		{
+			"name" : "Unsalted butter",
+			"amt" : {
+				"whole" : "3",
+				"measure" : {
+					"abbr" : "Tbsp",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "All-purpose flour",
+			"amt" : {
+				"whole" : "3",
+				"measure" : {
+					"abbr" : "Tbsp",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "Curry powder",
+			"amt" : {
+				"whole" : "3",
+				"measure" : {
+					"abbr" : "Tbsp",
+					"full" : "Tablespoons"
+				}
+			},
+			"href" : "https://www.amazon.com/dp/B0096BRED0?tag=wiltomf-20"
+		},
+		{
+			"name" : "Yukon gold potatoes",
+			"amt" : {
+				"whole" : "4"
+			},
+			"notes" : "diced"
+		},
+		{
+			"name" : "Carrots",
+			"amt" : {
+				"whole" : "6"
+			},
+			"notes" : "oblique cut",
+			"notehref" : "https://enthusiasts.ciachef.edu/how-oblique-cut-carrots/"
+		},
+		{
+			"name" : "Green peas",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cup"
+				}
+			},
+			"notes" : "frozen"
+		}
+	],
+	"instructions": [
+		"In a large, heavy-bottomed pot (I use an enameled cast icon dutch oven), over medium heat, heat about a tablespoon of neutral oil until just shimmering. Add ginger and garlic, and cook over medium-low heat until fragrant; only a few minutes. Add Marmite, mix, and cook for another minute or so.",
+		"Add shallots, onions, a pinch of white sugar, and a few more tablespoons of oil. Stir and cook, covered, for about fifteen minutes.",
+		"Carefully remove the lid (watch out for steam). The onions and shallots should have released most of their liquid; increase heat to medium-high, and reduce. As liquid evaporates, the aromatics should start to brown slowly; stir frequently, scraping fond from the bottom of the pot—add a spash of water or stock to help with this process, but don’t oversaturate. Continue stirring, scraping, and adding liquid in small increments; this part takes a long time.",
+		"Once shallots, onions, garlic, and ginger are a uniform golden brown, add stock, tonkotsu sauce, cocoa powder, honey, and a bay leaf. Reduce heat to low-medium and simmer, uncovered, for about an hour.",
+		"Remove bay leaf and blend until smooth using an immersion blender, if desired.",
+		"Using a medium-sized saucepan, melt butter over medium heat until foaming. Stir in flour and cook, stirring, until roux reaches a rich chestnut brown. This should take at least 15 minutes; don’t rush it. Remove from heat, add curry powder and whisk to combine.",
+		"Over low heat, add a ladel full of the stock mixture into the roux and whisk vigorously to combine—it should form a thick paste right away. Whisk this into the stock.",
+		"Add carrots and potatoes and cook until fork tender; the curry will thicken in the meantime. Add frozen peas, cook just until fully thawed—a few minutes—and serve."
+	]
+}
