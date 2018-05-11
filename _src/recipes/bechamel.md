@@ -2,7 +2,6 @@
 title: Béchamel
 tags:
   - staples
-subfeat: true
 lede: Shut up; Julia Child rules.
 type: recipe
 img: bechamel
