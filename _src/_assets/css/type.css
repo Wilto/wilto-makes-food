@@ -337,6 +337,21 @@ p.lede {
 	}
 }
 
+.intro blockquote {
+	border-left: 2px solid rgba(255,150,0, .25);
+	margin: 1.5em 0;
+	padding-left: 1em;
+}
+.intro blockquote p {
+	color: #666;
+	font-style: italic;
+	line-height: 1.45;
+}
+.intro blockquote br {
+	margin: .4em 0 0 0;
+	display: block;
+}
+
 
 .recipe-subhed,
 .subhed,
@@ -543,6 +558,7 @@ p.lede {
 	font-weight: bold;
 	font-size: .85em;
 	color: #333;
+	max-width: 100%;
 }
 .fonts .skiplink {
 	font-family: "open sans";
@@ -553,7 +569,7 @@ p.lede {
 .feat {
 	min-height: 25em;
 	height: 50vw;
-	max-height: 30em;
+	max-height: 27.5em;
 }
 
 .subfeat {

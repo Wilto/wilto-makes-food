@@ -628,6 +628,9 @@ a.prod img {
 	margin: 0;
 }
 
+.feat .feat-header {
+	margin-top: 12.5%;
+}
 
 .credit {
 	background: #fff;
@@ -837,6 +840,16 @@ a.prod img {
 }
 .intro p {
 	max-width: 40em;
+	font-size: 1.2em;
+}
+
+.intro .central {
+	margin: 1.5em auto;
+	display: block;
+}
+
+.take-your-time {
+	max-width: 12.5em;
 }
 
 .intro table caption {
@@ -1074,7 +1087,7 @@ a.prod img {
 
 .intro .subhed,
 .intro h3 {
-	clear: both;
+	clear: left;
 }
 .subhed .direct,
 .intro h3 a {

@@ -10,23 +10,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>{{ metadata.title }}{% if title %} - {{ title }}{% endif %}</title>
-		
-		<meta property="og:site_name" content="{{ metadata.title }} - {{ title }}" />
+		<meta name="description" content="">
 
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:site" content="{{ metadata.title }}" />
-		<meta name="twitter:title" content="{{ title }}" />
-		{% if lede %}<meta name="twitter:description" content="{{ lede or subhed }}" />{% endif %}
-		{% if img %}<meta name="twitter:image" content="https://wiltomakesfood.com/img/{{img}}-4.jpg" />{% endif %}
+		<meta property="og:site_name" content="{{ metadata.title }} - {{ title }}">
+		<link rel="canonical" href="https://wiltomakesfood.com{{ page.url | url }}">
 
-		<link rel="canonical" href="{{ page.url | url }}"/>
+		<!-- Icons, Platform-specific Theme Nonsense, etc.: -->
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/_assets/img/icons/wmf-152.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/_assets/img/icons/wmf-144.png">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/_assets/img/icons/wmf-120.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/_assets/img/icons/wmf-114.png">
+		<link rel="icon" type="image/png" href="/_assets/img/icons/wmf-32.png" sizes="32x32">
+		<meta name="msapplication-TileImage" content="/_assets/img/icons/wmf-144.png">
+		<meta name="theme-color" content="#d88123">
 
+		<!-- Twitter Card Stuff: -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="{{ metadata.title }}">
+		<meta name="twitter:title" content="{{ title }}">
+		{% if lede %}<meta name="twitter:description" content="{{ lede or subhed }}">{% endif %}
+		{% if img %}<meta name="twitter:image" content="https://wiltomakesfood.com/img/{{img}}-4.jpg">{% endif %}
+
+		<!-- Preload: -->
 		<link rel="preload" href="/_assets/css/fonts/fanwood_text-webfont.woff" as="font" type="font/woff" crossorigin>
 		<link rel="preload" href="/_assets/css/fonts/fanwood_text_italic-webfont.woff" as="font" type="font/woff" crossorigin>
 		<link rel="preload" href="/_assets/css/fonts/OpenSans-Bold-webfont.woff" as="font" type="font/woff" crossorigin>
 
+		<!-- Stylesheet(s) -->
 		<link rel="stylesheet" href="{{ '/_assets/css/all.css' | url }}">
 
+		<!-- RSS Feed(s): -->
 		<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 	</head>
 	<body>
