@@ -1,6 +1,8 @@
 {
   "title": "Wilto Makes Food",
+  "shortname": "WMF",
   "url": "https://wiltomakesfood.com/",
+  "description": "It’s a food blog.",
   "feed": {
     "subtitle": "It’s a food blog.",
     "filename": "feed.xml",
