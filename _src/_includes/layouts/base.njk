@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>{{ metadata.title }}{% if title %} - {{ title }}{% endif %}</title>
-		<meta name="description" content="">
+		<meta name="description" content="{% if lede %}{{lede }}{% else %}{{metadata.description }}{% endif %}">
 
 		<meta property="og:site_name" content="{{ metadata.title }} - {{ title }}">
 		<link rel="canonical" href="https://wiltomakesfood.com{{ page.url | url }}">
