@@ -35,7 +35,7 @@ templateClass: tmpl-post
 				{% endif %}
 				{% if meta.active %}
 				<dt>Active Time</dt>
-				<dd >{{meta.active}}</dd>
+				<dd itemprop="cookTime">{{meta.active}}</dd>
 				{% endif %}
 				{% if meta.total %}
 				<dt>Total Time</dt>
@@ -71,7 +71,7 @@ templateClass: tmpl-post
 		{% endif %}
 
 		{% if lede %}
-		<p class="lede">{{lede}}</p>
+		<p class="lede" itemprop="description">{{ lede | safe }}</p>
 		{% endif %}
 
 		{{ layoutContent | safe }}

@@ -52,7 +52,7 @@ templateClass: tmpl-post
 		{% endif %}
 
 		{% if lede %}
-		<p class="lede" itemprop="description">{{lede}}</p>
+		<p class="lede" itemprop="description">{{ lede | safe }}<</p>
 		{% endif %}
 
 		{{ layoutContent | safe }}
