@@ -5,7 +5,7 @@ tags:
 feat: true
 type: recipe
 lede: For years now, I’ve been on a quest for the ultimate from-scratch curry rice recipe. No store-bought roux blocks; homemade stock, hand-toasted and ground spice blends. This is where I’ve landed thus far.
-img: curry-rice
+img: curry-rice-lg
 alt: Carrots, peas, and potatoes in a pool of brown curry sauce, served on a bed of white rice.
 ---
 
