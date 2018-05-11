@@ -7,7 +7,6 @@ alt: The Field Skillet.
 keywords: 
     - Cookware
     - Pans
-subfeat: true
 type: review
 ---
 

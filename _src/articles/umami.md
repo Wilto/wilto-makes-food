@@ -3,6 +3,7 @@ title: On Umami
 subhed: We need to talk about glutamate.
 lede: "The word itself is the combination of “umai,” which expresses deliciousness (the way “yum” does, near as I can tell), and “mi,” which means “essence” or “taste.” Apparantly the name was never intended to stick—but here we are, stone-faced, discussing “yum taste.”"
 type: article
+subfeat: true
 img: msg
 alt: The 
 ---

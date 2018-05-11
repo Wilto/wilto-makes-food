@@ -58,7 +58,7 @@ templateClass: tmpl-home
 {% endfor %}
 
 	<div class="subfeat">
-	{% for post in postslist %}
+	{% for post in postslist | reverse %}
 		{% if post.data.subfeat %}
 			{{ homeitem(post, false, 'sub', '(min-width: 1480px) 465px, (min-width: 800px) 33vw, (min-width: 650px) 48vw, 98vw' ) }}
 		{% endif %}
@@ -92,8 +92,7 @@ templateClass: tmpl-home
 	</div>
 	<a href="/articles/" class="cta">All Articles</a>
 </section>
-<!-- Just gonna hide these for a bit: -->
-<!--
+
 <h2 class="section-hed" id="latest-rev">Latest Reviews</h2>
 <section class="col" role="region" aria-labelledby="latest-rev">
 	<div class="highlights">
@@ -105,4 +104,3 @@ templateClass: tmpl-home
 	</div>
 	<a href="/recipes/" class="cta">All Reviews</a>
 </section>
--->

@@ -6,7 +6,6 @@ type: article
 img: wmf
 tags: subnav
 navtitle: What is this?
-feat: true
 ---
 
 You can, of course, assume that it is currently—and perpetually—a leisurely Saturday morning. I check my meal planning calendar, a thing I definitely do and have, and— oh! Look at that: it is my special stock-making day wherein nobody emails me! I hop on my classic motorcycle, which starts. I ride over to my local butcher shop, where a cartoonishly jovial person greets me by name. I acquire pork trotters sawed into perfect 1" discs, chicken backs, and veal bones. Presumably, I come to posess a baguette and seasonal vegetables from somewhere; a farmer’s market or something? Point is, I return home and spend the rest of the day simmering. Soundtrack by whatever currently-hip band involves the most whistling.

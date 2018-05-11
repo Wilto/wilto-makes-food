@@ -5,6 +5,7 @@ tags:
 lede: Shut up; Julia Child rules.
 type: recipe
 img: bechamel
+subfeat: true
 capt: More than the sum of its parts.
 alt: Ramekins containing flour and nutmeg, a measuring cup containing milk, and a partial stick of butter.
 ---
