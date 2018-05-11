@@ -26,12 +26,12 @@ templateClass: tmpl-home
 			{% endif %}
 			<h3 class="article-hed"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
 			<p class="lede">{{ post.data.subhed }}</p>
-			{% if classes != "sub" %}
+			{% if feat %}
 			<p>{{ post.data.lede }}</p>
 			{% endif %}
 		</div>
 		{% else %}
-		{% if feat %}
+		{% if feat or classes == "sub" %}
 		<div class="feat-header">
 		{% else %}
 		<div class="recipe-header">
@@ -60,7 +60,7 @@ templateClass: tmpl-home
 	<div class="subfeat">
 	{% for post in postslist %}
 		{% if post.data.subfeat %}
-			{{ homeitem(post, true, 'sub', '(min-width: 1480px) 465px, (min-width: 800px) 33vw, (min-width: 650px) 48vw, 98vw' ) }}
+			{{ homeitem(post, false, 'sub', '(min-width: 1480px) 465px, (min-width: 800px) 33vw, (min-width: 650px) 48vw, 98vw' ) }}
 		{% endif %}
 	{% endfor %}
 	</div>
@@ -80,21 +80,20 @@ templateClass: tmpl-home
 	<a href="/recipes/" class="cta">All Recipes</a>
 </section>
 
-<!-- Just gonna hide these for a bit: -->
-<!--
+
 <h2 class="section-hed" id="latest-art">Latest Articles</h2>
 <section class="col" role="region" aria-labelledby="latest-art">
 	<div class="highlights">
 {% for post in postslist | reverse %}
 {% if ( post.data.feat != true ) and ( post.data.subfeat != true ) and ( post.data.type == "article" ) %}
-
 	{{ homeitem(post, '', '', '(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw') }}
 {% endif %}
 {% endfor %}
 	</div>
 	<a href="/articles/" class="cta">All Articles</a>
 </section>
-
+<!-- Just gonna hide these for a bit: -->
+<!--
 <h2 class="section-hed" id="latest-rev">Latest Reviews</h2>
 <section class="col" role="region" aria-labelledby="latest-rev">
 	<div class="highlights">
