@@ -1,0 +1,148 @@
+{
+	"title" : "Croquettes",
+	"meta" : {
+		"serves": "4",
+		"active": "45 Min",
+		"total": "2 hours"
+	},
+	"ingredients" : [
+		{
+			"name" : "Unsalted butter",
+			"amt" : {
+				"whole" : "3",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "All-purpose flour",
+			"amt" : {
+				"whole" : "3",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "Whole milk",
+			"amt" : {
+				"frac" : "3/4",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			}
+		},
+		{
+			"name" : "Heavy cream",
+			"amt" : {
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			}
+		},
+		{
+			"name" : "Yukon gold potatoes",
+			"amt" : {
+				"whole" : "4"
+			},
+			"notes" : "diced"
+		},
+		{
+			"name" : "Carrots",
+			"amt" : {
+				"whole" : "4"
+			},
+			"notes" : "brunoise"
+		},
+		{
+			"name" : "Yellow onion",
+			"amt" : {
+				"whole" : "1"
+			},
+			"notes" : "brunoise"
+		},
+		{
+			"name" : "Sake",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			}
+		},
+		{
+			"name" : "Mirin",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			}
+		},
+		{
+			"name" : "Soy sauce",
+			"amt" : {
+				"whole" : "4",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "All-purpose flour",
+			"amt" : {
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			}
+		},
+		{
+			"name" : "Potato flour",
+			"amt" : {
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			}
+		},
+		{
+			"name" : "Eggs",
+			"amt" : {
+				"whole" : "3"
+			}
+		},
+		{
+			"name" : "Panko breadcrumbs",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			}
+		},
+		{
+			"name" : "Vegetable oil",
+			"notes" : "for frying"
+		}
+	],
+	"instructions": [
+		"Dice the potatoes and boil them in lightly salted water, until tender when jabbed with a fork.",
+		"Meanwhile, make a béchamel: bring the milk and heavy cream to a near-simmer. Melt the butter, whisk in flour, and cook until foaming subsides. Add the hot milk/cream, whisking constantly.",
+		"In a skillet or sauté pan, heat a splash of olive oil or tablespoon of butter. Add the carrots and onions. Cook over medium-low heat, until onion is soft and transparent at the edges, about ten minutes. Add mixture of sake, mirin, and soy sauce, and reduce until the alcohol smell has faded. Mash the potatoes, then mix in the carrots and onions, pan sauce, and béchamel. Once combined, spread onto a sheet pan and allow to cool to room temperature.",
+		"Form croquettes into ovals, circles, whatever; dust with 50/50 mix of all-purpose and potato flours. Lightly whisk eggs. Dip floured croquettes in egg, then roll in panko breadcrumbs.",
+		"Heat oil in thick-bottomed pot (I use a small cast-iron dutch oven) to 350 degrees (f). Fry croquettes in small batches, keeping the oil temperature between 300 and 350 degrees. When golden brown, remove to a plate lined with paper towels and dust with kosher salt."
+	]
+}

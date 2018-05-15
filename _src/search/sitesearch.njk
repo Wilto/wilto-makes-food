@@ -2,7 +2,9 @@
 permalink: search/index.php
 layout: layouts/base.njk
 ---
+
 <?php
+
 $file = file_get_contents( '../posts.json' );
 $json = json_decode( $file, true );
 $needle = $_POST["search"];

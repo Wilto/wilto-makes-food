@@ -1,0 +1,7 @@
+/wmf-content
+_src/README.md
+!_src/recipes/*.md
+!_src/recipes/*.json
+!_src/articles/*.md
+!_src/reviews/*.md
+!_src/offline/*.md

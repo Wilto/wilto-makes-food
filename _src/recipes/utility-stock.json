@@ -1,0 +1,111 @@
+{
+	"title" : "toridashi",
+	"meta" : {
+		"active": "30 min",
+		"total": "Up to 3 hours"
+	},
+	"ingredients" : [
+		{
+			"name" : "Chicken Wings",
+			"amt" : {
+				"whole" : "1",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "lb.",
+					"full" : "Pounds"
+				}
+			}
+		},
+		{
+			"name" : "Shortribs",
+			"amt" : {
+				"frac" : "1/2",
+				"measure" : "rack"
+			}
+		},
+		{
+			"name" : "Onions",
+			"amt" : {
+				"whole" : "2"
+			},
+			"notes" : "one halved, one roughly chopped"
+		},
+		{
+			"name" : "Ginger",
+			"amt" : {
+				"whole" : "15",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			},
+			"notes" : "roughly chopped"
+		},
+		{
+			"name" : "Leeks",
+			"amt" : {
+				"whole" : "2"
+			},
+			"notes": "whites and light green parts only, chopped"
+		},
+		{
+			"name" : "Carrots",
+			"amt" : {
+				"whole" : "3"
+			},
+			"notes" : "roughly chopped"
+		},
+		{
+			"name" : "Celery Stalks",
+			"amt" : {
+				"whole" : "3"
+			},
+			"notes" : "roughly chopped"
+		},
+		{
+			"name" : "Sprigs of Parsley",
+			"amt" : {
+				"whole" : "A few"
+			}
+		},
+		{
+			"name" : "Peppercorns",
+			"amt" : {
+				"whole" : "~10"
+			},
+			"notes" : "whole"
+		},
+		{
+			"name" : "Bay Leaf",
+			"amt" : {
+				"whole" : "1"
+			}
+		},
+		{
+			"name" : "Kombu",
+			"href": "https://www.amazon.com/dp/B00ZB13JHO/?tag=wiltomf-20&th=1",
+			"amt" : {
+				"whole" : "4\"x4\" square"
+			},
+			"notes" : "lightly rinsed and patted dry"
+		},
+		{
+			"name" : "Katsuobushi",
+			"href": "https://www.amazon.com/dp/B000UWE0AO/?tag=wiltomf-20&th=1",
+			"amt" : {
+				"whole" : "20",
+				"measure" : {
+					"abbr" : "G",
+					"full" : "Grams"
+				}
+			}
+		}
+	],
+	"instructions": [
+		"Heat vegetable oil in a cast iron (or non-stick skillet) over high heat, until lightly smoking. Working in batches, brown both sides of the chicken wings and shortribs.",
+		"Place the chicken wings and ribs in a stockpot and cover with cold water. Bring to a boil over high heat. Meanwhile, add chopped onions, leeks, carrots, celery, and onion halves (cut sides down) to the skillet. Cook, tossing occasionally, until onions are slightly browned—about 10–15 minutes. Set aside.",
+		"Once water has come to a boil, pour it out. Rinse the chicken wings and shortribs thoroughly, then return them to the pot, along with browned aeromatics, herbs, peppercorns, katsuobushi, and kombu. Bring to a bare simmer over medium heat, skimming occasionally.",
+		"When bubbles just start to form (or the temperature reaches 190 degrees F on an instant-read thermometer), remove the kombu.",
+		"If you’re using a pressure cooker, seal and cook at high pressure for about an hour. On a stovetop, add gelatin and maintain at a bare simmer for several hours. Afterwards, either release pressure manually, or allow it to cool to room temperature under pressure, depending on the desired clarity. Remove solids using a mesh strainer and cheesecloth."
+	]
+}

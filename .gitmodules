@@ -1,0 +1,3 @@
+[submodule "wmf-content"]
+	path = wmf-content
+	url = git@github.com:Wilto/wmf-content.git
