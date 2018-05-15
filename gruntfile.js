@@ -42,9 +42,13 @@ module.exports = function(grunt) {
 			}
 		},
 		uglify: {
-			all: {
+			offline: {
 				files: {
-					'_site/_assets/js/offline.min.js': ['_src/_assets/js/offline.js'],
+					'_site/_assets/js/offline.min.js': ['_src/_assets/js/offline.js']
+				}
+			},
+			sw: {
+				files: {
 					'_site/service-worker.js': ['_site/service-worker.js']
 				}
 			}
@@ -121,7 +125,7 @@ module.exports = function(grunt) {
 		criticalcss: {
 			home: {
 				options: {
-					url: "http://localhost:8000",
+					url: "http://206.189.224.226",
 					outputfile: "_src/_includes/crit/crit-home.css",
 					filename: "_site/_assets/css/all.css",
 					height: 500
@@ -129,7 +133,7 @@ module.exports = function(grunt) {
 			},
 			home: {
 				options: {
-					url: "http://localhost:8000/recipes/",
+					url: "http://206.189.224.226/recipes/",
 					outputfile: "_src/_includes/crit/crit-landing.css",
 					filename: "_site/_assets/css/all.css",
 					height: 500
@@ -137,7 +141,7 @@ module.exports = function(grunt) {
 			},
 			post: {
 				options: {
-					url: "http://localhost:8000/recipes/curry-rice/",
+					url: "http://206.189.224.226/recipes/curry-rice/",
 					outputfile: "_src/_includes/crit/crit-post.css",
 					filename: "_site/_assets/css/all.css",
 					height: 500
@@ -150,16 +154,15 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		'copy',
 		'concat:css',
-		'uglify',
+		'uglify:offline',
 		'responsive_images',
-		'criticalcss',
 		'imagemin',
-		'cssmin'
+		'cssmin:css'
 	]);
 
-	grunt.registerTask('critical', [
+	grunt.registerTask('postbuild', [
 		'criticalcss',
-		'cssmin'
+		'uglify:sw'
 	]);
 
 	// NOTE these watch tasks try to run only relevant tasks per file save
