@@ -125,7 +125,7 @@ module.exports = function(grunt) {
 		criticalcss: {
 			home: {
 				options: {
-					url: "http://206.189.224.226",
+					url: "http://206.189.224.226/",
 					outputfile: "_src/_includes/crit/crit-home.css",
 					filename: "_site/_assets/css/all.css",
 					height: 500
