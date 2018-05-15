@@ -52,7 +52,7 @@ module.exports = function(eleventyConfig) {
   let opts = {
     permalink: true,
     permalinkClass: 'direct',
-    permalinkSymbol: 'direct link'
+    permalinkSymbol: ''
   };
 
   eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItAnchor, opts));
