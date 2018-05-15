@@ -57,6 +57,7 @@
 	}
 }
 
+
 /* The good stuff: */
 @supports (display: grid) {
 
@@ -221,6 +222,10 @@
 		.footwrap {
 			grid-template-columns: auto 40%;
 		}
+	}
+
+	.foot-nav {
+		grid-column: 1 / span 2;
 	}
 
 	.insta-thumbs {

@@ -36,9 +36,9 @@ picture {
 	height: auto;
 }
 a {
-	color: rgba(250,100,0,1);
-	text-decoration-color: rgba(250,150,0,.35);
-	transition: all .15s linear;
+	color:#000;
+	text-decoration-color: rgba(250,150,0,.5);
+	transition: color .15s linear,  text-decoration-color .15s linear;
 }
 a:hover {
 	color: #ea4142;

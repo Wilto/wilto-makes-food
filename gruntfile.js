@@ -29,13 +29,7 @@ module.exports = function(grunt) {
 				flatten: true,
 				src: ['_src/_assets/media/*'],
 				dest: '_site/_assets/media/',
-			},
-			sw: {
-				expand: true,
-				flatten: true,
-				src: ['_src/service-worker.js'],
-				dest: '_site/',
-			},
+			}
 		},
 		watch: {
 			css: {
@@ -50,7 +44,8 @@ module.exports = function(grunt) {
 		uglify: {
 			all: {
 				files: {
-					'_site/_assets/js/offline.min.js': ['_src/_assets/js/offline.js']
+					'_site/_assets/js/offline.min.js': ['_src/_assets/js/offline.js'],
+					'_site/service-worker.js': ['_site/service-worker.js']
 				}
 			}
 		},
@@ -64,6 +59,24 @@ module.exports = function(grunt) {
 					'<%= concat.css.dest %>'
 				],
 				dest: '<%= concat.css.dest %>'
+			},
+			crithome: {
+				src: [
+					'_src/_includes/crit/crit-home.css'
+				],
+				dest: '_src/_includes/crit/crit-home.css'
+			},
+			critpost: {
+				src: [
+					'_src/_includes/crit/crit-post.css'
+				],
+				dest: '_src/_includes/crit/crit-post.css'
+			},
+			critlanding: {
+				src: [
+					'_src/_includes/crit/crit-landing.css'
+				],
+				dest: '_src/_includes/crit/crit-landing.css'
 			}
 		},
 		responsive_images: {
@@ -99,9 +112,36 @@ module.exports = function(grunt) {
 			default: {
 				files: [{
 					expand: true,
-					cwd: '_site',
-					src: ['img/*.{png,jpg,gif}']
+					cwd: '_site/img',
+					src: ['*.{png,jpg,gif}'],
+					dest: '_site/img'
 				}]
+			}
+		},
+		criticalcss: {
+			home: {
+				options: {
+					url: "http://localhost:8000",
+					outputfile: "_src/_includes/crit/crit-home.css",
+					filename: "_site/_assets/css/all.css",
+					height: 500
+				}
+			},
+			home: {
+				options: {
+					url: "http://localhost:8000/recipes/",
+					outputfile: "_src/_includes/crit/crit-landing.css",
+					filename: "_site/_assets/css/all.css",
+					height: 500
+				}
+			},
+			post: {
+				options: {
+					url: "http://localhost:8000/recipes/curry-rice/",
+					outputfile: "_src/_includes/crit/crit-post.css",
+					filename: "_site/_assets/css/all.css",
+					height: 500
+				}
 			}
 		}
 	});
@@ -112,7 +152,13 @@ module.exports = function(grunt) {
 		'concat:css',
 		'uglify',
 		'responsive_images',
+		'criticalcss',
 		'imagemin',
+		'cssmin'
+	]);
+
+	grunt.registerTask('critical', [
+		'criticalcss',
 		'cssmin'
 	]);
 

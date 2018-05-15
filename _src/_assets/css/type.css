@@ -225,7 +225,7 @@ p.lede {
 }
 
 .features .lede {
-	font-size: 1.25em;
+	font-size: 1.4em;
 	padding-bottom: .5em;
 }
 
@@ -258,7 +258,7 @@ p.lede {
 .section-hed {
 	clear: both;
 	font-family: sans-serif;
-	font-size: .85em;
+	font-size: 1em;
 	margin: 10% 0 5% 0;
 	letter-spacing: .1em;
 	font-weight: bold;
@@ -273,7 +273,7 @@ p.lede {
 }
 @media( min-width: 60em ) {
 	.section-hed {
-		font-size: .85em;
+		font-size: 1em;
 	}
 }
 
@@ -531,7 +531,7 @@ p.lede {
 	text-transform: uppercase;
 	font-size: .8em;
 	line-height: 1.1;
-	color: #333;
+	color: #444;
 	letter-spacing: .025em;
 	position: relative;
 	text-decoration: none;
@@ -556,7 +556,7 @@ p.lede {
 .skiplink {
 	font-family: sans-serif;
 	font-weight: bold;
-	font-size: .85em;
+	font-size: 1em;
 	color: #333;
 	max-width: 100%;
 }
@@ -721,15 +721,6 @@ p.lede {
 .features .feat-header a:active {
 	outline: none;
 	box-shadow: 0 0 0 7px transparent;
-}
-
-.open-sans {
-	font-size: .825em;
-	position: relative;
-}
-.fonts .open-sans {
-	font-family: "open sans";
-	font-weight: normal;
 }
 
 .offline-subhed {

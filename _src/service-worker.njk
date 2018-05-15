@@ -1,3 +1,7 @@
+---
+permalink: service-worker.js
+---
+
 /*
 This is a modified version of Ethan Marcotte’s SW (https://ethanmarcotte.com/theworkerofservices.js), which was a modified version of Jeremy Keith’s service worker (https://adactio.com/serviceworker.js), with a few additional edits borrowed from Filament Group’s. (https://www.filamentgroup.com/sw.js)
 
@@ -10,7 +14,7 @@ https://www.filamentgroup.com/
 (function() {
 	"use strict";
 
-	const version = "v00429";
+	const version = "{{ metadata.build }}";
 	const cacheName = version + "::wiltomakesfood:";
 
 	const staticCacheName = cacheName + "static";

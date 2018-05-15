@@ -5,7 +5,7 @@ lede: "The word itself is the combination of “umai,” which expresses delicio
 type: article
 subfeat: true
 img: msg
-alt: The 
+alt: The side of a shaker of “Accent” seasoning. The only ingredient—monosodium glutimate—is centered.
 ---
 
 According to the book _Umami: Unlocking the Secrets of the Fifth Taste_ by Ole G. Mouritsen & Klavs Styrbæk, the pursuit of umami starts with the rise of Zen Buddhism in Japan. Buddhist monks would subsist on fruits and vegetables, tofu, seaweed, nuts, and so on—no fish, no meat. _Shōjin ryōri_ (精進料理), meaning “devotion cuisine,” seems to track pretty closely with how we think about modern-day veganism.

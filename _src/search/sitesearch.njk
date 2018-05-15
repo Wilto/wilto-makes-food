@@ -3,7 +3,7 @@ permalink: search/index.php
 layout: layouts/base.njk
 ---
 <?php
-$file = file_get_contents( 'posts.json' );
+$file = file_get_contents( '../posts.json' );
 $json = json_decode( $file, true );
 $needle = $_POST["search"];
 $matches;
@@ -60,7 +60,7 @@ if( sizeof( $matches ) > 0 ) {
 <?php else: ?>
 
 <?php foreach( $matches as $post): ?>
-	<?php if( $post['type'] != "landing" ): ?>
+	<?php if( $post['type'] != "landing" && $post['type'] != "utility" ): ?>
 		<article class="item <?php if( $post['img']['file'] ) print ' result-split' ?>">
 		<?php if( $post['img']['file'] ): ?>
 			<a href="<?= $post['url']; ?>">
