@@ -127,7 +127,7 @@ module.exports = function(grunt) {
 				options: {
 					url: "http://206.189.224.226/",
 					outputfile: "_src/_includes/crit/crit-home.css",
-					filename: "_site/_assets/css/all.css",
+					filename: "html/_assets/css/all.css",
 					height: 500
 				}
 			},
@@ -135,7 +135,7 @@ module.exports = function(grunt) {
 				options: {
 					url: "http://206.189.224.226/recipes/",
 					outputfile: "_src/_includes/crit/crit-landing.css",
-					filename: "_site/_assets/css/all.css",
+					filename: "html/_assets/css/all.css",
 					height: 500
 				}
 			},
@@ -143,7 +143,7 @@ module.exports = function(grunt) {
 				options: {
 					url: "http://206.189.224.226/recipes/curry-rice/",
 					outputfile: "_src/_includes/crit/crit-post.css",
-					filename: "_site/_assets/css/all.css",
+					filename: "html/_assets/css/all.css",
 					height: 500
 				}
 			}
