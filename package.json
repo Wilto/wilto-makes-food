@@ -1,7 +1,7 @@
 {
   "name": "wilto-makes-food",
   "version": "0.0.1",
-  "description": "It’s a food blog!",
+  "description": "It’s a food blog.",
   "scripts": {
     "start": "eleventy && grunt",
     "build": "eleventy",
