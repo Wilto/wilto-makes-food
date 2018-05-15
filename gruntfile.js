@@ -121,32 +121,6 @@ module.exports = function(grunt) {
 					dest: '_site/img'
 				}]
 			}
-		},
-		criticalcss: {
-			home: {
-				options: {
-					url: "http://206.189.224.226/",
-					outputfile: "_src/_includes/crit/crit-home.css",
-					filename: "html/_assets/css/all.css",
-					height: 500
-				}
-			},
-			home: {
-				options: {
-					url: "http://206.189.224.226/recipes/",
-					outputfile: "_src/_includes/crit/crit-landing.css",
-					filename: "html/_assets/css/all.css",
-					height: 500
-				}
-			},
-			post: {
-				options: {
-					url: "http://206.189.224.226/recipes/curry-rice/",
-					outputfile: "_src/_includes/crit/crit-post.css",
-					filename: "html/_assets/css/all.css",
-					height: 500
-				}
-			}
 		}
 	});
 
@@ -158,11 +132,6 @@ module.exports = function(grunt) {
 		'responsive_images',
 		'imagemin',
 		'cssmin:css'
-	]);
-
-	grunt.registerTask('postbuild', [
-		'criticalcss',
-		'uglify:sw'
 	]);
 
 	// NOTE these watch tasks try to run only relevant tasks per file save
