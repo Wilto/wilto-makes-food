@@ -1,3 +1,8 @@
 _site/
 node_modules/
 package-lock.json
+_src/recipes/*.md
+_src/recipes/*.json
+!_src/recipes/recipes.json
+_src/articles/*.md
+_src/reviews/*.md
