@@ -14,7 +14,7 @@ foreach( $json['posts'] as $key => $hay ) {
 	$type = strtolower( gettype( $hay ));
 
 	if( $type == "string" ) {
-		if( utf8_encode( stripos( strtolower( $hay ), $needle ) ) !== "" ) {
+		if( iconv( "ISO-8859-1", "UTF-8", stripos( strtolower( $hay ), $needle ) ) !== "" ) {
 			$matches[] = $hay;
 		}
 	} else if ( $type == "array" ) {
@@ -22,12 +22,12 @@ foreach( $json['posts'] as $key => $hay ) {
 			$type = strtolower( gettype( $subhay ));
 			if ( $type == "array" ) {
 				foreach( $subhay as $key => $subsubhay ) {
-					if( utf8_encode( stripos( strtolower( $subsubhay ), $needle ) ) !== "" ) {
+					if( iconv("ISO-8859-1", "UTF-8", stripos( strtolower( $subsubhay ), $needle ) ) !== "" ) {
 						$matches[] = $hay;
 					}
 				}
 			} else {
-				if( utf8_encode( stripos( strtolower( $subhay ), $needle ) ) !== "" ) {
+				if( iconv("ISO-8859-1", "UTF-8", stripos( strtolower( $subhay ), $needle ) ) !== "" ) {
 					$matches[] = $hay;
 				}
 			}
