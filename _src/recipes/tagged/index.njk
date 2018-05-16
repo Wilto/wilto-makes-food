@@ -13,7 +13,7 @@ if( $needle != null ) {
 	$matches;
 
 	foreach( $json['posts'] as $key => $hay ) {
-		if( utf8_encode( stripos( strtolower( $hay['tags'] ), $needle ) ) !== "" ) {
+		if( iconv("ISO-8859-1", "UTF-8", stripos( strtolower( $hay['tags'] ), $needle ) ) !== "" ) {
 			$matches[] = $hay;
 		}
 	}
