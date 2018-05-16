@@ -9,5 +9,5 @@ Header set Cache-Control "max-age=29030400, public"
 </FilesMatch>
 
 <FilesMatch "\.html$">
-Header set Link "</_assets/css/all.css>; rel=preload; as=style"
+Header add Link "</_assets/css/all.css>; rel=preload; as=style"
 <FilesMatch>
