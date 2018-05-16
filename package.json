@@ -3,10 +3,8 @@
   "version": "0.0.1",
   "description": "It’s a food blog.",
   "scripts": {
-    "start": "eleventy && grunt",
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "debug": "DEBUG=* npx eleventy"
+    "build": "grunt && eleventy",
+    "watch": "grunt && grunt watch && eleventy --watch"
   },
   "repository": {
     "type": "git",
