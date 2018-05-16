@@ -1,0 +1,91 @@
+{
+	"title" : "Pizza Dough",
+	"meta" : {
+		"active": "30 min",
+		"total": "Overnight"
+	},
+	"ingredients" : [
+		{
+			"name" : "“00” Flour",
+			"amt" : {
+				"whole" : "420",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "grams"
+				},
+				"notes": "lol"
+			}
+		},
+		{
+			"name" : "Sourdough starter castoff",
+			"amt" : {
+				"whole" : "100",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "grams"
+				},
+				"notes": "straight from the fridge",
+				"optional" : true
+			}
+		},
+		{
+			"name" : "Kosher salt",
+			"amt" : {
+				"whole" : "1",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoons"
+				}
+			}
+		},
+		{
+			"name" : "Instant yeast",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoons"
+				}
+			}
+		},
+		{
+			"name" : "Granulated sugar",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoons"
+				}
+			}
+		},
+		{
+			"name" : "Olive oil",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "Water",
+			"amt" : {
+				"frac" : "3/4",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "cup"
+				}
+			},
+			"notes" : "between 90 and 100 degrees (f)"
+		}
+	],
+	"instructions": [
+		"Add up to 3/4 C. water, only adding more until the dough comes together in a shaggy ball.",
+		"If using a stand mixer, switch to the dough hook and knead at low-medium speed for seven minutes—or until the dough passes the <a href='https://slice.seriouseats.com/2010/09/technique-the-windowpane-test-for-pizza-dough.html'>windowpane test</a>.",
+		"Shape the dough into a ball and place in a lightly oiled bowl. Cover, and let sit at room temperature for half an hour.",
+		"Place in refridgerator overnight, making sure the dough has room to expand (I use a gallon freezer bag).",
+		"When ready to bake, shape into a ball on a floured surface, dust with flour, cover loosely, and allow it to come to room temperature before shaping."
+	]
+}

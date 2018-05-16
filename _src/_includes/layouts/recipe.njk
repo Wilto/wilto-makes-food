@@ -106,7 +106,7 @@ templateClass: tmpl-post
 		{% else %}
 			<ol class="steps">
 				{%- for ins in instructions -%}
-				<li><p>{{ins}}</p></li>
+				<li><p>{{ins | safe }}</p></li>
 				{%- endfor -%}
 			</ol>
 		{% endif %}
