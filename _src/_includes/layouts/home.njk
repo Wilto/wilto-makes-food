@@ -4,18 +4,6 @@ templateClass: tmpl-home
 ---
 
 {% macro respimg(path, img, sizes, alt, lazy=false) %}
-
-
-<picture>
-	<source type="image/webp" 
-		sizes="{{ sizes }}"
-		srcset="
-			{{ path }}/webp/{{ img }}-1.webp 320w,
-			{{ path }}/webp/{{ img }}-2.webp 450w,
-			{{ path }}/webp/{{ img }}-3.webp 640w,
-			{{ path }}/webp/{{ img }}-4.webp 820w,
-			{{ path }}/webp/{{ img }}-5.webp 1024w"
-		>
 {% if lazy %}
 	<noscript>
 	<img 
