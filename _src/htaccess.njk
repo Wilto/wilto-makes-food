@@ -10,5 +10,5 @@ Header set Cache-Control "max-age=29030400, public"
 
 <FilesMatch "\.html$">
 Header add Link "</_assets/css/all.css?{{ metadata.build }}>; rel=preload; as=style"
-Header add Link "</_assets/js/lazyimg.min.js>; rel=preload; as=script"
+Header add Link "</_assets/js/lazyimg.min.js?{{ metadata.build }}>; rel=preload; as=script"
 </FilesMatch>
