@@ -619,13 +619,22 @@ p.lede {
 	overflow: hidden;
 }
 
+[data-fadein] {
+	opacity: 1;
+	-webkit-transition: opacity .1s ease-in-out;
+	transition: opacity .1s ease-in-out;
+}
+.fadein {
+	opacity: 0;
+}
+
 .highlights .item img,
 .subfeat .item img,
 .feat.item img {
 	position: absolute;
-	top: -5%;
-	transform: scale(1.000000001);
+	top: 0;
 	width: 100%;
+	min-height: 100%;
 }
 .item > a {
 	position: static;

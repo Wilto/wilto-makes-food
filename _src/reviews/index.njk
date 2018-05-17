@@ -4,7 +4,9 @@ tags: nav
 navtitle: Reviews
 ---
 
-{% macro respimg(path, img, alt) %}
+{% macro respimg(path, img, alt, lazy=false) %}
+{% if lazy %}
+<noscript>
 <img 
 	sizes="(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw"
 	srcset="
@@ -15,6 +17,30 @@ navtitle: Reviews
 		{{ path }}{{ img }}-5.jpg 1024w"
 	src="{{ path }}{{ img }}-4.jpg" 
 	alt="{{ alt }}">
+</noscript>
+<img 
+	data-lazy
+	data-sizes="(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw"
+	data-srcset="
+		{{ path }}{{ img }}-1.jpg 320w,
+		{{ path }}{{ img }}-2.jpg 450w,
+		{{ path }}{{ img }}-3.jpg 640w,
+		{{ path }}{{ img }}-4.jpg 820w,
+		{{ path }}{{ img }}-5.jpg 1024w"
+	data-src="{{ path }}{{ img }}-4.jpg" 
+	alt="{{ alt }}">
+{% else %}
+<img 
+	sizes="(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw"
+	srcset="
+		{{ path }}{{ img }}-1.jpg 320w,
+		{{ path }}{{ img }}-2.jpg 450w,
+		{{ path }}{{ img }}-3.jpg 640w,
+		{{ path }}{{ img }}-4.jpg 820w,
+		{{ path }}{{ img }}-5.jpg 1024w"
+	src="{{ path }}{{ img }}-4.jpg" 
+	alt="{{ alt }}">
+{% endif %}
 {% endmacro %}
 
 {% macro item(post, classes='') %}
@@ -37,7 +63,7 @@ navtitle: Reviews
 		{% endif %}
 		{% if post.data.img %}
 		<a href="{{ post.url | url }}" aria-hidden="true" tabindex="-1">
-			{{ respimg('/img/', post.data.img, post.data.alt) }}
+			{{ respimg('/img/', post.data.img, post.data.alt, false) }}
 		</a>
 		{% endif %}
 	</article>

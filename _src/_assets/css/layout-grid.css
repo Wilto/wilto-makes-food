@@ -208,13 +208,11 @@
 		}
 	}
 
-	.footwrap {
-		display: grid;
-		grid-template-columns: auto;
-		grid-gap: 2.5%;
-	}
 	@media( min-width: 45em ) {
 		.footwrap {
+			display: grid;
+			grid-template-columns: auto;
+			grid-gap: 2.5%;
 			grid-template-columns: 1fr 1fr;
 		}
 	}

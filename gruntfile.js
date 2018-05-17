@@ -42,9 +42,10 @@ module.exports = function(grunt) {
 			}
 		},
 		uglify: {
-			offline: {
+			alljs: {
 				files: {
-					'_site/_assets/js/offline.min.js': ['_src/_assets/js/offline.js']
+					'_site/_assets/js/offline.min.js': ['_src/_assets/js/offline.js'],
+					'_site/_assets/js/lazyimg.min.js': ['_src/_assets/js/lazyimg.js']
 				}
 			},
 			sw: {
@@ -63,30 +64,12 @@ module.exports = function(grunt) {
 					'<%= concat.css.dest %>'
 				],
 				dest: '<%= concat.css.dest %>'
-			},
-			crithome: {
-				src: [
-					'_src/_includes/crit/crit-home.css'
-				],
-				dest: '_src/_includes/crit/crit-home.css'
-			},
-			critpost: {
-				src: [
-					'_src/_includes/crit/crit-post.css'
-				],
-				dest: '_src/_includes/crit/crit-post.css'
-			},
-			critlanding: {
-				src: [
-					'_src/_includes/crit/crit-landing.css'
-				],
-				dest: '_src/_includes/crit/crit-landing.css'
 			}
 		},
 		responsive_images: {
 			options: {
 				newFilesOnly: false,
-				quality: 60,
+				quality: 75,
 				sizes: [{
 					name: '1',
 					width: 320,
@@ -121,6 +104,19 @@ module.exports = function(grunt) {
 					dest: '_site/img'
 				}]
 			}
+		},
+		cwebp: {
+			dynamic: {
+				options: {
+					q: 60
+				},
+				files: [{
+					expand: true,
+					cwd: '_site/img', 
+					src: ['*.jpg'],
+					dest: '_site/img/webp'
+				}]
+			}
 		}
 	});
 
@@ -152,9 +148,10 @@ module.exports = function(grunt) {
 		'clean',
 		'copy',
 		'concat:css',
-		'uglify:offline',
+		'uglify:alljs',
 		'responsive_images',
 		'imagemin',
+		'cwebp',
 		'cssmin:css'
 	]);
 
