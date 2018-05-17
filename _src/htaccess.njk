@@ -4,10 +4,11 @@ permalink: .htaccess
 
 AddOutputFilterByType DEFLATE text/html text/plain application/javascript text/css
 
-<FilesMatch "\.(jpg|jpeg|png|gif|woff|woff2|js|css)$">
+<FilesMatch "\.(jpg|jpeg|png|gif|woff|woff2|js|css|webp)$">
 Header set Cache-Control "max-age=29030400, public"
 </FilesMatch>
 
 <FilesMatch "\.html$">
 Header add Link "</_assets/css/all.css?{{ metadata.build }}>; rel=preload; as=style"
+Header add Link "</_assets/js/lazyimg.min.js>; rel=preload; as=script"
 </FilesMatch>
