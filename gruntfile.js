@@ -69,7 +69,7 @@ module.exports = function(grunt) {
 		responsive_images: {
 			options: {
 				newFilesOnly: false,
-				quality: 75,
+				quality: 70,
 				sizes: [{
 					name: '1',
 					width: 320,
