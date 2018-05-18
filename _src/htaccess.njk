@@ -14,7 +14,7 @@ Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
 # Server push:
-<If "%{HTTP_COOKIE}">
+<If "test">
 	<FilesMatch "\.html$">
 	</FilesMatch>
 <Else>
