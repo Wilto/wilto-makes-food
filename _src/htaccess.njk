@@ -8,8 +8,34 @@ AddOutputFilterByType DEFLATE text/html text/plain application/javascript text/c
 # Error pages:
 ErrorDocument 404 /404.html
 
+# Server push:
 <If "%{HTTP_COOKIE} !=~ /primed/">
-	H2PushResource add /_assets/css/crit/home.css?{{metadata.build}}
+	H2EarlyHints on
+
+	<If "%{DOCUMENT_URI} == '/'">
+		H2PushResource add /_assets/css/crit/home.css?{{metadata.build}}
+	</If>
+
+	<If "%{DOCUMENT_URI} == '/recipes/index.html'">
+		H2PushResource add /_assets/css/crit/landing.css?{{metadata.build}}
+	</If>
+	<If "%{DOCUMENT_URI} == '/articles/index.html'">
+		H2PushResource add /_assets/css/crit/landing.css?{{metadata.build}}
+	</If>
+	<If "%{DOCUMENT_URI} == '/reviews/index.html'">
+		H2PushResource add /_assets/css/crit/landing.css?{{metadata.build}}
+	</If>
+
+	<If "%{DOCUMENT_URI} == '/recipes/*/index.html'">
+		H2PushResource add /_assets/css/crit/post.css?{{metadata.build}}
+	</If>
+	<If "%{DOCUMENT_URI} == '/articles/*/index.html'">
+		H2PushResource add /_assets/css/crit/post.css?{{metadata.build}}
+	</If>
+	<If "%{DOCUMENT_URI} == '/reviews/*/index.html'">
+		H2PushResource add /_assets/css/crit/post.css?{{metadata.build}}
+	</If>
+
 	Header set Set-Cookie "cache=primed"
 </If>
 
@@ -20,15 +46,3 @@ Header set Cache-Control "max-age=31536000, public"
 
 Options +Includes
 AddHandler server-parsed .html 
-
-
-# Server push:
-<FilesMatch "\.html$">
-	<If "%{DOCUMENT_URI} == '/portfolio/index.html'">
-		H2PushResource add /css/dist/critical-portfolio.css?01042017
-	</If>
-
-	<If "%{DOCUMENT_URI} == '/code/index.html'">
-		H2PushResource add /css/dist/critical-code.css?01042017
-	</If>
-</FilesMatch>
