@@ -143,7 +143,7 @@ module.exports = function(grunt) {
 					width: 1200,
 					height: 650,
 					outputfile: "_site/_assets/css/crit/home.css",
-					filename: "_site/_assets/css/all.css",
+					file: "_site/_assets/css/all.css",
 					ignoreConsole: true
 				}
 			},
@@ -153,7 +153,7 @@ module.exports = function(grunt) {
 					width: 1200,
 					height: 650,
 					outputfile: "_site/_assets/css/crit/landing.css",
-					filename: "_site/_assets/css/all.css",
+					file: "_site/_assets/css/all.css",
 					ignoreConsole: true
 				}
 			},
@@ -163,7 +163,7 @@ module.exports = function(grunt) {
 					width: 1200,
 					height: 650,
 					outputfile: "_site/_assets/css/crit/post.css",
-					filename: "_site/_assets/css/all.css",
+					file: "_site/_assets/css/all.css",
 					ignoreConsole: true
 				}
 			}
@@ -211,7 +211,7 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask('crit', [
-		'criticalcss',
+		'criticalcss:home',
 		'cssmin'
 	]);
 
