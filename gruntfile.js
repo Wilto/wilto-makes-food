@@ -139,9 +139,9 @@ module.exports = function(grunt) {
 		criticalcss: {
 			home: {
 				options: {
-					url: "https://wiltomakesfood.com",
-					filename: "_src/_assets/css/index.css",
-					outputfile: "html/_assets/css/crit/home.css"
+					url: "wiltomakesfood.com",
+					filename: "_assets/css/index.css",
+					outputfile: "_site/_assets/css/crit/home.css"
 				}
 			}
 		}
