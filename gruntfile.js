@@ -141,7 +141,7 @@ module.exports = function(grunt) {
 				options: {
 					url: "https://wiltomakesfood.com",
 					outputfile: "_site/_assets/css/crit/home.css",
-					filename: "_site/_assets/css/all.css",
+					filename: "_site/_assets/css/all.css"
 				}
 			}
 		}
@@ -188,7 +188,7 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask('crit', [
-		'criticalcss:home',
+		'criticalcss',
 		'cssmin'
 	]);
 
