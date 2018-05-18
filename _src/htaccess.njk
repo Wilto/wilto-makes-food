@@ -14,11 +14,23 @@ ErrorDocument 404 /404.html
 		H2PushResource add /_assets/css/crit/home.css?{{metadata.build}}
 	</If>
 
-	<If "%{DOCUMENT_URI} == '/recipes/index.html'" || "%{DOCUMENT_URI} == '/articles/index.html'" || "%{DOCUMENT_URI} == '/reviews/index.html'">
+	<If "%{DOCUMENT_URI} == '/recipes/index.html'">
+		H2PushResource add /_assets/css/crit/landing.css?{{metadata.build}}
+	</If>
+	<If "%{DOCUMENT_URI} == '/articles/index.html'">
+		H2PushResource add /_assets/css/crit/landing.css?{{metadata.build}}
+	</If>
+	<If "%{DOCUMENT_URI} == '/reviews/index.html'">
 		H2PushResource add /_assets/css/crit/landing.css?{{metadata.build}}
 	</If>
 
-	<If "%{DOCUMENT_URI} == '/recipes/*/index.html'" || "%{DOCUMENT_URI} == '/articles/*/index.html'" || "%{DOCUMENT_URI} == '/reviews/*/index.html'">
+	<If "%{DOCUMENT_URI} == '/recipes/*/index.html'">
+		H2PushResource add /_assets/css/crit/post.css?{{metadata.build}}
+	</If>
+	<If "%{DOCUMENT_URI} == '/articles/*/index.html'">
+		H2PushResource add /_assets/css/crit/post.css?{{metadata.build}}
+	</If>
+	<If "%{DOCUMENT_URI} == '/reviews/*/index.html'">
 		H2PushResource add /_assets/css/crit/post.css?{{metadata.build}}
 	</If>
 </If>
