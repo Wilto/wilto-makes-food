@@ -7,8 +7,25 @@ module.exports = function(grunt) {
 		home: {
 			options: {
 				url: "https://wiltomakesfood.com",
+				height: 600,
 				filename: path + "/all.css",
-				outputfile: path + "/crit-home.css"
+				outputfile: path + "/crit/home.css"
+			}
+		},
+		landing: {
+			options: {
+				url: "https://wiltomakesfood.com/recipes",
+				height: 600,
+				filename: path + "/all.css",
+				outputfile: path + "/crit/landing.css"
+			}
+		},
+		post: {
+			options: {
+				url: "https://wiltomakesfood.com/recipes/curry-rice/",
+				height: 600,
+				filename: path + "/all.css",
+				outputfile: path + "/crit/post.css"
 			}
 		}
 	});
