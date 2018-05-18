@@ -153,9 +153,6 @@
 			if('serviceWorker' in navigator) {
 				navigator.serviceWorker.register('/service-worker.js?{{ metadata.build }}');
 			}
-			(function() {
-				document.cookie = 'cache=primed; expires=0; path=/';
-			}());
 		</script>
 
 		<script src="/_assets/js/lazyimg.min.js?{{ metadata.build }}"></script>
