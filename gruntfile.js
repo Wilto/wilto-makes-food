@@ -140,7 +140,7 @@ module.exports = function(grunt) {
 			home: {
 				options: {
 					url: "https://wiltomakesfood.com",
-					filename: "html/_assets/css/all.css",
+					filename: "./html/_assets/css/all.css",
 					outputfile: "html/_assets/css/crit/home.css"
 				}
 			}
