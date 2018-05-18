@@ -40,3 +40,710 @@
 		font-size: 1.155em;
 	}
 }
+
+.feat {
+	font-size: 3.585vw;
+}
+@media all and (min-width: 450px) {
+	.feat {
+		font-size: 1em;
+	}
+}
+
+/* Global Type
+----------------------- */
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+
+p {
+	font-family: serif;
+	line-height: 1.4em;
+	font-size: 1.25em;
+	margin: .4em 0 .5em 0;
+	max-width: 45em;
+}
+
+@media(min-width: 40em ) {
+	p {
+		line-height: 1.55em;
+	}
+}
+
+@media(min-width: 65em ) {
+	p {
+		font-size: 1.15em;
+	}
+}
+
+.fonts p {
+	font-family: "Fanwood Text";
+}
+.amp {
+	color: #999;
+	font-style: italic;
+	font-size: .75em;
+}
+[class$="-hed"] {
+	font-family: sans-serif;
+}
+
+abbr {
+	text-decoration-skip: ink;
+	text-decoration-skip-ink: auto;
+	text-decoration: dotted underline;
+	text-decoration-color: rgba(255,150,0, .35);
+}
+
+
+.recipe-hed,
+.article-hed {
+	font-weight: normal;
+	font-size: 2.75em;
+	line-height: 1;
+	padding: .15em 0 .15em 0;
+	margin-bottom: 0;
+}
+.recipe-hed {
+	font-family: serif;
+}
+.fonts .recipe-hed {
+	font-family: "Fanwood Text";
+}
+.recipe-hed a {
+	color: #444;
+	text-decoration: none;
+}
+
+.art-section {
+	background: #eee;
+	color: #333;
+	display: inline-block;
+	padding: .15em .65em .125em .65em;
+	text-transform: uppercase;
+	font-size: .7em;
+	font-weight: normal;
+	text-decoration: none;
+	font-family: sans-serif;
+	border-radius: .35em;
+}
+.fonts .art-section {
+	font-family: "open sans";
+}
+.art-section:focus {
+	background: rgba(255,150,0, .5);
+	outline: none;
+}
+
+.recipeheader .art-section {
+	padding-top: .25em;
+	margin-bottom: 1.5em;
+}
+.recipeheader .art-section:active,
+.recipeheader .art-section:hover {
+	background: rgba(255,150,0, .75);
+	color: #333;
+}
+
+.article-hed {
+	font-size: 1.8em;
+	margin-top: .35em;
+	padding: 0;
+}
+
+.article-hed {
+	font-family: serif;
+	font-size: 1.6em;
+	padding-bottom: .35em;
+	margin: 0 0 .25em 0;
+}
+.fonts .article-hed {
+	font-family: "Fanwood Text";
+}
+
+.article-hed a {
+	display: block;
+	padding-bottom: .2em;
+	padding-top: .3em;
+	position: relative;
+}
+.article-hed a:before,
+.article-hed a:after {
+	background: rgba(255,150,0, .5);
+	content: " ";
+	margin-top: .25em;
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 33%;
+	height: 2px;
+	border-radius: 1px;
+}
+.article-hed a:after {
+	background: rgba(255,150,0, .95);
+	width: 0;
+	z-index: 2;
+	transition: width .2s ease-in-out, height .2s ease-in-out;
+}
+.article-hed a:focus {
+	outline: none;
+}
+.article-hed a:hover:after {
+	width: 33%;
+}
+.article-hed a:focus:after,
+.article-hed a:hover:after {
+	width: 100%;
+}
+
+.article-hed a {
+	color: #444;
+	text-decoration: none;
+}
+.article:hover .article-hed a {
+	color: #222;
+}
+
+.article-hed+.lede {
+	margin-top: -.35em;
+}
+
+p.lede {
+	color: #444;
+	margin: 0;
+	padding: 0;
+}
+
+.features .article-hed {
+	font-size: 2.2em;
+}
+
+.subfeat .article-hed {
+	font-size: 2em;
+}
+
+.features .lede {
+	font-size: 1.4em;
+	padding-bottom: .5em;
+}
+
+
+.features > .item .lede {
+	color: #555;
+	font-size: 1.1em;
+	font-weight: normal;
+	line-height: 1.3;
+	padding-bottom: .5em;
+	font-family: sans-serif;
+}
+.fonts .features > .item .lede {
+	font-family: "open sans";
+	font-weight: normal;
+}
+
+.features > .item p {
+	line-height: 1.35;
+	font-size: 1.3em;
+}
+
+@media( min-width: 40em) {
+	.features > .item p {
+		font-size: 1.15em;
+	}
+}
+
+
+.section-hed {
+	clear: both;
+	font-family: sans-serif;
+	font-size: 1em;
+	margin: 10% 0 5% 0;
+	letter-spacing: .1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 3.5em 0 1.5em 0;
+	width: 100%;
+	border-bottom: 2px solid rgba(255,150,0, .45);
+}
+.fonts .section-hed {
+	font-family: "open sans";
+	font-weight: normal;
+}
+@media( min-width: 60em ) {
+	.section-hed {
+		font-size: 1em;
+	}
+}
+
+.section-hed b {
+	color: rgba(255,125,0, 1);
+	font-weight: normal;
+}
+
+.cta {
+	color: #333;
+	font-family: sans-serif;
+	font-size: .85em;
+	letter-spacing: .05em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.fonts .cta {
+	font-family: "open sans";
+	font-weight: normal;
+}
+
+
+.inline-hed {
+	border-bottom: 1px solid #ddd;
+	clear: both;
+	display: block;
+	letter-spacing: .1em;
+	margin: 2.5em 0 3em -.25em;
+	padding-left: .25em;
+	text-transform: uppercase;
+	font-size: .75em;
+}
+.feat-tag,
+.inline-hed {
+	font-family: sans-serif;
+}
+.fonts .feat-tag,
+.fonts .inline-hed {
+	font-family: "open sans";
+	font-weight: normal;
+}
+
+.feat-tag a {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.intro .lede {
+	font-size: 1.45em;
+	color: #666;
+	max-width: 34em;
+	line-height: 1.3;
+}
+	.intro p {
+		margin: .5em 0;
+	}
+@media(min-width:30em ) {
+	.intro p {
+		margin: .85em 0;
+	}
+}
+
+.intro blockquote {
+	border-left: 2px solid rgba(255,150,0, .25);
+	margin: 1.5em 0;
+	padding-left: 1em;
+}
+.intro blockquote p {
+	color: #666;
+	font-style: italic;
+	line-height: 1.45;
+}
+.intro blockquote br {
+	margin: .4em 0 0 0;
+	display: block;
+}
+
+
+.recipe-subhed,
+.subhed,
+.intro h3 {
+	color: #444;
+	font-family: sans-serif;
+	font-size: .9em;
+	font-weight: bold;
+}
+.fonts .recipe-subhed,
+.fonts .subhed,
+.fonts .intro h3 {
+	font-family: "open sans";
+	font-weight: normal;
+}
+
+.intro .subhed,
+.intro h3 {
+	font-family: sans-serif;
+	font-size: 1em;
+	margin: 1.65em 0 1.2em -.7em;
+	max-width: 45em;
+	font-weight: bold;
+	padding: 0 0 0 .5em;
+}
+.fonts .intro .subhed,
+.fonts .intro h3 {
+	font-family: "open sans";
+	font-weight: normal;
+}
+
+.recipe-subhed {
+	font-family: sans-serif;
+	font-size: .8em;
+	padding-bottom: 0;
+	margin-top: 2.5em;
+}
+.fonts .recipe-subhed {
+	font-family: "open sans";
+	font-weight: normal;
+}
+.recipe-subhed:after {
+	content: "";
+	display: block;
+	margin-top: .35em;
+	width: 2em;
+	height: 3px;
+	background: rgba(255,150,0, .25);
+	border-radius: 1em;
+}
+
+.intro .subhed,
+.intro h3 {
+	border-left: .2em solid rgba(255,150,0, .45);
+}
+
+.notification .recipe-subhed {
+	font-size: 1.1em;
+}
+
+
+.meta dd,
+.meta dt {
+	font-size: .75em;
+}
+
+.meta dt {
+	font-weight: bold;
+	text-transform: uppercase;
+	float: left;
+	font-family: sans-serif;
+	clear: left;
+	padding: .25em 0;
+	width: 33%;
+	max-width: 100px;
+}
+.fonts .meta dt {
+	font-family: "open sans";
+	font-weight: normal;
+}
+.meta dt:after {
+	content: ":";
+}
+.meta dd {
+	color: #555;
+	font-size: 1em;
+	line-height: 1;
+	padding-right: 1.5em;
+	padding-left: .25em;
+	padding-top: .2em;
+	display: block;
+}
+.fonts .meta dd {
+	font-family: "Fanwood Text";
+}
+
+@media(min-width: 35em ) {
+	.meta dt {
+		float: none;
+		width: auto;
+		clear: none;
+	}
+}
+
+.relatedprod-hed,
+.prod-hed {
+	font-family: serif;
+	font-size: 1.65em;
+	font-weight: normal;
+	margin: 0;
+	padding-top: .25em;
+}
+.fonts .relatedprod-hed,
+.fonts .prod-hed {
+	font-family: "Fanwood Text";
+}
+.relatedprod-hed {
+	font-size: 1.4em;
+	margin: 0 0 .75em 0;
+	padding-top: 0;
+}
+.prod-hed a {
+	color: #333;
+	text-decoration: none;
+}
+.prod-hed + p {
+	margin-top: -.2em;
+}
+.vend {
+	color: #666;
+	margin-bottom: 1em;
+}
+.ingredients li {
+	font-family: serif;
+	font-size: 1.1em;
+}
+.fonts .ingredients li {
+	font-family: "Fanwood Text";
+}
+
+.ingredients p {
+	font-size: inherit;
+	margin: .15em 0;
+	line-height: 1;
+	display: flex;
+}
+
+.tag {
+	font-family: sans-serif;
+	font-size: .7em;
+	text-shadow: 1px 1px 0 #fff;
+}
+.fonts .tag {
+	font-family: "open sans";
+	font-weight: normal;
+}
+
+.caption {
+	font-size: 1.2em;
+	line-height: 1.2;
+	margin-top: .5em;
+	font-style: italic;
+	color: #777;
+}
+.caption p {
+	font-family: serif;
+	line-height: 1.15em;
+}
+.fonts .caption p {
+	font-family: "Fanwood Text";
+}
+
+.sitenav a {
+	font-family: sans-serif;
+	font-weight: bold;
+	padding: 0 1.25em;
+	text-transform: uppercase;
+	font-size: .8em;
+	line-height: 1.1;
+	color: #444;
+	letter-spacing: .025em;
+	position: relative;
+	text-decoration: none;
+}
+.fonts .sitenav a {
+	font-family: "open sans";
+	font-weight: normal;
+}
+
+.search input {
+	font-family: serif;
+}
+.fonts .search input {
+	font-family: "Fanwood Text";
+}
+
+.search input::placeholder {
+	color: #999;
+	font-style: italic;
+}
+
+.skiplink {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+	color: #333;
+	max-width: 100%;
+}
+.fonts .skiplink {
+	font-family: "open sans";
+	font-weight: normal;
+}
+
+
+.feat {
+	min-height: 25em;
+	height: 50vw;
+	max-height: 27.5em;
+}
+
+.subfeat {
+	font-size: 3vw;
+}
+@media all and (min-width: 450px) {
+	.subfeat {
+		font-size: .85em;
+		height: auto;
+	}
+}
+.feat,
+.subfeat article {
+	background: #eaeaea;
+}
+
+.feat-header,
+.recipe-header {
+	background: rgba(255,255,255,.95);
+	display: block;
+	border: 1px dotted rgba(255,150,0, .5);
+	box-shadow: 0 0 0 7px #fff;
+
+	position: relative;
+	text-align: center;
+	max-width: 90%;
+	width: 20em;
+	z-index: 2;
+}
+.recipe-header {
+	margin-top: 3em;
+	text-align: left;
+	border-left: none;
+	width: auto;
+	box-shadow:0 0 0 5px #fff;
+	font-size: .5em;
+	position: relative;
+	z-index: 2;
+}
+.recipe-header .recipe-hed a {
+	padding: .7em 1em .4em .5em;
+	display: block;
+}
+
+.item {
+	position: relative;
+	overflow: hidden;
+}
+
+[data-fadein] {
+	opacity: 1;
+	-webkit-transition: opacity .1s ease-in-out;
+	transition: opacity .1s ease-in-out;
+}
+.fadein {
+	opacity: 0;
+}
+
+.highlights .item img,
+.subfeat .item img,
+.feat.item img {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	min-height: 100%;
+}
+.item > a {
+	position: static;
+	display: block;
+}
+.highlights > .item {
+	min-height: 15em;
+	margin-bottom: 2.5%;
+	overflow: hidden;
+}
+@media all and (min-width: 750px) {
+	.highlights > .item {
+		min-height: 11em;
+		height: 20vw;
+		max-height: 15em;
+	}
+}
+.feat-header {
+	margin: 3em auto 0 auto;
+}
+
+.recipe-hed {
+	padding: 0;
+}
+
+.recipe-hed a {
+	display: block;
+}
+
+.feat-tag {
+	font-size: .85em;
+	margin: 0 auto;
+	display: inline-block;
+	width: auto;
+	width: 100%;
+	left: 0;
+	min-width: 5.5em;
+	top: -19px;
+	position: absolute;
+	padding: .1em 1em 0 1em;
+}
+.feat-tag a {
+	background: rgba(255,150,0, 1);
+	color: #333;
+	display: inline-block;
+	margin: 0 auto;
+	padding: .175em 1.25em .15em 1.25em;
+	position: relative;
+	text-decoration: none;
+	width: auto;
+	z-index: 2;
+	border-radius: .85em .85em .85em .85em / 50% 50% 50% 50%;
+	-webkit-transition: background-color .1s linear;
+	transition: background-color .1s linear;
+}
+.feat-tag a:focus {
+	color: #fff;
+	box-shadow: 0 0 0 5px rgba(255,150,0, .5);
+	outline: none;
+	background-color: rgba(255,100,0, 1);
+}
+.feat-tag a:active {
+	background-color: rgba(255,150,0, 1);
+}
+.feat-tag a:hover {
+	color: #fff;
+}
+
+.features .recipe-hed a {
+	display: block;
+	z-index: 2;
+	padding: .45em .25em .25em .25em;
+	position: relative;
+	box-shadow: 0 0 0 7px transparent;
+}
+
+.recipe-hed a:focus {
+	outline: none;
+	position: relative;
+	z-index: 2;
+	box-shadow: 0 0 0 5px rgba(255,150,0, .5);
+}
+.recipe-hed a:active {
+	outline: none;
+	box-shadow: 0 0 0 5px transparent;
+}
+.feat-header .recipe-hed a:focus,
+.recipe-header .recipe-hed a:focus {
+	outline: none;
+	background: #fff;
+	box-shadow: 0 0 0 7px rgba(255,150,0, .5);
+}
+.features .feat-header a:active {
+	outline: none;
+	box-shadow: 0 0 0 7px transparent;
+}
+
+.offline-subhed {
+	color: #444;
+	font-size: 1em;
+}
+
+.results .art-content {
+	font-size: 1.1em;
+}
+.results .article-hed {
+	font-size: 2em;
+	margin-top: .25em;
+}
+.results .subhed {
+	font-size: .95em;
+}
