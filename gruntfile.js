@@ -201,7 +201,6 @@ module.exports = function(grunt) {
 		'uglify:alljs',
 		'responsive_images',
 		'imagemin',
-		'cwebp',
 		'cssmin:css'
 	]);
 
