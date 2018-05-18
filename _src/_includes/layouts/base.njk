@@ -40,7 +40,10 @@
 		<link rel="preload" href="/_assets/css/fonts/fanwood_text_italic-webfont.woff" as="font" type="font/woff" crossorigin>
 		<link rel="preload" href="/_assets/css/fonts/OpenSans-Bold-webfont.woff" as="font" type="font/woff" crossorigin>
 
-		<!--#if expr="$SERVER_PROTOCOL=/HTTP\/2\.0/" -->
+
+		<!--#echo var="$SERVER_PROTOCOL" -->
+
+		<!--#if expr="$SERVER_PROTOCOL=HTTP\/2\.0/" -->
 			<link rel="stylesheet" href="/_assets/css/crit/home.css?{{ metadata.build }}">
 		<!--#else -->
 		<style>

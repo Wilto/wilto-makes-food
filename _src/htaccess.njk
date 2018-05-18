@@ -14,8 +14,7 @@ Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
 Options +Includes
-AddType text/html .shtml .shtm .htm .html
-AddHandler server-parsed .shtml .shtm .htm .html 
+AddHandler server-parsed .html 
 
 # Server push:
 <FilesMatch "\.html$">
