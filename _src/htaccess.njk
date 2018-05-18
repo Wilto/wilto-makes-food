@@ -14,3 +14,12 @@ Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
 # Server push:
+<FilesMatch "\.html$">
+	<If "%{DOCUMENT_URI} == '/portfolio/index.html'">
+		H2PushResource add /css/dist/critical-portfolio.css?01042017
+	</If>
+
+	<If "%{DOCUMENT_URI} == '/code/index.html'">
+		H2PushResource add /css/dist/critical-code.css?01042017
+	</If>
+</FilesMatch>
