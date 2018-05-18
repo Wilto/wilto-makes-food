@@ -1,10 +1,17 @@
 /*global module:false,require:false*/
+
 module.exports = function(grunt) {
+	'use strict';
+
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+	var path = require( "path" ).resolve( "_site/_assets/css" );
+
 	// Project configuration.
 	grunt.initConfig({
 		pkg: '<json:package.json>',
 		banner: '/*! wiltomakesfood.com - v<%= pkg.version %> - */',
+		baseurl: process.env.baseurl || 'http://localhost:8000',
+
 		concat: {
 			options: {
 				banner: '<%= banner %>'
@@ -14,6 +21,15 @@ module.exports = function(grunt) {
 					'_src/_assets/css/*'
 				],
 				dest: '_site/_assets/css/all.css'
+			}
+		},
+		criticalcss: {
+			home: {
+				options: {
+					outputfile: path + "/critical/home.css",
+					filename: path + "/all.css",
+					url: "<%=baseurl%>?nocritical"
+				}
 			}
 		},
 		copy: {
@@ -69,19 +85,7 @@ module.exports = function(grunt) {
 					'<%= criticalcss.home.options.outputfile %>'
 				],
 				dest: '<%= criticalcss.home.options.outputfile %>'
-			},
-/*			critlanding: {
-				src: [
-					'<%= criticalcss.landing.options.outputfile %>'
-				],
-				dest: '<%= criticalcss.landing.options.outputfile %>'
-			},
-			critpost: {
-				src: [
-					'<%= criticalcss.post.options.outputfile %>'
-				],
-				dest: '<%= criticalcss.post.options.outputfile %>'
-			}*/
+			}
 		},
 		responsive_images: {
 			options: {
@@ -158,19 +162,18 @@ module.exports = function(grunt) {
 		'cssmin:css'
 	]);
 
-	// NOTE these watch tasks try to run only relevant tasks per file save
+	grunt.registerTask('crit', [
+		'criticalcss',
+		'cssmin'
+	]);
+
 	grunt.registerTask('watch-css', [
 		'concat:css',
 		'cssmin'
 	]);
 
-	grunt.registerTask('rebuild', [
-		'clean',
-		'default',
-		'imagemin'
-	]);
-
 	grunt.registerTask('watch-js', [
 		'uglify'
 	]);
+
 };
