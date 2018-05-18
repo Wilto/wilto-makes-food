@@ -8,13 +8,27 @@ AddOutputFilterByType DEFLATE text/html text/plain application/javascript text/c
 # Error pages:
 ErrorDocument 404 /404.html
 
+<If "%{HTTP_COOKIE} !=~ /primed/">
+	H2PushResource add /_assets/css/crit/home.css?{{metadata.build}}
+	Header set Set-Cookie "cache=primed"
+</If>
+
 # Far-future caching:
 <FilesMatch "\.(jpg|jpeg|png|gif|woff|woff2|js|css|webp)$">
 Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
 Options +Includes
-
 AddHandler server-parsed .html 
 
-Header set Set-Cookie "cache=primed"
+
+# Server push:
+<FilesMatch "\.html$">
+	<If "%{DOCUMENT_URI} == '/portfolio/index.html'">
+		H2PushResource add /css/dist/critical-portfolio.css?01042017
+	</If>
+
+	<If "%{DOCUMENT_URI} == '/code/index.html'">
+		H2PushResource add /css/dist/critical-code.css?01042017
+	</If>
+</FilesMatch>

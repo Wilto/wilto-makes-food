@@ -7,15 +7,16 @@ module.exports = function(grunt) {
 			stripBanners: true
 		},
 		css: {
-			src: ['<%= concat.css.dest %>'],
+			src: [
+				'<%= concat.css.dest %>'
+			],
 			dest: '<%= concat.css.dest %>'
 		},
 		crit: {
-			expand: true,
-			src: [ 
-				"_site/_assets/css/crit/*.css"
+			src: [
+				'<%= criticalcss.home.options.outputfile %>'
 			],
-			dest: "."
+			dest: '<%= criticalcss.home.options.outputfile %>'
 		}
 	});
 };
