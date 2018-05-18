@@ -14,9 +14,6 @@ Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
 # Server push:
-<If "test">
-	<FilesMatch "\.html$">
-	</FilesMatch>
-<Else>
+<If "test" == "test">
 	Header set Set-Cookie "cacheprimed=true; path=/;"
 </If>
