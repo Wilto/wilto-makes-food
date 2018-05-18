@@ -71,7 +71,7 @@ module.exports = function(grunt) {
 				],
 				dest: '<%= criticalcss.home.options.outputfile %>'
 			},
-			critlanding: {
+/*			critlanding: {
 				src: [
 					'<%= criticalcss.landing.options.outputfile %>'
 				],
@@ -82,7 +82,7 @@ module.exports = function(grunt) {
 					'<%= criticalcss.post.options.outputfile %>'
 				],
 				dest: '<%= criticalcss.post.options.outputfile %>'
-			}
+			}*/
 		},
 		responsive_images: {
 			options: {
@@ -123,7 +123,7 @@ module.exports = function(grunt) {
 				}]
 			}
 		},
-		cwebp: {
+/*		cwebp: {
 			dynamic: {
 				options: {
 					q: 60
@@ -135,36 +135,13 @@ module.exports = function(grunt) {
 					dest: '_site/img/webp'
 				}]
 			}
-		},
+		},*/
 		criticalcss: {
 			home: {
 				options: {
 					url: "https://wiltomakesfood.com",
-					width: 1200,
-					height: 650,
 					outputfile: "_site/_assets/css/crit/home.css",
-					file: "_site/_assets/css/all.css",
-					ignoreConsole: true
-				}
-			},
-			landing: {
-				options: {
-					url: "https://wiltomakesfood.com/recipes/",
-					width: 1200,
-					height: 650,
-					outputfile: "_site/_assets/css/crit/landing.css",
-					file: "_site/_assets/css/all.css",
-					ignoreConsole: true
-				}
-			},
-			post: {
-				options: {
-					url: "https://wiltomakesfood.com/recipes/curry-rice/",
-					width: 1200,
-					height: 650,
-					outputfile: "_site/_assets/css/crit/post.css",
-					file: "_site/_assets/css/all.css",
-					ignoreConsole: true
+					filename: "_site/_assets/css/all.css",
 				}
 			}
 		}

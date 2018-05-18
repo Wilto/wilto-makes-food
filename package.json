@@ -21,11 +21,11 @@
   },
   "homepage": "https://wiltomakesfood.com",
   "dependencies": {
-    "@11ty/eleventy-plugin-rss": "^1.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.0.2",
     "luxon": "^0.3.1"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.3.1",
+    "@11ty/eleventy": "^0.3.4",
     "grunt": "^1.0.2",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-concat": "^1.0.1",
@@ -33,7 +33,7 @@
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-uglify-es": "^3.3.0",
-    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-criticalcss": "^2.1.0",
     "grunt-cwebp": "^2.1.1",
     "grunt-responsive-images": "^1.10.1",
