@@ -9,6 +9,7 @@ AddOutputFilterByType DEFLATE text/html text/plain application/javascript text/c
 ErrorDocument 404 /404.html
 
 # Server push:
+<If "%{HTTP_COOKIE} !~ /primed/">
 	<If "%{DOCUMENT_URI} == '/'">
 		H2PushResource add /_assets/css/crit/home.css?{{metadata.build}}
 	</If>
@@ -34,6 +35,7 @@ ErrorDocument 404 /404.html
 	</If>
 
 	Header set Set-Cookie "cache=primed"
+</If>
 
 # Far-future caching:
 <FilesMatch "\.(jpg|jpeg|png|gif|woff|woff2|js|css|webp)$">
