@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "It’s a food blog.",
   "scripts": {
-    "build": "grunt && eleventy",
+    "build": "grunt && eleventy && grunt crit",
     "watch": "grunt && grunt watch && eleventy --watch"
   },
   "repository": {

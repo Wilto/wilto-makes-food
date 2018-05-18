@@ -11,6 +11,12 @@ module.exports = function(grunt) {
 				'<%= concat.css.dest %>'
 			],
 			dest: '<%= concat.css.dest %>'
+		},
+		crit: {
+			src: [
+				'_site/_assets/css/crit/crit-home.css'
+			],
+			dest: '_site/_assets/css/crit/crit-home.css'
 		}
 	});
 };
