@@ -33,8 +33,6 @@ ErrorDocument 404 /404.html
 	<If "%{DOCUMENT_URI} == '/reviews/*/index.html'">
 		H2PushResource add /_assets/css/crit/post.css?{{metadata.build}}
 	</If>
-
-	Header set Set-Cookie "cache=primed"
 </If>
 
 # Far-future caching:
