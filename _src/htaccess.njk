@@ -2,13 +2,24 @@
 permalink: .htaccess
 ---
 
+# gzip:
 AddOutputFilterByType DEFLATE text/html text/plain application/javascript text/css
 
+# Error pages:
+ErrorDocument 404 /404.html
+
+# Far-future caching:
 <FilesMatch "\.(jpg|jpeg|png|gif|woff|woff2|js|css|webp)$">
 Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
+# Server push:
 <FilesMatch "\.html$">
-Header add Link "</_assets/css/all.css?{{ metadata.build }}>; rel=preload; as=style"
-Header add Link "</_assets/js/lazyimg.min.js?{{ metadata.build }}>; rel=preload; as=script"
+	<If "%{HTTP_COOKIE} !cacheprimed=true [NC]">
+		Header add Link "</_assets/css/crit/home.css?{{ metadata.build }}>; rel=preload; as=style"
+		Header add Link "</_assets/css/crit/landing.css?{{ metadata.build }}>; rel=preload; as=style"
+		Header add Link "</_assets/css/crit/post.css?{{ metadata.build }}>; rel=preload; as=style"
+	<Else>
+		Header set Set-Cookie "cacheprimed=true; path=/;"
+	</If>
 </FilesMatch>

@@ -64,11 +64,29 @@ module.exports = function(grunt) {
 					'<%= concat.css.dest %>'
 				],
 				dest: '<%= concat.css.dest %>'
+			},
+			crithome: {
+				src: [
+					'<%= criticalcss.home.options.outputfile %>'
+				],
+				dest: '<%= criticalcss.home.options.outputfile %>'
+			},
+			critlanding: {
+				src: [
+					'<%= criticalcss.landing.options.outputfile %>'
+				],
+				dest: '<%= criticalcss.landing.options.outputfile %>'
+			},
+			critpost: {
+				src: [
+					'<%= criticalcss.post.options.outputfile %>'
+				],
+				dest: '<%= criticalcss.post.options.outputfile %>'
 			}
 		},
 		responsive_images: {
 			options: {
-				newFilesOnly: false,
+				newFilesOnly: true,
 				quality: 70,
 				sizes: [{
 					name: '1',
@@ -117,6 +135,38 @@ module.exports = function(grunt) {
 					dest: '_site/img/webp'
 				}]
 			}
+		},
+		criticalcss: {
+			home: {
+				options: {
+					url: "https://wiltomakesfood.com",
+					width: 1200,
+					height: 650,
+					outputfile: "_site/_assets/css/crit/home.css",
+					filename: "_site/_assets/css/all.css",
+					ignoreConsole: true
+				}
+			},
+			landing: {
+				options: {
+					url: "https://wiltomakesfood.com/recipes/",
+					width: 1200,
+					height: 650,
+					outputfile: "_site/_assets/css/crit/landing.css",
+					filename: "_site/_assets/css/all.css",
+					ignoreConsole: true
+				}
+			},
+			post: {
+				options: {
+					url: "https://wiltomakesfood.com/recipes/curry-rice/",
+					width: 1200,
+					height: 650,
+					outputfile: "_site/_assets/css/crit/post.css",
+					filename: "_site/_assets/css/all.css",
+					ignoreConsole: true
+				}
+			}
 		}
 	});
 
@@ -158,6 +208,11 @@ module.exports = function(grunt) {
 	// NOTE these watch tasks try to run only relevant tasks per file save
 	grunt.registerTask('watch-css', [
 		'concat:css',
+		'cssmin'
+	]);
+
+	grunt.registerTask('crit', [
+		'criticalcss',
 		'cssmin'
 	]);
 
