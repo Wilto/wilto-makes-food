@@ -16,9 +16,6 @@ Header set Cache-Control "max-age=31536000, public"
 # Server push:
 <FilesMatch "\.html$">
 	<If "%{HTTP_COOKIE} !cacheprimed=true [NC]">
-		Header add Link "</_assets/css/crit/home.css?{{ metadata.build }}>; rel=preload; as=style"
-		Header add Link "</_assets/css/crit/landing.css?{{ metadata.build }}>; rel=preload; as=style"
-		Header add Link "</_assets/css/crit/post.css?{{ metadata.build }}>; rel=preload; as=style"
 	<Else>
 		Header set Set-Cookie "cacheprimed=true; path=/;"
 	</If>
