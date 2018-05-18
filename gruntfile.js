@@ -1,7 +1,7 @@
 /*global module:false,require:false*/
 module.exports = function(grunt) {
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-
+	var path = require('path').dirname(require.main.filename);
 	// Project configuration.
 	grunt.initConfig({
 		pkg: '<json:package.json>',
@@ -140,7 +140,7 @@ module.exports = function(grunt) {
 			home: {
 				options: {
 					url: "https://wiltomakesfood.com",
-					filename: "_site/_assets/css/all.css".toString(),
+					filename: "_src/_assets/css/index.css",
 					outputfile: "html/_assets/css/crit/home.css"
 				}
 			}
