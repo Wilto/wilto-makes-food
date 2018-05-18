@@ -14,9 +14,9 @@ module.exports = function(grunt) {
 		},
 		crit: {
 			src: [
-				'_site/_assets/css/crit/crit-home.css'
+				'<%= criticalcss.home.options.outputfile %>'
 			],
-			dest: '_site/_assets/css/crit/crit-home.css'
+			dest: '<%= criticalcss.home.options.outputfile %>'
 		}
 	});
 };

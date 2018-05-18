@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('crit', [
 		'criticalcss',
-		'cssmin'
+		'cssmin:crit'
 	]);
 
 	grunt.registerTask('watch-css', [
