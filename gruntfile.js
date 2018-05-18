@@ -121,28 +121,6 @@ module.exports = function(grunt) {
 					dest: '_site/img'
 				}]
 			}
-		},
-/*		cwebp: {
-			dynamic: {
-				options: {
-					q: 60
-				},
-				files: [{
-					expand: true,
-					cwd: '_site/img', 
-					src: ['*.jpg'],
-					dest: '_site/img/webp'
-				}]
-			}
-		},*/
-		criticalcss: {
-			home: {
-				options: {
-					url: "filamentgroup.com",
-					filename: "_site/_assets/css/all.css",
-					outputfile: "html/_assets/css/crit/home.css"
-				}
-			}
 		}
 	});
 
@@ -183,11 +161,6 @@ module.exports = function(grunt) {
 	// NOTE these watch tasks try to run only relevant tasks per file save
 	grunt.registerTask('watch-css', [
 		'concat:css',
-		'cssmin'
-	]);
-
-	grunt.registerTask('crit', [
-		'criticalcss',
 		'cssmin'
 	]);
 
