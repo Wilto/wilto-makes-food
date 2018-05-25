@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+type: utility
+---
+
+<div class="col">
+	<div class="intro">
+		<header role="banner" class="recipeheader error">
+			<h2 class="recipe-hed" itemprop="name">{{ title }}</h2>
+		</header>
+
+		{% if lede %}
+		<p class="lede" itemprop="description">{{ lede | safe }}</p>
+		{% endif %}
+
+		{{ layoutContent | safe }}
+
+	</div>
+</div>

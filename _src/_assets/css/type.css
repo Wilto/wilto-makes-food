@@ -137,6 +137,41 @@ abbr {
 	outline: none;
 }
 
+.recipeheader.error {
+	font-size: 1.2em;
+	margin: 2.5em 0 0 -.65em;
+	padding: .85em 0 .25em .75em;
+	position: relative;
+	overflow: visible;
+	width: auto;
+	display: inline-block;
+}
+
+.recipeheader.error:before {
+	content: "";
+	left: 0;
+	top: 50%;
+	margin-top: -.5vw;
+	position: absolute;
+	right: 100%;
+	height: 1em;
+	background: rgba(255,150,0, .1);
+	transform: rotate(-2deg);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+	-moz-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+	clip-path: polygon(2.5% 0, 100% 0, 97.5% 100%, 0 100%);
+
+	-webkit-animation: highlight;
+	animation: highlight .5s 1s forwards;
+}
+@keyframes highlight {
+	0% { right: 100%; }
+	100% { right: 0; }
+}
+.recipeheader.error+.lede {
+	margin-top: .5em;
+	font-size: 1.6em;
+}
 .recipeheader .art-section {
 	padding-top: .25em;
 	margin-bottom: 1.5em;

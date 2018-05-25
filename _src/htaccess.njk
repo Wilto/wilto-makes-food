@@ -6,7 +6,8 @@ permalink: .htaccess
 AddOutputFilterByType DEFLATE text/html text/plain application/javascript text/css
 
 # Error pages:
-ErrorDocument 404 /404.html
+ErrorDocument 404 /404/
+ErrorDocument 500 /500/
 
 # Server push:
 <If "%{HTTP_COOKIE} !~ /primed/">
