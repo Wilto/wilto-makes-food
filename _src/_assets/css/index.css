@@ -16,7 +16,6 @@ main {
 		padding: 0 2.5%;
 	}
 }
-
 .site-hed {
 	margin: 1em auto .5em auto;
 	max-width: 4.5em;
@@ -581,7 +580,6 @@ a.cta-prod {
 }
 
 @media( min-width: 70em ) {
-
 	.listing {
 		float: none;
 		margin-left: 0;
@@ -590,6 +588,7 @@ a.cta-prod {
 
 main {
 	position: relative;
+	left: 0;
 }
 a.recipe-jump {
 	-webkit-transition: width 1s ease-in-out;
@@ -599,20 +598,20 @@ a.recipe-jump {
 }
 a.recipe-jump {
 	font-family: "Open Sans", sans-serif;
-	font-size: .8em;
-	background: rgba(255,150,0, .25);
-	padding: .55em 0 .5em 3em;
+	font-size: .75em;
+	padding: .25em 0 0 2em;
 	text-indent: 3px; /* Add a tiny buffer between the viewport edge and the text. */
 	position: absolute;
-	right: 0;
+	right: 5%;
 	text-decoration: none;
-	top: 2.5em;
-	border-radius: 1em 0 0 1em;
+	border: 1px solid red;
+	top: 0;
+	border-radius: .35em .35em 0 0;
 }
 a.recipe-jump span {
 	overflow: hidden;
 	display: inline-block;
-	padding-right: 1.5em;
+	padding-right: 1em;
 	white-space: nowrap;
 }
 
@@ -620,8 +619,8 @@ a.recipe-jump span {
 	position: absolute;
 	left: .75em;
 	top: 50%;
-	margin-top: -1em;
-	width: 1.8em;
+	margin-top: 0em;
+	width: 1em;
 }
 
 a.prod {
@@ -772,6 +771,12 @@ a.prod img {
 }
 .features .item .feat-header:hover .feat-tag {
 	transform: translateY(1.5px);
+}
+
+@media( min-width: 800px ) {
+	.subfeat > .item .feat-header {
+		top: 15%;
+	}
 }
 
 

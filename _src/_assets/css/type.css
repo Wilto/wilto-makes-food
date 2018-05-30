@@ -672,7 +672,8 @@ p.lede {
 .feat.item img {
 	position: absolute;
 	top: 0;
-	width: 100%;
+	min-width: 100%;
+	max-width: 150%;
 	min-height: 100%;
 }
 .item > a {
