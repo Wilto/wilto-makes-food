@@ -1,0 +1,57 @@
+{
+	"title" : "Liège Waffles",
+	"meta" : {
+		"total": "1.5 hours",
+		"active" : "30 minutes"
+	},
+	"ingredients" : [
+		{
+			"name" : "Unsalted butter",
+			"amt" : {
+				"whole" : "10",
+				"measure" : {
+					"abbr" : "Tbsp",
+					"full" : "Tablespoons"
+				}
+			},
+			"notes": "one and a quarter sticks"
+		},
+		{
+			"name" : "All-purpose flour",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "Tbsp",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "Milk",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			},
+			"notes" : "any fat content will work"
+		},
+		{
+			"name" : "Freshly grated nutmeg",
+			"amt" : {
+				"whole" : "A pinch"
+			}
+		},
+		{
+			"name" : "Salt and freshly ground white pepper",
+			"notes" : "to taste (black pepper is fine too)"
+		}
+	],
+	"instructions": [
+		"Bring the milk up to almost simmering—“the barest suggestion of a simmer,” as Julia Child put it. You want about 190 F on an instant-read—you can eyeball it by looking for a ring of tiny bubbles forming around the inside of the pot. This part isn’t as fussy as it sounds, though, in my experience. Just get the milk uncomfortably hot to the touch; a microwave works fine, just be sure to stop and stir it occasionally.",
+		"Meanwhile, melt the butter in a 3 quart saucepan over medium heat. Once fully liquified, add the flour, whisking constantly. Once the foaming subsides, add about a half cup of the hot milk in a thin stream, whisking vigorously.",
+		"After a few moments, it should form something best described as “mashed-potato-esque.” Add the rest of the milk in increments, whisking vigorously.",
+		"Add grated nutmeg, salt, and pepper to taste. Reduce heat to low, and keep warm until needed."
+	]
+}

@@ -581,13 +581,48 @@ a.cta-prod {
 }
 
 @media( min-width: 70em ) {
+
 	.listing {
 		float: none;
 		margin-left: 0;
 	}
 }
 
+main {
+	position: relative;
+}
+a.recipe-jump {
+	-webkit-transition: width 1s ease-in-out;
+	-moz-transition: width 1s ease-in-out;
+	transition: width 1s ease-in-out;
+	white-space: nowrap;
+}
+a.recipe-jump {
+	font-family: "Open Sans", sans-serif;
+	font-size: .8em;
+	background: rgba(255,150,0, .25);
+	padding: .55em 0 .5em 3em;
+	text-indent: 3px; /* Add a tiny buffer between the viewport edge and the text. */
+	position: absolute;
+	right: 0;
+	text-decoration: none;
+	top: 2.5em;
+	border-radius: 1em 0 0 1em;
+}
+a.recipe-jump span {
+	overflow: hidden;
+	display: inline-block;
+	padding-right: 1.5em;
+	white-space: nowrap;
+}
 
+.recipe-jump img {
+	position: absolute;
+	left: .75em;
+	top: 50%;
+	margin-top: -1em;
+	width: 1.8em;
+}
 
 a.prod {
 	position: relative;

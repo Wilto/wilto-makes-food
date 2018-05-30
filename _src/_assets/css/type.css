@@ -245,6 +245,10 @@ abbr {
 	margin-top: -.35em;
 }
 
+.intro+.article-hed {
+	clear: both;
+}
+
 p.lede {
 	color: #444;
 	margin: 0;

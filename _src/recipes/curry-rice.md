@@ -2,7 +2,7 @@
 title: Curry Rice
 tags:
   - yoshoku
-feat: true
+subfeat: true
 type: recipe
 lede: For years now, I’ve been on a quest for the ultimate from-scratch curry rice recipe. No store-bought roux blocks; homemade stock, hand-toasted and ground spice blends. This is where I’ve landed thus far.
 img: curry-rice-lg

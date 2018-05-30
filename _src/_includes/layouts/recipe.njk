@@ -27,7 +27,6 @@ templateClass: tmpl-post
 			{% endfor %}
 			<h2 class="recipe-hed" itemprop="name">{{ title }}</h2>
 
-
 			<dl class="meta">
 				{% if meta.serves %}
 				<dt>Serves</dt>
@@ -42,6 +41,8 @@ templateClass: tmpl-post
 				<dd itemprop="totalTime">{{meta.total}}</dd>
 				{% endif %}
 			</dl>
+			<a href="#recipe-jump" class="recipe-jump"><img src="/_assets/img/skip.svg" alt="Skip to the Recipe"><span>Just take me to the recipe</span></a>
+
 		</header>
 
 		{% if img %}
@@ -78,8 +79,12 @@ templateClass: tmpl-post
 
 	</div>
 
+	<h3 class="article-hed" id="recipe-jump">{{ title }}</h3>
 {% if ingredients %}
-	<h3 class="inline-hed" id="recipe-sub0">Ingredients</h3>
+	<p>{{ notes }}
+{% endif %}
+{% if ingredients %}
+	<h4 class="inline-hed" id="recipe-sub0">Ingredients</h4>
 	<ul class="ingredients" aria-labelledby="recipe-sub0">
 		{%- for ing in ingredients -%}
 		<li itemprop="ingredients">
@@ -92,7 +97,7 @@ templateClass: tmpl-post
 {% endif %}
 {% if instructions %}
 		<div class="instructions">
-			<h3 class="inline-hed">Instructions</h3>
+			<h4 class="inline-hed">Instructions</h4>
 
 		{% if instructions[0].stage %}
 			{%- for ins in instructions -%}
