@@ -33,7 +33,11 @@
 		<meta name="twitter:site" content="{{ metadata.title }}">
 		<meta name="twitter:title" content="{{ title }}">
 		{% if lede %}<meta name="twitter:description" content="{{ lede or subhed }}">{% endif %}
-		{% if img %}<meta name="twitter:image" content="https://wiltomakesfood.com/img/{{img}}-4.jpg">{% endif %}
+{% if img %}
+		<meta name="twitter:image" content="https://wiltomakesfood.com/img/{{img}}-4.jpg">
+{% else %}
+		<meta name="twitter:image" content="https://wiltomakesfood.com/_assets/img/wmf.png">
+{% endif %}
 
 		<!-- Preload: -->
 		<link rel="preload" href="/_assets/css/fonts/fanwood_text-webfont.woff" as="font" type="font/woff" crossorigin>

@@ -13,7 +13,7 @@ A long, long time ago I worked a retail job with a man named Mike “Gunface” 
 
 Mike did a lot of stomping and roaring. Generally, I mean. It wasn’t always in _response_ to anything, even; just the way he moved through the world. He was a friendly, positive, _boundlessly_ enthusiastic dude.
 
-More often than not, the arrival of his lunch would be heralded by a booming, guttural, _extremely_ metal ”_RRRGH I LOVE FOOD_.” You could hear it throughout the entire lousy store, followed by a series of similarly audible war-stomps toward the breakroom. This wasn’t, like, with regards to any specific food. Mike was just pumped as hell that some food was around, and he could eat it. If the food was _itself_ very good, oh man, what a time to be alive. But the baseline experience was: 
+More often than not, the arrival of his lunch would be heralded by a booming, guttural, _extremely_ metal “_RRRGH I LOVE FOOD_.” You could hear it throughout the entire lousy store, followed by a series of similarly audible war-stomps toward the breakroom. This wasn’t, like, with regards to any specific food. Mike was just pumped as hell that some food was around, and he could eat it. If the food was _itself_ very good, oh man, what a time to be alive. But the baseline experience was: 
 
 1. THERE IS FOOD
 2. I CAN EAT IT
