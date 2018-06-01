@@ -41,14 +41,16 @@
 {% endif %}
 {% if img %}
 		<meta name="twitter:image" content="https://wiltomakesfood.com/img/{{img}}-5.jpg">
+		<meta property="og:image" content="https://wiltomakesfood.com/img/{{img}}-5.jpg">
 {% if alt %}
 		<meta name="twitter:image:alt" content="{{alt}}">
+		<meta property="og:image:alt" content="{{alt}}">
 {% endif %}
-		<meta property="og:image" content="https://wiltomakesfood.com/img/{{img}}-5.jpg">
 {% else %}
 		<meta name="twitter:image" content="https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg">
 		<meta name="twitter:image:alt" content="">
 		<meta property="og:image" content="https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg">
+		<meta property="og:image:alt" content="">
 {% endif %}
 
 		<!-- Preload: -->
