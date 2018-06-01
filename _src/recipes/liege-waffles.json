@@ -1,57 +1,132 @@
 {
-	"title" : "Liège Waffles",
+	"name" : "Liège Waffles",
+	"notes" : "Don’t skip the pearl sugar—it’ll make or break this one, trust me. You can sub out the buttermilk for whole milk, but <a href=\"/articles/acid-browning\">you might need to lower the heat on your waffle maker</a>.",
 	"meta" : {
 		"total": "1.5 hours",
 		"active" : "30 minutes"
 	},
 	"ingredients" : [
 		{
-			"name" : "Unsalted butter",
+			"name" : "Pastry Flour",
+			"amt" : {
+				"whole" : "500",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			},
+			"notes": "though all-purpose flour will work"
+		},
+		{
+			"name" : "Wheat Flour",
+			"amt" : {
+				"whole" : "50",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Granulated Sugar",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "Light Brown Sugar",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "Kosher Salt",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Instant (Rapid-Rise) Yeast",
+			"amt" : {
+				"whole" : "2",
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Honey",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "Buttermilk",
+			"amt" : {
+				"frac" : "3/4",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cup"
+				}
+			},
+			"notes" : "at room temperature; milk will work too (see recipe notes)"
+		},
+		{
+			"name" : "Unsalted Butter",
 			"amt" : {
 				"whole" : "10",
 				"measure" : {
-					"abbr" : "Tbsp",
+					"abbr" : "Tbsp.",
 					"full" : "Tablespoons"
-				}
-			},
-			"notes": "one and a quarter sticks"
-		},
-		{
-			"name" : "All-purpose flour",
-			"amt" : {
-				"whole" : "2",
-				"measure" : {
-					"abbr" : "Tbsp",
-					"full" : "Tablespoons"
-				}
+				},
+				"notes" : "slightly below room temperature"
 			}
 		},
 		{
-			"name" : "Milk",
+			"name" : "Large Eggs",
 			"amt" : {
 				"whole" : "2",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			},
+			"notes" : "straight from the fridge"
+		},
+		{
+			"name" : "Pearl Sugar",
+			"href" : "https://www.amazon.com/dp/B0043NQTIC/?tag=wiltomf-20",
+			"amt" : {
+				"frac" : "1/2",
 				"measure" : {
 					"abbr" : "C.",
-					"full" : "Cups"
+					"full" : "Cup"
 				}
-			},
-			"notes" : "any fat content will work"
-		},
-		{
-			"name" : "Freshly grated nutmeg",
-			"amt" : {
-				"whole" : "A pinch"
 			}
-		},
-		{
-			"name" : "Salt and freshly ground white pepper",
-			"notes" : "to taste (black pepper is fine too)"
 		}
 	],
 	"instructions": [
-		"Bring the milk up to almost simmering—“the barest suggestion of a simmer,” as Julia Child put it. You want about 190 F on an instant-read—you can eyeball it by looking for a ring of tiny bubbles forming around the inside of the pot. This part isn’t as fussy as it sounds, though, in my experience. Just get the milk uncomfortably hot to the touch; a microwave works fine, just be sure to stop and stir it occasionally.",
-		"Meanwhile, melt the butter in a 3 quart saucepan over medium heat. Once fully liquified, add the flour, whisking constantly. Once the foaming subsides, add about a half cup of the hot milk in a thin stream, whisking vigorously.",
-		"After a few moments, it should form something best described as “mashed-potato-esque.” Add the rest of the milk in increments, whisking vigorously.",
-		"Add grated nutmeg, salt, and pepper to taste. Reduce heat to low, and keep warm until needed."
+		"In a large mixing bowl, or bowl of a stand mixer, stir together the flours, sugars, salt, and yeast. Add buttermilk, honey, and eggs, mixing until as close to fully incorporated.",
+		"With the mixer running on low speed (or hand-mixing continually), add butter a tablespoon at a time; this step isn’t particularly fussy. Once no dry ingredients remain and the dough has come together into a shaggy ball, add pearl sugar and thoroughly fold it into the dough by hand.",
+		"Form dough into a rough ball and set it in a clean, lightly greased bowl. Cover and allow it to rise for about an hour.",
+		"After the hour has elapsed, preheat your waffle maker to low-medium heat. Remove dough to a lightly greased surface and roll it out to a thickness of half an inch or so, then cut it into rough chunks with a bench scraper. The size and shape of these are gonna depend on your waffle maker—just make sure you leave enough room for them to expand. Allow the dough to rest for twenty minutes before pressing it into a well-greased waffle iron."
 	]
 }

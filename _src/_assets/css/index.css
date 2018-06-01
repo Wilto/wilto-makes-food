@@ -586,41 +586,71 @@ a.cta-prod {
 	}
 }
 
-main {
+.recipeheader {
 	position: relative;
-	left: 0;
-}
-a.recipe-jump {
-	-webkit-transition: width 1s ease-in-out;
-	-moz-transition: width 1s ease-in-out;
-	transition: width 1s ease-in-out;
-	white-space: nowrap;
-}
-a.recipe-jump {
-	font-family: "Open Sans", sans-serif;
-	font-size: .75em;
-	padding: .25em 0 0 2em;
-	text-indent: 3px; /* Add a tiny buffer between the viewport edge and the text. */
-	position: absolute;
-	right: 5%;
-	text-decoration: none;
-	border: 1px solid red;
-	top: 0;
-	border-radius: .35em .35em 0 0;
-}
-a.recipe-jump span {
-	overflow: hidden;
-	display: inline-block;
-	padding-right: 1em;
-	white-space: nowrap;
+	margin-bottom: 2em;
 }
 
-.recipe-jump img {
+.recipeheader:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+a.recipe-jump {
+	background: #f5ca95;
+	border-right: .25em solid rgba(255,150,0, 1);
+	font-family: "Open Sans", sans-serif;
+	display: block;
+	height: 1.35em;
 	position: absolute;
-	left: .75em;
-	top: 50%;
-	margin-top: 0em;
-	width: 1em;
+	right: -.25em;
+	text-decoration: none;
+	bottom: -1.35em;
+	border-radius: 0 0 .25em .25em;
+}
+
+@media( min-width: 560px ) {
+	a.recipe-jump {
+		bottom: -.65em;
+		right: 0;
+	}
+}
+
+.intro a.recipe-jump:focus,
+.intro a.recipe-jump:active {
+	background: #f5ca95;
+}
+
+.recipe-jump svg {
+	margin-top: -.25em;
+	width: 1.35em;
+	height: 1.35em;
+	margin: 0 .175em .25em .5em;
+	display: block;
+	will-change: transform;
+	transform: translateY(-1px);
+}
+@-webkit-keyframes bounce {
+	0% { transform: translateY(-1px); }
+	20% { transform: translateY(1px); }
+	100% { transform: translateY(-1px); }
+}
+@keyframes bounce {
+	0% { transform: translateY(-1px); }
+	20% { transform: translateY(1px); }
+	100% { transform: translateY(-1px); }
+}
+a.recipe-jump:focus svg,
+a.recipe-jump:hover svg {
+	-webkit-animation: bounce 1.25s infinite ease-in-out;
+	animation: bounce 1.25s infinite ease-in-out;
+}
+a.recipe-jump svg path {
+	opacity: .75;
+	transition: opacity .1s linear;
+}
+a.recipe-jump:hover svg path {
+	opacity: 1;
 }
 
 a.prod {
@@ -855,7 +885,7 @@ a.prod img {
 
 .intro ol,
 .intro ul {
-	margin: .5em 0;
+	margin: .5em 7.5% .5em 0;
 	padding-left: 2.25em;
 	list-style: none;
 }
@@ -904,6 +934,30 @@ a.prod img {
 .intro .video {
 	margin: 2.5em 0;
 }
+
+.intro > img,
+.intro > p img {
+	display: block;
+	margin: 1.5em auto;
+}
+
+@media( min-width: 35em ) {
+	.intro > img,
+	.intro > p img {
+		width: 40%;
+		margin: .25em 1.25em 1em 0;
+		display: inline;
+		float: left;
+	}
+}
+
+@media( min-width: 45em ) {
+	.intro > img,
+	.intro > p img {
+		max-width: 17.5em;
+	}
+}
+
 
 @media( max-width: 34.9375em ) {
 	.intro {
@@ -1006,6 +1060,7 @@ a.prod img {
 		margin: 0;
 		margin-top: .3em;
 		display: block;
+		transform: translatey(0px);
 		clip-path: polygon(2.5% 0%, 97.5% 0%, 100% 2.5%, 100% 97.5%, 97.5% 100%, 2.5% 100%, 0% 97.5%, 0% 2.5%);
 	}
 	.caption {
@@ -1041,7 +1096,7 @@ a.prod img {
 	clear: both;
 	width: 100%;
 	float: left;
-	margin: .25em 0 2em 0;
+	margin: 0;
 }
 .meta:after {
 	background: rgba(255,150,0, .45);
@@ -1201,6 +1256,7 @@ a.prod img {
 
 .instructions {
 	counter-reset: inst;
+	padding-bottom: 3.5em;
 }
 
 .steps {

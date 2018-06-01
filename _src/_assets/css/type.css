@@ -340,7 +340,7 @@ p.lede {
 	clear: both;
 	display: block;
 	letter-spacing: .1em;
-	margin: 2.5em 0 3em -.25em;
+	margin: 3.5em 0 3em -.25em;
 	padding-left: .25em;
 	text-transform: uppercase;
 	font-size: .75em;
@@ -786,4 +786,29 @@ p.lede {
 }
 .results .subhed {
 	font-size: .95em;
+}
+
+.jump-hed:before {
+	content: "";
+	display: block;
+	width: 25%;
+	position: relative;
+	top: -.75em;
+	max-width: 3em;
+	background: rgba(255,150,0, .65);
+	height: 3px;
+	margin: -2em auto 0 auto;
+	border-radius: .25em;
+}
+.jump-hed {
+	padding-top: 2.75em;
+	padding-bottom: .15em;
+	font-size: 2em;
+}
+
+.jump-hed span {
+	color: rgba(0,0,0,.5);
+	font-size: .6em;
+	padding-bottom: .15em;
+	display: block;
 }

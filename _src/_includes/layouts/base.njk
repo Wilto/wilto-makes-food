@@ -173,7 +173,7 @@
 
 		<script>
 			if('serviceWorker' in navigator) {
-				//navigator.serviceWorker.register('/service-worker.js?{{ metadata.build }}');
+				navigator.serviceWorker.register('/service-worker.js?{{ metadata.build }}');
 			}
 			(function() {
 				document.cookie = 'cache=primed; expires=0; path=/';

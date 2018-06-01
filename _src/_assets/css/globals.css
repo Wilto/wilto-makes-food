@@ -41,8 +41,8 @@ a {
 	transition: color .15s linear,  text-decoration-color .15s linear;
 }
 a:hover {
-	color: #ea4142;
-	text-decoration-color: rgba(250,100,0,.75);
+	color: rgba(250,115,0,1);
+	text-decoration-color: rgba(0,0,0,.2);
 }
 a:active {
 	position: relative;
