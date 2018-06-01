@@ -32,8 +32,8 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="{{ metadata.title }}">
 		<meta property="og:site_name" content="{{ metadata.title }}">
-		<meta name="twitter:title" content="{{ title or metadata.description }}">
-		<meta property="og:title" content="{{ title or metadata.description }}">
+		<meta name="twitter:title" content="{{ title or metadata.title }}">
+		<meta property="og:title" content="{{ title or metadata.title }}">
 		<meta property="og:url" content="https://wiltomakesfood.com{{page.url}}">
 {% if lede %}
 		<meta name="twitter:description" content="{{ lede or subhed }}">
