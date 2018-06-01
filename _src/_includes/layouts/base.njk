@@ -31,12 +31,24 @@
 		<!-- Twitter Card Stuff: -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="{{ metadata.title }}">
+		<meta property="og:site_name" content="{{ metadata.title }}">
 		<meta name="twitter:title" content="{{ title }}">
-		{% if lede %}<meta name="twitter:description" content="{{ lede or subhed }}">{% endif %}
+		<meta property="og:title" content="{{ title }}">
+		<meta property="og:url" content="https://wiltomakesfood.com{{page.url}}">
+{% if lede %}
+		<meta name="twitter:description" content="{{ lede or subhed }}">
+		<meta property="og:description" content="{{ lede or subhed }}">
+{% endif %}
 {% if img %}
-		<meta name="twitter:image" content="https://wiltomakesfood.com/img/{{img}}-4.jpg">
+		<meta name="twitter:image" content="https://wiltomakesfood.com/img/{{img}}-5.jpg">
+{% if alt %}
+		<meta name="twitter:image:alt" content="{{alt}}">
+{% else %}
+		<meta property="og:image" content="https://wiltomakesfood.com/img/{{img}}-5.jpg">
 {% else %}
 		<meta name="twitter:image" content="https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg">
+		<meta name="twitter:image:alt" content="">
+		<meta property="og:image" content="https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg">
 {% endif %}
 
 		<!-- Preload: -->
