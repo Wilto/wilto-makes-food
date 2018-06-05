@@ -11,25 +11,25 @@ permalink: posts.json
 {% if post.data.type %}
 {{ comma() }}{
 		{% if post.data.keywords %}
-		"keywords" : "{{ post.data.keywords | safe }}",
+		"keywords" : "{{ post.data.keywords | e }}",
 		{% endif %}
-		"url" : "{{ post.data.page.url | safe }}",
+		"url" : "{{ post.data.page.url | e }}",
 		{% if post.data.subhed %}
-		"subhed" : "{{ post.data.subhed | safe }}",
+		"subhed" : "{{ post.data.subhed | e }}",
 		{% endif %}
 		{% if post.data.lede %}
-		"lede" : "{{ post.data.lede | safe }}",
+		"lede" : "{{ post.data.lede | e }}",
 		{% endif %}
-		"type" : "{{ post.data.type | safe }}",
-		"tags" : "{{ post.data.tags | safe }}",
-		"title" : "{{ post.data.title | safe }}"
+		"type" : "{{ post.data.type | e }}",
+		"tags" : "{{ post.data.tags | e }}",
+		"title" : "{{ post.data.title | e }}"
 		{% if post.data.img %}
 		,"img" : {
-			"file" : "{{ post.data.img | safe }}",
+			"file" : "{{ post.data.img | e }}",
 			{% if post.data.capt %}
-			"capt" : "{{ post.data.capt | safe }}",
+			"capt" : "{{ post.data.capt | e }}",
 			{% endif %}
-			"alt" : "{{ post.data.alt | safe }}"
+			"alt" : "{{ post.data.alt | e }}"
 		}
 		{% endif %}
 		{% if post.data.ingredients.length %}
