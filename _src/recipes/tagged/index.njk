@@ -12,8 +12,6 @@ if( $needle != null ) {
 	$json = json_decode( $file, true );
 	$matches;
 
-	print_r( json_decode( $file ) );
-
 	foreach( $json['posts'] as $key => $hay ) {
 		if( iconv("ISO-8859-1", "UTF-8", stripos( strtolower( $hay['tags'] ), $needle ) ) !== "" ) {
 			$matches[] = $hay;
