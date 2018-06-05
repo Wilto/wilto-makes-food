@@ -1,5 +1,5 @@
 (function() {
-	document.addEventListener( "DOMContentLoaded", function() {
+	function loadAsync() {
 		var lazyimgs = document.querySelectorAll( '[data-lazy]' ),
 			attrswap = function( img ) {
 				img.src = img.getAttribute( 'data-src' );
@@ -17,8 +17,7 @@
 					if( el.isIntersecting ) {
 						let img = el.target;
 
-							attrswap( img );
-						
+						attrswap( img );
 						imgObs.unobserve( img );
 					}
 				});
@@ -33,5 +32,8 @@
 				attrswap( lazyimgs[ i ] );
 			}
 		}
-	});
+	};
+
+	document.addEventListener( "DOMContentLoaded", loadAsync );
+	document.addEventListener( "loadAsyncImages", loadAsync );
 }());

@@ -1,25 +1,29 @@
 ---
 layout: layouts/base.njk
-templateClass: tmpl-home
+templateClass: tmpl-post
+type: utility
 ---
 
-{% if title %}
-<header role="alert" class="recipeheader" aria-labelledby="notif-hed">
-	<h2 class="recipe-hed" id="notif-hed">{{ title | safe }}</h2>
-	<span class="meta"></span>
-</header>
-{% endif %}
+<div class="col">
+	<div class="intro">
+		<header role="banner" class="recipeheader error">
+			<h2 class="recipe-hed" itemprop="name">{{ title }}</h2>
+		</header>
 
-{{ layoutContent | safe }}
+		{% if lede %}
+		<p class="lede" itemprop="description">{{ lede | safe }}</p>
+		{% endif %}
 
-<div class="offline-reader">
+		{{ layoutContent | safe }}
+
+		<div class="offline-reader"></div>
+	</div>
 </div>
-
 <script>
 (function(){
 	let all = {
 {% for post in collections.posts | reverse %}
-		"{{ post.data.page.url }}" : {
+		"https://wiltomakesfood.com{{ post.data.page.url }}" : {
 			"title" : "{{ post.data.title | safe }}",
 			"type" :"{{ post.data.type | safe }}"
 		},
@@ -29,5 +33,4 @@ templateClass: tmpl-home
 	window.wmf.allPosts = all;
 }());
 </script>
-
-<script src="/_assets/js/offline.min.js"></script>
+<script src="/_assets/js/offline.min.js?{{ metadata.build }}"></script>

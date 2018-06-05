@@ -138,9 +138,9 @@ abbr {
 }
 
 .recipeheader.error {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	margin: 2.5em 0 0 -.65em;
-	padding: .85em 0 .25em .75em;
+	padding: .85em 0 .25em .65em;
 	position: relative;
 	overflow: visible;
 	width: auto;
@@ -170,7 +170,7 @@ abbr {
 }
 .recipeheader.error+.lede {
 	margin-top: .5em;
-	font-size: 1.6em;
+	font-size: 1.3em;
 }
 .recipeheader .art-section {
 	padding-top: .25em;
@@ -447,11 +447,13 @@ p.lede {
 	border-left: .2em solid rgba(255,150,0, .45);
 }
 
-.notification .recipe-subhed {
-	font-size: 1.1em;
+.notif-hed {
+	font-family: "Fanwood Text", serif;
+	font-weight: normal;
+	font-size: 1.3em;
+	margin: .5em 0 .1em 0;
+	padding: 0 1em;
 }
-
-
 .meta dd,
 .meta dt {
 	font-size: .75em;
@@ -669,7 +671,11 @@ p.lede {
 
 .highlights .item img,
 .subfeat .item img,
-.feat.item img {
+.feat.item img,
+.highlights .item svg,
+.subfeat .item svg,
+.feat.item svg {
+	background: #eaeaea;
 	position: absolute;
 	top: 0;
 	min-width: 100%;

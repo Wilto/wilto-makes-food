@@ -37,12 +37,13 @@
 					cachedItems = [];
 
 				categorized.forEach(entry => {
-					let found = lookup( event.data.urls, "https://wiltomakesfood.com" + entry.url );
+					let found = lookup( event.data.urls, entry.url );
 
 					if( found ) {
 						let pattern = new RegExp(p.protocol + p.domain + p.tld + p.params, 'gi'),
-							offline = window.wmf.allPosts[ found.substr(26) ]; // This is _terrible_.
+							offline = window.wmf.allPosts[ found ]; // This is _terrible_.
 
+						console.log( found );
 						if( offline ) {
 							cachedItems.push( '<li><a href="' + offline.url + '" class="offline-item">' + offline.title + '</a></li>' );
 						}
@@ -50,7 +51,7 @@
 				});
 
 				if( cachedItems.length !== 0 ) {
-					render.push( '<h3 class="recipe-subhed offline-subhed offline-landing">' + landing.title + '</h3>' );
+					render.push( '<h3 class="offline-subhed offline-landing">' + landing.title + '</h3>' );
 
 					render.push( '<ul class="offline-items">' );
 					Array.prototype.push.apply( render, cachedItems );
