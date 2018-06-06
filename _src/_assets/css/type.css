@@ -328,10 +328,8 @@ p.lede {
 }
 
 .cta {
-	color: #333;
 	font-family: sans-serif;
-	font-size: .85em;
-	letter-spacing: .05em;
+	letter-spacing: .02em;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -729,8 +727,8 @@ p.lede {
 	padding: .1em 1em 0 1em;
 }
 .feat-tag a {
-	background: rgba(255,150,0, 1);
-	color: #333;
+	background: #fbcb8f;
+	color: #444;
 	display: inline-block;
 	margin: 0 auto;
 	padding: .175em 1.25em .15em 1.25em;
@@ -753,6 +751,7 @@ p.lede {
 }
 .feat-tag a:hover {
 	color: #fff;
+	background-color: rgba(255,150,0, 1);
 }
 
 .features .recipe-hed a {

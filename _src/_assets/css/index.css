@@ -49,25 +49,47 @@ main {
 }
 
 .cta {
-	background: rgba(255,150,0, .15);
+	background: rgba(255,150,0, .05);
 	display: block;
-	padding: .55em 1em .45em 1em;
+	padding: .6em 1em .45em 1em;
 	width: 33%;
+	font-size: .85em;
 	min-width: 10em;
 	max-width: 20em;
 	text-align: center;
 	text-decoration: none;
-	border: 1px solid rgba(255,150,0, .65);
-	transition: all .15s ease-in-out; /* Temp */
+	color: #555;
+	border: 2px solid rgba(255,150,0, .35);
+	transition: all .2s ease-in-out;
 	overflow: hidden;
+	position: relative;
+}
+.cta:after {
+	position: absolute;
+	transition: .3s;
+	content: '';
+	width: 0;
+	left: -10%;
+	bottom: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(255,150,0, .2);
+	transform: skewX(25deg);
+	z-index: -1;
 }
 .cta:hover,
 .cta:focus {
-	background: rgba(255,150,0, .25);
-	border: 1px solid rgba(255,125,0, 1);
-	outline: none;
-	color: #333;
-	transform: scale(1.05);
+	border: 2px solid rgba(255,120,0, 1);
+	color: rgba(255,100,0, 1);
+}
+.cta:hover:after,
+.cta:focus:after {
+	left: -10%;
+	width: 120%;
+}
+
+.cta:active {
+	transform: scale(.99);
 }
 
 a.cta-prod {
