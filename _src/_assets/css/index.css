@@ -80,7 +80,7 @@ main {
 .cta:hover,
 .cta:focus {
 	border: 2px solid rgba(255,120,0, 1);
-	color: rgba(255,100,0, 1);
+	color: #333;
 }
 .cta:hover:after,
 .cta:focus:after {
