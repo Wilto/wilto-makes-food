@@ -229,12 +229,14 @@ abbr {
 .article-hed a:focus {
 	outline: none;
 }
-.article-hed a:hover:after {
-	width: 33%;
-}
-.article-hed a:focus:after,
-.article-hed a:hover:after {
-	width: 100%;
+@media( hover ) {
+	.article-hed a:hover:after {
+		width: 33%;
+	}
+	.article-hed a:focus:after,
+	.article-hed a:hover:after {
+		width: 100%;
+	}
 }
 
 .article-hed a {
