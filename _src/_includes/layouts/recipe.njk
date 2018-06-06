@@ -41,11 +41,11 @@ templateClass: tmpl-post
 				<dd itemprop="totalTime">{{meta.total}}</dd>
 				{% endif %}
 			</dl>
-			<a href="#recipe-jump" class="recipe-jump">
+			{% if name %}<a href="#recipe-jump" class="recipe-jump">
 				<svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 					<title>Skip to Recipe</title>
 					<path aria-hidden="true" fill="rgba(0,0,0,.65)" transform="rotate(90, 50, 57.465)" d="m74.363,63.82802l-36,36c-1.758,1.758 -4.06,2.637 -6.363,2.637s-4.605,-0.879 -6.363,-2.637c-3.516,-3.513 -3.516,-9.214 0,-12.727l29.636,-29.63601l-29.636,-29.637c-3.516,-3.513 -3.516,-9.214 0,-12.727c3.516,-3.516 9.211,-3.516 12.727,0l36,36c3.515,3.513 3.515,9.215 -0.001,12.727z" />
-				</svg>
+				</svg>{% endif %}
 			</a>
 		</header>
 
