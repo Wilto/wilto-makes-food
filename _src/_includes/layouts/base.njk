@@ -28,6 +28,22 @@
 		<meta name="application-name" content="Wilto Makes Food">
 		<link rel="manifest" href="/webappmanifest.json">
 
+		<!-- Half my site’s transfer is in `meta` nonsense. -->
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "Organization",
+				"url": "https://www.wiltomakesfood.com",
+				"logo": "https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg",
+				"sameAs" : [
+					"https://twitter.com/wiltomakesfood",
+					"https://pinterest.com/wiltomakesfood",
+					"https://instagram.com/wiltomakesfood"
+				] 
+			}
+		</script>
+		<meta name="google-site-verification" content="rI892iLe1lT6F-6BhuVu1S6XpJrnedJviX0OP3Ne53Q" />
+
 		<!-- Twitter Card Stuff: -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="{{ metadata.title }}">
@@ -40,16 +56,16 @@
 		<meta property="og:description" content="{{ lede or subhed }}">
 {% endif %}
 {% if img %}
-		<meta name="twitter:image" content="https://wiltomakesfood.com/img/{{img}}-5.jpg">
-		<meta property="og:image" content="https://wiltomakesfood.com/img/{{img}}-5.jpg">
+		<meta name="twitter:image" content="/img/{{img}}-5.jpg">
+		<meta property="og:image" content="/img/{{img}}-5.jpg">
 {% if alt %}
 		<meta name="twitter:image:alt" content="{{alt}}">
 		<meta property="og:image:alt" content="{{alt}}">
 {% endif %}
 {% else %}
-		<meta name="twitter:image" content="https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg">
+		<meta name="twitter:image" content="/_assets/img/wmf-placeholder.jpg">
 		<meta name="twitter:image:alt" content="">
-		<meta property="og:image" content="https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg">
+		<meta property="og:image" content="/_assets/img/wmf-placeholder.jpg">
 		<meta property="og:image:alt" content="">
 {% endif %}
 

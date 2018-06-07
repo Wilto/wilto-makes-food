@@ -702,8 +702,12 @@ p.lede {
 		max-height: 15em;
 	}
 }
-.feat-header {
-	margin: 3em auto 0 auto;
+.sub.item {
+	display: grid;
+}
+.sub.item .feat-header {
+	margin-top: -.2em;
+	margin: auto;
 }
 
 .recipe-hed {

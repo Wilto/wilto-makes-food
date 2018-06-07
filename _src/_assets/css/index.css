@@ -829,7 +829,7 @@ a.prod img {
 
 @media( min-width: 800px ) {
 	.subfeat > .item .feat-header {
-		top: 15%;
+		top: 12.5%;
 	}
 }
 
