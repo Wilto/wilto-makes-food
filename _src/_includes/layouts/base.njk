@@ -71,6 +71,13 @@
 		<meta property="og:image" content="https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg">
 		<meta property="og:image:alt" content="">
 {% endif %}
+
+{% if type == "article" or type == "review" %}
+		<meta property="og:type" content="article">
+{% endif %}
+{% if type == "recipe" %}
+		<meta property="og:type" content="recipe">
+{% endif %}
 		<meta name="author" content="Wilto Makes Food">
 
 		<!-- Preload: -->
