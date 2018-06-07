@@ -5,7 +5,7 @@ templateClass: tmpl-post
 
 {% macro respimg(path, img, sizes, alt, capt) %}
 <img 
-	itemprop="image"
+	class="u-photo"
 	sizes="{{ sizes }}"
 	srcset="
 		{{ path }}{{ img }}-1.jpg 320w,
@@ -17,21 +17,22 @@ templateClass: tmpl-post
 	{% if capt %}
 	aria-describedby="capt-1"
 	{% endif %}
+	itemprop="image"
 	alt="{{ alt }}">
 {% endmacro %}
 
-<div class="col" itemscope itemtype="http://schema.org/Recipe">
+<div class="col" itemscope itemtype="http://schema.org/Recipe" class="h-recipe">
 	<div class="intro">
 		<header role="banner" class="recipeheader">
 			{% for tag in tags %}
-				<a href="/recipes/tagged/{{ tag }}" class="art-section"><span class="a11y-only">Category: </span>{{ tag }}</a>
+				<a href="/recipes/tagged/{{ tag }}" class="art-section p-category"><span class="a11y-only">Category: </span>{{ tag }}</a>
 			{% endfor %}
-			<h2 class="recipe-hed" itemprop="name">{{ title }}</h2>
+			<h2 class="recipe-hed p-name" itemprop="name">{{ title }}</h2>
 
 			<dl class="meta">
 				{% if meta.serves %}
 				<dt>Serves</dt>
-				<dd itemprop="recipeYield">{{meta.serves}}</dd>
+				<dd itemprop="recipeYield" class="p-yield">{{meta.serves}}</dd>
 				{% endif %}
 				{% if meta.active %}
 				<dt>Active Time</dt>
@@ -39,7 +40,7 @@ templateClass: tmpl-post
 				{% endif %}
 				{% if meta.total %}
 				<dt>Total Time</dt>
-				<dd itemprop="totalTime">{{meta.total}}</dd>
+				<dd itemprop="totalTime" class="dt-duration">{{meta.total}}</dd>
 				{% endif %}
 			</dl>
 			{% if name %}<a href="#recipe-jump" class="recipe-jump">
@@ -86,14 +87,14 @@ templateClass: tmpl-post
 	<h3 class="article-hed jump-hed" id="recipe-jump"><span>Recipe:</span> {{ name }}</h3>
 {% endif %}
 {% if notes %}
-	<p class="lede">{{ notes | safe }}</p>
+	<p class="lede p-summary">{{ notes | safe }}</p>
 {% endif %}
 
 {% if ingredients %}
 	<h4 class="inline-hed" id="recipe-sub0">Ingredients</h4>
 	<ul class="ingredients" aria-labelledby="recipe-sub0">
 		{%- for ing in ingredients -%}
-		<li itemprop="recipeIngredient">
+		<li itemprop="recipeIngredient" class="p-ingredient">
 			<p><span class="amt">{{ing.amt.whole}}<b class="frac" role="presentation">{{ing.amt.frac}}</b> {% if ing.amt.measure.abbr %}<abbr title="{{ing.amt.measure.full}}" role="presentation">{{ing.amt.measure.abbr}}</abbr>{% else %}{{ing.amt.measure}}{% endif %}</span>
 			{% if ing.href %}<a href="{{ ing.href }}">{% endif %}{{ing.name}}{% if ing.href %}</a>{% endif %}{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes | safe }}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
 			{% if ing.optional %}<span class="opt">Optional</span>{%- endif -%}
@@ -108,14 +109,14 @@ templateClass: tmpl-post
 		{% if instructions[0].stage %}
 			{%- for ins in instructions -%}
 			<h4 class="recipe-subhed"><span class="a11y-only">Instructions </span>for the {{ins.stage}}</h4>
-			<ol class="steps" itemprop="recipeInstructions">
+			<ol class="steps e-instructions" itemprop="recipeInstructions">
 				{%- for step in ins.steps -%}
 				<li><p>{{step}}</p></li>
 				{%- endfor -%}
 			</ol>
 			{%- endfor -%}
 		{% else %}
-			<ol class="steps" itemprop="recipeInstructions">
+			<ol class="steps e-instructions" itemprop="recipeInstructions">
 				{%- for ins in instructions -%}
 				<li><p>{{ins | safe }}</p></li>
 				{%- endfor -%}
