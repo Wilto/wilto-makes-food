@@ -6,17 +6,7 @@ templateClass: tmpl-post
 {% macro respimg(path, img, sizes, alt, capt) %}
 <img 
 	itemprop="image"
-	sizes="{{ sizes }}"
-	srcset="
-		{{ path }}{{ img }}-1.jpg 320w,
-		{{ path }}{{ img }}-2.jpg 450w,
-		{{ path }}{{ img }}-3.jpg 640w,
-		{{ path }}{{ img }}-4.jpg 820w,
-		{{ path }}{{ img }}-5.jpg 1024w"
 	src="https://wiltomakesfood.com{{ path }}{{ img }}-4.jpg" 
-	{% if capt %}
-	aria-describedby="capt-1"
-	{% endif %}
 	alt="{{ alt }}">
 {% endmacro %}
 
