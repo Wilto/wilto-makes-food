@@ -46,7 +46,7 @@
 
 		<!-- Twitter Card Stuff: -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="{{ metadata.title }}">
+		<meta name="twitter:site" content="@wiltomakesfood">
 		<meta property="og:site_name" content="{{ metadata.title }}">
 		<meta name="twitter:title" content="{{ title or metadata.title }}">
 		<meta property="og:title" content="{{ title or metadata.title }}">
@@ -54,20 +54,24 @@
 {% if lede %}
 		<meta name="twitter:description" content="{{ lede or subhed }}">
 		<meta property="og:description" content="{{ lede or subhed }}">
+{% else %}
+		<meta name="twitter:description" content="{{ metadata.description }}">
+		<meta property="og:description" content="{{ metadata.description }}">
 {% endif %}
 {% if img %}
-		<meta name="twitter:image" content="/img/{{img}}-5.jpg">
-		<meta property="og:image" content="/img/{{img}}-5.jpg">
+		<meta name="twitter:image" content="https://wiltomakesfood.com/img/{{img}}-5.jpg">
+		<meta property="og:image" content="https://wiltomakesfood.com/img/{{img}}-5.jpg">
 {% if alt %}
 		<meta name="twitter:image:alt" content="{{alt}}">
 		<meta property="og:image:alt" content="{{alt}}">
 {% endif %}
 {% else %}
-		<meta name="twitter:image" content="/_assets/img/wmf-placeholder.jpg">
+		<meta name="twitter:image" content="https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg">
 		<meta name="twitter:image:alt" content="">
-		<meta property="og:image" content="/_assets/img/wmf-placeholder.jpg">
+		<meta property="og:image" content="https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg">
 		<meta property="og:image:alt" content="">
 {% endif %}
+		<meta name="author" content="Wilto Makes Food">
 
 		<!-- Preload: -->
 		<link rel="preload" href="/_assets/css/fonts/fanwood_text-webfont.woff2" as="font" type="font/woff2" crossorigin>
