@@ -5,6 +5,7 @@ templateClass: tmpl-post
 
 {% macro respimg(path, img, sizes, alt, capt) %}
 <img 
+	itemprop="image"
 	sizes="{{ sizes }}"
 	srcset="
 		{{ path }}{{ img }}-1.jpg 320w,
@@ -92,7 +93,7 @@ templateClass: tmpl-post
 	<h4 class="inline-hed" id="recipe-sub0">Ingredients</h4>
 	<ul class="ingredients" aria-labelledby="recipe-sub0">
 		{%- for ing in ingredients -%}
-		<li itemprop="ingredients">
+		<li itemprop="recipeIngredient">
 			<p><span class="amt">{{ing.amt.whole}}<b class="frac" role="presentation">{{ing.amt.frac}}</b> {% if ing.amt.measure.abbr %}<abbr title="{{ing.amt.measure.full}}" role="presentation">{{ing.amt.measure.abbr}}</abbr>{% else %}{{ing.amt.measure}}{% endif %}</span>
 			{% if ing.href %}<a href="{{ ing.href }}">{% endif %}{{ing.name}}{% if ing.href %}</a>{% endif %}{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes | safe }}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
 			{% if ing.optional %}<span class="opt">Optional</span>{%- endif -%}
@@ -107,14 +108,14 @@ templateClass: tmpl-post
 		{% if instructions[0].stage %}
 			{%- for ins in instructions -%}
 			<h4 class="recipe-subhed"><span class="a11y-only">Instructions </span>for the {{ins.stage}}</h4>
-			<ol class="steps">
+			<ol class="steps" itemprop="recipeInstructions">
 				{%- for step in ins.steps -%}
 				<li><p>{{step}}</p></li>
 				{%- endfor -%}
 			</ol>
 			{%- endfor -%}
 		{% else %}
-			<ol class="steps">
+			<ol class="steps" itemprop="recipeInstructions">
 				{%- for ins in instructions -%}
 				<li><p>{{ins | safe }}</p></li>
 				{%- endfor -%}
