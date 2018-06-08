@@ -1003,12 +1003,13 @@ a.prod img {
 	font-size: 1.2em;
 }
 
-.intro .central {
-	margin: 1.5em auto;
+.intro img.central {
+	margin: 3em auto 0 auto;
 	display: block;
+	float: none;
 }
 
-.take-your-time {
+img.take-your-time {
 	max-width: 12.5em;
 }
 

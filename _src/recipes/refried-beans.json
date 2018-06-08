@@ -1,0 +1,98 @@
+{
+	"name" : "Refried Beans",
+	"meta" : {
+		"active": "20 min",
+		"total": "30 min"
+	},
+	"ingredients" : [
+		{
+			"name" : "Lard",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			},
+			"notes" : "or a neutral oil"
+		},
+		{
+			"name" :"Garlic",
+			"amt" : {
+				"frac" : "3",
+				"measure" : "Cloves"
+			},
+			"notes" : "minced"
+		},
+		{
+			"name" : "Yellow Onion",
+			"amt" : {
+				"frac" : "1/2"
+			},
+			"notes" : "minced"
+		},
+		{
+			"name" : "Mexican Oregano",
+			"amt" : {
+				"whole" : "1/2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			},
+			"notes" : "dried"
+		},
+		{
+			"name" : "Chili Powder",
+			"amt" : {
+				"whole" : "A pinch"
+			},
+			"notes" : "or a dash of your favorite hot sauce",
+			"notehref" : "https://www.amazon.com/dp/B00AIR3Q38?tag=wiltomf-20"
+		},
+		{
+			"name" : "Ground Cumin",
+			"amt" : {
+				"whole" : "A pinch"
+			}
+		},
+		{
+			"name" : "Shallot",
+			"amt" : {
+				"whole" : "1"
+			},
+			"notes" : "finely minced"
+		},
+		{
+			"name" : "Pinto Beans",
+			"amt" : {
+				"whole" : "1",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			},
+			"notes" : "or one can"
+		},
+		{
+			"name" : "Stock",
+			"href" : "/recipes/utility-stock/",
+			"amt" : {
+				"whole" : "A splash"
+			},
+			"notes": "or reserved liquid from reconstituting dried beans"
+		},
+		{
+			"name" : "Salt and black pepper",
+			"notes" : "to taste"
+		}
+	],
+	"instructions": [
+		"in a 3qt. saucepan, heat lard/oil until shimmering, over medium heat. Add minced onion and garlic and cook, stirring occasionally, until onion is translucent.",
+		"Add herbs and cumin and cook until fragrant—only a minute or two. Stir in beans—drained, if from a can. Cook for a few minutes, stirring occasionally.",
+		"Add stock (ideally the stock you simmered them in, if you’re using previously-dried beans) to cover, and simmer—uncovered—until the beans start to separate from their skins.",
+		"Mash with the back of a spoon for a texture like the one pictured, or use an immersion blender to make a smoother purée. It’ll thicken more than you might expect; add stock in small amounts until you’ve reached your desired consistency.",
+		"Stir in chili powder or hot sauce, salt and pepper to taste, and finely minced shallots, and serve."
+	]
+}
