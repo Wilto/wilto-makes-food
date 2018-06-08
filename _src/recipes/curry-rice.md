@@ -40,7 +40,7 @@ If you brown the onions and shallots too far, or too quickly, you’ll get bitte
 
 So, in the end, I’ve got one big piece of advice for this recipe:
 
-<img src="/img/take-your-time-3.png" alt="Bust of the Persona 5 protagonist above the text “take your time,” as used on the Persona 5 loading screens" class="central take-your-time">
+<img src="/img/take-your-time-3.png" alt="Bust of the Persona 5 protagonist above the text “take your time,” as used on the Persona 5 loading screens" class="central take-your-time" data-pin-nopin="true">
 
 
 
