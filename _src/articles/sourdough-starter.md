@@ -9,9 +9,11 @@ capt: 'The blob, the myth, the legend: <a href="https://twitter.com/lrgmnn/statu
 alt: A clear glass bowl containing a wet, bubbling dough.
 ---
 
-For those of you fortunate enough to [hold in your hands a descendant of my sourdough starter](https://www.patreon.com/bePatron?c=898002&rid=2539311), “Dwigt Rortugal”: you are now in possession of an _authentic_ Greater-Bostonian sourdough culture—yes, that’s right, just like the ones you’ve read about in all the hottest, hippest bread baking circles. A descendant of a Philadephian culture, this starter was tempered in the fires of North Cambridge and honed on the streets of Watertown. This lovingly cared-for specimen—possessed of incredible strength and hardiness—was hand-delivered to me by [Sara Wachter-Boettcher](https://twitter.com/sara_ann_marie) on a cold winter’s night by the sea, lo those many years ago. And so the legend now continues with you.
+For those of you fortunate enough to [hold in your hands a descendant of my sourdough starter](https://www.patreon.com/bePatron?c=898002&rid=2539311), “Dwigt Rortugal:” you are now in possession of an _authentic_ Greater-Bostonian sourdough culture—yes, that’s right, just like the ones you’ve read about in all the hottest, hippest bread baking circles. A descendant of a Philadephian culture, this starter was tempered in the fires of North Cambridge and honed on the streets of Watertown. This lovingly cared-for specimen—possessed of incredible strength and hardiness—was hand-delivered to me by [Sara Wachter-Boettcher](https://twitter.com/sara_ann_marie) on a cold winter’s night by the sea, lo those many years ago. And so the legend now continues with you.
 
 Everyone else: your starter is probably fine also.
+
+Either way, here’s how to keep it alive.
 
 ### Maintaining Your Sourdough Starter
 
@@ -34,13 +36,13 @@ Sometimes I do 150 G. of water/flour; depends on how much baking I figure on doi
 
 Now, if you’re the sort who sets calendar reminders for things in your life: feed it once a week. If you’re a few days over, no harm done; Rortugal has been surprisingly difficult to kill, and so too is yours, I’ll wager. If freezing it or [drying it in the sun](https://www.breadexperience.com/drying-sourdough-starter/) won’t kill it, neither will forgetting to refresh it for a couple of days.
 
-If you, like me, _aren’t_ the type to set a calendar reminder, even for things like social events and basic professional responsibilities: here’s my “is it time to refresh Rortugal” checklist: does it feel like it has been a week? If so: feed Rortugal. Hasn’t failed me yet.
+If you, like me, _aren’t_ the type to set a calendar reminder, even for things like social events and basic professional responsibilities: here’s my “is it time to refresh Rortugal” checklist: does it feel like it has been a week, possibly, and does Rortugal look hungry? If so: feed Rortugal. Hasn’t failed me yet.
 
 There are really only a few things to look out for: colors (other than a little gray on the surface), and alcohol pooling on the surface. Changing color means something has contaminated it, like mold—I’ve read that there’s a good chance it’ll spring back if you scoop out a normal-looking portion and refresh it. It hasn’t happened to me, so I can’t vouch there. Clear liquid pooling on the surface of the starter—alcohol, produced by the yeast breaking down the sugars in the flour—just means that it’s overdue for feeding. Pour the alcohol off, refresh it as usual, and you’ll be back in business.
 
 ### Putting It To Use
 
-Now, the above routine means you’re gonna be left with 200 G. of sourdough cast-off every week, which rules. You can use it as a pre-ferment—say, throw it in some [pizza dough](/recipes/pizza-dough) or a batch of [waffles](/recipes/waffles). Foist it on a friend; tell ’em I sent you. Start a food blog Patreon.
+Now, the above routine means you’re gonna be left with ~200 G. of sourdough cast-off every week, which rules. You can use it as a pre-ferment—say, throw it in some [pizza dough](/recipes/pizza-dough) or a batch of [waffles](/recipes/waffles). Foist it on a friend; tell ’em I sent you. Start a food blog Patreon.
 
 Or—and this part is key—make bread with it.
 
@@ -52,9 +54,9 @@ So, the routine for getting a _levain_—an offshoot of your starter, intended t
 
 By morning you should have a much more voluminous, foamy blob, fit for baking. You can test for said baking-readiness by dropping a spoonful of it into water: if it floats, you’re good to go. If not, give it a little more time.
 
-Some recipes will call for turning a portion of it into a [hard starter](https://www.theperfectloaf.com/baking-sourdough-bread-stiff-starter/) and going from there. Some recipes will just have you chuck the entire full-strength levain into your dough, or repeat a feeding cycle with a portion of it, but mix it into the dough before it’s up to full strength. The former, a “mature starter,” will give you a sharper, more sour sourdough; the latter, a “young starter,” will give you a more subtle flavor. Both are good, because like, it’s bread—bread is great.
+Some recipes will call for turning a portion of it into a [hard starter](https://www.theperfectloaf.com/baking-sourdough-bread-stiff-starter/) and going from there. Some recipes will just have you chuck the entire full-strength levain into your dough, or repeat a feeding cycle with a portion of it, but mix it into the dough before it’s up to full strength. The former, a “mature starter,” will give you a sharper, more sour sourdough; the latter, a “young starter,” will give you a more subtle flavor. Both are good, because like, it’s bread. Bread is _good_.
 
-Personally though, I like my sourdoughs like I like my cheeses and my [Kongs](https://www.mariowiki.com/Funky_Kong). So, one last tip: you can tell when your levain is at the peak of maturity by letting it rise in a glass container. Once you see streaks of dough on the inside of the glass, _just_ above the surface of the levain: its slow collapse has begun. That means a strong, funky sourdough. If you’re noticing this with your starter in the fridge while making yourself a sandwich, it means you blanked on your last feeding—time to refresh your starter.
+Personally though, I like my sourdoughs like I like my cheeses and my [Kongs](https://www.mariowiki.com/Funky_Kong). So, one last tip: you can tell when your levain is at the peak of maturity by letting it rise in a glass container. Once you see streaks of dough on the inside of the glass, _just_ above the surface of the levain: its slow collapse has begun. That means a strong, funky sourdough. If you’re noticing this with your starter in the fridge while making yourself a sandwich—time to refresh your starter.
 
 ### I Think It Died?
 
