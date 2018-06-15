@@ -4,7 +4,6 @@ tags:
   - baking
 lede: Anything can be part of a complete breakfast if you believe in yourself.
 type: recipe
-subfeat: true
 img: waffles
 alt: A thick, triangular, golden brown waffle with butter and syrup.
 ---

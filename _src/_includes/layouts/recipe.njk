@@ -55,7 +55,7 @@ templateClass: tmpl-post
 			{{ respimg('/img/', img, '(min-width: 1260px) 370px, (min-width: 720px) calc(28.46vw + 17px), (min-width: 560px) 37.86vw, 99.58vw', alt, capt ) }}
 			{% if capt %}
 			<figcaption id="capt-1" class="caption">
-				{{capt}}
+				{{capt | safe }}
 			</figcaption>
 			{% endif %}
 		</figure>
@@ -70,7 +70,7 @@ templateClass: tmpl-post
 			</video>
 			{% if capt %}
 			<figcaption id="pagevid" class="caption">
-				{{capt}}
+				{{capt | safe }}
 			</figcaption>
 			{% endif %}
 		</figure>

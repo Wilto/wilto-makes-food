@@ -3,7 +3,7 @@ title: The Electric Waffle-Maker Acid Test
 subhed: Better browning through chemistry.
 lede: "Too little sugar made my waffles “biscuit-y,” but just enough meant they got too dark—almost burnt. A better waffle maker would help, sure, but so too can science."
 type: article
-feat: true
+subfeat: true
 img: dark-waffles
 alt: A stack of dark, chestnut brown waffles.
 ---
