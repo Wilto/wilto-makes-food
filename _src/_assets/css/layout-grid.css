@@ -64,13 +64,15 @@
 	/* Resets */
 	.feat,
 	.subfeat,
-	.subfeat .item,
 	.highlights .item,
 	.footwrap > div {
 		margin: 0;
 		float: none;
 		width: auto;
 		height: auto;
+	}
+	.subfeat .item:last-of-type {
+		margin-bottom: 0;
 	}
 
 	body {
@@ -121,7 +123,11 @@
 	.subfeat > .item {
 		height: 25vw;
 		min-height: 15em;
-		margin-top: 1%;
+		margin-top: 1.5%;
+	}
+	.subfeat .item:first-of-type,
+	.subfeat .item:nth-last-child(n+3) {
+		min-height: 25em;
 	}
 	@media all and (min-width: 650px) {
 
@@ -129,20 +135,24 @@
 			grid-template-columns: repeat( 2, 1fr );
 			width: 100%;
 		}
-		.subfeat > .item {
-			grid-column: 1 / span 2;
-			margin-top: 1.5%;
-		}
-		.subfeat > .item:nth-of-type(even) {
-			grid-column: 2;
-		}
-		.subfeat > .item:nth-last-child(n+2) {
-			grid-column: 1;
-		}
-		.subfeat > .item:nth-last-child(n+2) ~ .item {
-			grid-column: 2;
-		}
 
+		.subfeat > .item:first-of-type:last-of-type,
+		.subfeat .item:nth-last-child(n+3),
+		.subfeat > .item {
+			margin-top: 1%;
+		}
+		.subfeat .item:first-of-type {
+			min-height: 15em;
+		}
+		.subfeat .item:nth-last-child(n+3),
+		.subfeat .item:first-of-type:last-of-type,
+		.subfeat > .item:first-of-type:last-of-type {
+			grid-column: 1 / span 2;
+			min-height: 20em;
+		}
+		.subfeat:before {
+			grid-column: 1 / span 2;
+		}
 	}
 	@media all and (min-width: 800px) {
 		.features {
@@ -154,7 +164,12 @@
 
 		.subfeat {
 			grid-column: 2;
-			grid-gap: 1%;
+			grid-gap: 0;
+		}
+		.subfeat .item:nth-child(3):last-of-type,
+		.subfeat > .item:first-of-type:last-of-type,
+		.subfeat > .item {
+			min-height: 17.5em;
 		}
 		.subfeat > .item,
 		.subfeat > .item:nth-of-type(even),

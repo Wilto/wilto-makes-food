@@ -106,7 +106,7 @@ abbr {
 .article-hed {
 	font-weight: normal;
 	font-size: 2.75em;
-	line-height: 1;
+	line-height: 1.1;
 	padding: .15em 0 .15em 0;
 	margin-bottom: 0;
 }
@@ -205,6 +205,7 @@ abbr {
 .article-hed a {
 	display: block;
 	padding-bottom: .2em;
+	margin-bottom: .15em;
 	padding-top: .3em;
 	position: relative;
 }
@@ -214,7 +215,7 @@ abbr {
 	content: " ";
 	margin-top: .25em;
 	position: absolute;
-	bottom: 0;
+	bottom: -.1em;
 	display: block;
 	width: 33%;
 	height: 2px;
@@ -266,12 +267,15 @@ p.lede {
 }
 
 .subfeat .article-hed {
-	font-size: 2em;
+	font-size: 1.8em;
+}
+.subfeat .recipe-hed {
+	font-size: 2.2em;
 }
 
 .features .lede {
 	font-size: 1.4em;
-	padding-bottom: .5em;
+	padding-bottom: .2em;
 }
 
 
@@ -412,18 +416,30 @@ p.lede {
 }
 
 .intro .subhed,
-.intro h3 {
+.intro h3,
+.intro h4 {
+	clear: both;
 	font-family: sans-serif;
-	font-size: 1em;
+	font-size: 1.1em;
 	margin: 1.65em 0 1.2em -.7em;
 	max-width: 45em;
 	font-weight: bold;
 	padding: 0 0 0 .5em;
 }
+.intro h4 {
+	margin-left: 0;
+	padding-left: 0;
+}
 .fonts .intro .subhed,
-.fonts .intro h3 {
+.fonts .intro h3,
+.fonts .intro h4 {
 	font-family: "open sans";
 	font-weight: normal;
+}
+
+.fonts .intro h4 {
+	font-size: .9em;
+	color: #666;
 }
 
 .recipe-subhed {
@@ -449,6 +465,9 @@ p.lede {
 .intro .subhed,
 .intro h3 {
 	border-left: .2em solid rgba(255,150,0, .45);
+}
+.intro h3 {
+	padding-right: 2.25em;
 }
 
 .notif-hed {
@@ -612,9 +631,7 @@ p.lede {
 
 
 .feat {
-	min-height: 25em;
-	height: 50vw;
-	max-height: 27.5em;
+	min-height: 30em;
 }
 
 .subfeat {
@@ -640,8 +657,8 @@ p.lede {
 
 	position: relative;
 	text-align: center;
-	max-width: 90%;
-	width: 20em;
+	max-width: 85%;
+	width: 18em;
 	z-index: 2;
 }
 .recipe-header {
@@ -661,7 +678,6 @@ p.lede {
 
 .item {
 	position: relative;
-	overflow: hidden;
 }
 
 [data-fadein] {
@@ -682,14 +698,33 @@ p.lede {
 	background: #eaeaea;
 	position: absolute;
 	top: 0;
+	left: 0;
 	min-width: 100%;
-	max-width: 150%;
+	max-width: 175%;
 	min-height: 100%;
 }
-.item > a {
-	position: static;
-	display: block;
+@supports( transform: translate(-50%, -50%) ) {
+	.highlights .item img,
+	.subfeat .item img,
+	.feat.item img,
+	.highlights .item svg,
+	.subfeat .item svg,
+	.feat.item svg {
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
+.item > a {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
 .highlights > .item {
 	min-height: 15em;
 	margin-bottom: 2.5%;
@@ -706,7 +741,7 @@ p.lede {
 	display: grid;
 }
 .sub.item .feat-header {
-	margin-top: -.2em;
+	top: -2em;
 	margin: auto;
 }
 
@@ -802,19 +837,39 @@ p.lede {
 .results .subhed {
 	font-size: .95em;
 }
-
+.subfeat:before,
 .jump-hed:before {
 	content: "";
 	display: block;
 	width: 25%;
 	position: relative;
-	top: -.75em;
 	max-width: 3em;
 	background: rgba(255,150,0, .65);
 	height: 3px;
-	margin: -2em auto 0 auto;
+	margin: 0 auto;
 	border-radius: .25em;
 }
+.jump-hed:before {
+	top: -.75em;
+	max-width: 3em;
+	background: rgba(255,150,0, .65);
+	margin-top: -2em;
+}
+.subfeat:before {
+	display: none;
+}
+@media( max-width: 50em ) {
+	.subfeat {
+		margin-top: .75em;
+	}
+	.subfeat:before {
+		display: block;
+		bottom: auto;
+		max-width: 7.5em;
+		z-index: 2;
+	}
+}
+
 .jump-hed {
 	padding-top: 2.75em;
 	padding-bottom: .15em;
