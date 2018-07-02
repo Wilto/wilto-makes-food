@@ -741,7 +741,6 @@ p.lede {
 	display: grid;
 }
 .sub.item .feat-header {
-	top: -2em;
 	margin: auto;
 }
 

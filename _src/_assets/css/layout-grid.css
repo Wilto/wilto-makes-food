@@ -1,5 +1,8 @@
 /* Non-grid layout: */
 
+.sub.item .feat-header {
+	top: 0em;
+}
 @media(min-width: 45em ){
 	.feat {
 		clear: left;

@@ -12,10 +12,10 @@
 					&& "intersectionRatio" in window.IntersectionObserverEntry.prototype;
 
 		if( supports ) {
-			let imgObs = new IntersectionObserver( function( els, obs ) {
+			var imgObs = new IntersectionObserver( function( els, obs ) {
 				els.forEach( function( el ) {
 					if( el.isIntersecting ) {
-						let img = el.target;
+						var img = el.target;
 
 						attrswap( img );
 						imgObs.unobserve( img );

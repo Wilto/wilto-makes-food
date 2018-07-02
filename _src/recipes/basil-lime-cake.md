@@ -1,13 +1,4 @@
----
-title: Basil Lime Cake
-tags: 
-    - Cakes
-lede: "I got way too much basil and way too many limes; let’s get weird."
-type: recipe
-subfeat: false
-img: 
-alt: 
----
+
 
 2 sticks unsalted butter, slightly below room temp
 1 8 oz. pkg cream cheese, slightly below room temp

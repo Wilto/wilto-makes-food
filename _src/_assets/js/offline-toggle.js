@@ -2,7 +2,7 @@
 	const notify = function( txt, thendo ) {
 		const notif = document.querySelector( ".notification" ),
 			create = function( txt ) {
-				let body = document.body,
+				var body = document.body,
 					notif = document.createElement( "div" ),
 					copy = document.createTextNode( txt );
 
@@ -29,7 +29,7 @@
 			notify( "Looks like you’re offline.", null );
 		}
 		window.addEventListener( "online", function( e ) {
-			let imgs = document.querySelectorAll( "img:not([data-lazy]" );
+			var imgs = document.querySelectorAll( "img:not([data-lazy]" );
 
 			imgs.forEach( function( img ) {
 				console.log( img.src );
