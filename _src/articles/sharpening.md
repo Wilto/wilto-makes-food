@@ -63,6 +63,13 @@ I use a set of mis-matched waterstones, inherited and accumulated over the years
 
 Before using them, Waterstones should be fully submerged and allowed to soak for at least half an hour. The water prevents them from being too aggressively abrasive. It also helps an abrasive slurry to form on the face of the stone while you’re using it, made up of loose grit from the stone and microscopic bits of metal—together, called “swarf.” Be sure to set a stone back in its own container of water while you’re not actively using it, so it doesn’t dry out on you.
 
+<figure>
+<img alt="Three close-up views of a knife edge: ragged and tarnished, uniform but textured, and unifore and polished." sizes="(min-width: 1260px) 319px, (min-width: 1020px) calc(12.73vw + 161px), (min-width: 800px) calc(4.5vw + 240px), (min-width: 560px) calc(32.27vw + 24px), 93.33vw" srcset="/img/sharpness-1.jpg 320w,/img/sharpness-2.jpg 450w,/img/sharpness-3.jpg 640w,/img/paper-guide-4.jpg 820w,/img/sharpness-5.jpg 1024w" src="/img/sharpness-3.jpg">
+<figcaption class="caption">
+    A dull, tarnished edge, an edge polished to 800 grit, and an edge polished to 4000 grit.
+</figcaption>
+</figure>
+
 I really only use two of my handful of stones, both double-sided: one is 1000/6000 grit, and the other is 800/4000 grit. Like sandpaper, “grit” refers to the coarseness of the waterstone—the lower the number, the more coarse the stone, and the rougher the edge it’ll put on your knife.
 
 Lower grit stones are necessary for reshaping an edge, buffing out all the microscopic dings, scratches, rounded-over spots that cause dullness. Stopping there would still mean a dull knife, though—a low grit means we’ve reshaped the edge with a series of deep (on a microscopic level) scratches, like the edge of a saw. The edge is uniform, but not uniformly _sharp_. If a knife is in pretty serious need of sharpening, I’ll start with my 800 grit stone. If I’m just tuning-up a well maintained knife after a few months of use, I’ll start with my 1000 grit stone. I don’t need to remove a lot of material if the edge is already in pretty fair shape—using the 800 stone is only gonna make it _less_ sharp, if uniformly so.
@@ -77,7 +84,7 @@ A few things to keep in mind:
 * Waterstones are soft. Until you get a solid feel for your sharpening angle, always pull the knife—away from the edge—rather than pushing the knife edge-first. Otherwise, if your angle is too steep, you’ll take a chunk out of the stone.
 * Likewise, if you don’t buy a sharpening kit that includes one, be sure to get a [waterstone flattener](https://www.amazon.com/Flattening-Waterstones-Leather-Pocket-Included/dp/B01EXFKONK/ref=sr_1_cc_4?s=aps&ie=UTF8&qid=1529958169&sr=1-4-catcorr&keywords=waterstone+flattener) to maintain your stones themselves. They’ll wear unevenly and warp over time, making them far less effective—a flattener buffs the surface of the stones nice and flat again.
 
-<img alt="Two views of a knife held evenly against a sharpening stone—one with the heel at the top left corner of the stone, and one with the tip at the bottom right." sizes="(min-width: 1260px) 319px, (min-width: 1020px) calc(12.73vw + 161px), (min-width: 800px) calc(4.5vw + 240px), (min-width: 560px) calc(32.27vw + 24px), 93.33vw" srcset="/img/sharpen-angle-1.jpg 320w,/img/glint-2.jpg 450w,/img/sharpen-angle-3.jpg 640w,/img/sharpen-angle-4.jpg 820w,/img/sharpen-angle-5.jpg 1024w" src="/img/sharpen-angle-3.jpg">
+<img alt="Two views of a knife held evenly against a sharpening stone—one with the heel at the top left corner of the stone, and one with the tip at the bottom right." sizes="(min-width: 1260px) 319px, (min-width: 1020px) calc(12.73vw + 161px), (min-width: 800px) calc(4.5vw + 240px), (min-width: 560px) calc(32.27vw + 24px), 93.33vw" srcset="/img/sharpen-angle-1.jpg 320w,/img/sharpen-angle-2.jpg 450w,/img/sharpen-angle-3.jpg 640w,/img/sharpen-angle-4.jpg 820w,/img/sharpen-angle-5.jpg 1024w" src="/img/sharpen-angle-3.jpg">
 
 Maintain firm, even pressure across the blade, and drag the knife down the length of the stone, and across the width of the stone from heel to tip—starting at with the heel of the blade at the top left of the stone, and ending with the tip of the blade at the bottom right. Southpaws, other way around: heel to tip, from top right to bottom left.
 
@@ -91,7 +98,12 @@ The “sharpening angle” is the angle formed by your knife and your sharpening
 
 Now, for the sake of simplicity, I’m going to make a few assumptions here. Most western-style knives are double-beveled—meaning that the edge is symmetrical on both sides of the knife. I’m going to assume that’s what you’re working with. I’m also going to assume that the sharpening angle of your knife is somewhere between fifteen and twenty two degrees, because that’s a pretty safe assumption to make about chef’s knives in general. Thinner eastern knives are usually at the lower end of that scale and heavier western knives tend toward the higher end, but you’re not gonna see many general-purpose knives outside that range. The steeper the bevel, the sharper—and potentially, more fragile—the edge.
 
-<img alt="" sizes="(min-width: 1260px) 319px, (min-width: 1020px) calc(12.73vw + 161px), (min-width: 800px) calc(4.5vw + 240px), (min-width: 560px) calc(32.27vw + 24px), 93.33vw" srcset="/img/paper-guide-1.jpg 320w,/img/glint-2.jpg 450w,/img/paper-guide-3.jpg 640w,/img/paper-guide-4.jpg 820w,/img/paper-guide-5.jpg 1024w" src="/img/paper-guide-3.jpg">
+<figure>
+<img alt="A sharpening angle guide made from a twice-folded sheet of paper." sizes="(min-width: 1260px) 319px, (min-width: 1020px) calc(12.73vw + 161px), (min-width: 800px) calc(4.5vw + 240px), (min-width: 560px) calc(32.27vw + 24px), 93.33vw" srcset="/img/paper-guide-1.jpg 320w,/img/paper-guide-2.jpg 450w,/img/paper-guide-3.jpg 640w,/img/paper-guide-4.jpg 820w,/img/paper-guide-5.jpg 1024w" src="/img/paper-guide-3.jpg">
+<figcaption class="caption">
+    I reground my Shun to 22 degrees—a twice-folded paper guide lines up pretty closely.
+</figcaption>
+</figure>
 
 With practice, you’ll be able to find your sharpening angle naturally—a combination of muscle memory, feel, and even sound. You can buy fancy adjustable angle guides to help you feel it out, but you can make a rough one to help you find your angle. Fold a sheet of paper from corner to corner, and you’ll have a 45 degree angle. Fold it again, and you’ll have a 22.5 degree angle—close enough to a 20 degree western-style bevel to use it as a rough guide. Fold it one more time and you’ll have an 11.25 degree angle, close enough to an eastern-style bevel to use it as a rough guide. Obviously you can’t put any pressure on a folded paper, but you can use it to double-check and then finesse your sharpening angle while you get the hang of things.
 
