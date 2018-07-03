@@ -64,7 +64,7 @@ I use a set of mis-matched waterstones, inherited and accumulated over the years
 Before using them, Waterstones should be fully submerged and allowed to soak for at least half an hour. The water prevents them from being too aggressively abrasive. It also helps an abrasive slurry to form on the face of the stone while you’re using it, made up of loose grit from the stone and microscopic bits of metal—together, called “swarf.” Be sure to set a stone back in its own container of water while you’re not actively using it, so it doesn’t dry out on you.
 
 <figure>
-<img alt="Three close-up views of a knife edge: ragged and tarnished, uniform but textured, and unifore and polished." sizes="(min-width: 1260px) 319px, (min-width: 1020px) calc(12.73vw + 161px), (min-width: 800px) calc(4.5vw + 240px), (min-width: 560px) calc(32.27vw + 24px), 93.33vw" srcset="/img/sharpness-1.jpg 320w,/img/sharpness-2.jpg 450w,/img/sharpness-3.jpg 640w,/img/paper-guide-4.jpg 820w,/img/sharpness-5.jpg 1024w" src="/img/sharpness-3.jpg">
+<img alt="Three close-up views of a knife edge: ragged and tarnished, uniform but textured, and unifore and polished." sizes="(min-width: 1260px) 319px, (min-width: 1020px) calc(12.73vw + 161px), (min-width: 800px) calc(4.5vw + 240px), (min-width: 560px) calc(32.27vw + 24px), 93.33vw" srcset="/img/sharpness-1.jpg 320w,/img/sharpness-2.jpg 450w,/img/sharpness-3.jpg 640w,/img/sharpness-4.jpg 820w,/img/sharpness-5.jpg 1024w" src="/img/sharpness-3.jpg">
 <figcaption class="caption">
     A dull, tarnished edge, an edge polished to 800 grit, and an edge polished to 4000 grit.
 </figcaption>
