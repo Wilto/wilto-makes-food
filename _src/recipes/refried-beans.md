@@ -4,7 +4,6 @@ tags:
     - Mexican
 lede: "A lot of people will tell you that <em>really</em> good refried beans can’t be made from canned beans. Well, I am here to tell you: okay, yeah, they’re probably right."
 type: recipe
-subfeat: true
 img: refried-beans
 alt: A bowl of partially-mashed refried beans, with a sprig of oregano as garnish.
 ---

@@ -3,7 +3,7 @@ title: A Woodworker’s Guide to Knife Sharpening
 subhed: Multiclassing has its benefits.
 lede: I was supposed to be a carpenter. My father was a carpenter. His father— well, he owned a hammer, and building codes were pretty lax back in his day.
 type: article
-feat: true
+subfeat: true
 img: sharpening
 alt: Three chef’s knives side-by-side on a cloth rag, alongside a dampened sharpening stone and a bowl of water.
 ---
@@ -130,7 +130,7 @@ Worst case, take a crack at it the next time you’re planning to send your kniv
 
 See, there’s a flip side to nigh-obsessive tool maintenance. It’s an acceptance—even a sort of reverence—for the kind of wear-and-tear that we _can’t_ control. Take a joinery mallet: it is, structurally speaking, a block of wood at the end of a stick. I’ve seen super fancy joinery mallets, sure—hell, [the one I made myself is more than a little over-the-top](https://twitter.com/wilto/status/505777806761271297)—but it’s still just a dumb wooden club. I could keep it in pristine shape, of course—sand it down every time it gets a ding in the face, put a few coats of finish on it—but that wouldn’t make it _work_ any better. I could stop using it altogether and save it from the ravages of time, but then it isn’t a joinery mallet anymore; just a block of wood on a stick, pristine and useless. As it becomes weathered and worn through years of use, even a dumb wooden club can come to feel like something deeply personal; an invisible component in everything one builds with it, and a visible marker of one’s own accumulated experience.
 
-One of the less psychological things I inherited was a mismatched set of planes, all much older than I am. Almost all of their lacquer has flaked away though _generations_ of use, exposing the dull iron underneath. The once oiled and polished rosewood handles have gone black from decades of exposure to light and general woodworking grime. The years have worn away the inessential. I could refurbish them, top to bottom, but it would just be for show.
+One of the less psychological things I inherited was a mismatched set of planes, all much older than I am. Almost all of their lacquer has flaked away through _generations_ of use, exposing the dull iron underneath. The once oiled and polished rosewood handles have gone black from decades of exposure to light and general woodworking grime. The years have worn away the inessential. I could refurbish them, top to bottom, but it would just be for show.
 
 Their blades, though—I keep those razor sharp, like my father did, and like his father did. Those planes have seen some shit and they’re no prettier for it, but with a little maintenance now and then, they leave behind a surface as smooth as glass—as good, or better, than they did fresh from the factory.
 

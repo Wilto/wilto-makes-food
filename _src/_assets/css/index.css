@@ -765,7 +765,8 @@ a.prod img {
 }
 
 .feat .feat-header {
-	margin-top: 12.5%;
+	margin: 15% auto 0 auto;
+	max-width: 80em !important;
 }
 
 .credit {
