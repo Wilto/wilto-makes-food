@@ -13,7 +13,7 @@
 			"amt" : {
 				"whole" : "150",
 				"measure" : {
-					"abbr" : "G",
+					"abbr" : "G.",
 					"full" : "Grams"
 				}
 			}
@@ -24,7 +24,7 @@
 			"amt" : {
 				"whole" : "150",
 				"measure" : {
-					"abbr" : "G",
+					"abbr" : "G.",
 					"full" : "Grams"
 				}
 			}
@@ -34,7 +34,7 @@
 			"amt" : {
 				"whole" : "110",
 				"measure" : {
-					"abbr" : "G",
+					"abbr" : "G.",
 					"full" : "Grams"
 				}
 			}
@@ -45,7 +45,7 @@
 			"amt" : {
 				"whole" : "150",
 				"measure" : {
-					"abbr" : "G",
+					"abbr" : "G.",
 					"full" : "Grams"
 				}
 			}
