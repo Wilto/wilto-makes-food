@@ -13,7 +13,7 @@ alt: Bright yellow macarons with white buttercream filling, on a sheet of parchm
 
 Yes.
 
-“<a href="http://www.thenibble.com/reviews/main/cookies/cookies2/history-of-macaroons.asp">Macaroons</a>” were originally airy meringue cookies made from egg whites and equal parts sugar and almond flour. Some folks added coconut to theirs, some didn’t. A Parisian baker started sticking macaroons together with ganache—and thus do we have “<i>macarons</i>.” The cookies share an origin, the names share an entymology, language is fluid, and just because I feel that the Oxford comma adds clarity doesn’t mean that it’s inherently “more correct” <em>that’s right I said it welcome to my food blog motherfuckers</em>.
+“<a href="http://www.thenibble.com/reviews/main/cookies/cookies2/history-of-macaroons.asp">Macaroons</a>” were originally airy meringue cookies made from egg whites and equal parts sugar and almond flour. Some folks added coconut to theirs, some didn’t. A Parisian baker started sticking macaroons together with ganache—and thus do we have “<i>macarons</i>.” The cookies share an origin, the names share an etymology, language is fluid, and just because I feel that the Oxford comma adds clarity doesn’t mean that it’s inherently “more correct” <em>that’s right I said it welcome to my food blog motherfuckers</em>.
 
 Italian macarons use a sugar syrup to help set the egg whites, which is supposed to be a little more work in exchange for slightly more consistent results. French macarons have caster sugar added directly to the egg whites; honestly, I haven’t tried it, but I’ll report back when I do.
 
