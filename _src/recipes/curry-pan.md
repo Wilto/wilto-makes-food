@@ -1,39 +1,34 @@
+---
+title: Curry Pan
+tags: 
+    - Yoshoku
+lede: This is a recipe for soft, chewy bread rolls, filled with <a href="/recipes/curry-rice/">curry</a>, breaded <em>more</em>, and deep-fried. So, y’know. Strap in.
+type: recipe
+feat: true
+img: curry-pan
+alt: A bowl of partially-mashed refried beans, with a sprig of oregano as garnish.
+---
 
-    For the dough: 
+This might not come as much of a surprise to you, reader, but I end up with a lot of leftover curry. I’m not gonna fire up the rice maker over and over again just to work through a batch of curry experimentation over the course of a week—so, on day two, I whip up a batch of curry pan, chuck them in the fridge, and crisp them up in the toaster oven for a quick lunch.
 
-    3 oz. sourdough starter
-    1/2 cup water (125 grams)
-    1 tsp instant yeast
-    1/4 tsp sugar
-    150 grams all purpose flour
-    80 grams “00” flour
-    1 tsp salt
-    1 tsp neutral oil
+To answer your next question: a lot. I spend a _lot_ of time at the gym. _A lot of time_.
 
-    one egg, lightly beaten
-    1/2 cup panko crumbs
+Another reason it works well with leftovers is that, well, you want your curry filling a little… congealed, for want of a more appealing word. Too much liquid is gonna make it hard to seal the bread up, so they’re more likely to burst—and abruptly introducing water to hot oil isn’t generally good news. Pour off some of the liquid, and chop up or mash your… curry components—potatos, carrots, meat, etc.—so your filling is easier to wrap. Be sure to watch out for spitting oil either way—it’s a good idea to put a mesh cover over the oil while you’re frying these, or keep a lid handy.
 
-Instructions
+Speaking of the gym: there’s a lot of punching, resting, and flattening in this recipe—you’re basically knocking the the yeast around before these hit the hot oil. We’re looking to _hold back_ the sort of oven spring you’d get baking any ol’ loaf of bread. A sudden spike in temperature will send yeast into high gear (until it gets _too_ hot inside the dough, and they burn out). It also produces steam, stretching the holes in the bread further. In a stand-alone loaf of bread, that’s often what you want—for these, we want the bread soft, but with a fairly tight crumb—more “bao” than “baguette,” y’know? In my experience, I’ll get two solid rises from off-the-shelf instant yeast, with a weaker third. So, these use a long first ferment—overnight in the fridge, ideally—for maximum bread-y flavor, a second rise that we completely ruin with the final shaping, and a weakened third and final “oven” spring in the hot oil.
 
-For the dough: Whisk the yeast, sugar, flours, and salt together in a bowl.
+Speaking of, though: no reason you can’t bake them. I’m gonna ballpark 350°F, for about half an hour—until they’re golden brown. A little egg-wash probably wouldn’t go amiss, either. I’ll try it next time around, and update this post accordingly.
 
- Add the 1 1/2 tablespoons of oil and the water, and mix with your hands, in a mixer, or in a food processor, adding more water or flour as needed, until you have a smooth dough.
+### I Think Japanese Curry is Weird and Gros—
 
- machine-knead 5 minutes on low-med speed
+_You’re weird and gross._
 
- do a few envelope-folds, form into a tight ball, and let rest for fifteen minutes
- put in lightly oiled bowl and ferment for 2 hours, or overnight in the fridge
- punch down
- 
+### …Okay? Wow?
 
-Place the dough into an oiled bowl, cover with plastic wrap, and let rise until doubled, 60 to 90 minutes.
+Look—fine. Okay. It isn’t for everyone. I’m sorry for yelling.
 
-Divide the dough into 10 to 12 equal pieces and shape each into a ball. Place on a plate or on your counter, cover with plastic wrap and let rest for 30 to 45 minutes.
+Listen: you can fill these with _whatever_. There’s a reason every imaginable cuisine has some version of “bread, but with stuff in it”—it is because that is a thing that rules, and this is that, deep-fried. Fill them with leftover Indian take-out! Fill them with red bean paste for a heartier twist on _dou sha bao_. Pioneer bold and unconventional new Hot Pocket™ flavors. Fill them with other, smaller breads. Whisper a wish in there. I’m not gonna stop you.
 
-For the filling: Drain any excess liquid from the stew you have set aside. Cut the meat into smaller pieces, and roughly mash the vegetables. Stir the meat back into the vegetables.
+But _do_ [let me know how it turns out](https://twitter.com/wiltomakesfood).
 
-To prepare the buns: Flatten each piece of dough into a disk, about 1/4 inch thick. Place a heaping teaspoon of curry in the middle of the dough circle, bring the seams together, seal, and fold up into a ball.
 
-Whisk the egg and the water in a bowl, and place the panko in another bowl. Dip each ball in the egg wash, and then coat with the panko, lightly pressing the crumbs into the dough with your hands. Let them rest for about 15 minutes, covered, while you heat the oil.
-
-In a fryer, wok, or pan, heat the oil to 365 degrees F. Fry the buns, two to three at a time, turning them as they cook, so that they brown evenly. They are ready in 2 to 4 minutes. Using a slotted spoon, remove them to a paper towel lined plate. Serve immediately.

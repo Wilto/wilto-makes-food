@@ -1,0 +1,128 @@
+{
+	"name" : "Curry Bread",
+	"meta" : {
+		"serves": "4–5",
+		"active": "45 minutes",
+		"total": "Overnight"
+	},
+	"ingredients" : [
+		{
+			"name" : "Sourdough starter",
+			"amt" : {
+				"whole" : "85",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			},
+			"notes" : "straight from the fridge"
+		},
+		{
+			"name" : "Water",
+			"amt" : {
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cup"
+				}
+			},
+			"notes" : "at ~90°f (32°c)"
+		},
+		{
+			"name" : "Instant Yeast",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "Teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Sugar",
+			"amt" : {
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "Teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "All-Purpose Flour",
+			"amt" : {
+				"whole" : "150",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Whole-Wheat Flour",
+			"amt" : {
+				"whole" : "25",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Cake Flour",
+			"amt" : {
+				"whole" : "55",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Kosher Salt",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "Teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Eggs",
+			"amt" : {
+				"whole" : "2"
+			},
+			"notes": "lightly beaten"
+		},
+		{
+			"name" : "Water",
+			"amt" : {
+				"fract" : "1/2",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			}
+		},
+		{
+			"name" : "Panko Breadcrumbs",
+			"amt" : {
+				"whole" : "1",
+				"cups" : {
+					"abbr" : "C.",
+					"full" : "Cup"
+				}
+			},
+			"notes":"give or take"
+		}
+	],
+	"instructions": [
+		"Whisk the yeast, sugar, flours, and salt together in a bowl.",
+		"Add water and mix until smooth. Allow the dough to rest for fifteen minutes, then hand-knead for ten minutes or so. If using a stand mixer, switch to the dough hook and knead at low-medium speed for seven minutes. You want a decent amount of gluten development so it doesn’t tear while you’re filling and shaping it, so it should pass the windowpane test.",
+		"Perform a set of envelope folds, form into a tight-skinned ball, and allow to rest on the countertop, loosely covered, for fifteen minutes. Place in a lightly oiled bowl and ferment for two hours, or overnight in the fridge.",
+		"Punch the dough down, envelope-fold and shape it back into a ball, place it into a clean, oiled bowl, cover with plastic wrap, and let rise until doubled. This’ll take an hour to an hour and a half, depending on the temperature in your kitchen. Divide into 10–16 equally-sized, ball-shaped pieces, and leave them to rest for another fifteen minutes.",
+		"Bring oil to 350° f (~175° c) in a fryer, wok, deep pan, or dutch oven. Meanwhile, flatten each piece of dough into a thin disc, add a spoonful of curry to the center (drained of excess liquid, if necessary), purse the seams together (use a fingertip and a small bowl of water to seal the edges together, if the dough isn’t sticking), and form into a ball, crescent, or torpedo shape.",
+		"Roll the shaped dough in the egg/water wash, then the breadcrumbs. Fry one or two pieces at a time for just a few minutes each side—until uniformly golden brown. Remove with a slotted spoon and let cool briefly on a plate lined with paper towels. Serve immediately, with a drizzle of Kewpie mayo and Bull-Dog tonkatsu sauce, and—if you’re living your best life—a generous side of <i>fukujinzuke</i>."
+	]
+}

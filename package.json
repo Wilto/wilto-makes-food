@@ -25,8 +25,8 @@
     "luxon": "^0.3.1"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.3.4",
-    "grunt": "^1.0.2",
+    "@11ty/eleventy": "^0.3.6",
+    "grunt": "^1.0.3",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",

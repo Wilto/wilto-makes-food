@@ -664,6 +664,7 @@ p.lede {
 }
 .feat .feat-header {
 	width: 25em;
+	max-width: 80% !important;
 }
 .recipe-header {
 	margin-top: 3em;
@@ -885,3 +886,13 @@ p.lede {
 	padding-bottom: .15em;
 	display: block;
 }
+
+.intro pre {
+	border: 1px solid #ddd;
+	color: #555;
+	padding: .75em 1em;
+	border-radius: 3px;
+}
+code {
+}
+
