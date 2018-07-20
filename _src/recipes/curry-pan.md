@@ -17,7 +17,7 @@ Another reason it works well with leftovers is that, well, you want your curry f
 
 Speaking of the gym: there’s a lot of punching, resting, and flattening in this recipe—you’re basically knocking the the yeast around before these hit the hot oil. We’re looking to _hold back_ the sort of oven spring you’d get baking any ol’ loaf of bread. A sudden spike in temperature will send yeast into high gear (until it gets _too_ hot inside the dough, and they burn out). It also produces steam, stretching the holes in the bread further. In a stand-alone loaf of bread, that’s often what you want—for these, we want the bread soft, but with a fairly tight crumb—more “bao” than “baguette,” y’know? In my experience, I’ll get two solid rises from off-the-shelf instant yeast, with a weaker third. So, these use a long first ferment—overnight in the fridge, ideally—for maximum bread-y flavor, a second rise that we completely ruin with the final shaping, and a weakened third and final “oven” spring in the hot oil.
 
-No reason you _can’t_ bake these, though. I’m gonna ballpark 350°F, for about half an hour—until they’re golden brown. A little egg-wash probably wouldn’t go amiss, either. I’ll try it next time around, and update this post accordingly.
+No reason you _can’t_ bake these, though. I’m gonna ballpark 350°F, for about half an hour—until they’re golden brown. Skipping the breading and just hitting them with some egg wash probably wouldn’t go amiss, either. I’ll try it next time around, and update this post accordingly.
 
 ### I Think Japanese Curry is Weird and Gros—
 
