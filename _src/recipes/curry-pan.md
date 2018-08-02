@@ -4,7 +4,7 @@ tags:
     - Yoshoku
 lede: This is a recipe for soft, chewy bread rolls, filled with <a href="/recipes/curry-rice/">curry</a>, breaded <em>more</em>, and deep-fried. So, y’know. Strap in.
 type: recipe
-feat: true
+subfeat: true
 img: curry-pan
 alt: A bowl of partially-mashed refried beans, with a sprig of oregano as garnish.
 ---

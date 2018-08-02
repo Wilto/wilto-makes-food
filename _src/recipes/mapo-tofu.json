@@ -1,0 +1,146 @@
+{
+	"name" : "Mapo Tofu",
+	"notes" : "Adapted from a recipe in Fuschia Dunlop’s <a href='https://www.amazon.co.uk/Land-Plenty-Treasury-Authentic-Sichuan/dp/0393051773/'>Land of Plenty</a>.",
+	"meta" : {
+		"total": "20 minutes",
+		"serves" : "3"
+	},
+	"ingredients" : [
+		{
+			"name" : "Silken tofu",
+			"amt" : {
+				"whole" : "1",
+				"measure" : "Block"
+			}
+		},
+		{
+			"name" : "Leeks",
+			"amt" : {
+				"whole" : "2"
+			}
+		},
+		{
+			"name" : "Peanut oil",
+			"amt" : {
+				"whole" : "1/2",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cup"
+				}
+			}
+		},
+		{
+			"name" : "Doubanjiang",
+			"amt" : {
+				"whole" : "2",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			},
+			"href": "https://amzn.to/2v9kVas"
+		},
+		{
+			"name" : "Fermented black beans",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			},
+			"href": "https://amzn.to/2vf8wS6"
+		},
+		{
+			"name" : "Sichuan chili flakes",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoons"
+				}
+			},
+			"note" : "more, less, or none at all, to taste",
+			"optional" : true
+		},
+		{
+			"name" : "Utility Stock",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cup"
+				}
+			},
+			"href": "/recipes/utility-stock/"
+		},
+		{
+			"name" : "Sichuan chili flakes",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "Teaspoons"
+				}
+			}
+		},
+		{
+			"name" : "Sugar",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Light soy sauce",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoons"
+				}
+			},
+			"href" : "https://amzn.to/2O65gzr"
+		},
+		{
+			"name" : "Cornstarch",
+			"amt" : {
+				"whole" : "4",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "Sichuan chili oil",
+			"notes" : "to taste",
+			"href" : "/recipes/chili-oil"
+		},
+		{
+			"name" : "Scallion greens",
+			"notes" : "finely chopped"
+		},
+		{
+			"name" : "Sichuan peppercorns",
+			"amt" : {
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			},
+			"notes" : "lightly roasted and finely ground"
+		}
+	],
+	"instructions": [
+		"Cut the tofu into ~1 inch cubes, and the leeks into roughly one-inch <a href='https://lifehacker.com/three-different-ways-to-slice-a-scallion-depending-on-1778010438'>horse ears</a>.",
+		"Lightly oil your wok, wipe away the excess, and place it over high heat until smoking. Add the peanut oil and heat until just smoking, then add the chili paste and turn the heat down to medium. Stir-fry for thirty seconds or so. Add fermented black beans and chili flakes, if using, and stir fry for another thirty seconds or so.",
+		"Add stock (keep a cover handy, as the hot oil might spit here) and stir well. Gently add tofu cubes, and carefully mix by pushing the contents of the wok around with the back of a ladle or spatula. Season with sugar and soy sauce, as well as additional chili flakes, if you’ve got somethin’ to prove, here.",
+		"Add leeks and stir gently. When just cooked—only a few minutes—add the cornstarch mixture a tablespoon at a time, mixing carefully, until the sauce has just thickened enough to cling to the tofu. Serve topped with chili oil, a dusting of Sichuan peppercorns, and a handful of finely chopped scallion greens."
+	]
+}

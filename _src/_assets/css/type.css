@@ -896,3 +896,13 @@ p.lede {
 code {
 }
 
+p.recipe-credit {
+	color: #666;
+	margin-top: 1.5em;
+	font-size: .75em;
+	font-family: "Open Sans", sans-serif;
+}
+
+p.recipe-credit a {
+	color: #333;
+}

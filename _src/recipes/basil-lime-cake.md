@@ -9,6 +9,7 @@
 2 tsp baking soda
 
 2 eggs, room temp, lightly beaten
+2 egg yolks
 
 520 g. cake flour
 1/3 C. milk
