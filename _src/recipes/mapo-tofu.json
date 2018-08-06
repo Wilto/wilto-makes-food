@@ -76,16 +76,6 @@
 			"href": "/recipes/utility-stock/"
 		},
 		{
-			"name" : "Sichuan chili flakes",
-			"amt" : {
-				"whole" : "2",
-				"measure" : {
-					"abbr" : "tsp.",
-					"full" : "Teaspoons"
-				}
-			}
-		},
-		{
 			"name" : "Sugar",
 			"amt" : {
 				"whole" : "1",
@@ -114,7 +104,8 @@
 					"abbr" : "Tbsp.",
 					"full" : "Tablespoons"
 				}
-			}
+			},
+			"notes" : "mixed into 6 Tbsp. cold water"
 		},
 		{
 			"name" : "Sichuan chili oil",
