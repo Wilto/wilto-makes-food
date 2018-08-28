@@ -1,0 +1,73 @@
+{
+	"name" : "French Macarons",
+	"notes" : "Adapted from a <a href='https://www.cambridgeculinary.com'>Cambridge School of Culinary Arts</a> recipe.",
+	"meta" : {
+		"serves": "4",
+		"active": "30 minutes",
+		"total": "1 3/4 hours"
+	},
+	"ingredients" : [
+		{
+			"name" : "Almond Flour",
+			"href": "https://amzn.to/2KYV8uK",
+			"amt" : {
+				"whole" : "170",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Confectioner’s Sugar",
+			"href": "https://amzn.to/2N4517G",
+			"amt" : {
+				"whole" : "225",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Egg Whites",
+			"amt" : {
+				"whole" : "160",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			},
+			"notes": "About five"
+		},
+		{
+			"name" : "Granulated Sugar",
+			"amt" : {
+				"whole" : "125",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Vanilla Extract",
+			"amt" : {
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "Teaspoon"
+				}
+			}
+		}
+	],
+	"instructions": [
+		"Put the confectioner’s sugar and almond flour in a food processor and run it to combine. Sift them into a large mixing bowl twice, discarding any larger bits.",
+		"In the very carefully washed bowl of a stand mixer, beat the egg whites at high speed until they reach soft peaks. Turn the machine to low and add granulated sugar, then turn back up to medium and beat until the sugar is completely dissolved, the egg whites are shiny, and stiff peaks form.",
+		"Carefully fold the meringue into the dry ingredients, adding colorings/extract only once roughly incorporated.",
+		"Pipe into silver dollar sized discs on dark cookie sheets lined with parchment paper, leaving at least an inch or two between each shell—you can draw circle guides on the underside of the parchment with a Sharpie. You should be able to hold the piping bag still, centered, using a small round piping tip. The peak in the center should incorporate after a few seconds, and sit flat again. They’ll spread slightly, but should be rounded on the sides, rather than completely flat.",
+		"Give the cookie sheets a few sharp raps against the countertop to pop the bubbles on the tops of the shells; they might spread slightly, but not by much. If you’re feeling particularly fussy, you can carefully pop any remaining bubbles with a toothpick—getting rid of them will keep the domes from cracking in the oven.",
+		"Leave them to dry until you can gently touch the tops of them without any meringue sticking to your finger—from 30 min to an hour, depending on the humidity in your kitchen. Meanwhile, preheat your oven to 325°f.",
+		"Bake at 325°f for twelve or so minutes. Wait at least ten minutes before rotating a cookie sheet, so they don’t collapse on you. Allow them to cool completely before removing from parchment/silicone mats."
+	]
+}

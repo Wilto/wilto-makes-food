@@ -29,13 +29,6 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-    // only content in the `reviews` directory
-  eleventyConfig.addCollection("reviews", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/_src\/reviews\//) !== null;
-    });
-  });
-
   eleventyConfig.addCollection("subnav", function(collection) {
     return collection.getAllSorted().filter(function(item) {
       return item.data.tags === "subnav";

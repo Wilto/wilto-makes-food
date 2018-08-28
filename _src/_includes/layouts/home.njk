@@ -46,7 +46,7 @@ templateClass: tmpl-home
 
 {% macro homeitem(post, feat=false, classes='', sizes='100vw', lazy=false) %}
 	<article class="{{ classes }}{% if post.data.type == "article" %} article{% endif %} item">
-		{% if ( post.data.type == "article" ) or ( post.data.type == "review" ) %}
+		{% if ( post.data.type == "article" ) %}
 		<div class="art-content">
 			{% if post.data.tags %}
 			{% if post.data.tags !== "subnav" %}
@@ -121,14 +121,3 @@ templateClass: tmpl-home
 	<a href="/articles/" class="cta">All Articles</a>
 </section>
 
-<h2 class="section-hed" id="latest-rev">Latest Reviews</h2>
-<section class="col" role="region" aria-labelledby="latest-rev">
-	<div class="highlights">
-{% for post in postslist | reverse %}
-{% if ( post.data.feat != true ) and ( post.data.subfeat != true ) and ( post.data.type == "review" ) %}
-	{{ homeitem(post, '', '', '(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw', true) }}
-{% endif %}
-{% endfor %}
-	</div>
-	<a href="/recipes/" class="cta">All Reviews</a>
-</section>

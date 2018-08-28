@@ -1,5 +1,0 @@
-{
-	"title":"Reviews",
-	"layout": "layouts/post.njk",
-	"type": "landing"
-}

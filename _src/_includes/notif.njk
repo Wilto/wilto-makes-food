@@ -1,3 +1,6 @@
-<div class="notification" role="alert" tabindex="0" aria-labelledby="notif-hed">
+<div class="notification">
 	<h2 class="notif-hed" id="notif-hed">{{ notif | safe }}</h2>
+	{% if notifcta %}
+		<a href="{{ notifhref }}" class="notif-cta cta">{{ notifcta | safe }}</a>
+	{% endif %}
 </div>

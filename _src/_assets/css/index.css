@@ -1065,9 +1065,14 @@ img.take-your-time {
 	font-family: "Fanwood Text", serif;
 	border: 1px solid rgba(255,150,0, .25);
 }
-.intro table tr:last-child th,
-.intro table tr:last-child td {
+.intro table tr:last-child th {
 	padding-bottom: .5em;
+}
+
+.intro table tr:nth-child(even) td {
+	background: #f8f4ee;
+	border-bottom: 1px solid #f3ebde;
+	border-top: 1px solid #f3ebde;
 }
 .intro thead {
 	font-size: .8em;
@@ -1077,7 +1082,7 @@ img.take-your-time {
 .intro tbody th,
 .intro tbody td {
 	font-size: 1.1em;
-	padding: .25em 1em;
+	padding: .35em 1em .2em 1em;
 }
 .intro tbody th {
 	font-family: "open sans", sans-serif;
@@ -1446,13 +1451,59 @@ img.take-your-time {
 
 .notification {
 	background: #fff;
-	overflow: hidden;
 	border: 1px solid rgba(255,150,0, .5);
-	padding: 0 1em;
-	margin: 2em -1em 0 -1em;
+	padding: 0 1em .5em 1em;
+	margin: 1em 0 0 0;
+	overflow: visible;
+	position: relative;
+}
+.notification:not(.toast):before {
+	clip-path: polygon(0 100%, 15px 0, 100% 100%);
+	transform: rotate(-.5deg);
+	background: rgba(255,150,0, .5);
+	content: "";
+	display: block;
+	position: absolute;
+	top: -2vw;
+	height: 4vw;
+	left: 0;
+	width: 100%;
+	z-index:-1;
+}
+
+
+.notification:not(.toast) .notif-cta {
+	margin: auto;
+	padding-top: .85em;
+	font-size: .8em;
+	text-transform: uppercase;
+	font-family: "open sans", sans-serif;
+}
+@media(min-width: 40em ) {
+	.notification:not(.toast):before {
+		top: -.8em;
+		height: 1.6em;
+	}
+	.notification:not(.toast) .notif-hed {
+		padding-top: .125em;
+	}
+	.notification:not(.toast) .notif-cta {
+		border-width: 0 0 0 1.5px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding-top: 1.6em;
+		max-width: 20%;
+		bottom: 0;
+	}
+	.notification:not(.toast) .notif-cta:after {
+		z-index: 1;
+	}
 }
 .notification.toast {
+	background: #fff;
 	position: absolute;
+	overflow: hidden;
 	top: 0;
 	right: 2.5%;
 	left: 2.5%;

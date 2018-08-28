@@ -1,12 +1,12 @@
 (function() {
 	const notify = function( txt, thendo ) {
-		const notif = document.querySelector( ".notification" ),
+		const notif = document.querySelector( ".offline-notice" ),
 			create = function( txt ) {
 				var body = document.body,
 					notif = document.createElement( "div" ),
 					copy = document.createTextNode( txt );
 
-				notif.classList.add( "notification","toast","notif-hed" );
+				notif.classList.add( "notification","toast","notif-hed", "offline-notice" );
 				notif.setAttribute( "role", "alert" );
 
 				notif.append( copy );

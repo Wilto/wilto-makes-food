@@ -438,6 +438,20 @@ p.lede {
 	font-weight: normal;
 }
 
+.intro .subhed .amp,
+.intro h3 .amp,
+.intro h4 .amp {
+	color: #d78135;
+	font-family: "fanwood text", serif;
+	font-size: 1.4em;
+	font-weight: normal;
+	line-height: .9;
+	position: relative;
+	bottom: -.1em;
+	margin: 0 .25em;
+	padding: 0;
+}
+
 .fonts .intro h4 {
 	font-size: .9em;
 	color: #666;
@@ -474,9 +488,8 @@ p.lede {
 .notif-hed {
 	font-family: "Fanwood Text", serif;
 	font-weight: normal;
-	font-size: 1.3em;
+	font-size: 1.45em;
 	margin: .5em 0 .1em 0;
-	padding: 0 1em;
 }
 .meta dd,
 .meta dt {

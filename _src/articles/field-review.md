@@ -7,7 +7,7 @@ alt: The Field Skillet.
 keywords: 
     - Cookware
     - Pans
-type: review
+type: article
 ---
 
 For the most part—but not always, sure—that rule has saved me from this maybe-familiar pattern:

@@ -4,7 +4,6 @@ tags:
   - baking
 lede: Let’s make some delicate-ass sandwich cookies.
 type: recipe
-subfeat: true
 img: macaron-shells
 alt: Bright yellow macarons with white buttercream filling, on a sheet of parchment paper.
 ---
