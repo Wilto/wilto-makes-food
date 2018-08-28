@@ -453,8 +453,20 @@ p.lede {
 }
 
 .fonts .intro h4 {
-	font-size: .9em;
-	color: #666;
+	font-size: .95em;
+	color: #555;
+	margin-top: .25em;
+	margin-bottom: 0;
+	display: inline-block;
+}
+.fonts .intro h4:after {
+	content: "";
+	display: block;
+	clear: both;
+	margin: .25em 0 0 0;
+	border-bottom: 2px solid rgba(255,150,0, .25);
+	width: 100%;
+	max-width: 6.5em;
 }
 
 .recipe-subhed {
@@ -483,6 +495,12 @@ p.lede {
 }
 .intro h3 {
 	padding-right: 2.25em;
+}
+
+p.table-note {
+	margin-top: -.75em;
+	color: #666;
+	font-size: 1.1em;
 }
 
 .notif-hed {
