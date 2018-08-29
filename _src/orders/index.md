@@ -13,15 +13,15 @@ That’s right. Starting in the fall of 2018, I’m gonna take some orders. I ha
 
 #### Chili Oil
 
-A little spicy and a little numbing, this is all-purpose condiment is [a recipe](/recipes/chili-oil/) I’ve been tinkering with on and off for a long time. Don’t have the time or inclination to mix up a batch yourself? I got you.
+A little spicy and a little numbing, this all-purpose condiment is [a recipe](/recipes/chili-oil/) I’ve been tinkering with on and off for a long time. Don’t have the time or inclination to mix up a batch yourself? I got you.
 
 #### Chili Crisp
 
-A little more spicy and a little more numbing—this a slightly tweaked version of the Sichuan chili oil recipe you might already know and love, plus a handful of fried garlic chips, an irresponsible amount of crispy fried shallots, a scoop of [doubanjian](https://en.wikipedia.org/wiki/Doubanjiang), and a sprinkling of toasted sesame seeds.
+A little more spicy and a little more numbing—this is a slightly tweaked version of the Sichuan chili oil recipe you might already know and love, with the addition of a handful of fried garlic chips, an irresponsible amount of crispy fried shallots, a scoop of [doubanjian](https://en.wikipedia.org/wiki/Doubanjiang), and a sprinkling of toasted sesame seeds.
 
 ### Macarons
 
-Macarons are notoriously fussy, and you _know_ I love a fussy recipe. So much so, in fact, that I keep making them despite having bags and bags of macaron shells burnin’ a hole in my freezer as it is. 
+Macarons are notoriously fussy, and you _know_ I love a fussy recipe. So much so, in fact, that I keep on making them—despite having bags and bags of macaron shells burnin’ a hole in my freezer as it is. Only you can save my household from this absurd cookie surplus.
 
 | Quantity   | Price |
 | ---------- | -----:|
