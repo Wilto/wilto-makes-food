@@ -25,8 +25,8 @@ Macarons are notoriously fussy, and you _know_ I love a fussy recipe. So much so
 
 | Quantity   | Price |
 | ---------- | -----:|
-| Half dozen |   $15 |
-| Dozen      |   $33 |
+| Half dozen |   $16 |
+| Dozen      |   $32 |
 <p class="table-note">Pricing for larger quantities available on request!</p>
 
 #### Fall Flavors
