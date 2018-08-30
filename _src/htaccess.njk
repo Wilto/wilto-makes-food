@@ -34,6 +34,7 @@ ErrorDocument 500 /500/
 	<If "%{DOCUMENT_URI} == '/reviews/*/index.html'">
 		H2PushResource add /_assets/css/crit/post.css?{{metadata.build}}
 	</If>
+	Header set Set-Cookie "primed=true"
 </If>
 
 # Far-future caching:

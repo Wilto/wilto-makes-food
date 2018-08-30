@@ -35,6 +35,12 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addCollection("footnav", function(collection) {
+    return collection.getAllSorted().filter(function(item) {
+      return item.data.tags === "footnav";
+    });
+  });
+
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
   let options = {

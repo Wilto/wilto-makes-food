@@ -1440,6 +1440,23 @@ img.take-your-time {
 	float: right;
 }
 
+.sponsorship {
+	place-content: start;
+	justify-content: start;
+	align-content: start;
+}
+
+.sponsorship a.patreon {
+	float: right;
+}
+.sponsorship a.patreon svg {
+	margin: 0 .25em .5em .5em;
+	background: #f96753;
+	max-width: 5em;
+	border-radius: 50%;
+	padding: .5em .25em .5em .75em;
+}
+
 @-webkit-keyframes pulse {
   0%   { border-color: rgba(255,150,0, .5) }
   100% { border-color: rgba(250,105,0, 1) }
