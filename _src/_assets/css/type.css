@@ -509,6 +509,12 @@ p.table-note {
 	font-size: 1.45em;
 	margin: .5em 0 .1em 0;
 }
+@media( min-width: 40em ) {
+	.notif-hed {
+		text-align: left;
+	}
+}
+
 .meta dd,
 .meta dt {
 	font-size: .75em;

@@ -19,7 +19,26 @@ templateClass: tmpl-post
 	alt="{{ alt }}">
 {% endmacro %}
 
+{% macro featrespimg(path, img, sizes, alt, capt) %}
+<img 
+	src="{{ path }}feat/{{ featimg }}-8.jpg" 
+	{% if capt %}
+	aria-describedby="capt-1"
+	{% endif %}
+	alt="{{ alt }}">
+{% endmacro %}
+
 <div class="col">
+	{% if featimg %}
+	<figure class="featured-image">
+		{{ featrespimg('/img/', img, '(min-width: 560px) 38vw, 100vw', alt, capt ) }}
+		{% if capt %}
+		<figcaption id="capt-1" class="caption">
+			{{capt | safe}}
+		</figcaption>
+		{% endif %}
+	</figure>
+	{% endif %}
 	<div class="intro">
 		<header role="banner" class="recipeheader">
 			<h2 class="recipe-hed" itemprop="name">{{ title }}</h2>
@@ -36,6 +55,7 @@ templateClass: tmpl-post
 			{% endif %}
 		</figure>
 		{% endif %}
+
 		{% if video %}
 		<figure aria-describedby="pagevid">
 			<video controls>

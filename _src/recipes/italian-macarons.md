@@ -4,6 +4,9 @@ tags:
   - baking
 lede: Let’s make some delicate-ass sandwich cookies.
 type: recipe
+notif: "Hey, the French meringue method is <em>much</em> easier."
+notifcta: Check it out
+notifhref: /recipes/french-macarons/
 img: macaron-shells
 alt: Bright yellow macarons with white buttercream filling, on a sheet of parchment paper.
 ---

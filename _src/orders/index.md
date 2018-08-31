@@ -1,11 +1,4 @@
----
-layout: layouts/post.njk
-title: Our Menu
-lede: "Do I have any business opening a pseudo-bakery out of a city apartment? Absolutely not. Am I gonna do it anyway? <em>Hell yes I am.</em>"
-templateClass: tmpl-post
-tags: nav
-navtitle: Ordering
----
+
 
 That’s right. Starting in the fall of 2018, I’m gonna take some orders. I have a few things to get sorted out before orders open up for-realsies—but [stay tuned](https://twitter.com/wiltomakesfood) for further announcements, and don’t hesitate to [drop me a line](mailto:me@wiltomakesfood.com) if you’ve got something in mind right now. Orders likely won’t be open _all_ the time—I mean, I’m just one person, and I’m not retired from my day job just yet—but I got more time than I have excuses to bake, so _here we are_.
 

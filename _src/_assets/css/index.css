@@ -751,6 +751,38 @@ a.prod img {
 	}
 }
 
+.intro {
+	position: relative;
+}
+
+.featured-image {
+	background: #eee;
+	margin-top: 2em;
+	position: absolute;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	margin-left: -2.6%;
+	margin-right: -2.6%;
+}
+
+.featured-image img {
+	max-width: 80em;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	line-height: .5;
+	padding: 0;
+}
+.featured-image+.intro {
+	padding: 1.25em 3.5% 7.5em 3.5%;
+	position: relative;
+	margin-top: 7.5vw;
+	margin-bottom: 2em;
+	z-index: 2;
+	background: rgba(255,255,255,.95);
+}
+
 .additional {
 	list-style: none;
 	padding: 0;
@@ -1469,10 +1501,27 @@ img.take-your-time {
 .notification {
 	background: #fff;
 	border: 1px solid rgba(255,150,0, .5);
-	padding: 0 1em .5em 1em;
+	padding: .5em 1em 1em 1em;
 	margin: 1em 0 0 0;
 	overflow: visible;
 	position: relative;
+	text-align: center;
+}
+
+.tmpl-post .notification {
+	position: absolute;
+	right: 2.5%;
+	left: 2.5%;
+}
+
+@media(min-width: 35em ) {
+	.tmpl-post .notification {
+		right: auto;
+		left: auto;
+		position: relative;
+		right: auto;
+		left: auto;
+	}
 }
 .notification:not(.toast):before {
 	clip-path: polygon(0 100%, 15px 0, 100% 100%);
@@ -1490,13 +1539,18 @@ img.take-your-time {
 
 
 .notification:not(.toast) .notif-cta {
-	margin: auto;
-	padding-top: .85em;
+	margin: 1em auto auto auto;
+	padding-top: .65em;
+	padding-bottom: .5em;
 	font-size: .8em;
 	text-transform: uppercase;
 	font-family: "open sans", sans-serif;
 }
 @media(min-width: 40em ) {
+	.notification:not(.toast) {
+		position: relative;
+		margin-bottom: 1.5em;
+	}
 	.notification:not(.toast):before {
 		top: -.8em;
 		height: 1.6em;
@@ -1507,9 +1561,11 @@ img.take-your-time {
 	.notification:not(.toast) .notif-cta {
 		border-width: 0 0 0 1.5px;
 		position: absolute;
+		padding-top: 2.25em;
+		justify-content: center;
 		right: 0;
 		top: 0;
-		padding-top: 1.6em;
+		margin-top: 0;
 		max-width: 20%;
 		bottom: 0;
 	}
