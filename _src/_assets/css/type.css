@@ -563,7 +563,6 @@ p.table-note {
 
 @media(min-width: 35em ) {
 	.meta dt {
-		float: none;
 		width: auto;
 		clear: none;
 	}

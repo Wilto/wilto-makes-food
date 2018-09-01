@@ -1211,9 +1211,16 @@ img.take-your-time {
 	display: block;
 	clear: both;
 	float: left;
+	position: relative;
+	top: -.45em;
 	margin-top: 1.5em;
 	width: 100%;
 	z-index: 0;
+}
+@supports(display: grid) {
+	.meta:after {
+			top: 0;
+	}
 }
 
 .meta dt {
@@ -1245,9 +1252,12 @@ img.take-your-time {
 	}
 }
 @media( min-width: 35em ) {
-	.meta {
-		display: flex;
+	@supports( display: grid ) {
+			.meta {
+			display: flex;
+		}
 	}
+
 	.meta:after {
 		margin-top: .55em;
 	}
@@ -1520,6 +1530,7 @@ img.take-your-time {
 	position: absolute;
 	right: 2.5%;
 	left: 2.5%;
+	width: 95%;
 }
 
 @media(min-width: 35em ) {
@@ -1529,6 +1540,7 @@ img.take-your-time {
 		position: relative;
 		right: auto;
 		left: auto;
+		width: 100%;
 	}
 }
 .notification:not(.toast):before {
