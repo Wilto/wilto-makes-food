@@ -423,10 +423,21 @@ p.lede {
 	font-size: 1.1em;
 	margin: 1.65em 0 1.2em -.7em;
 	max-width: 45em;
-	display: flex;
+	display: inline-block;
+	width: 50%;
 	font-weight: bold;
 	padding: 0 0 0 .5em;
 }
+@supports (display: grid) {
+	.intro .subhed,
+	.intro h3,
+	.intro h4 {
+		display: flex;
+		width: auto;
+	}
+}
+
+
 .intro h4 {
 	margin-left: 0;
 	padding-left: 0;

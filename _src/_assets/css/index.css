@@ -731,6 +731,14 @@ a.prod img {
 	}
 }
 
+.notification+.col .feat-thumb {
+	z-index: -1;
+}
+
+.feat-thumb img {
+	width: 100%;
+}
+
 @media( min-width: 45em ) {
 	.feat-thumb {
 		position: relative;
