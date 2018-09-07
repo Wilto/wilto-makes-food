@@ -4,8 +4,8 @@ module.exports = function(grunt) {
 	grunt.config( "responsive_images", {
 		standard: {
 			options: {
-				newFilesOnly: true,
-				quality: 70,
+				newFilesOnly: false,
+				quality: 80,
 				sizes: [{
 					name: '1',
 					width: 320,
