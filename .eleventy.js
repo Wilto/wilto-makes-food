@@ -22,10 +22,32 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // only content in the `recipes` directory
+  eleventyConfig.addCollection("truncrecipes", function(collection) {
+    let i = 0;
+    return collection.getAllSorted().reverse().filter(function(item) {
+      if( item.data.feat != true && item.data.subfeat != true && i <= 8 &&  item.inputPath.match(/^\.\/_src\/recipes\//) !== null ) {
+        i++;
+        return item;
+      }
+    });
+  });
+
     // only content in the `articles` directory
   eleventyConfig.addCollection("articles", function(collection) {
     return collection.getAllSorted().filter(function(item) {
       return item.inputPath.match(/^\.\/_src\/articles\//) !== null;
+    });
+  });
+
+    // only content in the `recipes` directory
+  eleventyConfig.addCollection("truncarticles", function(collection) {
+    let i = 0;
+    return collection.getAllSorted().reverse().filter(function(item) {
+      if( item.data.feat != true && item.data.subfeat != true && i <= 8 &&  item.inputPath.match(/^\.\/_src\/articles\//) !== null ) {
+        i++;
+        return item;
+      }
     });
   });
 
@@ -39,6 +61,17 @@ module.exports = function(eleventyConfig) {
     return collection.getAllSorted().filter(function(item) {
       return item.data.tags === "footnav";
     });
+  });
+
+  eleventyConfig.addShortcode("respimg", function( img ) {
+    return `<figure class="inline-img" ${ img.caption ? `aria-describedby="${ img.src }-capt">` : `>` }
+      <img 
+        src="/img/${ img.src }-4.jpg" 
+        alt="${ img.alt }"
+        srcset="/img/${ img.src }-1.jpg 320w, /img/${ img.src }-2.jpg 450w, /img/${ img.src }-3.jpg 640w, /img/${ img.src }-4.jpg 820w, /img/${ img.src }-5.jpg 1024w"
+        sizes="(min-width: 1320px) 323px, (min-width: 1040px) calc(8.85vw + 208px), (min-width: 800px) calc(6.36vw + 229px), (min-width: 560px) calc(32.27vw + 28px), 93.33vw" />
+      ${ img.caption ? `<figcaption class="caption" id="${ img.src }-capt">${ img.caption }</figcaption></figure>` : `</figure>` }
+  `;
   });
 
   let markdownIt = require("markdown-it");

@@ -4,7 +4,7 @@ tags:
   - baking
 lede: Less fuss, minimal muss.
 type: recipe
-feat: true
+subfeat: true
 img: french-macs
 alt: Rows of pink macaron shells filled with a pale yellow ganache.
 ---

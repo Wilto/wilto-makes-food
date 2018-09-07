@@ -77,9 +77,12 @@ templateClass: tmpl-home
 {% endmacro %}
 
 {% set postslist = collections.posts %}
+{% set otherarticles = collections.truncarticles %}
+{% set otherrecipes = collections.truncrecipes %}
+
 <h2 class="section-hed a11y-only" id="features">Features</h2>
 <section class="col features" role="region" aria-labelledby="features">
-{% for post in postslist %}
+{% for post in postslist  %}
 	{% if post.data.feat %}
 		{{ homeitem(post, true, 'feat', '(min-width: 1480px) 935px, (min-width: 800px) 64vw, 98vw') }}
 	{% endif %}
@@ -98,7 +101,7 @@ templateClass: tmpl-home
 <section class="col" role="region" aria-labelledby="latest-rec">
 	<div class="highlights">
 {% set somerecipes = 0 %}
-{% for post in postslist | reverse %}
+{% for post in otherrecipes %}
 {% if ( post.data.feat != true ) and ( post.data.subfeat != true ) and ( post.data.type == "recipe" ) %}
 	{% set somerecipes = 1 %}
 	{{ homeitem(post,'','','(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw', true) }}
@@ -112,7 +115,7 @@ templateClass: tmpl-home
 <h2 class="section-hed" id="latest-art">Latest Articles</h2>
 <section class="col" role="region" aria-labelledby="latest-art">
 	<div class="highlights">
-{% for post in postslist | reverse %}
+{% for post in otherarticles | reverse %}
 {% if ( post.data.feat != true ) and ( post.data.subfeat != true ) and ( post.data.type == "article" ) %}
 	{{ homeitem(post, '', '', '(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw', true) }}
 {% endif %}
