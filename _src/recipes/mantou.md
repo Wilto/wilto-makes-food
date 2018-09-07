@@ -31,8 +31,15 @@ So, the gist is that you sit your steamer baskets in a wok, fill the wok with wa
 
 My warning here is that this always beats the hell out of the seasoning on my wok, even if I start with a full pan of cold water and bring it up to heat gradually (never add water to a dry, screaming hot pan, unless you’re looking to remove your seasoning completely).
 
-A flat-bottomed stainless pan would involve a lot more fussing with water levels _and_ direct heat on the bottom of a wooden steamer basket, which isn’t the greatest idea ever. Something to raise the baskets off the bottom of the pan might work, but it means giving some of the steam a way to escape if the water level isn’t carefully managed. I even thought about having a second wok for steaming purposes only, but I’m in an apartment kitchen, here—we’ve had to institute a “one in, one out” rule on pots and pans as it is.
+{% respimg 
+    align="right",
+    src="wok-baskets", 
+    alt="A wok on a stovetop, containing a stack of bamboo steamer baskets.",
+    caption="It’s not easy on the wok, but it sure is effective."
+%}
 
-Other than hoping to find a perfectly steamer-basket-sized stainless steel saucier one day, the only answer I’ve got for either of us is a can of [Bar Keepers Friend](https://amzn.to/2oOTkYj) to take off what’s left of the flaky seasoning and a [couple new coats of oil](/articles/field-review/#the-gritty-details). I take a little comfort in the idea that a wok isn’t some overly precious pristine French-named dealie—a wok is here to _work_. But still, it’s a pain.
+A flat-bottomed stainless pan would involve a lot more fussing with water levels _and_ direct heat on the bottom of a wooden steamer basket, which isn’t the greatest idea ever. Something to raise the baskets off the bottom of the pan might work, but it means giving some of the steam a way to escape if the water level isn’t carefully managed. I have a skillet that the steamer baskets juuust barely sit atop, but it feels a little too precarious. I even thought about having a second wok for steaming purposes only, but I’m in an apartment kitchen, here—we’ve had to institute a “one in, one out” rule on pots and pans as it is.
+
+Other than hoping to find a perfectly steamer-basket-sized stainless steel saucier one day, the only answer I’ve got for either of us is a can of [Bar Keepers Friend](https://amzn.to/2oOTkYj) to take off what’s left of the flaky seasoning and a [couple new coats of oil](/articles/field-review/#the-gritty-details) after using your wok. I take a little comfort in the idea that a wok isn’t some overly precious pristine French-named dealie—a wok is here to _work_. But still, it’s a pain.
 
 All that aside, this method _works_ great. Just make sure your bao don’t come into contact with cold air at any point in the steaming, or they might deflate on you. Likewise, don’t yank them out of the steam as soon as they’re ready: I turn off the heat and leave them to cool a little over the residual steam, then remove the unopened basket and set it aside to cool a little further before opening it up.
