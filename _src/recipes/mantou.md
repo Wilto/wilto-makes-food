@@ -34,7 +34,7 @@ My warning here is that this always beats the hell out of the seasoning on my wo
 {% respimg 
     align="right",
     src="wok-baskets", 
-    alt="A wok on a stovetop, containing a stack of bamboo steamer baskets.",
+    alt="A wok on a stovetop, containing a stack of bamboo steamer baskets."
 %}
 
 A flat-bottomed stainless pan would involve a lot more fussing with water levels _and_ direct heat on the bottom of a wooden steamer basket, which isn’t the greatest idea ever. Something to raise the baskets off the bottom of the pan might work, but it means giving some of the steam a way to escape if the water level isn’t carefully managed. I have a skillet that the steamer baskets juuust barely sit atop, but it feels a little too precarious. I even thought about having a second wok for steaming purposes only, but I’m in an apartment kitchen, here—we’ve had to institute a “one in, one out” rule on pots and pans as it is.
