@@ -12,10 +12,7 @@ alt: A handful of small, round, white dumplings, each with single red dot on the
 
 Let me begin this recipe with some crucial advice—not for this recipe, but for life. Beg, borrow, or steal a copy of <i>[Chinese Snacks](https://www.cookbookvillage.com/products/wei-chuan-cookbook-chinese-snacks)</i> by Huang Su-Huei, published by Wei-Chuan. It’s part of a set, the other half being <i>Chinese Cuisine</i>—which I only just managed to find and order from a used bookstore in Maryland.
 
-{% respimg 
-    src="chinese-snacks", 
-    alt="Cover of the book “Chinese Snacks,” by Huang Si-Huei"
-%}
+
 
 This recipe isn’t from <i>Chinese Snacks</i>, which _does_ contain several recipes for this kind of dough (including a sourdough one). No, I cobbled this one together myself. It isn’t far off from the go-to dough recipe in the book, though, mostly by nature of the simplicity of the dough itself: a pretty standard yeast-raised, oil-enriched affair, with the “oven spring,” so to speak, bolstered by a little baking soda.
 
@@ -31,12 +28,6 @@ So, the gist is that you sit your steamer baskets in a wok, fill the wok with wa
 
 My warning here is that this always beats the hell out of the seasoning on my wok, even if I start with a full pan of cold water and bring it up to heat gradually (never add water to a dry, screaming hot pan, unless you’re looking to remove your seasoning completely).
 
-{% respimg 
-    align="right",
-    src="wok-baskets", 
-    alt="A wok on a stovetop, containing a stack of bamboo steamer baskets.",
-    caption="It’s not easy on the wok, but it sure is effective."
-%}
 
 A flat-bottomed stainless pan would involve a lot more fussing with water levels _and_ direct heat on the bottom of a wooden steamer basket, which isn’t the greatest idea ever. Something to raise the baskets off the bottom of the pan might work, but it means giving some of the steam a way to escape if the water level isn’t carefully managed. I have a skillet that the steamer baskets juuust barely sit atop, but it feels a little too precarious. I even thought about having a second wok for steaming purposes only, but I’m in an apartment kitchen, here—we’ve had to institute a “one in, one out” rule on pots and pans as it is.
 
