@@ -1,0 +1,96 @@
+{
+	"name" : "Mantou Dough",
+	"notes" : "For bao of every shape and size.",
+	"meta" : {
+		"total": "~2 hours",
+		"total": "20 minutes",
+		"serves" : "3"
+	},
+	"ingredients" : [
+		{
+			"name" : "Cake Flour",
+			"href": "https://amzn.to/2wFfXCe",
+			"amt" : {
+				"whole" : "250",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "All-Purpose Flour",
+			"amt" : {
+				"whole" : "50",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Instant Yeast",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Sugar",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "Coconut Oil",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			},
+			"notes" : "but any neutral oil should work"
+		},
+		{
+			"name" : "Baking Soda",
+			"amt" : {
+			"frac" : "1/8",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Kosher Salt",
+			"amt" : {
+				"whole" : "A Pinch"
+			}
+		},
+		{
+			"name" : "Water",
+			"amt" : {
+				"whole" : "160",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "grams"
+				}
+			},
+			"notes": "between 90–100°f"
+		}
+	],
+	"instructions": [
+		"Combine everything but the water in a large bowl, or in the bowl of a stand mixer fitted with a paddle bit. Mixing on low speed, or by hand, add water until dough comes together into a shaggy ball. Switch to a dough hook/spiral and knead on low–med speed for 5 min, or hand-knead for seven or eight minutes, until smooth.",
+		"Form into a ball and place into a clean, well-oiled bowl to rise for 1–1.5 hours, or until doubled in size.",
+		"Remove to surface lightly dusted with all-purpose flour and knead gently to deflate. Divide into uniformly sized pieces (probably eight, for most bao applications), roll each piece into a ball, and flatten with a small rolling pin (dusting with a small amount of flour as-needed to prevent sticking) and shape.",
+		"Cook in steamer baskets seated in a wok filled with boiling water for 15 minutes, without separating the baskets or otherwise exposing the dough to cool air. When done, turn off heat and allow bao to cool slightly inside the baskets before exposing to cool air, to help prevent collapse."
+	]
+}
