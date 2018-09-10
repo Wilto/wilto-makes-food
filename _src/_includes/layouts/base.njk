@@ -51,8 +51,8 @@
 		<meta property="og:title" content="{{ title or metadata.title }}">
 		<meta property="og:url" content="https://wiltomakesfood.com{{page.url}}">
 {% if lede %}
-		<meta name="twitter:description" content="{{ lede or subhed }}">
-		<meta property="og:description" content="{{ lede or subhed }}">
+		<meta property="og:description" content="{{ lede }}">
+		<meta name="twitter:description" content="{{ lede }}">
 {% else %}
 		<meta name="twitter:description" content="{{ metadata.description }}">
 		<meta property="og:description" content="{{ metadata.description }}">
@@ -76,6 +76,19 @@
 {% endif %}
 {% if type == "recipe" %}
 		<meta property="og:type" content="recipe">
+
+{% if meta.serves %}
+		<meta property="twitter:label1" content="Serves:">
+		<meta property="twitter:data1" content="{{ meta.serves }}">
+{% endif %}
+{% if meta.active %}
+		<meta property="twitter:label2" content="Active Time:">
+		<meta property="twitter:data2" content="{{ meta.active }}">
+{% endif %}
+{% if meta.total %}
+		<meta property="twitter:label2" content="Total Time:">
+		<meta property="twitter:data2" content="{{ meta.total }}">
+{% endif %}
 {% endif %}
 		<meta name="author" content="Wilto Makes Food">
 
