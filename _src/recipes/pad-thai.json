@@ -1,0 +1,151 @@
+{
+	"title" : "Pad Thai",
+	"meta" : {
+		"serves": "4",
+		"active": "30 minutes",
+		"total": "30 minutes"
+	},
+	"ingredients" : [
+		{
+			"name" : "Fish Sauce",
+			"amt" : {
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cup"
+				}
+			}
+		},
+		{
+			"name" : "Light Soy Sauce",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			}
+		},
+		{
+			"name" : "Salted Radish",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			},
+			"notes" : "shredded",
+			"href": "https://www.amazon.com/Preserved-Salted-Radish-Superior-shredded/dp/B00M3MWS1M",
+			"optional" : true
+		},
+		{
+			"name" : "Tamarind Concentrate",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			},
+			"href" : "https://www.amazon.com/Tamicon-Tamarind-Paste-14-FL/dp/B014QEFBSG"
+		},
+		{
+			"name" : "Palm Sugar",
+			"amt" : {
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			}
+		},
+		{
+			"name" : "Chili Flakes",
+			"amt" : {
+				"whole" : "2–3",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "Teaspoons"
+				}
+			},
+			"href": "https://www.amazon.com/gp/product/B06XKHQH9V/"
+		},
+		{
+			"name" : "Garlic",
+			"amt" : {
+				"whole" : "3",
+				"measure": "cloves"
+			},
+			"notes" : "minced"
+		},
+		{
+			"name" : "Shallot",
+			"amt" : {
+				"whole" : "1"
+			},
+			"notes" : "minced"
+		},
+		{
+			"name" : "Rice Noodles",
+			"href" : "https://www.amazon.com/Thai-Kitchen-Gluten-Free-Noodles/dp/B016F7GFV4"
+		},
+		{
+			"name" : "Eggs",
+			"amt" : {
+				"whole" : "2"
+			},
+			"notes" : "lightly scrambled"
+		},
+		{
+			"name" : "Firm Tofu",
+			"amt" : {
+				"whole" : "1",
+				"measure" : "package"
+			},
+			"notes" : "drained, pressed, and cut into thin strips"
+		},
+		{
+			"name" : "Roasted Peanuts",
+			"amt" : {
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cup"
+				}
+			},
+			"notes" : "roughly chopped"
+		},
+		{
+			"name" : "Bean sprouts",
+			"amt" : {
+				"whole" : "1",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cups"
+				}
+			}
+		},
+		{
+			"name" : "Scallion Greens",
+			"amt" : {
+				"whole" : "4"
+			},
+			"notes" : "chopped into 1–2 inch lengths"
+		},
+		{
+			"name" : "Peanut oil",
+			"amt" : {
+				"whole" : "A few tablespoons"
+			}
+		}
+	],
+	"instructions": [
+		"Soak the noodles in hot water until they’ve <em>almost</em> reached the desired softness. This usually takes fifteen to twenty minutes for me. Whisk together fish sauce, light soy sauce, tamarind concentrate, palm sugar, and chili flakes.",
+		"Over high heat, add tablespoon of peanut oil to your wok and heat until just smoking. Working in small batches, quickly stir-fry tofu until just golden, remove to a paper towel, and set aside. Do the same with any other optional ingredients.",
+		"Working quickly, repeat this process with aromatics—stir-fry the shallot until just starting to brown, then add garlic and cook until golden. Add salted radish, cooking for just a few seconds. Add eggs, scrambling and breaking them apart with chopsticks or a plastic fork. Add noodles, tofu, and any additional ingredents, then re-whisk and add sauce mixture, tossing and stirring to coat. Cook just until noodles have reached desired softness; it should only take a minute or two. Add a splash of water if necessary.",
+		"Fold in scallion greens, peanuts, and bean sprouts off heat.",
+		"Serve with lime wedges and additional chili flakes."
+	]
+}
