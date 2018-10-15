@@ -5,6 +5,8 @@ tags:
 lede: My wok sees more use than any other tool in my kitchen, hands-down. 
 type: recipe
 img: padthai
+subfeat: true
+date: 2018-10-10
 alt: A bowl of dark brown rice noodles, topped with raw bean sprouts and scallion greens.
 ---
 

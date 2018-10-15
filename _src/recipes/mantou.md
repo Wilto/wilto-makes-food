@@ -4,7 +4,7 @@ tags:
   - staples
 lede: The key to all your favorite <i>dim sum</i> classics is much easier than you think.
 type: recipe
-feat: true
+subfeat: true
 img: mantou
 date: 2018-09-07
 alt: A handful of small, round, white dumplings, each with single red dot on the top, inside of a bamboo steamer basket.

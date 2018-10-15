@@ -26,7 +26,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("truncrecipes", function(collection) {
     let i = 0;
     return collection.getAllSorted().reverse().filter(function(item) {
-      if( item.data.feat != true && item.data.subfeat != true && i <= 8 &&  item.inputPath.match(/^\.\/_src\/recipes\//) !== null ) {
+      if( item.data.feat != true && item.data.subfeat != true && i <= 9 &&  item.inputPath.match(/^\.\/_src\/recipes\//) !== null ) {
         i++;
         return item;
       }
