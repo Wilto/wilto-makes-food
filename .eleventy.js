@@ -64,7 +64,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("respimg", function( img ) {
-    return `<figure class="inline-img" ${ img.caption ? `aria-describedby="${ img.src }-capt">` : `>` }
+    return `<figure class="inline-img ${ img.align == "right" ? `inline-img-right` : `` }${ img.align == "center" ? `inline-img-center` : `` }" ${ img.caption ? `aria-describedby="${ img.src }-capt">` : `>` }
       <img 
         src="/img/${ img.src }-4.jpg" 
         alt="${ img.alt }"

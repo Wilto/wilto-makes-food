@@ -34,6 +34,8 @@
 				"@context": "http://schema.org",
 				"@type": "Organization",
 				"url": "https://www.wiltomakesfood.com",
+				"title": "Wilto Makes Food
+				"author_name": "Mat “Wilto” Marquis",
 				"logo": "https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg",
 				"sameAs" : [
 					"https://twitter.com/wiltomakesfood",
@@ -46,6 +48,7 @@
 		<!-- Twitter Card Stuff: -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@wiltomakesfood">
+		<meta name="twitter:creator" content="@wilto">
 		<meta property="og:site_name" content="{{ metadata.title }}">
 		<meta name="twitter:title" content="{{ title or metadata.title }}">
 		<meta property="og:title" content="{{ title or metadata.title }}">
@@ -86,8 +89,8 @@
 		<meta property="twitter:data2" content="{{ meta.active }}">
 {% endif %}
 {% if meta.total %}
-		<meta property="twitter:label2" content="Total Time:">
-		<meta property="twitter:data2" content="{{ meta.total }}">
+		<meta property="twitter:label3" content="Total Time:">
+		<meta property="twitter:data3" content="{{ meta.total }}">
 {% endif %}
 {% endif %}
 		<meta name="author" content="Wilto Makes Food">
@@ -174,8 +177,7 @@
 		<a href="#main" class="a11y-only focusable skiplink">Skip to Main Content</a>
 
 		<header role="banner" class="site-head">
-			<h1 class="site-hed"><a href="{{ '/' | url }}"><img src="/_assets/img/wmf.png" alt="Wilto Makes Food"></a></h1>
-
+			<h1 class="site-hed{% if featimg %} feat-site-hed{% endif %}"><a href="{{ '/' | url }}"><img src="/_assets/img/wmf.png" alt="Wilto Makes Food"></a></h1>
 			<div>
 				<div class="bar">
 					<nav role="navigation" class="sitenav">

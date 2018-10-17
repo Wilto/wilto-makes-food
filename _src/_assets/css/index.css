@@ -133,7 +133,7 @@ a.cta-prod {
 }
 
 .bar {
-	background: rgba(255,150,0, .1);
+	background: #f4ebdb;
 	width: 100%;
 	border-bottom: .25em solid rgba(255,150,0, .4);
 	border-top: 1px solid rgba(255,150,0, .15);
@@ -764,31 +764,50 @@ a.prod img {
 }
 
 .featured-image {
-	background: #eee;
-	margin-top: 2em;
-	position: absolute;
-	left: 0;
-	right: 0;
-	overflow: hidden;
-	margin-left: -2.6%;
-	margin-right: -2.6%;
+	background: rgba(255,150,0, .1);
+	border-top: 2px solid rgba(255,150,0, .35);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
 }
-
 .featured-image img {
-	max-width: 80em;
 	width: 100%;
 	display: block;
+	display: none;
 	margin: 0 auto;
 	line-height: .5;
 	padding: 0;
+
+}
+
+.feat-site-hed {
+	height: auto;
+	margin: .75em 0 0 0;
+	z-index: 3;
+	width: 4em;
+}
+.feat-site-hed img {
+	padding: .2em;
+	border-radius: 0 0 3px 3px;
+}
+
+.featured-image {
+	clear: both;
+	position: absolute;
+	display: block;
+	top: 6%;
+	left: 0;
+	right: 0;
+	padding: 0 2.5%;
+	z-index: -1;
+	height: 25em;
 }
 .featured-image+.intro {
 	padding: 1.25em 3.5% 7.5em 3.5%;
 	position: relative;
-	margin-top: 7.5vw;
+	margin-top: 5vw;
 	margin-bottom: 2em;
 	z-index: 2;
-	background: rgba(255,255,255,.95);
+	background: rgba(255,255,255,1);
 }
 
 .additional {
@@ -1046,7 +1065,15 @@ a.prod img {
 		display: inline;
 		float: left;
 	}
-
+	.intro > figure:not(.feat-thumb).inline-img-center {
+		margin: 0 auto;
+	}
+	.intro > figure:not(.feat-thumb).inline-img-right {
+		float: right;
+		clear: right;
+		display: inline-block;
+		margin: 0 0 1em 1.5em;
+	}
 }
 
 @media( min-width: 45em ) {
@@ -1054,6 +1081,11 @@ a.prod img {
 	.intro > figure:not(.feat-thumb),
 	.intro > p img {
 		max-width: 17.5em;
+	}
+}
+@media( min-width: 50em ) {
+	.intro > figure:not(.feat-thumb).inline-img-right img {
+		float: right;
 	}
 }
 
@@ -1101,6 +1133,7 @@ img.take-your-time {
 	max-width: 45em;
 	margin-bottom: 1.5em;
 	margin-top: 1.5em;
+	clear: left;
 	border-collapse: collapse;
 	font-family: "Fanwood Text", serif;
 	border: 1px solid rgba(255,150,0, .25);
@@ -1194,6 +1227,10 @@ img.take-your-time {
 		margin: 0 1em 1em 0;
 	}
 }
+
+
+
+
 
 
 .meta {
