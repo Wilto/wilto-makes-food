@@ -183,8 +183,8 @@
 					<nav role="navigation" class="sitenav">
 						<ul>
 							{%- for nav in collections.nav | reverse -%}
-							{% if nav.data.navtitle.toLowerCase() != "home" %}
-								<li><a href="{{ nav.url | url }}" class='{% if nav.url == page.url or nav.data.navtitle.toLowerCase() == type + "s" %}nav-item-active{% endif %}'{% if nav.url == page.url %} aria-current="page"{% endif %}>{{ nav.data.navtitle }}</a></li>
+							{% if nav.data.navtitle | lower != "home" %}
+								<li><a href="{{ nav.url | url }}" class='{% if nav.url == page.url or nav.data.navtitle == type + "s" %}nav-item-active{% endif %}'{% if nav.url == page.url %} aria-current="page"{% endif %}>{{ nav.data.navtitle }}</a></li>
 							{% endif %}
 							{%- endfor -%}
 						</ul>

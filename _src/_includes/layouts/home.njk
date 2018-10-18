@@ -49,9 +49,13 @@ templateClass: tmpl-home
 		{% if ( post.data.type == "article" ) %}
 		<div class="art-content">
 			{% if post.data.tags %}
-			{% if post.data.tags !== "subnav" %}
-			<a href="/recipes/tagged/{{ post.data.tags | lower }}" class="art-section"><span class="a11y-only">Category: </span>{{ post.data.tags }}</a>{% endif %}
+				{% for tag in post.data.tags %}
+				{% if tag !== "subnav" %}
+			<a href="/recipes/tagged/{{ tag | lower }}" class="art-section"><span class="a11y-only">Category: </span>{{ post.data.tags }}</a>
+				{% endif %}
+				{% endfor %}
 			{% endif %}
+
 			<h3 class="article-hed"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
 			<p class="lede">{{ post.data.subhed }}</p>
 			{% if feat %}

@@ -25,7 +25,7 @@
 			let landings = filter( window.wmf.allPosts, "landing" );
 
 			landings.forEach(landing => {
-				let title = landing.title.toLowerCase(),
+				let title = landing.title,
 					categorized = filter( window.wmf.allPosts, title.substring(0, title.length - 1) ),
 					lookup = function( refObj, find ) {
 						return refObj.find( function( item ) {
