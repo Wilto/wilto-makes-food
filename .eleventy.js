@@ -24,10 +24,8 @@ module.exports = function(eleventyConfig) {
 
   // only content in the `recipes` directory
   eleventyConfig.addCollection("truncrecipes", function(collection) {
-    let i = 0;
     return collection.getAllSorted().reverse().filter(function(item) {
-      if( item.data.feat != true && item.data.subfeat != true && i <= 9 &&  item.inputPath.match(/^\.\/_src\/recipes\//) !== null ) {
-        i++;
+      if( item.data.feat != true && item.data.subfeat != true && item.inputPath.match(/^\.\/_src\/recipes\//) !== null ) {
         return item;
       }
     });

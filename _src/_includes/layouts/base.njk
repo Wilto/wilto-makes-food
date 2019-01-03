@@ -12,7 +12,7 @@
 		<title>{{ metadata.title }}{% if title %} - {{ title }}{% endif %}</title>
 		<meta name="description" content="{% if lede %}{{ lede }}{% else %}{{ metadata.description }}{% endif %}">
 
-		<meta property="og:site_name" content="{{ metadata.title }}{% if title %} - {{ title }}{% endif %}">
+		<meta property="og:site_name" content="{{ metadata.title }}">
 		<link rel="canonical" href="https://wiltomakesfood.com{{ page.url | url }}">
 
 		<!-- Icons, Platform-specific Theme Nonsense, etc.: -->
@@ -55,7 +55,6 @@
 		<meta property="og:url" content="https://wiltomakesfood.com{{page.url}}">
 {% if lede %}
 		<meta property="og:description" content="{{ lede }}">
-		<meta name="twitter:description" content="{{ lede }}">
 {% else %}
 		<meta name="twitter:description" content="{{ metadata.description }}">
 		<meta property="og:description" content="{{ metadata.description }}">

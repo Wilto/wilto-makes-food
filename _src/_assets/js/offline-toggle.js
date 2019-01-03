@@ -1,21 +1,50 @@
 (function() {
-	const notify = function( txt, thendo ) {
+	const notify = function( txt, thendo, more ) {
 		const notif = document.querySelector( ".offline-notice" ),
-			create = function( txt ) {
+			create = function( txt, more ) {
 				var body = document.body,
 					notif = document.createElement( "div" ),
-					copy = document.createTextNode( txt );
+					copy = document.createTextNode( txt ),
+					morelink, moretxt, docel, innerlabel;
 
-				notif.classList.add( "notification","toast","notif-hed", "offline-notice" );
-				notif.setAttribute( "role", "alert" );
+				if( more ) {
+					docel = document.createElement( "div" );
+					innerlabel = document.createElement( "p" );
+					morelink = document.createElement( "a" );
+					moretxt = document.createTextNode( more.txt );
 
-				notif.append( copy );
+					docel.setAttribute( "role", "document" );
+					docel.setAttribute( "tabindex", "0" );
+
+					notif.setAttribute( "role", "alertdialog" );
+					notif.setAttribute( "aria-labelledby", "testid" );
+
+					morelink.href = more.href;
+
+					innerlabel.id = "testid";
+					innerlabel.classList.add( "notif-desc" );
+					innerlabel.append( copy );
+
+					morelink.append( moretxt );
+					morelink.classList.add( "notif-cta" );
+					docel.append( innerlabel );
+					docel.append( morelink );
+					notif.classList.add( "notification","toast", "offline-notice" );
+
+					notif.append( docel );
+				} else {
+					notif.setAttribute( "role", "alert" );
+					notif.classList.add( "notification","toast","notif-hed", "offline-notice" );
+
+					notif.append( copy );
+				}
+
 				body.insertBefore( notif, body.firstChild );
 			}
 			if( notif ) {
 				notif.innerHTML = txt;
 			} else {
-				create( txt );
+				create( txt, more );
 			}
 			if( thendo ) {
 				notif.addEventListener( "transitionend", function( e ){ 
@@ -32,7 +61,6 @@
 			var imgs = document.querySelectorAll( "img:not([data-lazy]" );
 
 			imgs.forEach( function( img ) {
-				console.log( img.src );
 				img.src = img.src;
 			});
 			notify( "You’re back online!", "fadeout" );
@@ -42,7 +70,7 @@
 			}));
 		});
 		window.addEventListener( "offline", function( e ) {
-			notify( "Looks like you’re offline.", null );
+			notify( "Looks like you’re offline.", null, { "href" : "/offline", "txt" : "Browse offline" } );
 		});
 	});
 }());

@@ -921,6 +921,7 @@ p.table-note {
 	}
 }
 
+
 .jump-hed {
 	padding-top: 2.75em;
 	padding-bottom: .15em;
@@ -934,13 +935,41 @@ p.table-note {
 	display: block;
 }
 
-.intro pre {
+.intro *:not(.tweet-embed) pre {
 	border: 1px solid #ddd;
 	color: #555;
+	font-weight: normal;
 	padding: .75em 1em;
 	border-radius: 3px;
 }
-code {
+
+.intro .tweet-embed pre {
+	font-family: "Fanwood", serif;
+	font-style: italic;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+.intro .tweet-embed pre + a {
+	font-weight: bold;
+}
+.tweet-attr {
+	color:  rgba(255,150,0, 1);
+	font-family: "Open Sans", sans-serif;
+	position: relative;
+}
+.tweet-attr a {
+	color: #333;
+	font-size: .75em;
+	margin: 0 .25em 0 .125em;
+	font-weight: normal;
+	position: relative;
+	top: -1px;
+	margin-top: -.25em;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.tweet-attr a:hover {
+	color: #111;
 }
 
 p.recipe-credit {

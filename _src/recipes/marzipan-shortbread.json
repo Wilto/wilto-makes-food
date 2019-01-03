@@ -1,0 +1,86 @@
+{
+	"name" : "Marzipan Shortbread Cookies",
+	"meta" : {
+		"active": "25 minutes",
+		"total": "45 minutes"
+	},
+	"ingredients" : [
+		{
+			"name" : "All-purpose flour",
+			"amt" : {
+				"whole" : "240",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Kosher salt",
+			"amt" : {
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Unsalted butter",
+			"amt" : {
+				"whole" : "10",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			},
+			"notes" : "slightly below room temperature"
+		},
+		{
+			"name" : "Marzipan",
+			"amt" : {
+				"whole" : "110",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			},
+			"notes" : "about 7/8ths of a tube"
+		},
+		{
+			"name" : "Egg yolk",
+			"amt" : {
+				"whole" : "1"
+			},
+			"notes": "large"
+		},
+		{
+			"name" : "Almond extract",
+			"amt" : {
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Vanilla extract",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		}
+	],
+	"instructions": [
+		"Preheat your oven to 300 degrees.",
+		"Cream together the butter, egg yolk, and marzipan at medium-high speed for about a minute, pausing to scrape down the sides of the bowl occasionally. It’ll turn lighter in colors as it aerates.",
+		"Whisk together flour and salt, then stir into wet ingredients using a paddle bit at low speed. I know it looks too dry to come together at this point, but trust me on this one. Increase speed to medium once flour is moistened enough to not destroy your kitchen. Beat until dough begins clumping together on the sides of the bowl.",
+		"Remove dough to a lightly floured countertop and press it into a shaggy ball. Roll out to approximately 1/4 inchness, dusting the top of the dough very lightly with flour; just enough to prevent it from sticking to your rolling pin.",
+		"Cut into desired shapes, kneading together and re-rolling out the cut-offs. Arrange on a half sheet pan lined with parchment, allowing at least an inch between cookies for proper heat circulation. If they’re big, jab ’em a few times with a fork to keep them from puffing up.",
+		"Bake for fifteen to twenty minutes. Tough to get exact on time, since it’ll depend on your shapes—at fifteen or so, watch for the corners/edges of your cookies <em>just barely</em> starting to brown. Allow them to cool for a few minutes in the pan before removing to a cooling rack, as they’ll be too soft to move at first."
+	]
+}
