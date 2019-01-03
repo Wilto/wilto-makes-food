@@ -2,7 +2,7 @@
 title: Marzipan Shortbread
 tags:
   - baking
-lede: Most shortbread sucks pretty bad. This is a recipe for a shortbread that _isn’t_ like eating vaguely butter-scented IKEA furniture.
+lede: Most shortbread sucks pretty bad. This is a recipe for a shortbread that <em>isn’t</em> like eating vaguely butter-scented IKEA furniture.
 type: recipe
 img: shortbread
 capt: ♪ Da-na-na-NAAA! ♪
