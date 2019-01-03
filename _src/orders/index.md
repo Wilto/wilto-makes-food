@@ -2,68 +2,64 @@
 layout: layouts/post.njk
 title: Our Menu
 lede: "Do I have any business opening a pseudo-bakery out of a city apartment? Absolutely not. Am I gonna do it anyway? <em>Hell yes I am.</em>"
-featimg: cake-span
-tags: nav
-navtitle: Ordering
+img: wedding-cake
+featimg: true
+alt: A cake.
+
 ---
 
-That’s right. Starting in the fall of 2018, I’m gonna take some orders. I have a few things to get sorted out before orders open up for-realsies—but [stay tuned](https://twitter.com/wiltomakesfood) for further announcements, and don’t hesitate to [drop me a line](mailto:me@wiltomakesfood.com) if you’ve got something in mind right now. Orders likely won’t be open _all_ the time—I mean, I’m just one person, and I’m not retired from my day job just yet—but I got more time than I have excuses to bake, so _here we are_.
+That’s right. Starting in 2019, I’m gonna take some orders.
 
-### Sichuan Chili Oil 
+[stay tuned](https://twitter.com/wiltomakesfood) for further announcements, and don’t hesitate to [drop me a line](mailto:me@wiltomakesfood.com) if you’ve got something in mind right now. 
 
-A little spicy and a little numbing, this all-purpose condiment is [a recipe](/recipes/chili-oil/) I’ve been tinkering with on and off for a long time. Don’t have the time or inclination to mix up a batch yourself? I got you.
-
-| Quantity   | Price |
-| ---------- | -----:|
-| Half dozen |   $16 |
-| Dozen      |   $32 |
-
-
-#### Chili Oil
-
-<!--
-### Macarons
-
-Macarons are notoriously fussy, and you _know_ I love a fussy recipe. So much so, in fact, that I keep on making them—despite having bags and bags of macaron shells burnin’ a hole in my freezer as it is. Only you can save my household from this absurd cookie surplus.
-
-| Quantity   | Price |
-| ---------- | -----:|
-| Half dozen |   $16 |
-| Dozen      |   $32 |
-<p class="table-note">Pricing for larger quantities available on request!</p>
-
-#### Fall Flavors
-
--->
+Said orders likely won’t be open _all_ the time. I’m just one person, and I’m not retired from my day job just yet—but I got more time than I have excuses to bake, so _here we are_.
 
 ### Cakes
 
-Listen. I’m sick and tired of texting people to ask them whether they can think of any excuse for me to make them over-the-top cakes. Help me out by ordering a cake.
-
-| Quantity                | Price |
-| ----------------------- | -----:|
-| Small (6", three layer) |   $60 |
-| Small (9", three layer) |  $110 |
-
-<p class="table-note">Cakes are for local pick-up only. Inquire for two or more tiers!</p>
-
-{% respimg 
-    src="oreo-cake", 
-    align="right",
-    alt="A three-layer, semi-“naked” cake—"
-%}
-
 {% respimg 
     src="carrot-cake", 
-    align="right",
     alt="A three-layer carrot cake with bare sides. On the top is a swirl of white frosting, decorated with a crescent of chopped nuts, topped with carrot roses with carrot green leaves."
 %}
 
+Listen. I’m sick and tired of texting people to ask them whether they can think of any excuse for me to make them over-the-top cakes. Help me out by ordering one, yeah?
+
+| Quantity              | Price |
+| --------------------- | -----:|
+| 6", three layers      |   $60 |
+| 9", three layers      |  $110 |
+| 9", five layers       |  $180 |
+
+<p class="table-note">Cakes are for local pick-up only. [Inquire](mailto:me@wiltomakesfood.com) for two or more tiers!</p>
+
+#### White Mountain Cake
+
+A snow-white vanilla layer cake, with a hint of almond.
+
+#### Devil's Food Cake
+
+Here’s the thing: Oreos cookies, but soft, and also cake. It’s plenty rich, thanks to a hint of espresso and three (3) kinds of chocolate—but not cloyingly sweet.
+
+### Seasonal Macarons
+
 {% respimg 
-    src="lemon-cake", 
-    align="right",
-    alt="A three-layer, semi-“naked” cake—"
+    src="mint-macarons", 
+    alt="A line of chocolate macaron shells, criss-crossed with pale green icing, on a sheet of parchment paper"
 %}
+
+Macarons are notoriously fussy, and you _know_ I love a fussy recipe. So much so, in fact, that I keep on making them—despite having bags and bags of macaron shells burnin’ a hole in my freezer as it is. Only you can save my household from this absurd surplus of fancy cookies.
+
+| Quantity   | Price |
+| ---------- | -----:|
+| Half dozen |   $18 |
+| Dozen      |   $32 |
+
+#### Chocolate
+
+Shells with a flavor not unlike your favorite chocolate cereal—but, y’know, _fancy_—sandwiched around a coffee-spiked dark chocolate ganache.
+
+#### Mint Chocolate
+
+I’m not a big holiday-flavors kind of dude, me—but I _am_ a sucker for peppermint, especially paired with chocolate.
 
 
 

@@ -1,6 +1,9 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
+pagination:
+  data: collections.truncrecipes
+  size: 11
 ---
 
 {% macro respimg(path, img, sizes, alt, lazy=false) %}
@@ -104,8 +107,7 @@ templateClass: tmpl-home
 <h2 class="section-hed" id="latest-rec">Latest Recipes</h2>
 <section class="col" role="region" aria-labelledby="latest-rec">
 	<div class="highlights">
-{% set somerecipes = 0 %}
-{% for post in otherrecipes %}
+{%- for post in pagination.items %}
 {% if ( post.data.feat != true ) and ( post.data.subfeat != true ) and ( post.data.type == "recipe" ) %}
 	{% set somerecipes = 1 %}
 	{{ homeitem(post,'','','(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw', true) }}
