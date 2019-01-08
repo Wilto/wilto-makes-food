@@ -5,7 +5,7 @@ tags:
 lede: Less fuss, minimal muss.
 type: recipe
 date: 2018-09-01
-feat: true
+subfeat: true
 img: french-macs
 alt: Rows of pink macaron shells filled with a pale yellow ganache.
 ---

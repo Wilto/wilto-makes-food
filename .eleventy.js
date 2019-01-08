@@ -61,6 +61,13 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addShortcode("tweet", function( tweet ) {
+    return `<blockquote class="tweet-embed">
+        <pre>${ tweet.text }</pre>
+        <span class="tweet-attr">@<a href="${ tweet.href }">${ tweet.user }</a></span>
+    </blockquote>`;
+  });
+
   eleventyConfig.addShortcode("respimg", function( img ) {
     return `<figure class="inline-img ${ img.align == "right" ? `inline-img-right` : `` }${ img.align == "center" ? `inline-img-center` : `` }" ${ img.caption ? `aria-describedby="${ img.src }-capt">` : `>` }
       <img 
