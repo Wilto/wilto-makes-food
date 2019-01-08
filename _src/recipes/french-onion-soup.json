@@ -1,0 +1,153 @@
+{
+	"meta" : {
+		"serves": "2 (bowl) – 4 (cup)",
+		"total": "1 hour",
+		"active" : "40 minutes"
+	},
+	"ingredients" : [
+		{
+			"name" : "Unsalted butter",
+			"amt" : {
+				"whole" : "4",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoons"
+				}
+			},
+			"notes" : "clarified"
+		},
+		{
+			"name" : "Garlic",
+			"amt" : {
+				"whole" : "25",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			},
+			"notes" : "three or four cloves"
+		},
+		{
+			"name" : "Thyme",
+			"amt" : {
+				"whole" : "2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoons"
+				}
+			},
+			"notes" : "dried"
+		},
+		{
+			"name" : "Marmite",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoons"
+				}
+			},
+			"optional": true
+		},
+		{
+			"name" : "Yellow onions",
+			"amt" : {
+				"whole" : "500",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			},
+			"notes" : "about five"
+		},
+		{
+			"name" : "Shallots",
+			"amt" : {
+				"whole" : "100",
+				"measure" : {
+					"abbr" : "G.",
+					"full" : "Grams"
+				}
+			}
+		},
+		{
+			"name" : "Sugar",
+			"amt" : {
+				"whole" : "1",
+				"measure" : "pinch"
+			}
+		},
+		{
+			"name" : "Sherry",
+			"amt" : {
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "cup"
+				}
+			}
+		},
+		{
+			"name" : "Stock",
+			"href" : "/utility-stock",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "qt.",
+					"full" : "quart"
+				}
+			}
+		},
+		{
+			"name" : "Cider vinegar",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Soy sauce",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			}
+		},
+		{
+			"name" : "Bay leaf",
+			"amt" : {
+				"whole" : "1"
+			}
+		},
+		{
+			"name" : "Thick cut, crusty slices of bread",
+			"notes" : "buttered and toasted"
+		},
+		{
+			"name" : "Gruyère",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "C.",
+					"full" : "Cup"
+				}
+			},
+			"notes" : "grated"
+		},
+		{
+			"name" : "Salt and freshly ground pepper",
+			"notes" : "to taste"
+		}
+	],
+	"instructions": [
+		"Bring the milk up to almost simmering—“the barest suggestion of a simmer,” as Julia Child put it. You want about 190 F on an instant-read—you can eyeball it by looking for a ring of tiny bubbles forming around the inside of the pot. This part isn’t as fussy as it sounds, though, in my experience. Just get the milk uncomfortably hot to the touch; a microwave works fine, just be sure to stop and stir it occasionally.",
+		"Meanwhile, melt the butter in a 3 quart saucepan over medium heat. Once fully liquified, add the flour, whisking constantly. Once the foaming subsides, add about a half cup of the hot milk in a thin stream, whisking vigorously.",
+		"After a few moments, it should form something best described as “mashed-potato-esque.” Add the rest of the milk in increments, whisking vigorously.",
+		"Add grated nutmeg, salt, and pepper to taste. Reduce heat to low, and keep warm until needed."
+	]
+}
