@@ -5,8 +5,7 @@ lede: "Do I have any business opening a pseudo-bakery out of a city apartment? A
 img: wedding-cake
 featimg: true
 alt: A cake.
-tags: nav
-navtitle: Ordering
+
 ---
 
 That’s right. Starting in 2019, I’m gonna take some orders.

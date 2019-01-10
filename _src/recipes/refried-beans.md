@@ -20,7 +20,7 @@ Some people might tell you that oregano—warm, earthy oregano—has no place in
 
 Listen. I don’t know if you’ve picked up on the _vibe_ here, but I’m not drawing a lot of hard-and-fast rules on this one. Traditionally, you’d use lard—which, again, if I were on Iron Chef: Battle Pinto Beans, _absolutely_. I don’t keep a squeeze bottle of lard next to my stove, though—vegetable oil does the job, even if it is a missed opportunity for adding flavor. I also have a 50/50 mix of oil and butter squeeze-bottle’d—which has nothing to do with smoke points and everything to do with flavors—but a little butter doesn’t seem to add much of anything in the way of flavor. Olive oil is wasted; any flavor it would impart is obliterated by all the other strong, earthy flavors in play. Bacon drippings work great if you want your refried beans to taste like bacon drippings—and no judgement if you do.
 
-Lard imparts richness in a balanced way; if you’ve got it handy, use it. If not, vegetable oil works just fine. I’ve also used [the Marmite trick](http://localhost:8000/recipes/curry-rice/#wait-no-shut-up-why-is-there-marmite-in-this) in these; it works.
+Lard imparts richness in a balanced way; if you’ve got it handy, use it. If not, vegetable oil works just fine. I’ve also used [the Marmite trick](/recipes/curry-rice/#wait-no-shut-up-why-is-there-marmite-in-this) in these; it works.
 
 ### The Aromatics
 
