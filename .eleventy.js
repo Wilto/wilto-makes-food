@@ -51,13 +51,13 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("subnav", function(collection) {
     return collection.getAllSorted().filter(function(item) {
-      return item.data.tags === "subnav";
+      return item.data.tags == "subnav";
     });
   });
 
   eleventyConfig.addCollection("footnav", function(collection) {
     return collection.getAllSorted().filter(function(item) {
-      return item.data.tags === "footnav";
+      return item.data.tags == "footnav";
     });
   });
 
