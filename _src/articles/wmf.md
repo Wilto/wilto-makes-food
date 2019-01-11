@@ -5,7 +5,8 @@ lede: "To keep to the medium: I, your humble and effortlessly talented narrator,
 type: article
 img: wmf
 alt: Mise en place; tiny bowls of various spices and herbs, a large bowl of whole carrots, a leek, and a celery stalk.
-tags: subnav
+tags: 
+    - subnav
 navtitle: What is this?
 ---
 
