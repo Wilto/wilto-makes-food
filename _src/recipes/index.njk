@@ -31,16 +31,27 @@ navtitle: Recipes
 	data-src="{{ path }}{{ img }}-4.jpg" 
 	alt="{{ alt }}">
 {% else %}
-<img 
-	sizes="(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw"
-	srcset="
-		{{ path }}{{ img }}-1.jpg 320w,
-		{{ path }}{{ img }}-2.jpg 450w,
-		{{ path }}{{ img }}-3.jpg 640w,
-		{{ path }}{{ img }}-4.jpg 820w,
-		{{ path }}{{ img }}-5.jpg 1024w"
-	src="{{ path }}{{ img }}-4.jpg" 
-	alt="{{ alt }}">
+<picture>
+	<source
+		type="image/webp"
+		sizes="(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw"
+		srcset="
+			{{ path }}{{ img }}-1.webp 320w,
+			{{ path }}{{ img }}-2.webp 450w,
+			{{ path }}{{ img }}-3.webp 640w,
+			{{ path }}{{ img }}-4.webp 820w,
+			{{ path }}{{ img }}-5.webp 1024w">
+	<img 
+		sizes="(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw"
+		srcset="
+			{{ path }}{{ img }}-1.jpg 320w,
+			{{ path }}{{ img }}-2.jpg 450w,
+			{{ path }}{{ img }}-3.jpg 640w,
+			{{ path }}{{ img }}-4.jpg 820w,
+			{{ path }}{{ img }}-5.jpg 1024w"
+		src="{{ path }}{{ img }}-4.jpg" 
+		alt="{{ alt }}">
+</picture>
 {% endif %}
 {% endmacro %}
 
