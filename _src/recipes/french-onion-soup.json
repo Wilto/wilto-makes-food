@@ -6,7 +6,7 @@
 	},
 	"ingredients" : [
 		{
-			"name" : "Unsalted butter",
+			"name" : "Clarified unsalted butter",
 			"amt" : {
 				"whole" : "4",
 				"measure" : {
@@ -14,7 +14,7 @@
 					"full" : "Tablespoons"
 				}
 			},
-			"notes" : "clarified"
+			"notes" : "or a neutral oil"
 		},
 		{
 			"name" : "Garlic",
@@ -90,14 +90,14 @@
 		},
 		{
 			"name" : "Stock",
-			"href" : "/utility-stock",
 			"amt" : {
 				"whole" : "1",
 				"measure" : {
 					"abbr" : "qt.",
 					"full" : "quart"
 				}
-			}
+			},
+			"notes" : "beef or vegetable"
 		},
 		{
 			"name" : "Cider vinegar",
