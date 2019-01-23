@@ -1055,7 +1055,7 @@ a.prod img {
 	clear: left;
 }
 .intro > figure:not(.feat-thumb) .caption {
-	margin-bottom: 1.25em;
+	margin-bottom: .5em;
 }
 
 @media( min-width: 35em ) {
@@ -1063,7 +1063,7 @@ a.prod img {
 	.intro > figure:not(.feat-thumb),
 	.intro > p img {
 		width: 40%;
-		margin: .25em 1.25em 1em 0;
+		margin: .25em .5em 1em 0;
 		display: inline;
 		float: left;
 	}
@@ -1221,7 +1221,7 @@ img.take-your-time {
 	.inline-img {
 		max-width: 20em;
 		float: left;
-		margin: 0 1em 1em 0;
+		margin: 0 1em .8em 0;
 	}
 }
 
