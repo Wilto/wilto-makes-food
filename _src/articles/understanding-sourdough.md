@@ -1,6 +1,6 @@
 ---
 title: Understanding Sourdough
-subhed: "Let’s yeet this wheat."
+subhed: "Maybe the real bread we got were the friends we made along the way."
 type: article
 lede: "There are only three ways to write about making naturally-leavened bread on a food blog, and I’m gonna do all of ’em here."
 img: sourdough
