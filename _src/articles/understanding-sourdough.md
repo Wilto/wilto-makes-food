@@ -1,88 +1,35 @@
 ---
 title: Understanding Sourdough
-subhed: "Here is pretty much everything I know about baking bread."
+subhed: "Let’s yeet this wheat."
 type: article
-lede: "There are, in my experience, three ways to write about sourdough bread."
-img: boule
-alt: "A bunka knife with a hammered dark grey cladding."
+lede: "There are only three ways to write about making naturally-leavened bread on a food blog, and I’m gonna do all of ’em here."
+img: sourdough
+feat: true
+date: 2019-01-25
+alt: "A cross-section of a sourdough boule with an open, irregular crumb structure."
 ---
 
 The first is a straight-up recipe, drawing a lot of hard lines and missing a lot of critical “it depends” details. “Add <var>X</var> things, wait <var>Y</var> hours, put it in a <var>Z</var> degree oven, serves four.” When these recipes came out looking anything like the picture, it was pretty clearly a matter of luck. I didn’t know what I didn’t know, but I was pretty sure there was a lot of it.
 
-The second kind of sourdough recipe is always a hair’s breadth away from baking fanfiction. They almost always start with an overly-precious rumination on the nature of their very special and magic sourdough starter—which has a name, and will be addressed as such throughout—and ended with something about “the smell of freshly baked bread” filling their home. It was still a straight-up recipe, but couched in “this will not work unless you have a very real and meaningful and dare-I-say-magical personal connection with a [colony of bacteria and yeast perpetually dying in a blob of wet flour](/articles/sourdough-starter/) inside a conspicuously photogenic mason jar.”
+The second kind of sourdough recipe is always a hair’s breadth away from baking fanfiction. They start with an overly-precious rumination on the nature of their very special and magical sourdough starter—which has a name, and will be addressed as such throughout—and end with something about “the smell of freshly baked bread” filling their home. Still a straight-up recipe, but couched in “this will not work unless you have a very real and meaningful and dare-I-say-magical personal connection with a [colony of bacteria and yeast perpetually dying in a blob of wet flour](/articles/sourdough-starter/) inside of a conspicuously photogenic mason jar.”
 
 The final, and my least favorite by a _wide_ margin, were write-ups from basic-ass tech guys who—in typical basic-ass-tech-guy fashion—would [strangle every last gram of fun out of the process](https://www.eater.com/2018/11/19/18099127/bread-silicon-valley-sourdough-tech-bros-tartine-chad-robertson). Clinical, joyless documentation, crammed full of unnecessarily gatekeep-y buzzwords and shorthand. I’m all set with A Hacker News Guide to Bread™.
 
-In trying not to write any of those things, I have absolutely written every one of those things, all in one convenient way-too-long article.
+In trying not to write any of those things, I have absolutely written every one of those things, all in one convenient and _way_ too long article.
 
 So.
 
-Here is everything I know about making bread [using my sourdough starter](/articles/sourdough-starter/)—your mileage will almost _certainly_ vary, but try this out, see where it lands you, and tinker from there.
-
-### Understanding Bread Recipes
-
-First thing’s first: get yourself a kitchen scale. I’m sure I wouldn’t be the first to tell you that it’s [way more accurate](https://www.baking-sense.com/2017/03/29/baking-ingredient-salt/), but it’s also a lot easier: set your bowl on a scale, dump in one ingredient, reset the scale to zero, dump in the next ingredient, and so on. Any bread recipe worth a damn is gonna be in weights; grams, more often than not.
-
-You’re also gonna run into a lot of percentages, especially in terms of water content. Fancy-ass sourdough recipes in particular tend to focus real hard on “hydration” percentages—all “72.1983% hydration, ” with or without an implied “nyeh” and a pause to push their glasses up the bridge of their noses.
-
-Said nerds are referring to a “baker’s percentage” of water. A baker’s percentage is a way of expressing an entire recipe based on the ratios of its ingredients, by weight. Using a baker’s percentage allows you finesse the size and shape of the loaf—or loaves—per batch of dough. So instead of fussing with all the math involved in multiplying a “serves eight”-sized recipe by some arbitrary amount, the recipe is more along the lines of “ingredients in these proportions, at any amount.”
-
-Now, the only tricky thing here is that this isn’t the percentage of the ingredient in the recipe, with all of them adding up to one hundred—it isn’t “60% flour plus 40% water equals 100% of one bread.” In a baker’s percentage, everything is expressed as a percentage of the _total flour weight_ (TFW). If there’s just one kind of flour, that’s 100% of the ratio, always. If there are multiple types of flour in play, they’ll add up to 100%, always. So, that extremely bad bread ratio I just mentioned wouldn’t be “60% flour, 40% water,” but “100% flour, 66.666666667% water.” _Nyeeeh._
-
-#### Working with Baker’s Percentages
-
-Now, I know, that sucks; math sucks. So, to avoid math as much as possible, I mentally anchor myself at “1000 grams of flour,” which usually gives me two decently-sized boules. It helps that there aren’t a hell of a lot of factors to consider in a “lean” dough: only flour, water, salt, and yeast (or _almost_ only, [like my pizza dough](/recipes/pizza-dough/) recipe)—versus “enriched” doughs, which contain milk, sugar, eggs, butter, etc.
-
-So, here’s a 100% usable bread recipe, using instant yeast, expressed in both grams and baker’s percentages:
-
-| Ingredients           | Grams | Baker’s Percentage |
-| --------------------- | ----: | -----------------: | 
-| White flour           |   900 |                90% |
-| Wheat flour           |   100 |                10% |
-| Water                 |  700* |                70% |
-| Salt                  |    20 |                 2% |
-| Instant Yeast         |     7 |                .7% |
-<p class="table-note">One milliliter of water weighs one gram, if you’re eyeballing things by volume—but a scale is still more accurate.</p>
-
-That ratio nets you “70% hydration” bread—two boules, at the size I usually make ’em. If I were only doing a single loaf, I’d start with 500 grams of flour. 70% hydration would then be 350 grams of water, instead. One _bigass_ boule? 750<abbr title="grams">g</abbr> flour—750 multiplied by 0.7—I need 525<abbr title="grams">g</abbr> water. Thats it; that’s the whole deal. 
-
-Likewise, in order to avoid adding any new math, I keep my starter itself at “100% hydration”—which, again, just means I always refresh it with equal amounts of water and bread flour, by weight. So, if I wanted to use 200<abbr title="grams">g</abbr> of leaven instead of the instant yeast in that ratio above, that means I’ll be adding 100<abbr title="grams">g</abbr> white flour and 100<abbr title="grams">g</abbr> water to the mix—so I have to adjust the other ingredients accordingly:
-
-| Ingredients           | Grams                    | Baker’s Percentage |
-| --------------------- | -----------------------: | -----------------: | 
-| White flour           |   800 (+100 from leaven) |            **90%** |
-| Whole wheat flour     |                      100 |            **10%** |
-| Water                 |   600 (+100 from leaven) |            **70%** |
-| Salt                  |                       20 |             **2%** |
-| Levain                |                      200 |           **10%*** |
-<p class="table-note">* In a baker’s percentage, levain is based on <em>the amount of flour</em> in the levain—which <em>kinda</em> makes sense when we’re thinking of “amount of flour” as synonymous with “how much bread we’ll end up with.” This 200G levain contains 100G flour, so it is expressed as “10%.” Look, I don’t know—I don’t make the rules.</p>
-
-Easy-ish-peasy-ish. Point is, math aside: add together a handful of ingredients, mix ’em, enjoy bread.
-
-Follow the same general recipe a couple of times to get a feel for it, and start tinkering with ratios just for the hell of it—90% of the time you’re not gonna _not_ get bread, and 10% of the time you waste all of twenty minutes and a dollar’s worth of flour. Take notes in case you really nail something you want to recreate, but you can save the math equations for for the nyeh-nerds. And speaking of whom:
-
-#### Why “Hydration” is a Whole Thing
-
-Now, a high hydration means two things: an open or “airy” crumb—so, the internal structure of the bread is made up of large, irregularly-sized holes—and a wet, sticky, dough that can be much more difficult to work with.
-
-| Hydration             | Crumb Structure                      |
-| --------------------- | ------------------------------------:|
-| 50–60%                | Bagels, sandwich bread               |
-| 60–65%                | Dinner rolls, French bread           |
-| 65–80%                | Ciabatta, fancy sourdough-nerd bread |
-<p class="table-note">You’ll see ow-hydration doughs referred to as “stiff,” and high-hydration doughs referred to as “slack” or “rustic.” These are loose terms, though—especially considering that different kinds of flour will absorb more or less water than others.</p>
-
-A stiff dough is a denser dough. When yeast breaks down the sugars in the dough, it produces CO2, among other things—you probably know this. This creates bubbles inside the dough, which are constrained by the density of the dough. A wet, slack dough with a well-developed gluten network will hold its shape just as well as a stiffer dough, but be much more flexible, internally—so the yeast can create larger holes.
-
-The trouble is, that airy crumb is impeded by how tricky it is to work with these wetter doughs—hence “rustic” loaves becoming a point of pride for some.  You can’t knead wetter doughs the way you can knead stiffer doughs, whether by hand or using a dough hook/spiral on a stand mixer. And unless you build up gluten in your dough, you’re not gonna end up with much in the way of bread at all.
+Here is what I know about making bread using my sourdough starter. Your mileage will almost _certainly_ vary, but try this out, see where it lands you, and tinker from there. At this point, using wild yeast comes as naturally to me as instant, I don’t mind sayin’.
 
 ### Preparing A Levain
 
 If you always keep your sourdough starter out on the counter and feed it several times a day, two points:
 
-One, feel free to [skip this next section](#step-2-the-levain). Two, you and I are very different people.
+One, feel free to [skip this next section](#the-levain-itself). Two, you and I are very different people.
 
 #### Getting Your Starter Ready
+
+First thing’s first: if you don’t have one, get yourself a kitchen scale. I’m sure I wouldn’t be the first to tell you that it’s [way more accurate](https://www.baking-sense.com/2017/03/29/baking-ingredient-salt/), but it’s also a lot easier: set your bowl on a scale, dump in one ingredient, reset the scale to zero, dump in the next ingredient, and so on. Any bread recipe worth a damn is gonna be in weights; grams, more often than not.
 
 {% respimg 
     src="starter-container",
@@ -119,7 +66,64 @@ Some recipes will call for turning this into a bigger, more involved levain:  ta
 
 Other recipes will make reference to using a “young” or “mature” levain/starter, which really just means the difference between making bread with a levain still early in its lifecycle—maybe only fermenting for a handful of hours—versus a levain further along. The difference is that a mature levain has had time to be, well, fully taken-over by the natural yeast and bacteria transferred from your starter. The result is that you’re introducing more of their by-products to the total recipe—acids, alcohol, etc.—and thus more sourdough funk. 
 
-For something like waffles, you’ll want a young starter: you’re mostly in it for the leavening and and just a hint of sourdough tang—so, as soon as that levain floats in water, you’re off to the races. If you’re going for an italicized _loaf of sourdough_, with the requisite level of tanginess, you’ll want to use a levain that’s right on the brink—maybe even tripled in size. You’ll know your levain has reached its limit when you notice doughy steaks on the glass, just above the surface: the yeast has run out of food, and it’s starting to collapse.
+For something like waffles or cinnamon rolls, you’ll want a young starter: you’re mostly in it for the leavening and and just a hint of sourdough tang—so, as soon as that levain floats in water, you’re off to the races. If you’re going for an italicized _loaf of sourdough_, with the requisite level of tanginess, you’ll want to use a levain that’s right on the brink—maybe even tripled in size. You’ll know your levain has reached its limit when you notice doughy steaks on the glass, just above the surface: the yeast has run out of food, and it’s starting to collapse.
+
+### Understanding Bread Recipes
+
+You’re gonna encounter a lot of percentages as you venture into fancy bread circles, especially in terms of water content. Fancy-ass sourdough recipes in particular tend to focus real hard on “hydration” percentages—all “72.1983% hydration, ” with or without an implied “nyeh” and a pause to push their glasses up the bridge of their noses.
+
+Said nerds are referring to a “baker’s percentage” of water. A baker’s percentage is a way of expressing an entire recipe based on the ratios of its ingredients, by weight. Using a baker’s percentage allows you finesse the size and shape of the loaf—or loaves—per batch of dough. So instead of fussing with all the math involved in multiplying a “serves eight”-sized recipe by some arbitrary amount, the recipe is more along the lines of “ingredients in these proportions, at any amount.”
+
+Now, the only tricky thing here is that this isn’t the percentage of the ingredient in the recipe, with all of them adding up to one hundred—it isn’t “60% flour plus 40% water equals 100% of one bread.” In a baker’s percentage, everything is expressed as a percentage of the _total flour weight_ (TFW). If there’s just one kind of flour, that’s 100% of the ratio, always. If there are multiple types of flour in play, they’ll add up to 100%, always. So, that extremely bad bread ratio I just mentioned wouldn’t be “60% flour, 40% water,” but “100% flour, 66.666666667% water.” _Nyeeeh._
+
+#### Working with Baker’s Percentages
+
+Now, I know, that sucks; math sucks. So, to avoid math as much as possible, I mentally anchor myself at “1000 grams of flour,” which usually gives me two decently-sized boules. It helps that there aren’t a hell of a lot of factors to consider in a “lean” dough: only flour, water, salt, and yeast (or _almost_ only, [like my pizza dough](/recipes/pizza-dough/) recipe)—versus “enriched” doughs, which contain milk, sugar, eggs, butter, etc.
+
+So, here’s a 100% usable bread recipe, using instant yeast, expressed in both grams and baker’s percentages:
+
+| Ingredients           | Grams | Baker’s Percentage |
+| --------------------- | ----: | -----------------: | 
+| White flour           |   900 |                90% |
+| Wheat flour           |   100 |                10% |
+| Water                 |  700* |                70% |
+| Salt                  |    20 |                 2% |
+| Instant Yeast         |     7 |                .7% |
+<p class="table-note">One milliliter of water weighs one gram, if you’re eyeballing things by volume—but a scale is still more accurate.</p>
+
+That ratio nets you “70% hydration” bread—two boules, at the size I usually make ’em. If I were only doing a single loaf, I’d start with 500 grams of flour. 70% hydration would then be 350 grams of water, instead. One _bigass_ boule? 750<abbr title="grams">g</abbr> flour—750 multiplied by 0.7—I need 525<abbr title="grams">g</abbr> water. Thats it; that’s the whole deal. 
+
+Likewise, in order to avoid adding any new math, I keep my starter itself at “100% hydration”—which, again, just means I always refresh it with equal amounts of water and bread flour, by weight. So, if I wanted to use 200<abbr title="grams">g</abbr> of leaven instead of the instant yeast in that ratio above, that means I’ll be adding 100<abbr title="grams">g</abbr> white flour and 100<abbr title="grams">g</abbr> water to the mix—so I have to adjust the other ingredients accordingly:
+
+| Ingredients           | Grams                    | Baker’s Percentage |
+| --------------------- | -----------------------: | -----------------: | 
+| White flour           |   800 (+100 from leaven) |            **90%** |
+| Whole wheat flour     |                      100 |            **10%** |
+| Water                 |   600 (+100 from leaven) |            **70%** |
+| Salt                  |                       20 |             **2%** |
+| Levain                |                      200 |           **10%*** |
+<p class="table-note">* In a baker’s percentage, levain is based on <em>the amount of flour</em> in the levain—which <em>kinda</em> makes sense when we’re thinking of “amount of flour” as synonymous with “how much bread we’ll end up with.” This 200G levain contains 100G flour, so it is expressed as “10%.” Look, I don’t know—I don’t make the rules.</p>
+
+Easy-ish-peasy-ish. Point is, math aside: add together a handful of ingredients, mix ’em, enjoy bread.
+
+Follow the same general recipe a couple of times to get a feel for it, and start tinkering with ratios just for the hell of it—90% of the time you’re not gonna _not_ get bread, and 10% of the time you waste all of twenty minutes and a dollar’s worth of flour. Once you’ve got the hang of this with lean doughs, it won’t be much of a jump to do the same with enriched doughs—meaning you’ve got a path to making damn near _anything_ that calls for the addition of yeast with your sourdough starter.
+
+Just be sure to take notes in case you really nail something that you want to recreate. And speaking of being a big baking nerd:
+
+#### Why “Hydration” is a Whole Thing
+
+Now, a high hydration means two things: an open or “airy” crumb—so, the internal structure of the bread is made up of large, irregularly-sized holes—and a wet, sticky, dough that can be much more difficult to work with.
+
+| Hydration             | Crumb Structure                      |
+| --------------------- | ------------------------------------:|
+| 50–60%                | Bagels, sandwich bread               |
+| 60–65%                | Dinner rolls, French bread           |
+| 65–80%                | Ciabatta, fancy sourdough-nerd bread |
+<p class="table-note">You’ll see ow-hydration doughs referred to as “stiff,” and high-hydration doughs referred to as “slack” or “rustic.” These are loose terms, though—especially considering that different kinds of flour will absorb more or less water than others.</p>
+
+A stiff dough is a denser dough. When yeast breaks down the sugars in the dough, it produces CO2 among other things—you probably know this. This creates bubbles inside the dough, which are constrained by the density of the dough. A wet, slack dough with a well-developed gluten network will hold its overall shape just as well as a stiffer dough, but be much more flexible, internally—so the yeast can create larger holes.
+
+The trouble is, that airy crumb is impeded by how tricky it is to work with these wetter doughs—hence “rustic” loaves becoming a point of pride for some.  You can’t knead wetter doughs the way you can knead stiffer doughs, whether by hand or using a dough hook/spiral on a stand mixer. And unless you build up gluten in your dough, you’re not gonna end up with much in the way of bread at all.
 
 ### Developing Gluten
 
@@ -169,7 +173,7 @@ Pretty cut and dry stuff, building up gluten networks—that is, unless you’re
 
 Likewise, I do not use the “slap and fold” technique, where you take a wad of the dough and slap it against your work surface, stretch it, wad it up again, and repeat. I’ve tried it lots of times, but never had much luck with it.
 
-My go-to is the [Tartine](https://www.tartinebakery.com/)-style [stretch and fold technique](https://www.weekendbakery.com/posts/the-stretch-fold-method/). The basic gist is this: during your long initial rise, wet your hands to prevent the dough from sticking to them. Reach into the proofing bowl, grab the far edge of the dough as best you can, stretch it upwards as high as you can without it tearing, and fold it over the rest of the dough, envelope-style. Repeat this on all four sides. Then, leave the dough alone to rest and relax for about half an hour. After half an hour, wet your hands again, and repeat. The first few sets of folds won’t seem like they’re doing much, but as time goes on the dough will retain its shape a little better, sticking to your hands (and the bowl) much less. Keeping it in the proofing bowl means you won’t be destroying your kitchen counter with stray wads of gluey dough. Looking at you here, slap-and-fold method.
+My go-to is the [Tartine](https://www.tartinebakery.com/)-style [stretch and fold technique](https://www.weekendbakery.com/posts/the-stretch-fold-method/). The basic gist is this: during your long initial rise, wet your hands to prevent the dough from sticking to them. Reach into the bowl or bucket or whatever, grab the far edge of the dough as best you can, stretch it upwards as high as you can without it tearing, and fold it over the rest of the dough, envelope-style. Repeat this on all four sides. Then, leave the dough alone to rest and relax for about half an hour. After half an hour, wet your hands again, and repeat. The first few sets of folds won’t seem like they’re doing much, but as time goes on the dough will retain its shape a little better, sticking to your hands (and the bowl) much less. Keeping it in the bowl means you won’t be destroying your kitchen counter with stray wads of gluey dough. Looking at you here, slap-and-fold method.
 
 ### Bulk Rise (aka “Bulk Fermentation,” or “Primary Fementation”)
 
@@ -206,21 +210,21 @@ On baking day, remove your dough from the fridge, shape it, and allow it to proo
     alt="Several shaped but unbaked baguettes."
 %}
 
-The shaping is 100% a matter of preference. I do boules a lot, since I do most of my bread-baking in a round Dutch oven.
+The shaping is 100% a matter of preference. I do boules a lot, since I do most of my bread-baking in a round Dutch oven. Proofing them in a _banneton_—a round proofing basket—will help the dough retain a nice round shape during proofing, and—crucially—give you that cool spiral effect on the crust. However you go about the shaping, be sure to dust the dough liberally with flour to prevent it from sticking. Even better: dust the outside of the dough and your proofing basket with white rice flour, which can withstand much higher temperatures before burning, so your crust doesn’t get too dark too quickly.
 
-The rest after shaping is important for a few reasons:
+Now, proofing after shaping is important for a few reasons:
 
-First, it allows the dough to reach a consistent temperature throughout. Second, low temperatures and the activity from the shaping mean the gluten network is tight and stiff; this time allows it to warm up, relax, and become flexible again. Third, it allows the yeast to “wake up” from its semi-dormancy, in the fridge.
+First, it allows the dough to reach a consistent temperature throughout. Second, low temperatures and the activity from the shaping mean the gluten network is tight and stiff; this time allows it to warm up, relax, and become flexible again. Third, it allows the yeast to “wake up” from its semi-dormancy in the fridge and get back to work, since you’ll have knocked a lot of the air out of the dough during the shaping. 
 
-That first thing is pretty much what it says on the tin: if the center is still cold when it goes in the oven—especially with big loaves of bread—the center could end up under-done. Letting the gluten relax and letting the yeast wake up a little are both important factors when it comes to the _oven spring_—the sudden rise your bread will undergo when you first put it in the oven.
+The proofing isn’t really about _fermentation_; plenty of that will already have happened in the fridge. It’s more about getting your crumb in order. Letting the gluten relax and giving the yeast time to put in a little more work are both important factors when it comes to the _oven spring_—the sudden rise your bread will undergo when you first put it in the oven.
 
 ### Scoring
 
-A couple of things happen when you apply heat to yeast-raised dough. First, the yeast spirals completely out of control—the warmer it gets, the more productive the yeast is, after all. To a point, that is—once your dough hits 140 degrees f, the heat kills the yeast off. Up to that point, the yeast produces a ton of CO2. As it gets hotter still, the gas inside these new air pockets—as well as the larger air pockets in the dough from your first and second proof—will expand rapidly. 
+A couple of things happen when you apply heat to yeast-raised dough. First, the yeast spirals completely out of control—the warmer it gets, the more productive the yeast is, after all. To a point, that is—once your dough hits 140°f, the heat kills the yeast off. Up to that point, the yeast produces a ton of CO2. As it gets hotter still, the gas inside these new air pockets—as well as the larger air pockets in the dough from your first and second proof—will expand rapidly. 
 
 {% respimg 
     src="baguette",
-    alt="A close-up of a baked baguette with wide almond-shaped gaps in the crust."
+    alt="A close-up of a baked baguette with wide, almond-shaped gaps in the crust."
 %}
 
 This part of the process is the “oven spring,” or “bloom.” A good oven spring is how you get the much sought after irregularly-sized holes in a good crumb, and one of the keys to a good oven spring is scoring the loaf.
@@ -233,13 +237,11 @@ There’s not a lot to know, here:
 * Make your cuts at a 45-degree angle if you want those coveted “ears”—the flaps of crust that curl up and out over the slashes, once baked. Said slashes are called _grigne_; French for “grin.”
 * For a longer loaf, make sure your cuts overlap each other slightly, so your loaf has room to expand uniformly. Likewise—for longer loaves—make your cuts down the length of the bread, not across.
 
-
-
 ### Baking with Steam
 
 The big difference between baking just-okay bread and baking really good bread is steam. Trapping steam in the oven means that the crust of your bread won’t dry out—so it stays flexible, allowing it to stretch as the bread expands. A flexible crust means a better oven spring and a nicer crumb.
 
-It also means the crust itself bakes up better—to a point. Steam helps the starches on the surface of the dough gelatinize, forming a crisp, glossy, blistered outer layer—which, with enough time and heat becomes a rich, glossy, caramelized brown. _Too much_ steam will keep the crust too cool—and prevent that second phase from kicking in, leaving you with a pale, shiny, gummy crust.
+It also means the crust itself bakes up better—to a point. Steam helps the starches on the surface of the dough gelatinize, forming a crisp, glossy, blistered outer layer—which, with enough time and heat becomes a rich, glossy, caramelized brown. _Too much_ steam will keep the crust too cool—and prevent that second phase from kicking in, leaving you with a pale, gummy crust.
 
 Bakeries have fancy steam-injection ovens to deal with all this steam fine-tuning. You and I do not. So, there are a couple of tricks we can use instead, from least to most practical.
 
@@ -261,22 +263,33 @@ This sucks.
 
 #### Use a Dutch Oven
 
-I use my enameled cast iron Dutch oven instead. Turn your oven up to 450 degrees and preheat it with the dutch oven in there (make sure you have the kind with an [oven-safe knob on the lid](https://shop.lodgemfg.com/prodcat/enameled-cast-iron.asp), or an all-iron [combo cooker](https://shop.lodgemfg.com/deep-skillets/3-quart-cast-iron-combo-cooker.asp)).
+I use my enameled cast iron Dutch oven instead. Turn your oven up to 500°f and preheat it with the dutch oven in there (make sure you have the kind with an [oven-safe knob on the lid](https://shop.lodgemfg.com/prodcat/enameled-cast-iron.asp), or an all-iron [combo cooker](https://shop.lodgemfg.com/deep-skillets/3-quart-cast-iron-combo-cooker.asp)).
 
-Once as preheated as it’ll ever get, remove the (extremely hot) lid, set your scored bread in there, and cover it. Remove the lid for the second half of the total bake time. That’s it. The lid traps the steam from the bread itself, no fuss, no muss.
+Once as preheated as it’ll ever get, remove the (extremely hot) lid, set your scored bread in there, and give it a couple of spritzes with hot water. Cover it and lower the temperature to 450°f. The lid traps the steam from the bread itself inside; no fuss, no muss. Remove the lid for the second half of the total bake time. That’s it. 
 
 #### Spray It With Hot Water a Couple Times
 
-Don’t have a Dutch oven, and don’t want to create a potentially hazardous engineering project out of your kitchen? Get a spray bottle, fill it with hot water, and lightly mist the top of the bread every few minutes during the first half of the baking. It’s not ideal, but it helps.
+Don’t have a Dutch oven, and don’t want to create a potentially hazardous engineering project out of your kitchen? Get a spray bottle, fill it with hot water, and crack the oven door to lightly mist the top of the bread every few minutes during the first half of the baking time. It’s not ideal, but better than nothing.
 
 ### Bake Time
 
-Here’s my secret: I don’t set a timer until the bread has started to brown, and even then it’s only so I don’t get distracted and burn it.
+Eventually you’ll just have a gut sense of how long a certain volume of dough is gonna take. These days I only use a timer as a “hey, don’t forget to check on this,” so I don’t get distracted and burn something.
 
-I bake to an internal temperature of 210° f. If I’m working with a total flour weight of 1000g and split it into two Dutch oven sized boules, that usually works out to about fifteen or twenty minutes with the lid in place, and another twenty to thirty minutes uncovered.
+But speaking of: don’t be a chicken about letting the crust brown. For a shatteringly crispy crust and a full depth of flavor, you want it to have reached a rich mahogany brown.
 
-Pull it out of the oven and set it on a wire rack, so that air can circulate around it fully—otherwise, parts of the crust could go a little soft on you. Here, per the rules of foodblogs, I’m supposed to say something exclamation-pointy about how I can never resist cutting into it right away even though I’m not supposed to and blah blah “smell of freshly baked bread,” etc.
+As a general guideline, bake to an internal temperature of 210°f on an instant-read thermometer—stab it right into the bottom of the loaf. If I’m working with a total flour weight of 1000g and split it into two Dutch-oven-sized boules, that usually works out to about thirty five minutes with the lid in place, and another twenty or so minutes uncovered. Follow your recipes for now, and you’ll get more of a feel for it as time goes on—but when in doubt, check that you’ve hit 210°f.
 
-Listen to me: _wait half an hour before you cut into it_.
+Once your bread is done, pull it out of the oven and set it on a wire rack so that air can circulate around it fully—otherwise, parts of the crust could go a little squishy on you. Listen now, as a point of pride, for the bread to “sing”—a term that I stress I absolutely did not invent. As the crust cools, it’ll crackle. 
 
-Steam is still escaping, and the starches are still setting; it smells good and all, but cutting into it now is just gonna mean mashing to death with a knife, and a mouthful of doughy, gluey bread. After all this—after waiting _days_ for some bread—you deserve better.
+If you hear that sound, you nailed it. If not, who cares; you still have some fancy-ass bread, and bread rules.
+
+### Put Down the Knife
+
+Here, per the rules of foodblogs, I’m supposed to say something exclamation-pointy about how I can never resist cutting into it right away even though I’m “not supposed to” and blah blah “smell of freshly baked bread,” etc.
+
+Listen to me: you are a grown-ass adult. _Wait half an hour before you cut into the bread_.
+
+Your starches are still setting. Cutting into your bread now is just gonna mean mashing it to death with a knife, exploding your crust all over the place and rewarding you with—at best—a doughy, gluey, seemingly under-baked crumb. After all this—after waiting _days_ for some bread—you deserve better.
+
+
+

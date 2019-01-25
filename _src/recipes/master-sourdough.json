@@ -1,0 +1,194 @@
+{
+	"name" : "Basic sourdough",
+	"notes" : "You can—and should—start tinkering with this recipe as soon as you’ve got the hang of it.",
+	"meta" : {
+		"total": "1–4 days",
+		"active" : "30 minutes"
+	},
+	"ingredients" : {
+		"totals" : [
+			{
+				"name" : "Bread flour",
+				"amt" : {
+					"whole" : "950",
+					"measure" : {
+						"abbr" : "G.",
+						"full" : "grams"
+					}
+				},
+				"href" : "https://www.kingarthurflour.com/shop/items/king-arthur-unbleached-bread-flour-5-lb"
+			},
+			{
+				"name" : "Whole wheat flour",
+				"amt" : {
+					"whole" : "125",
+					"measure" : {
+						"abbr" : "G.",
+						"full" : "grams"
+					}
+				},
+				"href" : "https://www.kingarthurflour.com/shop/items/king-arthur-premium-100-whole-wheat-flour-5-lb"
+			},
+			{
+				"name" : "White rye flour",
+				"amt" : {
+					"whole" : "50",
+					"measure" : {
+						"abbr" : "G.",
+						"full" : "grams"
+					}
+				},
+				"href" : "https://www.kingarthurflour.com/shop/items/white-rye-flour-3-lb"
+			},
+			{
+				"name" : "Water",
+				"amt" : {
+					"whole" : "700",
+					"measure" : {
+						"abbr" : "G.",
+						"full" : "grams"
+					}
+				},
+				"notes" : "between 90°f and 100°f"
+			},
+			{
+				"name" : "Starter",
+				"amt" : {
+					"whole" : "25",
+					"measure" : {
+						"abbr" : "G.",
+						"full" : "grams"
+					}
+				},
+				"notes" : "fed"
+			},
+			{
+				"name" : "White rice flour",
+				"amt" : {
+					"frac" : "1/8",
+					"measure" : {
+						"abbr" : "C.",
+						"full" : "cup"
+					}
+				},
+				"notes" : "for dusting"
+			}
+		],
+		"steps" : [
+			{
+				"stage" : "Levain",
+				"ingredients" : [{
+					"name" : "Bread flour",
+					"amt" : {
+						"whole" : "100",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				},{
+					"name" : "Whole wheat flour",
+					"amt" : {
+						"whole" : "25",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				},{
+					"name" : "Water",
+					"amt" : {
+						"whole" : "100",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				},{
+					"name" : "Starter",
+					"amt" : {
+						"whole" : "25",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				}]
+			},
+			{
+				"stage" : "Final Dough",
+				"ingredients" : [{
+					"name" : "Bread flour",
+					"amt" : {
+						"whole" : "850",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				},{
+					"name" : "Whole wheat flour",
+					"amt" : {
+						"whole" : "100",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				},{
+					"name" : "White rye flour",
+					"amt" : {
+						"whole" : "50",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				},{
+					"name" : "Water",
+					"amt" : {
+						"whole" : "600",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				},{
+					"name" : "Salt",
+					"amt" : {
+						"whole" : "20",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				},
+				{
+					"name" : "The entire levain"
+				}]
+			}
+		]
+	},
+	"instructions" : [
+		{
+			"stage" : "Levain",
+			"steps" : [
+				"Add fed starter and lukewarm water to a mixing bowl; swirl until water is cloudy and starter is mostly dispersed. Mix in white and wheat flour until fully incorporated.",
+				"Let rest at room temperature, loosely covered, for four to nine hours."
+			]
+		},
+		{
+			"stage" : "Final Dough",
+			"steps" : [
+				"Add entire levain and lukewarm water to a large mixing bowl or the bowl of a stand mixer and swirl until water is cloudy and levain is mostly dispersed. Mix in white and wheat flour until fully incorporated.",
+				"Let rest at room temperature, loosely covered, for at least twenty minutes.",
+				"Add salt, and machine knead on low speed for four minutes, or hand knead for five minutes. Allow dough to rest for at least ten minutes before performing a windowpane test. If dough tears easily: continue kneading for a few minutes more, allow to rest, and perform the test again.",
+				"Remove dough to a lightly oiled bowl or proofing bucket and either mist the dough lightly with spray oil or roll it around the container to prevent drying. Seal the bowl/container with plastic wrap and let rest at room temperature for two hours. Move container to refrigerator and allow to ferment at least overnight, and up to four days.",
+				"On baking day, half the total dough, shape into boules and dust with white rice flour or place in round, well-dusted proofing baskets. Allow to proof at room temperature for two hours. In the meantime, place covered Dutch oven into oven and preheat to 500°f.",
+				"Move each shaped loaf to a square of parchment paper, and slash. Carefully move dough to Dutch oven—optionally, mist top of the dough with hot water. Return cover to Dutch oven and return to oven for twenty five minutes.",
+				"Carefully remove lid from Dutch oven and continue to bake for twenty five minutes, or until the center of the loaf reads 210°f on an instant-read thermometer",
+				"Allow bread to rest for at least half an hour before cutting."
+			]
+		}
+	]
+}

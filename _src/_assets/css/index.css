@@ -1063,7 +1063,7 @@ a.prod img {
 	.intro > figure:not(.feat-thumb),
 	.intro > p img {
 		width: 40%;
-		margin: .25em .5em 1em 0;
+		margin: .25em 1.5em .5em 0;
 		display: inline;
 		float: left;
 	}
@@ -1352,6 +1352,16 @@ img.take-your-time {
 	top: .55em;
 	left: 0;
 }
+
+.ingredients-step {
+	font-size: .95em;
+	border-left: none;
+}
+.ingredients-step li {
+	padding-left: 0;
+	margin: .5em 0;
+}
+
 .amt {
 	text-align: right;
 	white-space: nowrap;
@@ -1404,9 +1414,13 @@ img.take-your-time {
 	float: right;
 }
 
-.instructions {
+.instructions ol {
 	counter-reset: inst;
 	padding-bottom: 3.5em;
+}
+
+.instructions .recipe-subhed+ol {
+	padding-bottom: 1em;
 }
 
 .steps {
@@ -1418,7 +1432,7 @@ img.take-your-time {
 .steps li {
 	margin: 2em 0;
 	display: block;
-	position: relative;
+	position: relative
 }
 
 .steps li:before {

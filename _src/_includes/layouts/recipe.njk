@@ -103,6 +103,32 @@ templateClass: tmpl-post
 
 {% if ingredients %}
 	<h4 class="inline-hed" id="recipe-sub0">Ingredients</h4>
+	{% if ingredients.totals %}
+		<h4 class="recipe-subhed a11y-only">Total Ingredients</h4>
+		<ul class="ingredients" aria-labelledby="recipe-sub0">
+			{%- for ing in ingredients.totals -%}
+			<li itemprop="recipeIngredient" class="p-ingredient">
+				<p><span class="amt">{{ing.amt.whole}}<b class="frac" role="presentation">{{ing.amt.frac}}</b> {% if ing.amt.measure.abbr %}<abbr title="{{ing.amt.measure.full}}" role="presentation">{{ing.amt.measure.abbr}}</abbr>{% else %}{{ing.amt.measure}}{% endif %}</span>
+				{% if ing.href %}<a href="{{ ing.href }}">{% endif %}{{ing.name}}{% if ing.href %}</a>{% endif %}{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes | safe }}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
+				{% if ing.optional %}<span class="opt">Optional</span>{%- endif -%}
+			</li>
+			{%- endfor -%}
+		</ul>
+	{% endif %}
+	{% if ingredients.steps %}
+		{%- for ins in ingredients.steps -%}
+		<h4 class="recipe-subhed"><span class="a11y-only">Instructions </span>For the {{ins.stage}}</h4>
+			<ul class="ingredients ingredients-step" aria-labelledby="recipe-sub0">
+				{%- for ing in ins.ingredients -%}
+				<li itemprop="recipeIngredient" class="p-ingredient">
+					<p><span class="amt">{{ing.amt.whole}}<b class="frac" role="presentation">{{ing.amt.frac}}</b> {% if ing.amt.measure.abbr %}<abbr title="{{ing.amt.measure.full}}" role="presentation">{{ing.amt.measure.abbr}}</abbr>{% else %}{{ing.amt.measure}}{% endif %}</span>
+					{% if ing.fhref %}<a href="{{ ing.href }}">{% endif %}{{ing.name}}{% if ing.href %}</a>{% endif %}{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes | safe }}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
+					{% if ing.optional %}<span class="opt">Optional</span>{%- endif -%}
+				</li>
+				{%- endfor -%}
+			</ul>
+			{%- endfor -%}
+	{% else %}
 	<ul class="ingredients" aria-labelledby="recipe-sub0">
 		{%- for ing in ingredients -%}
 		<li itemprop="recipeIngredient" class="p-ingredient">
@@ -112,6 +138,7 @@ templateClass: tmpl-post
 		</li>
 		{%- endfor -%}
 	</ul>
+	{% endif %}
 {% endif %}
 {% if instructions %}
 		<div class="instructions">
@@ -119,7 +146,7 @@ templateClass: tmpl-post
 
 		{% if instructions[0].stage %}
 			{%- for ins in instructions -%}
-			<h4 class="recipe-subhed"><span class="a11y-only">Instructions </span>for the {{ins.stage}}</h4>
+			<h4 class="recipe-subhed"><span class="a11y-only">Instructions </span>For the {{ins.stage}}</h4>
 			<ol class="steps e-instructions" itemprop="recipeInstructions">
 				{%- for step in ins.steps -%}
 				<li><p>{{step}}</p></li>
