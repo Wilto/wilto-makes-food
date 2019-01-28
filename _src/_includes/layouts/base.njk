@@ -268,16 +268,13 @@
 			_paq.push(['trackPageView']);
 			_paq.push(['enableLinkTracking']);
 			(function() {
-				var host = window.location.hostname,
-					siteid = 2;
-
-				if( !navigator.onLine || host !== "localhost" ) {
+				if( !navigator.onLine ) {
 					return;
 				}
 				var u="https://analytics.wiltomakesfood.com/";
 				_paq.push(['setTrackerUrl', u+'piwik.php']);
-				_paq.push(['setSiteId', siteid ]);
-
+				_paq.push(['setSiteId', '2']);
+				
 				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
 				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
 			})();
