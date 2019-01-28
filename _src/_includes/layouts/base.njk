@@ -264,25 +264,20 @@
 		{% if page.url != "/offline/" %}<script src="/_assets/js/offline-toggle.min.js?{{ metadata.build }}"></script>{% endif %}
 
 		<script>
+			var _paq = _paq || [];
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
 			(function() {
-				if( window.location.hostname === "localhost" ) {
-					return false;
+				if( !navigator.onLine || window.location.hostname === "localhost" ) {
+					return;
 				}
-				var _paq = _paq || [];
-				_paq.push(['trackPageView']);
-				_paq.push(['enableLinkTracking']);
-				(function() {
-					if( !navigator.onLine ) {
-						return;
-					}
-					var u="https://analytics.wiltomakesfood.com/";
-					_paq.push(['setTrackerUrl', u+'piwik.php']);
-					_paq.push(['setSiteId', '1']);
-					
-					var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-					g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-				})();
-			}());
+				var u="https://analytics.wiltomakesfood.com/";
+				_paq.push(['setTrackerUrl', u+'piwik.php']);
+				_paq.push(['setSiteId', '1']);
+				
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
 		</script>
 	</body>
 </html>
