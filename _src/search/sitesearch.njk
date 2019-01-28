@@ -80,10 +80,10 @@ if( sizeof( $matches ) > 0 ) {
 			<?php endif; ?>
 			<h3 class="article-hed"><a href="<?= $post['url']; ?>"><?= $post['title']; ?></a></h3>
 			<?php if( $post['subhed'] ): ?>
-			<p class="subhed"><?= $post['subhed']; ?></p>
+			<p class="subhed"><?= html_entity_decode( $post['subhed'] ); ?></p>
 			<?php endif; ?>
 			<?php if( $post['lede'] ): ?>
-				<p class="lede"><?= $post['lede']; ?></p>
+				<p class="lede"><?= html_entity_decode( $post['lede'] ); ?></p>
 			<?php endif; ?>
 			</div>
 	</article>
