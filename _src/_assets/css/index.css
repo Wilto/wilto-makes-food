@@ -1589,16 +1589,15 @@ img.take-your-time {
 }
 .notification:not(.toast):before {
 	clip-path: polygon(0 100%, 15px 0, 100% 100%);
-	transform: rotate(-.5deg);
 	background: rgba(255,150,0, .5);
 	content: "";
 	display: block;
 	position: absolute;
-	top: -3vw;
-	height: 3vw;
+	top: -2.5vw;
+	height: 2.5vw;
 	left: 0;
 	width: 100%;
-	z-index:-1;
+	z-index: -1;
 }
 
 .notification:not(.toast) .notif-cta {
@@ -1615,8 +1614,9 @@ img.take-your-time {
 		margin-bottom: 1.5em;
 	}
 	.notification:not(.toast):before {
-		top: -.8em;
-		height: 1.6em;
+		top: -.65em;
+		height: .65em;
+		width: 85%;
 	}
 	.notification:not(.toast) .notif-hed {
 		padding-top: .125em;
