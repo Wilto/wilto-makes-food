@@ -1567,6 +1567,7 @@ img.take-your-time {
 	overflow: visible;
 	position: relative;
 	text-align: center;
+	z-index: 1;
 }
 
 .tmpl-post .notification {
@@ -1593,13 +1594,12 @@ img.take-your-time {
 	content: "";
 	display: block;
 	position: absolute;
-	top: -2vw;
-	height: 4vw;
+	top: -3vw;
+	height: 3vw;
 	left: 0;
 	width: 100%;
 	z-index:-1;
 }
-
 
 .notification:not(.toast) .notif-cta {
 	margin: 1em auto auto auto;
