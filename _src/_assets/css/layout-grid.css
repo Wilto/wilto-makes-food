@@ -97,7 +97,7 @@
 	.highlights {
 		display: grid;
 		grid-template-columns: repeat( 1, 1fr );
-		grid-gap: 2.5%;
+		grid-gap: 0 2.5%;
 	}
 	@media all and (min-width: 500px) {
 		.highlights {
