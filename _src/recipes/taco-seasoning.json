@@ -1,0 +1,109 @@
+{
+	"name" : "Taco Seasoning",
+	"meta" : {
+		"total": "~15 minutes"
+	},
+	"ingredients" : [
+		{
+			"name" : "All-purpose flour",
+			"amt" : {
+				"whole" : "2",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "Tbsp.",
+					"full" : "Tablespoon"
+				}
+			}
+		},
+		{
+			"name" : "Chili powder",
+			"amt" : {
+				"whole" : "2",
+				"frac" : "1/2",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Salt",
+			"amt" : {
+				"whole" : "1",
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Smoked paprika",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Sugar",
+			"amt" : {
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Cayenne pepper",
+			"amt" : {
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Cumin",
+			"amt" : {
+				"whole" : "1",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			}
+		},
+		{
+			"name" : "Onion powder",
+			"amt" : {
+				"frac" : "3/4",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			},
+			"notes": "or one onion, minced"
+		},
+		{
+			"name" : "Garlic powder",
+			"amt" : {
+				"frac" : "1/4",
+				"measure" : {
+					"abbr" : "tsp.",
+					"full" : "teaspoon"
+				}
+			},
+			"notes": "or two cloves of garlic, minced"
+		}
+	],
+	"instructions": [
+		"Put the flour and dry spices in a small jar with a lid. Add 3/4 C. stock (or water) and shake vigorously.",
+		"Brown ~1 pound of ground beef (or one bag of ground-beef-style vegetarian “crumbles”) in a large, well-oiled skillet, over high heat",
+		"Lower heat to medium, add aromatics, and cook until softened.",
+		"Give the jar another shake and add the contents to the skillet. Stir until consistently thickened—only a few minutes more."
+	]
+}
