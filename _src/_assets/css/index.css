@@ -262,6 +262,9 @@ a.cta-prod {
 	color: #000;
 	opacity: 1;
 }
+.site-head a.patreon:active {
+	bottom: auto;
+}
 .site-head a.patreon svg {
 	padding: 1px 2px 1px 4px;
 	width: 22px;
