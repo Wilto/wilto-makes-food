@@ -957,6 +957,13 @@ p.table-note {
 	font-family: "Open Sans", sans-serif;
 	position: relative;
 }
+
+.related {
+	color: #555;
+	font-family: "Open Sans", sans-serif;
+	margin: .75em 0 .35em 0;
+	font-size: .85em;
+}
 .tweet-attr a {
 	color: #333;
 	font-size: .75em;
