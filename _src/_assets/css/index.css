@@ -221,6 +221,7 @@ a.cta-prod {
 	margin: 0 auto;
 	padding: 0 1.5%;
 	max-width: 85em;
+	position: relative;
 }
 
 .site-foot {
@@ -240,6 +241,33 @@ a.cta-prod {
 	.site-head {
 		padding: 0 2.5%;
 	}
+}
+
+.site-head a.patreon {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	top: .65em;
+	right: 2.5%;
+	font-size: .7em;
+	letter-spacing: -.01em;
+	font-family: "open sans", sans-serif;
+	text-decoration: none;
+	opacity: .7;
+	padding: 0;
+	transition: opacity .2s linear;
+}
+.site-head a.patreon:hover {
+	color: #000;
+	opacity: 1;
+}
+.site-head a.patreon svg {
+	padding: 1px 2px 1px 4px;
+	width: 22px;
+	height: 22px;
+	display: block;
+	margin: 0 0 0 .5em;
 }
 
 .bar {
@@ -1538,11 +1566,10 @@ img.take-your-time {
 	justify-content: start;
 	align-content: start;
 }
-
 .sponsorship a.patreon {
 	float: right;
 }
-.sponsorship a.patreon svg {
+a.patreon svg {
 	margin: 0 .25em .5em .5em;
 	background: #f96753;
 	max-width: 5em;
