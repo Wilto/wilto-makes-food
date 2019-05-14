@@ -24,11 +24,19 @@ module.exports = function(eleventyConfig) {
 
   // only content in the `recipes` directory
   eleventyConfig.addCollection("truncrecipes", function(collection) {
-    return collection.getAllSorted().reverse().filter(function(item) {
-      if( item.data.feat != true && item.data.subfeat != true && item.inputPath.match(/^\.\/_src\/recipes\//) !== null ) {
-        return item;
+    let i = 0;
+    let ret = [];
+
+    collection.getAllSorted().reverse().filter(function(item) {
+      if( item.data.img != null && item.data.feat != true && item.data.subfeat != true && item.inputPath.match(/^\.\/_src\/recipes\//) !== null ) {
+        if(  i < 8  ) {
+          console.log( item.data.title );
+          ret.push( item );
+          i++;
+        }
       }
     });
+    return ret;
   });
 
     // only content in the `articles` directory
