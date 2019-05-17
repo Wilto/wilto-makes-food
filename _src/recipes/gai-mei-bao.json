@@ -1,0 +1,211 @@
+{
+	"name" : "Gai Mei Bao",
+	"notes" : "Sweet, coconut-scented dough with a creamy coconut filling. Breakfast of champions, if you ask me.",
+	"meta" : {
+		"total": "2 hours",
+		"active" : "30 minutes"
+	},
+	"ingredients" : {
+		"steps" : [
+			{
+				"stage" : "Tangzhong",
+				"ingredients" : [{
+					"name" : "All-purpose flour",
+					"amt" : {
+						"whole" : "20",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				},{
+					"name" : "Water",
+					"amt" : {
+						"whole" : "60",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				}]
+			},{
+				"stage" : "Filling",
+				"ingredients" : [{
+					"name" : "Unsalted butter",
+					"amt" : {
+						"whole" : "8",
+						"measure" : {
+							"abbr" : "Tbsp.",
+							"full" : "tablespoons"
+						}
+					},
+					"notes": "melted"
+				},{
+					"name" : "Vanilla extract",
+					"amt" : {
+						"frac": "1/2",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoons"
+						}
+					}
+				},{
+					"name" : "Granulated sugar",
+					"amt" : {
+						"frac": "1/2",
+						"measure" : {
+							"abbr" : "C.",
+							"full" : "cup"
+						}
+					}
+				},{
+					"name" : "Dessicated coconut",
+					"amt" : {
+						"whole": "4",
+						"measure" : {
+							"abbr" : "Tbsp.",
+							"full" : "tablespoons"
+						}
+					},
+					"notes" : "unsweetened"
+				},{
+					"name" : "All-purpose flour",
+					"amt" : {
+						"whole": "4",
+						"measure" : {
+							"abbr" : "Tbsp.",
+							"full" : "tablespoon"
+						}
+					}
+				},{
+					"name" : "Kosher salt",
+					"amt" : {
+						"whole": "A pinch"
+					}
+				}]
+			},{
+				"stage" : "Final Dough",
+				"ingredients" : [{
+					"name" : "All-purpose flour",
+					"amt" : {
+						"whole" : "215",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				},{
+					"name" : "Bread flour",
+					"amt" : {
+						"whole" : "260",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				},{
+					"name" : "Water",
+					"amt" : {
+						"whole" : "125",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					},
+					"notes": "between 90–100 degrees"
+				},{
+					"name" : "Whole milk",
+					"amt" : {
+						"whole" : "80",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					},
+					"notes": "between 90–100 degrees"
+				},{
+					"name" : "Salt",
+					"amt" : {
+						"frac" : "1/2",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoons"
+						}
+					}
+				},{
+					"name" : "Sugar",
+					"amt" : {
+						"whole" : "80",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					}
+				},{
+					"name" : "Malted milk powder",
+					"amt" : {
+						"whole" : "1",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoon"
+						}	
+					},
+					"optional" : true
+				},{
+					"name" : "Instant yeast",
+					"amt" : {
+						"whole" : "2",
+						"frac": "1/4",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoon"
+						}
+					}
+				},{
+					"name" : "Coconut oil",
+					"amt" : {
+						"whole" : "2",
+						"measure" : {
+							"abbr" : "Tbsp.",
+							"full" : "tablespoons"
+						}
+					},
+					"notes":"unrefined"
+				},{
+					"name" : "Egg",
+					"amt" : {
+						"whole" : "1"
+					},
+					"notes":"lightly beaten, for brushing"
+				}]
+			}
+		]
+	},
+	"instructions" : [
+		{
+			"stage" : "Tangzhong (water roux)",
+			"steps" : [
+				"Whisk 20G all-purpose flour and 60G water in a shallow skillet over medium heat, until a thick paste forms.",
+				"Spread the paste on a sheet of parchment, set aside, and allow to cool to room temperature."
+			]
+		},{
+			"stage" : "Filling",
+			"steps" : [
+				"Mix together all the filling ingredients in a skillet over low–medium heat.",
+				"Cook, whisking constantly, until foaming and thickened to a custard-like consistency. Set aside and allow to cool to room temperature."
+			]
+		},{
+			"stage" : "Final Dough",
+			"steps" : [
+				"In the bowl of a stand-mixer or large mixing bowl, bring together all of the final dough ingredients—minus the egg—including the cooled tangzhong. Add more water a teaspoon at a time, until the dough just comes together into a shaggy ball.",
+				"Switch to a dough hook and knead on low–medium speed for seven minutes, or hand-knead for ten minutes or so.",
+				"Remove dough to a clean, lightly oiled bowl, and allow to proof at room temperature for about an hour (or until roughly doubled in size).",
+				"Punch the dough down, knead lightly to deflate, and divide into sixteen equally-sized portions. Form into balls, cover loosely, and allow to rest for ten minutes.",
+				"On a lightly floured countertop, roll each ball out into an oval. Add about two teaspoons of filling in the center, then fold the dough onto itself like an envelope and move to a parchment-lined baking sheet, seam side down.",
+				"Cover and proof for half an hour. In the meantime, preheat your oven to 375 degrees Farenheit.",
+				"Brush with egg wash (I add about a teaspoon of water to the beaten egg, to make it brush a little more easily), optionally dust with sesame seeds, and bake for about fifteen minutes, or until golden brown."
+			]
+		}
+	]
+}
+
