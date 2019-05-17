@@ -269,7 +269,7 @@
 		</footer>
 
 		<script>
-			if('serviceWorker' in navigator && window.location.hostname !== "localhost" ) {
+			if('serviceWorker' in navigator ) {
 				navigator.serviceWorker.register('/service-worker.js?{{ metadata.build }}');
 			}
 		</script>
@@ -282,16 +282,17 @@
 			_paq.push(['trackPageView']);
 			_paq.push(['enableLinkTracking']);
 			(function() {
-				if( !navigator.onLine || window.location.hostname === "localhost" ) {
+				if( !navigator.onLine ) {
 					return;
 				}
 				var u="https://analytics.wiltomakesfood.com/";
 				_paq.push(['setTrackerUrl', u+'piwik.php']);
-				_paq.push(['setSiteId', '1']);
+				_paq.push(['setSiteId', '2']);
 				
 				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
 				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
 			})();
+
 		</script>
 
 		<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
