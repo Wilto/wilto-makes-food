@@ -73,7 +73,7 @@ Probably cheap stainless.
 
 #### But This Steel is From Space!
 
-[All iron came from space](https://sciencing.com/origin-iron-5371252.html).
+[All iron is from space](https://sciencing.com/origin-iron-5371252.html).
 
 #### But The Facebook Ad Sai—
 
