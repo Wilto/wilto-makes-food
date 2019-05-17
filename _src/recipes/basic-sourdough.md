@@ -5,10 +5,8 @@ tags:
 lede: This recipe makes a nice little loaf in and of itself, for sure, but with a little remastering it can just as handily become a focaccia, sourdough baguettes, trap remix, whatever. The difference mostly comes down to the ratio of flours, amount of water, and number of airhorns you use.
 type: recipe
 img: basic-sourdough
-notif: It’s dangerous to go alone.
-notifcta: Take this
-notifhref: /articles/understanding-sourdough
-subfeat: true
+related: Understanding Sourdough
+relatedhref: /articles/understanding-sourdough
 date: 2019-01-25
 alt: A rich, reddish-brown sourdough boule with a blistered crust and a wide “grigne”—a slash down the center, split open by the bread rising in the oven.
 ---

@@ -4,7 +4,9 @@ tags:
     - Mexican
 lede: "Listen, it ain’t all frilly-footed macarons and ingredients set in italics around here."
 type: recipe
+feat: true
 img: nachos
+date: 2019-04-05
 alt: A close-up of a tray of nachos, piled—perhaps to excess—with meat, beans, lettuce, tomatoes, and red peppers.
 capt: "Here’s a little not-this-recipe bonus tip: pre-bake your nacho chips to golden brown <em>before</em> you top them."
 ---

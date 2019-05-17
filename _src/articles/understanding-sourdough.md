@@ -4,7 +4,7 @@ subhed: "Let’s get this bread; let’s yeet this wheat."
 type: article
 lede: "There are only three ways to write about making naturally-leavened bread on a food blog, and I’m gonna do all of ’em here."
 img: sourdough
-feat: true
+subfeat: true
 date: 2019-01-25
 alt: "A cross-section of a sourdough boule with an open, irregular crumb structure."
 ---

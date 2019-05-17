@@ -6,7 +6,6 @@ lede: Most shortbread sucks pretty bad. This is a recipe for a shortbread that <
 type: recipe
 img: shortbread
 date: 2019-01-02
-subfeat: true
 capt: ♪ Da-na-na-NAAA! ♪
 alt: Shortbread cookies cut into 8-bit heart shapes and decorated with bright red royal icing.
 ---
