@@ -27,12 +27,7 @@ npm install
 ### 4. Run Eleventy
 
 ```
-npx eleventy
-```
-
-Or build automatically when a template changes:
-```
-npx eleventy --watch
+npx eleventy --serve
 ```
 
 ### 5. Run Grunt

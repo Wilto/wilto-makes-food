@@ -482,7 +482,7 @@ p.lede {
 
 .recipe-subhed {
 	font-family: sans-serif;
-	font-size: .8em;
+	font-size: .925em;
 	padding-bottom: 0;
 	margin-top: 2.5em;
 }
@@ -741,12 +741,12 @@ p.table-note {
 	opacity: 0;
 }
 
-.highlights .item img,
-.subfeat .item img,
-.feat.item img,
-.highlights .item svg,
-.subfeat .item svg,
-.feat.item svg {
+.highlights .item > img,
+.subfeat .item > img,
+.feat.item > img,
+.highlights .item > svg,
+.subfeat .item > svg,
+.feat.item > svg {
 	background: #eaeaea;
 	position: absolute;
 	top: 0;
@@ -756,12 +756,12 @@ p.table-note {
 	min-height: 100%;
 }
 @supports( transform: translate(-50%, -50%) ) {
-	.highlights .item img,
-	.subfeat .item img,
-	.feat.item img,
-	.highlights .item svg,
-	.subfeat .item svg,
-	.feat.item svg {
+	.highlights .item > img,
+	.subfeat .item > img,
+	.feat.item > img,
+	.highlights .item > svg,
+	.subfeat .item > svg,
+	.feat.item > svg {
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
@@ -789,6 +789,9 @@ p.table-note {
 		max-height: 15em;
 	}
 }
+.highlights > .item img {
+	width: 100%;
+}
 .sub.item {
 	display: grid;
 }
@@ -799,9 +802,12 @@ p.table-note {
 .recipe-hed {
 	padding: 0;
 }
-
 .recipe-hed a {
 	display: block;
+}
+.recipe-hed .hq {
+	margin-left: .15em;
+	display: inline-block;
 }
 
 .feat-tag {

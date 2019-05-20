@@ -71,9 +71,9 @@ There’s a non-zero chance of finding a _good_ Damascus steel knife, but you ai
 
 Probably cheap stainless.
 
-#### But This Steel is From Space!
+#### But This One is Made Out of Metal From Space!
 
-[All iron is from space](https://sciencing.com/origin-iron-5371252.html).
+Every kitchen knife is made of [metal from space](https://sciencing.com/origin-iron-5371252.html).
 
 #### But The Facebook Ad Sai—
 
@@ -81,11 +81,11 @@ _Definitely_ cheap stainless.
 
 ### So, What’s the&nbsp;<em>Best</em>&nbsp;Knife?
 
-I already told you: mine. It’s a [Takayuki AS Bunka](https://www.chefknivestogo.com/taaskeb19.html), 200mm blade. It’s small, light, and razor-sharp. I got small hands, and a bigass Final Fantasy sword knife might look cool (for a _very_ specific value of “cool”), but probably wouldn’t be super comfortable for me. The cutting edge is flatter, like the Shun I got so used to, versus the rounder edge like you might find on a Wüsthof.
+I already told you: mine. It’s a [Takayuki AS Bunka](https://www.chefknivestogo.com/taaskeb19.html), 200mm blade. It’s small, light, and razor-sharp. I got small hands, and a bigass Final-Fantasy-sword knife might look cool (for a _very_ specific value of “cool”), but probably wouldn’t be super comfortable for me. The cutting edge is flatter, like the Shun I got so used to, versus the rounder edge like you might find on a Wüsthof.
 
 The core is made out of “Aogami Super Steel,” which—yes—should set off your newly-formed “Kickstarter scam metal” alarm, but [here’s the composition](http://zknives.com/knives/steels/steelgraph.php?nm=Aogami%2520Super): high carbon with a <i>soupçon</i> of chromium. Easy enough to sharpen, takes a relatively durable edge, and doesn’t tarnish much.
 
-What I like about this one is that it has stainless steel _cladding_—a tarnish and rust-proof wrapper around the fussier metal core. All the benefits of a high carbon cutting edge, with _some_ of the maintenance benefits of stainless—I couldn’t leave it sitting in the sink overnight or anything, but I wasn’t gonna do that anyway. The hammered finish allegedly keeps food from sticking to the blade, and I guess it _might_ do that, but definitely not to an extent where I have ever noticed it. It just looks cool.
+What I like about this one is that it has stainless steel _cladding_—a tarnish- and rust-proof wrapper around the fussier metal core. All the benefits of a high carbon cutting edge, with _some_ of the maintenance benefits of stainless—I couldn’t leave it sitting in the sink overnight or anything, but I wasn’t gonna do that anyway. The hammered finish allegedly keeps food from sticking to the blade, and I guess it _might_ do that, but definitely not to an extent where I have ever noticed it. It just looks cool.
 
 A handle also is present! It looks nice enough; I don’t mind it. I will, at some point, replace it with one of my own. Thinking maple burl, ebony at both ends, copper accents, maybe D-shaped like my Shun was. I mean… I haven’t thought it through much or anythi—
 

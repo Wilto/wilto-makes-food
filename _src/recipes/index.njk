@@ -69,7 +69,7 @@ navtitle: Recipes
 		{% else %}
 
 		<div class="recipe-header">
-			<h3 class="recipe-hed"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+			<h3 class="recipe-hed"><a href="{{ post.url | url }}">{{ post.data.title }} {% if post.data.hq %}<svg width="13" height="14" viewBox="0 0 324 329" version="1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="hq"><path d="M44 223v-7a118 118 0 1 1 230 38v-5a96 96 0 1 0-153 77l5 3a167 167 0 1 1 197-221A153 153 0 0 0 44 223z" fill="#444" fill-rule="evenodd"/></svg>{% endif %}</a></h3>
 			{% for tag in post.data.tags %}<span class="feat-tag"><a href="tagged/{{ tag | lower }}"><span class="a11y-only">Category: </span>{{ tag }}</a></span>{% endfor %}
 		</div>
 		{% endif %}
