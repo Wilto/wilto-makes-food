@@ -742,16 +742,16 @@ p.table-note {
 }
 
 .highlights .item > img,
-.subfeat .item > img,
-.feat.item > img,
+.subfeat .item > a img,
+.feat.item > a img,
 .highlights .item > svg,
 .subfeat .item > svg,
 .feat.item > svg {
 	background: #eaeaea;
 	position: absolute;
 	top: 0;
+	width: 100%;
 	left: 0;
-	min-width: 100%;
 	max-width: 175%;
 	min-height: 100%;
 }

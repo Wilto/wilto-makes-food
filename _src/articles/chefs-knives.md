@@ -3,13 +3,14 @@ title: The Best Chef’s Knife
 subhed: "* Probably not, though."
 type: article
 lede: "This post is such an easy dunk, with a big ol’ list of “affiliate links” to expensive-ass knives. Spoiler: the super expensive one happens to be the best one! Good news, though: there’s a best <em>budget</em> knife, too, so you can go ahead and buy that one. After all, when you’re selling, you don’t want the mark’s options to be “buy something or don’t”—you want it to be “buy something or buy something."
-subfeat: true
+minilede: "This post is such an easy dunk. Just a big ol’ list of “affiliate links” to expensive-ass knives—cha-<em>ching</em>, suckers. Retirement here I come!"
+feat: true
 img: knife
 alt: "A bunka knife with a hammered-texture dark grey cladding."
 draft: true
 ---
 
-Gross. 
+Gross. Gross gross gross.
 
 Listen, If you’ve been reading this thing for a while, you can probably guess where I’m gonna land on this: 
 

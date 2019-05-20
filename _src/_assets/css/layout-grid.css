@@ -145,13 +145,12 @@
 			margin-top: 1%;
 		}
 		.subfeat .item:first-of-type {
-			min-height: 15em;
+			min-height: 20em;
 		}
 		.subfeat .item:nth-last-child(n+3),
 		.subfeat .item:first-of-type:last-of-type,
 		.subfeat > .item:first-of-type:last-of-type {
 			grid-column: 1 / span 2;
-			min-height: 20em;
 		}
 		.subfeat:before {
 			grid-column: 1 / span 2;
@@ -169,6 +168,7 @@
 			grid-column: 2;
 			grid-gap: 0;
 		}
+		.subfeat .item:first-of-type,
 		.subfeat .item:nth-child(3):last-of-type,
 		.subfeat > .item:first-of-type:last-of-type,
 		.subfeat > .item {
