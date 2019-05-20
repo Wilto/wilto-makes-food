@@ -4,7 +4,6 @@ title: Our Menu
 lede: "Do I have any business opening a pseudo-bakery out of a city apartment? Absolutely not. Am I gonna do it anyway? <em>Hell yes I am.</em>"
 img: wedding-cake
 featimg: cake-span
-tags: nav
 alt: A cake.
 
 ---
