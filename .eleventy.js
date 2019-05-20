@@ -29,7 +29,7 @@ module.exports = function(eleventyConfig) {
 
     collection.getAllSorted().reverse().filter(function(item) {
       if( item.data.img != null && item.data.feat != true && item.data.subfeat != true && item.inputPath.match(/^\.\/_src\/recipes\//) !== null ) {
-        if(  i < 8  ) {
+        if( i <= 8  ) {
           console.log( item.data.title );
           ret.push( item );
           i++;
