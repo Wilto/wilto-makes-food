@@ -55,7 +55,7 @@ navtitle: Articles
 {% set postslist = collections.posts %}
 <h2 class="section-hed" id="all">All Articles</h2>
 <div class="col" aria-labelledby="all">
-	<div class="highlights">
+	<div class="highlights article-highlights">
 {% for post in postslist | reverse %}
 	{% if post.data.type == 'article' %}
 		{{ item(post) }}

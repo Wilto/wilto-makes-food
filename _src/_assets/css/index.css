@@ -47,6 +47,7 @@ main {
 
 .col {
 	clear: both;
+	margin: 0 0 5em 0;
 }
 
 .cta {
@@ -476,7 +477,7 @@ a.cta-prod {
 	font-size: .8em;
 	text-transform: uppercase;
 	padding: 0 .2em;
-	color: #666;
+	color: #444;
 	text-decoration: none;
 }
 .foot-nav a+a,
@@ -982,6 +983,9 @@ a.prod img {
 
 .cta {
 	margin: 1.5em auto 0 auto;
+}
+.highlights {
+	padding-bottom: 1.5em;
 }
 
 .item {
@@ -1537,7 +1541,7 @@ img.take-your-time {
 }
 
 .site-foot {
-	margin-top: 2em;
+	margin-top: 5em;
 	border-top: 1px solid #ddd;
 	background: #f0f0f0;
 	position: relative;
@@ -1569,6 +1573,7 @@ img.take-your-time {
 	display: block;
 	margin-top: 2.5em;
 	padding-top: .5em;
+	padding-bottom: .35em;
 }
 .foot-nav p {
 	float: left;

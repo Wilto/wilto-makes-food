@@ -741,7 +741,7 @@ p.table-note {
 	opacity: 0;
 }
 
-.highlights .item > img,
+.highlights .item img,
 .subfeat .item > a img,
 .feat.item > a img,
 .highlights .item > svg,
@@ -756,7 +756,7 @@ p.table-note {
 	min-height: 100%;
 }
 @supports( transform: translate(-50%, -50%) ) {
-	.highlights .item > img,
+	.highlights .item img,
 	.subfeat .item > img,
 	.feat.item > img,
 	.highlights .item > svg,
@@ -787,6 +787,10 @@ p.table-note {
 		min-height: 11em;
 		height: 20vw;
 		max-height: 15em;
+	}
+	.article-highlights .item {
+		height: 25vw;
+		max-height: 20em;
 	}
 }
 .highlights > .item img {

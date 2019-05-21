@@ -103,19 +103,25 @@
 		.highlights {
 			display: grid;
 			grid-template-columns: repeat( 2, 1fr );
-			grid-gap: 2%;
+			grid-gap: 0 1.25%;
 		}
 	}
 	@media all and (min-width: 750px) {
 		.highlights {
 			grid-template-columns: repeat( 4, 1fr );
+			grid-gap: .5%;
+		}
+	}
+	@media all and (min-width: 750px) {
+		.article-highlights {
+			grid-template-columns: repeat( 2, 1fr );
 			grid-gap: 1.5%;
 		}
 	}
 
 	@media all and (min-width: 850px) {
 		.highlights {
-			grid-gap: .5%;
+			grid-gap: 0 .75%;
 		}
 	}
 
