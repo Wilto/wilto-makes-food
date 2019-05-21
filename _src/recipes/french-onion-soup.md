@@ -4,7 +4,9 @@ tags:
   - french
 lede: This is the best French onion soup I’ve ever had. The secret ingredient, well, it isn’t onions.
 date: 2019-01-09
+type: recipe
 img: onion-soup
+subfeat: false
 alt: An earthenware mug of french onion soup, topped with a sourdough crouton, melted cheese, and a sprinkling of finely chopped parsley
 ---
 
