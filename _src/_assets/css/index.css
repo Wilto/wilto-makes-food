@@ -664,19 +664,16 @@ a.recipe-jump {
 	bottom: -1.35em;
 	border-radius: 0 0 .25em .25em;
 }
-
 @media( min-width: 560px ) {
 	a.recipe-jump {
 		bottom: -.65em;
 		right: 0;
 	}
 }
-
 .intro a.recipe-jump:focus,
 .intro a.recipe-jump:active {
 	background: #f5ca95;
 }
-
 .recipe-jump svg {
 	margin-top: -.25em;
 	width: 1.35em;
@@ -686,6 +683,22 @@ a.recipe-jump {
 	will-change: transform;
 	transform: translateY(-1px);
 }
+
+.recipe-jump-txt,
+.recipe-jump-txt:active {
+	position: absolute;
+	z-index: 2;
+	right: 4.25em;
+	bottom: -1.75em;
+}
+
+@media(min-width: 35em) {
+	.recipe-jump-txt,
+	.recipe-jump-txt:active {
+		bottom: -.75em;
+	}
+}
+
 @-webkit-keyframes bounce {
 	0% { transform: translateY(-1px); }
 	20% { transform: translateY(1px); }

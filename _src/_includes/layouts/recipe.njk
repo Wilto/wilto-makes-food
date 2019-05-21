@@ -39,6 +39,8 @@ templateClass: tmpl-post
 			{% endfor %}
 			<h2 class="recipe-hed p-name" itemprop="name">{{ title }}{% if hq %}<svg class="hq" width="24" height="25" viewBox="0 0 324 329" version="1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M44 223v-7a118 118 0 1 1 230 38v-5a96 96 0 1 0-153 77l5 3a167 167 0 1 1 197-221A153 153 0 0 0 44 223z" fill="#444" fill-rule="evenodd"/></svg>{% endif %}</h2>
 
+			{% if name %}<a href="#recipe" class="recipe-jump-txt">Skip to the recipe</a>{% endif %}
+
 			<dl class="meta">
 				{% if meta.serves %}
 				<dt>Serves</dt>
@@ -59,7 +61,6 @@ templateClass: tmpl-post
 				<dd itemprop="recipeYield" class="p-yield">{{ metaval }}</dd>
 				{% endif %}
 			</dl>
-
 			{% if name %}<a href="#recipe" class="recipe-jump">
 				<svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 					<title>Skip to Recipe</title>

@@ -879,6 +879,18 @@ p.table-note {
 	box-shadow: 0 0 0 7px transparent;
 }
 
+.recipe-jump-txt {
+	font-family: "Open Sans", sans-serif;
+	font-size: .65em;
+	color: #444;
+	opacity: .8;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.recipe-jump-txt:hover {
+	opacity: 1;
+}
+
 .offline-subhed {
 	color: #444;
 	font-size: 1em;
