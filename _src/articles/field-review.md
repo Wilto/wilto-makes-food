@@ -4,6 +4,7 @@ subhed: It ain’t cheap, but is it worth it?
 lede: The old Marquis Home Renovation rule was “buy the cheapest version of something, and if you manage to use it until it breaks, replace it with the best one money can buy.” It’s a pretty good rule for tape measures and whatnot, but a better one writ larger.
 img: field
 alt: The Field Skillet.
+date: 2019-01-03
 keywords: 
     - Cookware
     - Pans

@@ -4,6 +4,7 @@ subhed: This is my food blog.
 lede: "To keep to the medium: I, your humble and effortlessly talented narrator, have just awoken to the sound of birds singing and clear blue skies."
 type: article
 img: wmf
+date: 2018-01-01
 alt: Mise en place; tiny bowls of various spices and herbs, a large bowl of whole carrots, a leek, and a celery stalk.
 tags: 
     - subnav

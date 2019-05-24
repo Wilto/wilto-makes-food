@@ -5,6 +5,7 @@ type: article
 lede: "This post is such an easy dunk, with a big ol’ list of “affiliate links” to expensive-ass knives. Spoiler: the super expensive one happens to be the best one! Good news, though: there’s a best <em>budget</em> knife, too, so you can go ahead and buy that one. After all, when you’re selling, you don’t want the mark’s options to be “buy something or don’t”—you want it to be “buy something or buy something."
 minilede: "This post is such an easy dunk. Just a big ol’ list of “affiliate links” to expensive-ass knives—cha-<em>ching</em>, suckers. Retirement here I come!"
 feat: true
+date: 2019-05-23
 img: knife
 alt: "A bunka knife with a hammered-texture dark grey cladding."
 draft: true

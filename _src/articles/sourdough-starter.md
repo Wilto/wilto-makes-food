@@ -4,6 +4,7 @@ subhed: Listen—if I can do it, anybody can.
 lede: It isn’t as hard as you think.
 type: article
 img: rortugal
+date: 2019-01-04
 capt: 'The blob, the myth, the legend: <a href="https://twitter.com/lrgmnn/status/813635533658144768">Dwigt Rortugal</a>.'
 alt: A clear glass bowl containing a wet, bubbling dough.
 ---

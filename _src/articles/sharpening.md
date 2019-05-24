@@ -4,6 +4,7 @@ subhed: Multiclassing has its benefits.
 lede: I was supposed to be a carpenter. My father was a carpenter. His father— well, he owned a hammer, and building codes were pretty lax back in his day.
 type: article
 img: sharpening
+date: 2019-01-02
 alt: Three chef’s knives side-by-side on a cloth rag, alongside a dampened sharpening stone and a bowl of water.
 ---
 
