@@ -260,6 +260,7 @@
 					<p>&copy; 2018, Mat Marquis</p>
 
 					<nav class="footnav">
+						<a href="mailto:me@wiltomakesfood.com" rel="me">Contact</a>
 					{%- for nav in collections.footnav | reverse -%}
 						<a href="{{ nav.url | url }}" class='{% if nav.url == page.url %}footnav-item-active{% endif %}'{% if nav.url == page.url %} aria-current="page"{% endif %}>{{ nav.data.navtitle }}</a>
 						{%- endfor -%}
