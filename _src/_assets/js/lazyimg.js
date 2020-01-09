@@ -11,23 +11,25 @@
 					&& "IntersectionObserverEntry" in window 
 					&& "intersectionRatio" in window.IntersectionObserverEntry.prototype;
 
-		if( supports === true ) {
+		if( supports ) {
 			var imgObs = new IntersectionObserver( function( els, obs ) {
-				for( i = 0; i < els.length; i++ ){
-					if( els[ i ].isIntersecting ) {
-						attrswap( els[ i ].target );
+				els.forEach( function( el ) {
+					if( el.isIntersecting ) {
+						var img = el.target;
+
+						attrswap( img );
 					}
-				}
+				});
 			});
 
-			for( i = 0; i < lazyimgs.length; i++ ){
-				lazyimgs[i].parentElement.classList.add( 'fadein' );
-				imgObs.observe( lazyimgs[i] );
-			}
+			[].slice.call( lazyimgs ).forEach(function(lazyimg) {
+				lazyimg.parentElement.classList.add( 'fadein' );
+				imgObs.observe( lazyimg );
+			});
 		} else {
 			for( i = 0; i < lazyimgs.length; i++ ){
 				attrswap( lazyimgs[ i ] );
-				lazyimg.parentElement.classList.add( 'fadein' );
+				lazyimgs[ i ].parentElement.classList.add( 'fadein' );
 			}
 		}
 	};
