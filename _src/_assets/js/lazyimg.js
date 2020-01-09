@@ -22,6 +22,10 @@
 				});
 			});
 
+			for( i = 0; i < lazyimgs.length; i++ ){
+				lazyimgs[ i ].parentElement.classList.add( 'fadein' );
+				imgObs.observe( lazyimgs[ i ] );
+			}
 			[].slice.call( lazyimgs ).forEach(function(lazyimg) {
 				lazyimg.parentElement.classList.add( 'fadein' );
 				imgObs.observe( lazyimg );
@@ -29,7 +33,6 @@
 		} else {
 			for( i = 0; i < lazyimgs.length; i++ ){
 				attrswap( lazyimgs[ i ] );
-				lazyimgs[ i ].parentElement.classList.add( 'fadein' );
 			}
 		}
 	};
