@@ -750,7 +750,7 @@ p.table-note {
 	background: #eaeaea;
 	position: absolute;
 	top: 0;
-	width: 100%;
+	min-width: 100%;
 	left: 0;
 	max-width: 175%;
 	min-height: 100%;
