@@ -11,7 +11,7 @@
 					&& "IntersectionObserverEntry" in window 
 					&& "intersectionRatio" in window.IntersectionObserverEntry.prototype;
 
-		if( supports ) {
+		if( supports === true ) {
 			var imgObs = new IntersectionObserver( function( els, obs ) {
 				els.forEach( function( el ) {
 					if( el.isIntersecting ) {
