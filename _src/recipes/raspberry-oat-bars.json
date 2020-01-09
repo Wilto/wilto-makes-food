@@ -1,0 +1,204 @@
+{
+    "meta" : {
+        "total": "45 minutes",
+        "active" : "20 minutes"
+    },
+    "ingredients" : {
+        "steps" : [
+            {
+                "stage" : "Bottom Crust",
+                "ingredients" : [{
+                    "name" : "Unsalted butter, melted",
+                    "amt" : {
+                        "frac" : "1/2",
+                        "measure" : {
+                            "abbr" : "C.",
+                            "full" : "cup"
+                        }
+                    }
+                },{
+                    "name" : "Granulated Sugar",
+                    "amt" : {
+                        "frac" : "1/4",
+                        "measure" : {
+                            "abbr" : "C.",
+                            "full" : "cup"
+                        }
+                    }
+                },{
+                    "name" : "All-purpose Flour",
+                    "amt" : {
+                        "whole" : "125",
+                        "measure" : {
+                            "abbr" : "G.",
+                            "full" : "grams"
+                        }
+                    },
+                    "notes" : "(about a cup)"
+                },{
+                    "name" : "Minute Oats",
+                    "amt" : {
+                        "frac" : "1/4",
+                        "measure" : {
+                            "abbr" : "C.",
+                            "full" : "cup"
+                        }
+                    }
+                },{
+                    "name" : "Vanilla Extract",
+                    "amt" : {
+                        "whole" : "1",
+                        "measure" : {
+                            "abbr" : "tsp.",
+                            "full" : "teaspoon"
+                        }
+                    }
+                },{
+                    "name" : "Kosher Salt",
+                    "amt" : {
+                        "frac" : "1/4",
+                        "measure" : {
+                            "abbr" : "tsp.",
+                            "full" : "teaspoon"
+                        }
+                    }
+                },{
+                    "name" : "Vanilla Extract",
+                    "amt" : {
+                        "whole" : "1",
+                        "measure" : {
+                            "abbr" : "tsp.",
+                            "full" : "teaspoon"
+                        }
+                    }
+                },{
+                    "name" : "Vanilla Extract",
+                    "amt" : {
+                        "whole" : "1",
+                        "measure" : {
+                            "abbr" : "tsp.",
+                            "full" : "teaspoon"
+                        }
+                    }
+                }]
+            },
+            {
+                "stage" : "Filling",
+                "ingredients" : [{
+                    "name" : "Raspberry Preserves",
+                    "amt" : {
+                        "frac" : "3/4",
+                        "measure" : {
+                            "abbr" : "C.",
+                            "full" : "cup"
+                        }
+                    }
+                },{
+                    "name" : "Vanilla Extract",
+                    "amt" : {
+                        "frac" : "1/2",
+                        "measure" : {
+                            "abbr" : "tsp.",
+                            "full" : "teaspoon"
+                        }
+                    }
+                },{
+                    "name" : "Five-Spice Powder",
+                    "amt" : {
+                        "frac" : "1/4",
+                        "measure" : {
+                            "abbr" : "tsp.",
+                            "full" : "teaspoon"
+                        }
+                    }
+                },{
+                    "name" : "Cornstarch",
+                    "amt" : {
+                        "frac" : "1/2",
+                        "measure" : {
+                            "abbr" : "tsp.",
+                            "full" : "teaspoon"
+                        }
+                    }
+                }]
+            },
+            {
+                "stage" : "Topping",
+                "ingredients" : [{
+                    "name" : "All-Purpose Flour",
+                    "amt" : {
+                        "whole" : "30",
+                        "measure" : {
+                            "abbr" : "G.",
+                            "full" : "grams"
+                        }
+                    },
+                    "notes" : "about 1/4 cup"
+                },{
+                    "name" : "Minute Oats",
+                    "amt" : {
+                        "frac" : "1/2",
+                        "measure" : {
+                            "abbr" : "C.",
+                            "full" : "cup"
+                        }
+                    }
+                },{
+                    "name" : "Light Brown Sugar",
+                    "amt" : {
+                        "frac" : "1/3",
+                        "measure" : {
+                            "abbr" : "C.",
+                            "full" : "cup"
+                        }
+                    }
+                },{
+                    "name" : "Five-Spice Powder",
+                    "amt" : {
+                        "frac" : "1/4",
+                        "measure" : {
+                            "abbr" : "tsp.",
+                            "full" : "cup"
+                        }
+                    }
+                },{
+                    "name" : "Unsalted Butter",
+                    "amt" : {
+                        "frac" : "1/4",
+                        "measure" : {
+                            "abbr" : "C.",
+                            "full" : "cup"
+                        }
+                    },
+                    "notes" : "straight from the fridge"
+                }]
+            }
+        ]
+    },
+    "instructions" : [
+        {
+            "stage" : "Bottom Crust",
+            "steps" : [
+                "Pre-heat your oven to 325° f (~160° c).",
+                "Combine everything and press evenly into a foil-lined 9×9 baking pan",
+                "Bake for 15-20 minutes, just until fully set."
+            ]
+        },
+        {
+            "stage" : "Filling",
+            "steps" : [
+                "Combine all the filling ingredients and pour over the still-hot bottom crust. Even this layer out with a spatula."
+            ]
+        },
+        {
+            "stage" : "Topping",
+            "steps" : [
+                "Whisk together dry ingredients.",
+                "Using a pastry cutter, work cold, cubed butter into the dry ingredients until roughly combined and pea-sized lumps have formed. If combining with your fingertips instead of a pastry cutter, cut the cold butter into small cubes before adding it.",
+                "Evenly distribute this topping over the filling layer.",
+                "Bake for another 30 or so minutes, until edges have just started to brown.",
+                "Allow to cool slightly before removing from pan—allowing it to cool fully will make it difficult to remove the foil."
+            ]
+        }
+    ]
+}

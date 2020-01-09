@@ -30,6 +30,7 @@
 		} else {
 			for( i = 0; i < lazyimgs.length; i++ ){
 				attrswap( lazyimgs[ i ] );
+				lazyimg.parentElement.classList.add( 'fadein' );
 			}
 		}
 	};

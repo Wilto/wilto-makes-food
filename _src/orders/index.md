@@ -7,12 +7,9 @@ featimg: cake-span
 alt: A cake.
 
 ---
-
-That’s right. Starting in 2019, I’m gonna take some orders.
-
-[stay tuned](https://twitter.com/wiltomakesfood) for further announcements, and don’t hesitate to [drop me a line](mailto:me@wiltomakesfood.com) if you’ve got something in mind right now. 
-
 Said orders likely won’t be open _all_ the time. I’m just one person, and I’m not retired from my day job just yet—but I got more time than I have excuses to bake, so _here we are_.
+
+[Stay tuned](https://twitter.com/wiltomakesfood) for further announcements, and don’t hesitate to [drop me a line](mailto:me@wiltomakesfood.com) if you’ve got something in mind right now. 
 
 ### Cakes
 
@@ -21,7 +18,13 @@ Said orders likely won’t be open _all_ the time. I’m just one person, and I�
     alt="A three-layer carrot cake with bare sides. On the top is a swirl of white frosting, decorated with a crescent of chopped nuts, topped with carrot roses with carrot green leaves."
 %}
 
-Listen. I’m sick and tired of texting people to ask them whether they can think of any excuse for me to make them over-the-top cakes. Help me out by ordering one, yeah?
+Listen: frankly, I’m sick and tired of having to text people to ask whether they can think of any excuses for me to make them over-the-top cakes. Help me out by ordering one, yeah?
+
+#### White Mountain Cake
+A snow-white vanilla layer cake, with a hint of almond. 
+
+#### Devil's Food Cake
+Here’s the thing: Oreos cookies, but soft, and also cake. It’s plenty rich, thanks to a hint of espresso and three (3) kinds of chocolate—but not cloyingly sweet.
 
 | Quantity              | Price |
 | --------------------- | -----:|
@@ -29,20 +32,12 @@ Listen. I’m sick and tired of texting people to ask them whether they can thin
 | 9", three layers      |  $110 |
 | 9", five layers       |  $180 |
 
-<p class="table-note">Cakes are for local pick-up only. [Inquire](mailto:me@wiltomakesfood.com) for two or more tiers!</p>
-
-#### White Mountain Cake
-
-A snow-white vanilla layer cake, with a hint of almond.
-
-#### Devil's Food Cake
-
-Here’s the thing: Oreos cookies, but soft, and also cake. It’s plenty rich, thanks to a hint of espresso and three (3) kinds of chocolate—but not cloyingly sweet.
+<p class="table-note">Cakes are for local pick-up only. <a href="mailto:me@wiltomakesfood.com">Inquire for two or more tiers!</a></p>
 
 ### Seasonal Macarons
 
 {% respimg 
-    src="mint-macarons", 
+    src="mac-shells", 
     alt="A line of chocolate macaron shells, criss-crossed with pale green icing, on a sheet of parchment paper"
 %}
 

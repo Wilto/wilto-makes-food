@@ -480,9 +480,24 @@ a.cta-prod {
 	color: #444;
 	text-decoration: none;
 }
-.foot-nav a+a,
+.footwrap .foot-nav a+a,
 .subnav a+a {
-	padding-left: .5em;
+	margin-left: .5em;
+	display: inline-block;
+}
+.footwrap .foot-nav a+a {
+	position: relative;
+	padding-left: .85em;
+}
+.footwrap .foot-nav a+a:before {
+	content: "";
+	background:  rgba(0,0,0,.125);
+	margin-right: .65em;
+	position: absolute;
+	left: 0;
+	width: 2px;
+	bottom: .325em;
+	top: .35em;
 }
 .foot-nav a:hover,
 .subnav a:hover {

@@ -43,7 +43,6 @@
 						let pattern = new RegExp(p.protocol + p.domain + p.tld + p.params, 'gi'),
 							offline = window.wmf.allPosts[ found ]; // This is _terrible_.
 
-						console.log( found );
 						if( offline ) {
 							cachedItems.push( '<li><a href="' + offline.url + '" class="offline-item">' + offline.title + '</a></li>' );
 						}
