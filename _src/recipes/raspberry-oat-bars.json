@@ -54,27 +54,19 @@
                         }
                     }
                 },{
+                    "name" : "Almond Extract",
+                    "amt" : {
+                        "frac" : "1/2",
+                        "measure" : {
+                            "abbr" : "tsp.",
+                            "full" : "teaspoon"
+                        }
+                    },
+                    "optional" : true
+                },{
                     "name" : "Kosher Salt",
                     "amt" : {
                         "frac" : "1/4",
-                        "measure" : {
-                            "abbr" : "tsp.",
-                            "full" : "teaspoon"
-                        }
-                    }
-                },{
-                    "name" : "Vanilla Extract",
-                    "amt" : {
-                        "whole" : "1",
-                        "measure" : {
-                            "abbr" : "tsp.",
-                            "full" : "teaspoon"
-                        }
-                    }
-                },{
-                    "name" : "Vanilla Extract",
-                    "amt" : {
-                        "whole" : "1",
                         "measure" : {
                             "abbr" : "tsp.",
                             "full" : "teaspoon"
