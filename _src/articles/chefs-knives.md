@@ -43,7 +43,7 @@ As you can imagine, this has really led to my having only one hard-and-fast crit
 
 Steel is iron and carbon, fundamentally, with guest appearances from silicon, manganese, vanadium, nickel, molybdenum, and chromium. 
 
-There is an _incredible_ amount of nonsense wrapped up in the topic of knife steel, I assume because it involves a lot of science, and marketers have a knack for fitting in a bunch of expensive nonsense between science-style words.
+There is an _incredible_ amount of nonsense wrapped up in the topic of knife steel, I assume because it involves a lot of science, and marketers have a knack for fitting dollar signs between science-style words.
 
 #### Carbon Steel
 
@@ -59,7 +59,7 @@ Add a little chromium and molybdenum and you can air-cool it after heat treating
 
 #### Stainless Steel
 
-If you bumped the amount of chromium up to ten- or twelve-ish percent, you have stainless steel (or “inox,” for “inoxidizable steel”). It resists corrosion, staining, and rust. You can probably guess the deal here: A2 is harder to sharpen and holds an edge longer than O2, thanks to the addition of chromium. Add _more_ chromium, you get steel that sucks real bad to sharpen, comparitively, but will then hold that sorta-crummy edge for ages. Likewise, it doesn’t tarnish—like, you can leave a stainless knife, damp, on the side of your sink overnight without doing any real damage to it (but please don’t).
+If you bumped the amount of chromium up to ten- or twelve-ish percent, you have stainless steel (or “inox,” for “inoxidizable steel”). It resists corrosion, staining, and rust. You can probably guess the deal here: A2 is harder to sharpen and holds an edge longer than O1, thanks to the addition of chromium. Add _more_ chromium, you get steel that sucks real bad to sharpen, comparitively, but will then hold that sorta-crummy edge for ages. Likewise, it doesn’t tarnish—like, you can leave a stainless knife, damp, on the side of your sink overnight without doing any real damage to it (but please don’t).
 
 I have a couple of stainless knives; my Shun is stainless, and I still use it all the time. They work fine! Not _great_, but fine. A good go-to knife.
 

@@ -12,7 +12,7 @@
 				"ingredients" : [{
 					"name" : "All-purpose flour",
 					"amt" : {
-						"whole" : "20",
+						"whole" : "25",
 						"measure" : {
 							"abbr" : "G.",
 							"full" : "grams"
@@ -33,7 +33,7 @@
 				"ingredients" : [{
 					"name" : "Unsalted butter",
 					"amt" : {
-						"whole" : "8",
+						"whole" : "6",
 						"measure" : {
 							"abbr" : "Tbsp.",
 							"full" : "tablespoons"
@@ -185,14 +185,16 @@
 		{
 			"stage" : "Tangzhong (water roux)",
 			"steps" : [
-				"Whisk 20G all-purpose flour and 60G water in a shallow skillet over medium heat, until a thick paste forms.",
+				"Whisk 25G all-purpose flour and 60G water in a shallow skillet over medium heat, until a thick paste forms.",
 				"Spread the paste on a sheet of parchment, set aside, and allow to cool to room temperature."
 			]
 		},{
 			"stage" : "Filling",
 			"steps" : [
-				"Mix together all the filling ingredients in a skillet over low–medium heat.",
-				"Cook, whisking constantly, until foaming and thickened to a custard-like consistency. Set aside and allow to cool to room temperature."
+				"Melt butter in a skillet over low-medium heat. Add flour and coconut and whisk to combine. Continue whisking constantly.",
+				"Cook, whisking constantly, until foaming and thickened to a custard-like consistency.",
+				"Once mixture has thickened and foaming has significantly subsided (~10 minutes), add sugar, salt, and vanilla extract.",
+				"Remove from heat once fully combined, and mixture has begun to look crumbly. Set aside, and allow to cool to room temperature."
 			]
 		},{
 			"stage" : "Final Dough",
