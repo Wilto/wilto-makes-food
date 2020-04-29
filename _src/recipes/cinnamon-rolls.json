@@ -1,0 +1,243 @@
+{
+    "name" : "Sourdough Cinnamon Rolls",
+    "notes" : "Hang in there.",
+    "meta" : {
+        "total": "1 day",
+        "active" : "40 minutes"
+    },
+    "ingredients" : {
+        "steps" : [
+            {
+                "stage" : "Levain",
+                "ingredients" : [{
+                    "name" : "Starter",
+                    "amt" : {
+                        "whole" : "50",
+                        "measure" : {
+                            "abbr" : "G.",
+                            "full" : "grams"
+                        }
+                    }
+                },{
+                    "name" : "Water",
+                    "amt" : {
+                        "whole" : "100",
+                        "measure" : {
+                            "abbr" : "G.",
+                            "full" : "grams"
+                        }
+                    },
+                    "notes" : "between 90°f and 110°f"
+                },{
+                    "name" : "All-purpose flour",
+                    "amt" : {
+                        "whole" : "100",
+                        "measure" : {
+                            "abbr" : "G.",
+                            "full" : "grams"
+                        }
+                    }
+                }]
+            },
+            {
+                "stage" : "Filling",
+                "ingredients" : [{
+                    "name" : "Granulated Sugar",
+                    "amt" : {
+                        "frac" : "1/4",
+                        "measure" : {
+                            "abbr" : "C.",
+                            "full" : "cup"
+                        }
+                    }
+                },{
+                    "name" : "Light Brown Sugar",
+                    "amt" : {
+                        "frac" : "1/8",
+                        "measure" : {
+                            "abbr" : "C.",
+                            "full" : "cup"
+                        }
+                    }
+                },{
+                    "name" : "Ground Cinnamon",
+                    "amt" : {
+                        "frac" : "1/2",
+                        "measure" : {
+                            "abbr" : "Tbsp.",
+                            "full" : "tablespoon"
+                        }
+                    }
+                },{
+                    "name" : "Kosher Salt",
+                    "amt" : {
+                        "whole" : "1",
+                        "measure" : {
+                            "abbr" : "tsp.",
+                            "full" : "Teaspoon"
+                        }
+                    }
+                },{
+                    "name" : "All-purpose flour",
+                    "amt" : {
+                        "whole" : "2",
+                        "measure" : {
+                            "abbr" : "Tbsp.",
+                            "full" : "tablespoons"
+                        }
+                    }
+                },{
+                    "name" : "Unsalted Butter",
+                    "amt" : {
+                        "whole" : "3",
+                        "measure" : {
+                            "abbr" : "Tbsp.",
+                            "full" : "Tablespoons"
+                        }
+                    },
+                    "notes": "melted"
+                }]
+            },
+            {
+                "stage" : "Icing",
+                "ingredients" : [{
+                    "name" : "Cream Cheese",
+                    "amt" : {
+                        "whole" : "115",
+                        "measure" : {
+                            "abbr" : "G.",
+                            "full" : "grams"
+                        }
+                    },
+                    "notes" : "at room temperature (about half of an eight-ounce package)"
+                },{
+                    "name" : "Confectioners Sugar",
+                    "amt" : {
+                        "whole" : "1",
+                        "measure" : {
+                            "abbr" : "C.",
+                            "full" : "cup"
+                        }
+                    }
+                },{
+                    "name" : "Unsalted Butter",
+                    "amt" : {
+                        "whole" : "2",
+                        "measure" : {
+                            "abbr" : "Tbsp.",
+                            "full" : "Tablespoons"
+                        }
+                    },
+                    "notes": "melted"
+                }]
+            },
+            {
+                "stage" : "Final Dough",
+                "ingredients" : [{
+                    "name" : "AP Flour",
+                    "amt" : {
+                        "whole" : "400",
+                        "measure" : {
+                            "abbr" : "G.",
+                            "full" : "grams"
+                        }
+                    },
+                    "notes": "plus a few tablespoons, reserved"
+                },{
+                    "name" : "Kosher Salt",
+                    "amt" : {
+                        "whole" : "1",
+                        "measure" : {
+                            "abbr" : "tsp.",
+                            "full" : "Teaspoon"
+                        }
+                    }
+                },{
+                    "name" : "Granulated Sugar",
+                    "amt" : {
+                        "frac" : "1/4",
+                        "measure" : {
+                            "abbr" : "C.",
+                            "full" : "cup"
+                        }
+                    }
+                },{
+                    "name" : "Whole Milk",
+                    "amt" : {
+                        "frac" : "1/4",
+                        "measure" : {
+                            "abbr" : "C.",
+                            "full" : "cup"
+                        }
+                    },
+                    "notes" : "between 90°f and 110°f"
+                },{
+                    "name" : "Large Eggs",
+                    "amt" : {
+                        "whole" : "2"
+                    }
+                },{
+                    "name" : "Greek Yogurt",
+                    "amt" : {
+                        "frac" : "1/4",
+                        "measure" : {
+                            "abbr" : "C.",
+                            "full" : "cup"
+                        }
+                    }
+                },{
+                    "name" : "Unsalted Butter",
+                    "amt" : {
+                        "whole" : "4",
+                        "measure" : {
+                            "abbr" : "Tbsp.",
+                            "full" : "Tablespoons"
+                        }
+                    },
+                    "notes": "melted"
+                },{
+                    "name" : "The entire levain"
+                }]
+            }
+        ]
+    },
+    "instructions" : [
+        {
+            "stage" : "Levain",
+            "steps" : [
+                "Add fed starter and lukewarm water to a mixing bowl; swirl until water is cloudy and starter is mostly dispersed. Mix in flour until fully incorporated.",
+                "Let rest at room temperature, loosely covered, overnight."
+            ]
+        },
+        {
+            "stage" : "Filling",
+            "steps" : [
+                "Whisk together dry ingredients and reserve."
+            ]
+        },
+        {
+            "stage" : "Icing",
+            "steps" : [
+                "Thoroughly beat together together all ingredients until smooth."
+            ]
+        },
+        {
+            "stage" : "Final Dough",
+            "steps" : [
+                "Lightly whisk together milk, eggs, yogurt, and melted butter in a large mixing bowl or the bowl of a stand mixer.",
+                "Check that the temperature of the wet ingredients is no higher than 110°f before adding the levain to the wet ingredients, stirring until it is mostly dispersed.",
+                "Add remaining dough ingredients and mix, adding additional flour a tablespoon at a time until the dough just comes together in a loose ball.",
+                "Add salt, and machine knead on low speed using a dough hook or spiral for four minutes, or hand knead for five minutes.",
+                "Hand knead for a minute or two on a lightly floured surface, then form into a ball.",
+                "Remove dough to a lightly oiled bowl or proofing bucket and either mist the dough lightly with spray oil or roll it around the container to prevent drying. Seal the bowl/container with plastic wrap and let rest at room temperature for two hours. Move container to refrigerator and allow to ferment overnight.",
+                "On baking day, punch dough down and turn out onto floured surface. Knead lightly to deflate.",
+                "Roll dough out into a large rectangle and brush with melted butter. Dust generously with filling, then roll dough into a tight cylinder, starting from one of the wide ends.",
+                "Cut filled dough into one inch thick rounds using a sharp bread knife, thin thread, or please-not-mint-flavored dental floss.",
+                "Arrange rounds at the bottom of a parchment-lined and spray-oiled baking tin or cake pan, with a little space between them for oven spring.",
+                "Cover loosely and let rise in warm place until almost double in size, about 1 1/2–2 hours. Preheat your oven to 350°f during this time.",
+                "Bake, uncovered, for about 20–25 minutes (or until very lightly browned at the tops and edges).",
+                "Spoon icing over buns while still warm."
+            ]
+        }
+    ]
+}
