@@ -1,0 +1,322 @@
+{
+	"title" : "Leblanc Curry",
+	"meta" : {
+		"serves": "4",
+		"active": "1 1/2 hours",
+		"total": "3 hours"
+	},
+	"ingredients" : {
+		"steps" : [{
+			"stage" : "Dry Roux",
+			"ingredients" : [
+				{
+					"name" : "All-purpose flour",
+					"amt" : {
+						"whole" : "4",
+						"measure" : {
+							"abbr" : "Tbsp.",
+							"full" : "tablespoons"
+						}
+					},
+					"alt": "36g"
+				}, {
+					"name" : "Cumin",
+					"amt" : {
+						"whole" : "2",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoons"
+						}
+					},
+					"alt": "4g"
+				},{
+					"name" : "Coriander",
+					"amt" : {
+						"whole" : "2",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoons"
+						}
+					},
+					"alt": "4g"
+				},{
+					"name" : "Turmeric",
+					"amt" : {
+						"whole" : "2",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoons"
+						}
+					},
+					"alt": "4g"
+				},{
+					"name" : "Cardamom",
+					"amt" : {
+						"whole" : "1",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoons"
+						}
+					},
+					"alt": "2g"
+				},{
+					"name" : "Cinnamon",
+					"amt" : {
+						"whole" : "1",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoons"
+						}
+					},
+					"alt": "2g"
+				},{
+					"name" : "Chili powder",
+					"amt" : {
+						"whole" : "1",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoons"
+						}
+					},
+					"alt": "1g"
+				},{
+					"name" : "Nutmeg",
+					"amt" : {
+						"whole" : "1",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoons"
+						}
+					},
+					"alt": "1g"
+				},{
+					"name" : "Clove powder",
+					"amt" : {
+						"frac" : "1/4",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoons"
+						}
+					},
+					"alt": "0.5g"
+				},
+				{
+					"name" : "Black pepper",
+					"amt" : {
+						"frac" : "1/4",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoon"
+						}
+					},
+					"alt": "0.5g"
+				}
+			]
+		}, {
+			"stage" : "Meat",
+			"ingredients" : [
+				{
+					"name" : "Vegetable oil",
+					"amt" : {
+						"whole" : "1",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoon"
+						}
+					}
+				}, {
+					"name" : "Stew beef",
+					"amt" : {
+						"whole" : "500",
+						"measure" : {
+							"abbr" : "G.",
+							"full" : "grams"
+						}
+					},
+					"notes": "cubed"
+				},{
+					"name" : "Bay leaf",
+					"amt" : {
+						"whole" : "1"
+					},
+					"alt": "4g"
+				},{
+					"name" : "Red wine",
+					"amt" : {
+						"whole" : "1",
+						"measure" : {
+							"abbr" : "C.",
+							"full" : "cup"
+						}
+					}
+				},{
+					"name" : "Water",
+					"amt" : {
+						"whole" : "3",
+						"measure" : {
+							"abbr" : "C.",
+							"full" : "cups"
+						}
+					},
+					"alt": "2g"
+				},{
+					"name" : "Salt & pepper",
+					"notes" : "to taste"
+				}
+			]
+		}, {
+			"stage" : "Vegetables",
+			"ingredients" : [
+				{
+					"name" : "Vegetable oil",
+					"amt" : {
+						"whole" : "3",
+						"measure" : {
+							"abbr" : "Tbsp.",
+							"full" : "tablespoons"
+						}
+					}
+				}, {
+					"name" : "Yellow onions",
+					"amt" : {
+						"whole" : "2"
+					},
+					"alt": "400g",
+					"notes" : "finely minced"
+				},{
+					"name" : "Large carrot",
+					"amt" : {
+						"whole" : "1"
+					},
+					"alt": "150g",
+					"notes" : "grated"
+				},{
+					"name" : "Apple",
+					"amt" : {
+						"frac" : "1/2"
+					},
+					"alt" : "100g",
+					"notes" : "grated"
+				},{
+					"name" : "Garlic",
+					"amt" : {
+						"whole" : "1",
+						"measure" : "clove"
+					},
+					"alt": "10g",
+					"notes" : "grated"
+				},{
+					"name" : "Ginger",
+					"amt" : {
+						"whole" : "10",
+						"measure" : {
+							"abbr" : "g",
+							"full" : "grams"
+						}
+					},
+					"notes" : "grated"
+				}
+			]
+		}, {
+			"stage" : "Secret Ingredients",
+			"ingredients" : [
+				{
+					"name" : "Chocolate",
+					"amt" : {
+						"whole" : "1",
+						"measure" : "square"
+					},
+					"alt" : "8g"
+				}, {
+					"name" : "Instant coffee granules",
+					"amt" : {
+						"whole" : "1",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoon"
+						}
+					},
+					"alt": "2g"
+				}, {
+					"name" : "Worcestershire sauce",
+					"amt" : {
+						"whole" : "1",
+						"measure" : {
+							"abbr" : "Tbsp.",
+							"full" : "tablespoon"
+						}
+					},
+					"alt": "17g"
+				}, {
+					"name" : "Yogurt",
+					"amt" : {
+						"whole" : "1",
+						"measure" : "serving"
+					},
+					"alt": "110g"
+				}, {
+					"name" : "Honey",
+					"amt" : {
+						"whole" : "1",
+						"measure" : {
+							"abbr" : "Tbsp.",
+							"full" : "tablespoon"
+						}
+					},
+					"alt": "19g"
+				},{
+					"name" : "Beef boullion",
+					"amt" : {
+						"whole" : "1",
+						"measure" : "cube"
+					},
+					"alt": "5g"
+				},{
+					"name" : "Kosher salt",
+					"amt" : {
+						"whole" : "2",
+						"measure" : {
+							"abbr" : "tsp.",
+							"full" : "teaspoons"
+						}
+					},
+					"alt": "10g",
+					"notes" : "or to taste"
+				},{
+					"name" : "Unsalted butter",
+					"amt" : {
+						"whole" : "1",
+						"measure" : {
+							"abbr" : "Tbsp.",
+							"full" : "tablespoon"
+						}
+					},
+					"alt": "14g"
+				}
+			]
+		}]
+	},
+	"instructions": [
+		{
+			"stage" : "Dry Roux",
+			"steps" : [
+				"Cook the flour in a medium-sized pan over low–medium heat, stirring constantly, until uniformly chestnut brown. A light-colored pan will make this easier to gauge.",
+				"Add spices and cook for a minute or two longer, until just fragrant. Remove from pan to prevent burning and set aside."
+			]
+		},{
+			"stage" : "Meat",
+			"steps" : [
+				"Rub beef with salt and black pepper.",
+				"Heat vegetable oil until shimmering over medium–high heat in a large sauce pan. Add cubed beef and brown on all sides. Add one cup of red wine and a bay leaf, and allow it to come to a boil for a few moments before adding water. Once it returns to a boil, lower heat and leave to simmer."
+			]
+		},
+		{
+			"stage" : "Finished Curry",
+			"steps" : [
+				"Heat vegetable oil over low–medium heat in a large stew pot. Add onions, stirring constantly, until uniformly amber in color. Add grated carrot, garlic, and ginger and stir-fry for a few minutes, stirring constantly. Add dry roux and a ladle of the simmering liquid, stirring until uniform and thickened. Add meat and additional simmering liquid to cover, and stir.",
+				"Add chocolate, coffee, Worcestershire, yogurt, honey, bullion, and black pepper. Allow to stew for several hours, thinning if desired with remaining simmering liquid.",
+				"Add salt, to taste, and finish with butter before serving."
+			]
+		}
+	]
+}

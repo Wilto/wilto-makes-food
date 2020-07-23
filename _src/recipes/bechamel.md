@@ -25,16 +25,29 @@ Add grated parmesean and make it a layer in a lasagne. Cook aromatics in the but
 
 If nothing else, look at this recipe as an excuse to get good at making a roux—you’re gonna need it for curry rice, you’re gonna need it for [croquettes](/recipes/croquettes/), and you’re gonna need it for chowders and stews.
 
+
+
 <figure class="video">
-<video controls aria-describedby="vid">
-  <source src="/_assets/media/roux.mp4" type="video/mp4">
-  <track kind="captions" src="/_assets/media/roux.vtt">
-  Sorry, I’m having trouble loading this video.
-</video>
-<figcaption class="caption" id="vid">
-  Keep on whisking and shaking the pan until the foaming subsides, and you’re good to go.
-</figcaption>
+  <video controls aria-describedby="vid">
+    <source src="/_assets/media/roux.mp4" type="video/mp4">
+    <track kind="captions" src="/_assets/media/roux.vtt">
+    Sorry, I’m having trouble loading this video.
+  </video>
+  <figcaption class="caption" id="vid">
+    Keep on whisking and shaking the pan until the foaming subsides, and you’re good to go.
+  </figcaption>
 </figure>
+
+
+
+
+
+
+
+
+
+
+
 
 Just don’t rush the roux part, even if you’re worried about it browning a little on you. Better to have it tip over into “ivory” territory—you can always start another one if it gets too browned on you. Undercooking it could end up lending your final dish a chalky, raw flour taste, and there are no take-backs on that. 
 

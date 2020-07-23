@@ -39,7 +39,7 @@
 				"@context": "http://schema.org",
 				"@type": "Organization",
 				"url": "https://www.wiltomakesfood.com",
-				"title": "Wilto Makes Food
+				"title": "Wilto Makes Food",
 				"author_name": "Mat “Wilto” Marquis",
 				"logo": "https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg",
 				"sameAs" : [
@@ -108,30 +108,16 @@
 	<!--#if expr='v("SERVER_PROTOCOL") =~ /2\.0/' -->
 	{% if type == "landing" %}
 		<link rel="stylesheet" href="/_assets/css/crit/landing.css?{{ metadata.build }}">
-		<link rel="preload" href="/_assets/css/all.css?{{ metadata.build }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}"></noscript>
-		<script type="text/javascript">
-		/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
-		(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i+=1){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
+		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}" media="print" onload="this.media='all'">
 		</script>
 	{% endif %}
 	{% if type == "article" or type == "review" or type == "recipe" %}
 		<link rel="stylesheet" href="/_assets/css/crit/post.css?{{ metadata.build }}">
-		<link rel="preload" href="/_assets/css/all.css?{{ metadata.build }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}"></noscript>
-		<script type="text/javascript">
-		/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
-		(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i+=1){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
-		</script>
+		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}" media="print" onload="this.media='all'">
 	{% endif %}
 	{% if page.url == "/" %}
 		<link rel="stylesheet" href="/_assets/css/crit/home.css?{{ metadata.build }}">
-		<link rel="preload" href="/_assets/css/all.css?{{ metadata.build }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}"></noscript>
-		<script type="text/javascript">
-		/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
-		(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i+=1){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
-		</script>
+		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}" media="print" onload="this.media='all'">
 	{% else %}
 		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}">
 	{% endif %}
@@ -140,32 +126,17 @@
 		<style>
 		<!--#include virtual="/_assets/css/crit/landing.css" -->
 		</style>
-		<link rel="preload" href="/_assets/css/all.css?{{ metadata.build }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}"></noscript>
-		<script type="text/javascript">
-		/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
-		(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i+=1){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
-		</script>
+		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}" media="print" onload="this.media='all'">
 	{% elseif type == "article" or type == "review" or type == "recipe" %}
 		<style>
 		<!--#include virtual="/_assets/css/crit/post.css" -->
 		</style>
-		<link rel="preload" href="/_assets/css/all.css?{{ metadata.build }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}"></noscript>
-		<script type="text/javascript">
-		/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
-		(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i+=1){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
-		</script>
+		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}" media="print" onload="this.media='all'">
 	{% elseif page.url == "/" %}
 		<style>
 		<!--#include virtual="/_assets/css/crit/home.css" -->
 		</style>
-		<link rel="preload" href="/_assets/css/all.css?{{ metadata.build }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}"></noscript>
-		<script type="text/javascript">
-		/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
-		(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i+=1){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
-		</script>
+		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}" media="print" onload="this.media='all'">
 	{% else %}
 		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}">
 	{% endif %}
