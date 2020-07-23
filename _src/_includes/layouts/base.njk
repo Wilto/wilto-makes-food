@@ -106,21 +106,7 @@
 
 <!--#if expr='v("HTTP_COOKIE") !~ /primed/' -->
 	<!--#if expr='v("SERVER_PROTOCOL") =~ /2\.0/' -->
-	{% if type == "landing" %}
-		<link rel="stylesheet" href="/_assets/css/crit/landing.css?{{ metadata.build }}">
-		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}" media="print" onload="this.media='all'">
-		</script>
-	{% endif %}
-	{% if type == "article" or type == "review" or type == "recipe" %}
-		<link rel="stylesheet" href="/_assets/css/crit/post.css?{{ metadata.build }}">
-		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}" media="print" onload="this.media='all'">
-	{% endif %}
-	{% if page.url == "/" %}
-		<link rel="stylesheet" href="/_assets/css/crit/home.css?{{ metadata.build }}">
-		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}" media="print" onload="this.media='all'">
-	{% else %}
-		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}">
-	{% endif %}
+	<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}">
 	<!--#else -->
 	{% if type == "landing" %}
 		<style>
