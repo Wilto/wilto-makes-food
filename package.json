@@ -4,7 +4,7 @@
   "description": "It’s a food blog.",
   "scripts": {
     "build": "npm install && grunt && eleventy && grunt crit",
-    "dev": "eleventy --serve && grunt watch"
+    "dev": "grunt && grunt watch & eleventy --serve"
   },
   "repository": {
     "type": "git",

@@ -21,7 +21,8 @@ type: utility
 </div>
 <script>
 (function(){
-	let all = {
+	window.wmf = {};
+	window.wmf.allPosts = {
 {% for post in collections.posts | reverse %}
 		"https://wiltomakesfood.com{{ post.data.page.url }}" : {
 			"title" : "{{ post.data.title | safe }}",
@@ -29,8 +30,6 @@ type: utility
 		},
 {% endfor %}
 	};
-	window.wmf = {};
-	window.wmf.allPosts = all;
 }());
 </script>
 <script src="/_assets/js/offline.min.js?{{ metadata.build }}"></script>
