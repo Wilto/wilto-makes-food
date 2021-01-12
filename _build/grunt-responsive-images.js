@@ -9,18 +9,6 @@ module.exports = function(grunt) {
 				sizes: [{
 					name: '1',
 					width: 320,
-				},{
-					name: '2',
-					width: 450
-				},{
-					name: '3',
-					width: 640
-				},{
-					name: '4',
-					width: 820
-				},{
-					name: '5',
-					width: 1024
 				}]
 			},
 			files: [{
