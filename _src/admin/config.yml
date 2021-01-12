@@ -11,7 +11,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "layout", name: "layout", widget: "select", options: { label: "V2", value: "layouts/v2.njk" ], default: "layouts/v2.njk", required: false }
+      - {label: "layout", name: "layout", widget: "select", options: [{ label: "V2", value: "layouts/v2.njk" }], default: "layouts/v2.njk", required: false }
       - {label: "Type", name: "type", widget: "hidden", default: "recipe"}
       - {label: "Tags", name: "tags", widget: "list" }
       - {label: "Related", name: "related", widget: "relation", collection: "articles", search_fields: ["title"], value_field: "title", display_fields: ["title", "url"] }
