@@ -14,7 +14,6 @@ module.exports = function(grunt) {
 	// Default task.
 	grunt.registerTask('default', [
 		'bump',
-		'clean',
 		'copy',
 		'concat:css',
 		'uglify:alljs',
