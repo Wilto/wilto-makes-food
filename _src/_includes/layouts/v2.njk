@@ -39,7 +39,7 @@ templateClass: tmpl-post
 			{% endfor %}
 			<h2 class="recipe-hed p-name" itemprop="name">{{ title }}{% if hq %}<svg class="hq" width="24" height="25" viewBox="0 0 324 329" version="1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M44 223v-7a118 118 0 1 1 230 38v-5a96 96 0 1 0-153 77l5 3a167 167 0 1 1 197-221A153 153 0 0 0 44 223z" fill="#444" fill-rule="evenodd"/></svg>{% endif %}</h2>
 
-			{% if name %}<a href="#recipe" class="recipe-jump-txt">Skip to the recipe</a>{% endif %}
+			{% if subhed %}<a href="#recipe" class="recipe-jump-txt">Skip to the recipe</a>{% endif %}
 
 			<dl class="meta">
 				{% if meta.serves %}
@@ -61,7 +61,7 @@ templateClass: tmpl-post
 				<dd itemprop="recipeYield" class="p-yield">{{ metaval }}</dd>
 				{% endif %}
 			</dl>
-			{% if name %}<a href="#recipe" class="recipe-jump">
+			{% if subhed %}<a href="#recipe" class="recipe-jump">
 				<svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 					<title>Skip to Recipe</title>
 					<path aria-hidden="true" fill="rgba(0,0,0,.65)" transform="rotate(90, 50, 57.465)" d="m74.363,63.82802l-36,36c-1.758,1.758 -4.06,2.637 -6.363,2.637s-4.605,-0.879 -6.363,-2.637c-3.516,-3.513 -3.516,-9.214 0,-12.727l29.636,-29.63601l-29.636,-29.637c-3.516,-3.513 -3.516,-9.214 0,-12.727c3.516,-3.516 9.211,-3.516 12.727,0l36,36c3.515,3.513 3.515,9.215 -0.001,12.727z" />
@@ -112,8 +112,8 @@ templateClass: tmpl-post
 		</div>
 {% endif %}
 	</div>
-{% if name %}
-	<h3 class="article-hed jump-hed" id="recipe"><span>Recipe:</span> {{ name }}</h3>
+{% if subhed %}
+	<h3 class="article-hed jump-hed" id="recipe"><span>Recipe:</span> {{ subhed }}</h3>
 {% endif %}
 {% if notes %}
 	<p class="lede p-summary">{{ notes | safe }}</p>
