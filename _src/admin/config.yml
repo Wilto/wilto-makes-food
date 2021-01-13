@@ -38,11 +38,11 @@ collections:
             summary: '{{fields.amt}} {{fields.measure}} {{fields.ing}}'
             fields:
               - {label: Amount (whole), name: amt_whole, widget: string }
-              - {label: Amount (fraction), name: amt_frac, widget: string }
-              - {label: Measure, name: measure, widget: string }
-              - {label: Ingredient, name: ing, widget: string }
-              - {label: Note, name: notes, widget: string }
-              - {label: Note HREF, name: notehref, widget: string }
+              - {label: Amount (fraction), name: amt_frac, widget: string, required: false  }
+              - {label: Measure, name: measure, widget: string, required: false  }
+              - {label: Ingredient, name: name, widget: string }
+              - {label: Note, name: notes, widget: string, required: false  }
+              - {label: Note HREF, name: notehref, widget: string, required: false  }
               - {label: Optional, name: optional, widget: boolean, default: false }
       - label: "Steps"
         name: "steps"

@@ -128,8 +128,9 @@ This is v2!
 			<ul class="ingredients ingredients-step" aria-labelledby="recipe-sub0">
 				{%- for ing in ins.ingredients -%}
 				<li itemprop="recipeIngredient" class="p-ingredient">
-					<p><span class="amt">{{ing.amt_whole}}<b class="frac" role="presentation">{{ing.amt_frac}}</b> {% if ing.amt.measure.abbr %}<abbr title="{{ing.amt.measure.full}}" role="presentation">{{ing.amt.measure.abbr}}</abbr>{% else %}{{ing.amt.measure}}{% endif %}</span>
-					{% if ing.fhref %}<a href="{{ ing.href }}">{% endif %}{{ing.name}}{% if ing.href %}</a>{% endif %}{% if ing.alt %} ({{ing.alt}}){% endif %}{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes | safe }}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
+					<p><span class="amt">{{ing.amt_whole}}<b class="frac" role="presentation">{{ing.amt_frac}}</b>{{ing.amt.measure}}</span>
+					{{ing.name}}
+					{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes | safe }}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
 					{% if ing.optional %}<span class="opt">Optional</span>{%- endif -%}
 				</li>
 				{%- endfor -%}
@@ -139,8 +140,9 @@ This is v2!
 	<ul class="ingredients" aria-labelledby="recipe-sub0">
 		{%- for ing in ingredients -%}
 		<li itemprop="recipeIngredient" class="p-ingredient">
-			<p><span class="amt">{{ing.amt.whole}}<b class="frac" role="presentation">{{ing.amt.frac}}</b> {% if ing.amt.measure.abbr %}<abbr title="{{ing.amt.measure.full}}" role="presentation">{{ing.amt.measure.abbr}}</abbr>{% else %}{{ing.amt.measure}}{% endif %}</span>
-			{% if ing.href %}<a href="{{ ing.href }}">{% endif %}{{ing.name}}{% if ing.href %}</a>{% endif %}{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes | safe }}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
+			<p><span class="amt">{{ing.amt_whole}}<b class="frac" role="presentation">{{ing.amt_frac}}</b>{{ing.amt.measure}}</span>
+			{{ing.name}}
+			{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes | safe }}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
 			{% if ing.optional %}<span class="opt">Optional</span>{%- endif -%}
 		</li>
 		{%- endfor -%}
