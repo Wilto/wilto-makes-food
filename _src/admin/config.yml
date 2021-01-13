@@ -31,7 +31,7 @@ collections:
         widget: "list"
         summary: '{{fields.title}}'
         fields:
-          - {label: "Title", name: "title", widget : "string" }
+          - {label: "Title", name: "title", widget : "string", required: false }
           - label: "Ingredients"
             name: "ingredients"
             widget: "list"
@@ -42,14 +42,20 @@ collections:
               - {label: Measure, name: measure, widget: string, required: false  }
               - {label: Ingredient, name: name, widget: string }
               - {label: Note, name: notes, widget: string, required: false  }
-              - {label: Note HREF, name: notehref, widget: string, required: false  }
+              - {label: Note URL, name: notehref, widget: string, required: false  }
               - {label: Optional, name: optional, widget: boolean, default: false }
-      - label: "Steps"
-        name: "steps"
+      - label: "Instruction Steps"
+        name: "instruction_steps"
         widget: "list"
-        summary: '{{fields.body}}'
+        summary: '{{fields.title}}'
         fields:
-          - {label: Step, name: body, widget: markdown }
+          - {label: Step, name: title, widget: "string", required: false }
+          - label: "Instructions"
+            name: "instructions"
+            widget: "list"
+            summary: '{{fields.body}}'
+            fields:
+              - {label: Instruction, name: instruction, widget: markdown }
 
   - name: "articles" # Used in routes, e.g., /admin/collections/blog
     label: "Articles" # Used in the UI

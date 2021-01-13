@@ -32,7 +32,6 @@ templateClass: tmpl-post
 {% endmacro %}
 
 <div class="col" itemscope itemtype="http://schema.org/Recipe" class="h-recipe">
-This is v2!
 	<div class="intro">
 		<header role="banner" class="recipeheader">
 			{% for tag in tags %}
@@ -120,55 +119,34 @@ This is v2!
 	<p class="lede p-summary">{{ notes | safe }}</p>
 {% endif %}
 
-{% if ingredients %}
+{% if ingredient_steps %}
 	<h4 class="inline-hed" id="recipe-sub0">Ingredients</h4>
-	{% if ingredient_steps %}
-		{%- for ins in ingredient_steps -%}
-		<h4 class="recipe-subhed">{{ins.title}}</h4>
-			<ul class="ingredients ingredients-step" aria-labelledby="recipe-sub0">
-				{%- for ing in ins.ingredients -%}
-				<li itemprop="recipeIngredient" class="p-ingredient">
-					<p><span class="amt">{{ing.amt_whole}}<b class="frac" role="presentation">{{ing.amt_frac}}</b>{{ing.amt.measure}}</span>
-					{{ing.name}}
-					{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes | safe }}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
-					{% if ing.optional %}<span class="opt">Optional</span>{%- endif -%}
-				</li>
-				{%- endfor -%}
-			</ul>
+	{%- for ingstep in ingredient_steps -%}
+		{% if ingstep.title %}<h4 class="recipe-subhed">{{ingstep.title}}</h4>{% endif %}
+		<ul class="ingredients ingredients-step" aria-labelledby="recipe-sub0">
+			{%- for ing in ingstep.ingredients -%}
+			<li itemprop="recipeIngredient" class="p-ingredient">
+				<p><span class="amt">{{ing.amt_whole}}<b class="frac" role="presentation">{{ing.amt_frac}}</b>{{ing.amt.measure}}</span>
+				{{ing.name}}
+				{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes | safe }}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
+				{% if ing.optional %}<span class="opt">Optional</span>{%- endif -%}
+			</li>
 			{%- endfor -%}
-	{% else %}
-	<ul class="ingredients" aria-labelledby="recipe-sub0">
-		{%- for ing in ingredients -%}
-		<li itemprop="recipeIngredient" class="p-ingredient">
-			<p><span class="amt">{{ing.amt_whole}}<b class="frac" role="presentation">{{ing.amt_frac}}</b>{{ing.amt.measure}}</span>
-			{{ing.name}}
-			{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes | safe }}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
-			{% if ing.optional %}<span class="opt">Optional</span>{%- endif -%}
-		</li>
-		{%- endfor -%}
-	</ul>
-	{% endif %}
+		</ul>
+	{%- endfor -%}
 {% endif %}
-{% if instructions %}
+{% if instruction_steps %}
 		<div class="instructions">
 			<h4 class="inline-hed">Instructions</h4>
 
-		{% if instructions[0].stage %}
-			{%- for ins in instructions -%}
-			<h4 class="recipe-subhed"><span class="a11y-only">Instructions </span>For the {{ins.stage}}</h4>
+			{%- for insstep in instruction_steps -%}
+			{% if insstep.title %}<h4 class="recipe-subhed"><span class="a11y-only">Instructions </span>{{ insstep.title }}</h4>{% endif %}
 			<ol class="steps e-instructions" itemprop="recipeInstructions">
-				{%- for step in ins.steps -%}
-				<li><p>{{step}}</p></li>
+				{%- for step in insstep.instructions -%}
+				<li><p>{{ step.instruction }}</p></li>
 				{%- endfor -%}
 			</ol>
 			{%- endfor -%}
-		{% else %}
-			<ol class="steps e-instructions" itemprop="recipeInstructions">
-				{%- for ins in instructions -%}
-				<li><p>{{ins | safe }}</p></li>
-				{%- endfor -%}
-			</ol>
-		{% endif %}
 		</div>
 	{% endif %}
 

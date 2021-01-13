@@ -1,13 +1,4 @@
 ---
-ingredients:
-  - amt: "1"
-    measure: cup
-    ing: Flour
-  - amt: "2"
-    measure: Cups
-    ing: Water
-steps:
-  - body: Mix the flour and the water together; serve.
 layout: layouts/v2.njk
 type: recipe
 tags:
