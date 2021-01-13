@@ -5,9 +5,9 @@ tags:
   - baking
 related: The Electric Waffle-Maker Acid Test
 feat_img:
-  img: /_assets/img/fridays2.png
-  alt: A shirt!
-  capt: This is the caption for the shirt.
+  img: /_src/img/baguette.jpg
+  alt: A bread.
+  capt: This is the caption for the bread.
 title: A Baking Recipe
 lede: Should be a pretty good one, I think.
 ingredients:
