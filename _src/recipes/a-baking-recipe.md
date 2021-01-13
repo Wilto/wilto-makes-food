@@ -6,6 +6,8 @@ ingredients:
   - amt: "2"
     measure: Cups
     ing: Water
+steps:
+  - body: Mix the flour and the water together; serve.
 layout: layouts/v2.njk
 type: recipe
 tags:
@@ -29,8 +31,11 @@ ingredient_steps:
         name: Sugar
         notehref: hire.wil.to
         measure: cup
-steps:
-  - body: Mix the flour and the water together; serve.
+instruction_steps:
+  - title: Levain
+    instructions:
+      - instruction: Mix the stuff together.
+      - instruction: Cook it all.
 V2: true
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
