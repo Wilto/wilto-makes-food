@@ -12,6 +12,10 @@ title: A Baking Recipe
 lede: Should be a pretty good one, I think.
 subhed: The Big Bread
 notes: Tastes like bread, mostly.
+recipe_meta:
+  active: 30 minutes
+  total: 2 hours
+  serves: "4"
 ingredient_steps:
   - title: ""
     ingredients:
