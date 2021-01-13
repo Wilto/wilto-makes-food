@@ -20,13 +20,15 @@ lede: Should be a pretty good one, I think.
 ingredient_steps:
   - title: Levain
     ingredients:
-      - amt: "1"
-        measure: cup
-        ing: sugar
-        amt_whole: "1"
-        amt_frac: 1/2
-        notes: any kind
+      - amt_whole: "1"
         optional: true
+        notes: any kind
+        ing: sugar
+        amt_frac: 1/2
+        amt: "1"
+        name: Sugar
+        notehref: hire.wil.to
+        measure: cup
 steps:
   - body: Mix the flour and the water together; serve.
 V2: true
