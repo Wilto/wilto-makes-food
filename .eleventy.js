@@ -60,6 +60,12 @@ module.exports = function(eleventyConfig) {
     return ret;
   });
 
+  eleventyConfig.addFilter("relatedFilter", function(collection, needle) {
+    return collection.filter(function(item) {
+      return item.data.title == needle;
+    });
+  });
+
   eleventyConfig.addCollection("subnav", function(collection) {
     return collection.getAllSorted().filter(function(item) {
       return item.data.tags == "subnav";

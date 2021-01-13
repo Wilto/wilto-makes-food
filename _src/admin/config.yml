@@ -15,7 +15,7 @@ collections:
       - {label: "layout", name: "layout", widget: "select", options: [{ label: "V2", value: "layouts/v2.njk" }], default: "layouts/v2.njk", required: false }
       - {label: "Type", name: "type", widget: "hidden", default: "recipe"}
       - {label: "Tags", name: "tags", widget: "list" }
-      - {label: "Related", name: "related", widget: "relation", collection: "articles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+      - {label: "Related", name: "related", required: false, widget: "relation", collection: "articles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
       - label: "Featured Image"
         name: "feat_img"
         widget: "object"
@@ -26,14 +26,20 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Lede", name: "lede", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Ingredients"
-        name: "ingredients"
+      - label: "Ingredient Steps"
+        name: "ingredient_steps"
         widget: "list"
-        summary: '{{fields.amt}} {{fields.measure}} {{fields.ing}}'
+        summary: '{{fields.title}}'
         fields:
-          - {label: Amount, name: amt, widget: string }
-          - {label: Measure, name: measure, widget: string }
-          - {label: Ingredient, name: ing, widget: string }
+          - {label: "Title", name: "title", widget : "string" }
+          - label: "Ingredients"
+            name: "ingredients"
+            widget: "list"
+            summary: '{{fields.amt}} {{fields.measure}} {{fields.ing}}'
+            fields:
+              - {label: Amount, name: amt, widget: string }
+              - {label: Measure, name: measure, widget: string }
+              - {label: Ingredient, name: ing, widget: string }
       - label: "Steps"
         name: "steps"
         widget: "list"

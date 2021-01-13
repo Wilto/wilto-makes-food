@@ -101,6 +101,17 @@ This is v2!
 		{% endif %}
 
 		{{ layoutContent | safe }}
+
+{% if related %}
+{% set rels = collections.articles | relatedFilter( related ) %}
+		<div class="related">
+			<h3 class="subhed">Related Article{% if rels.length > 1 %}s{% endif %}:</h3>
+			{% for rel in rels %}
+			<h4 class="subhed"><a href="{{ rel.data.url }}">{{ rel.data.title }}</a></h4>
+			<p class="lede">{{ rel.data.lede | safe }}</p>
+			{% endfor %}
+		</div>
+{% endif %}
 	</div>
 {% if name %}
 	<h3 class="article-hed jump-hed" id="recipe"><span>Recipe:</span> {{ name }}</h3>
@@ -109,33 +120,8 @@ This is v2!
 	<p class="lede p-summary">{{ notes | safe }}</p>
 {% endif %}
 
-{% if related %}
-		<div class="related">
-			<span aria-hidden="true">Read More:</span>
-		{% if relatedhref %}
-			<a href="{{ relatedhref }}">
-{% endif %}
-			{{ related }}
-{% if relatedhref %}
-			</a>
-{% endif %}
-		</div>
-{% endif %}
-
 {% if ingredients %}
 	<h4 class="inline-hed" id="recipe-sub0">Ingredients</h4>
-	{% if ingredients.totals %}
-		<h4 class="recipe-subhed a11y-only">Total Ingredients</h4>
-		<ul class="ingredients" aria-labelledby="recipe-sub0">
-			{%- for ing in ingredients.totals -%}
-			<li itemprop="recipeIngredient" class="p-ingredient">
-				<p><span class="amt">{{ing.amt.whole}}<b class="frac" role="presentation">{{ing.amt.frac}}</b> {% if ing.amt.measure.abbr %}<abbr title="{{ing.amt.measure.full}}" role="presentation">{{ing.amt.measure.abbr}}</abbr>{% else %}{{ing.amt.measure}}{% endif %}</span>
-				{% if ing.href %}<a href="{{ ing.href }}">{% endif %}{{ing.name}}{% if ing.href %}</a>{% endif %}{% if ing.alt %} ({{ing.alt}}){% endif %}{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes | safe }}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
-				{% if ing.optional %}<span class="opt">Optional</span>{%- endif -%}
-			</li>
-			{%- endfor -%}
-		</ul>
-	{% endif %}
 	{% if ingredients.steps %}
 		{%- for ins in ingredients.steps -%}
 		<h4 class="recipe-subhed"><span class="a11y-only">Instructions </span>{{ins.stage}}</h4>
