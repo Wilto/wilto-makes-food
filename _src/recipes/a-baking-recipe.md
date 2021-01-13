@@ -10,6 +10,8 @@ feat_img:
   capt: This is the caption for the bread.
 title: A Baking Recipe
 lede: Should be a pretty good one, I think.
+subhed: The Big Bread
+notes: Tastes like bread, mostly.
 ingredient_steps:
   - title: ""
     ingredients:
