@@ -23,6 +23,9 @@ ingredient_steps:
       - amt: "1"
         measure: cup
         ing: sugar
+        amt_whole: "1"
+        amt_frac: 1/2
+        notes: any kind
 steps:
   - body: Mix the flour and the water together; serve.
 V2: true
