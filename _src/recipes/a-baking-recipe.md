@@ -1,21 +1,30 @@
 ---
 layout: layouts/v2.njk
+related: The Best Chef’s Knife
+subhed: The Big Bread
+notes: Tastes like bread, mostly.
+meta:
+  active: 1 hour
+  total: 2 hours
+  serves: "4"
+instruction_steps:
+  - title: ""
+    instructions:
+      - instruction: Mix the stuff together.
+      - instruction: Cook it all.
+recipe_meta:
+  active: 30 minutes
+  total: 2 hours
+  serves: "4"
 type: recipe
 tags:
   - baking
-related: The Best Chef’s Knife
 feat_img:
   img: /img/basic-sourdough.jpg
   alt: A bread.
   capt: This is the caption for the bread.
 title: A Baking Recipe
 lede: Should be a pretty good one, I think.
-subhed: The Big Bread
-notes: Tastes like bread, mostly.
-recipe_meta:
-  active: 30 minutes
-  total: 2 hours
-  serves: "4"
 ingredient_steps:
   - title: ""
     ingredients:
@@ -28,11 +37,6 @@ ingredient_steps:
         name: Sugar
         notehref: hire.wil.to
         measure: cup
-instruction_steps:
-  - title: ""
-    instructions:
-      - instruction: Mix the stuff together.
-      - instruction: Cook it all.
 V2: true
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
