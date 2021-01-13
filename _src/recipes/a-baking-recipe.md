@@ -1,4 +1,11 @@
 ---
+ingredients:
+  - amt: "1"
+    measure: cup
+    ing: Flour
+  - amt: "2"
+    measure: Cups
+    ing: Water
 layout: layouts/v2.njk
 type: recipe
 tags:
@@ -10,13 +17,12 @@ feat_img:
   capt: This is the caption for the bread.
 title: A Baking Recipe
 lede: Should be a pretty good one, I think.
-ingredients:
-  - amt: "1"
-    measure: cup
-    ing: Flour
-  - amt: "2"
-    measure: Cups
-    ing: Water
+ingredient_steps:
+  - title: Levain
+    ingredients:
+      - amt: "1"
+        measure: cup
+        ing: sugar
 steps:
   - body: Mix the flour and the water together; serve.
 V2: true
