@@ -3,7 +3,7 @@ layout: layouts/v2.njk
 type: recipe
 tags:
   - baking
-related: Understanding Sourdough
+related: The Electric Waffle-Maker Acid Test
 feat_img:
   img: /_assets/img/fridays2.png
   alt: A shirt!
