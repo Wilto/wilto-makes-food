@@ -7,6 +7,7 @@ related: The Electric Waffle-Maker Acid Test
 feat_img:
   img: /_assets/img/fridays2.png
   alt: A shirt!
+  capt: This is the caption for the shirt.
 title: A Baking Recipe
 lede: Should be a pretty good one, I think.
 ingredients:
