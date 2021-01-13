@@ -32,7 +32,7 @@ ingredient_steps:
         notehref: hire.wil.to
         measure: cup
 instruction_steps:
-  - title: Levain
+  - title: ""
     instructions:
       - instruction: Mix the stuff together.
       - instruction: Cook it all.
