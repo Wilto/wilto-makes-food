@@ -3,7 +3,9 @@ layout: layouts/v2.njk
 type: recipe
 tags:
   - baking
-related: Care and Feeding of Your Sourdough Starter
+related: I was supposed to be a carpenter. My father was a carpenter. His
+  father— well, he owned a hammer, and building codes were pretty lax back in
+  his day.
 feat_img:
   img: /img/basic-sourdough.jpg
   alt: A bread.
