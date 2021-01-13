@@ -18,7 +18,7 @@ feat_img:
 title: A Baking Recipe
 lede: Should be a pretty good one, I think.
 ingredient_steps:
-  - title: Levain
+  - title: ""
     ingredients:
       - amt_whole: "1"
         optional: true
