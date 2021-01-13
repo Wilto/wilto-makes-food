@@ -17,6 +17,7 @@ module.exports = function(grunt) {
 		'copy',
 		'concat:css',
 		'uglify:alljs',
+		'responsive_images',
 		'imagemin',
 		'cssmin:css'
 	]);

@@ -79,7 +79,9 @@ navtitle: Recipes
 		</a>
 		{% endif %}
 		{% if post.data.feat_img.img %}
-			<img src="{{ post.data.feat_img.img }}" alt="{{ post.data.feat_img.alt }}">
+			<a href="{{ post.url | url }}" aria-hidden="true" tabindex="-1">
+				<img src="{{ post.data.feat_img.img }}" alt="{{ post.data.feat_img.alt }}">
+			</a>
 		{% endif %}
 	</article>
 {% endmacro %}
