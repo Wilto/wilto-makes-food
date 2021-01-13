@@ -78,8 +78,12 @@ navtitle: Recipes
 			{{ respimg('/img/', post.data.img, post.data.alt, false) }}
 		</a>
 		{% endif %}
+		{% if post.data.feat_img.img %}
+			<img src="{{ post.data.feat_img.img }}" alt="{{ post.data.feat_img.alt }}">
+		{% endif %}
 	</article>
 {% endmacro %}
+
 
 {{ layoutContent | safe }}
 {% set postslist = collections.recipes %}

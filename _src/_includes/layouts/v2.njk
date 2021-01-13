@@ -33,7 +33,6 @@ templateClass: tmpl-post
 
 <div class="col" itemscope itemtype="http://schema.org/Recipe" class="h-recipe">
 This is v2!
-
 	<div class="intro">
 		<header role="banner" class="recipeheader">
 			{% for tag in tags %}
@@ -109,7 +108,6 @@ This is v2!
 {% if notes %}
 	<p class="lede p-summary">{{ notes | safe }}</p>
 {% endif %}
-{{ related }}
 
 {% if related %}
 		<div class="related">

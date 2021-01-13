@@ -2,7 +2,8 @@ backend:
   name: github
   repo: Wilto/wilto-makes-food # Path to your GitHub repository
   branch: v2
-media_folder: "img" # Media files will be stored in the repo under images/uploads
+media_folder: "_src/img" # Media files will be stored in the repo under images/uploads
+public_folder: "/img"
 
 collections:
   - name: "recipes" # Used in routes, e.g., /admin/collections/blog

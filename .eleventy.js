@@ -106,6 +106,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItAnchor, opts));
   eleventyConfig.addPassthroughCopy("_src/_assets/img");
   eleventyConfig.addPassthroughCopy("_src/admin");
+  eleventyConfig.addPassthroughCopy("_src/img");
 
   return {
     templateFormats: [
