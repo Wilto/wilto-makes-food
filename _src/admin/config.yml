@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Wilto/wilto-makes-food # Path to your GitHub repository
   branch: v2
-media_folder: "_assets/img" # Media files will be stored in the repo under images/uploads
+media_folder: "img" # Media files will be stored in the repo under images/uploads
 
 collections:
   - name: "recipes" # Used in routes, e.g., /admin/collections/blog
@@ -14,14 +14,14 @@ collections:
       - {label: "layout", name: "layout", widget: "select", options: [{ label: "V2", value: "layouts/v2.njk" }], default: "layouts/v2.njk", required: false }
       - {label: "Type", name: "type", widget: "hidden", default: "recipe"}
       - {label: "Tags", name: "tags", widget: "list" }
-      - {label: "Related", name: "related", widget: "relation", collection: "articles", search_fields: ["title"], value_field: "title", display_fields: ["title", "url"] }
+      - {label: "Related", name: "related", widget: "relation", collection: "articles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
       - label: "Featured Image"
         name: "feat_img"
         widget: "object"
         fields:
         - {label: "Image", name: "img", widget: "image"}
         - {label: "alt", name: "alt", widget: "string"}
-
+        - {label: "Caption", name: "capt", widget: "markdown"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Lede", name: "lede", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}

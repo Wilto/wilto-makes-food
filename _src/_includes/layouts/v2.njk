@@ -32,7 +32,7 @@ templateClass: tmpl-post
 {% endmacro %}
 
 <div class="col" itemscope itemtype="http://schema.org/Recipe" class="h-recipe">
-This is v2.
+This is v2!
 
 	<div class="intro">
 		<header role="banner" class="recipeheader">
@@ -71,12 +71,12 @@ This is v2.
 			</a>
 		</header>
 
-		{% if img %}
+		{% if feat_img.img %}
 		<figure class="feat-thumb">
-			{{ respimg('/img/', img, '(min-width: 1260px) 370px, (min-width: 720px) calc(28.46vw + 17px), (min-width: 560px) 37.86vw, 99.58vw', alt, capt ) }}
-			{% if capt %}
+			<img src="{{ feat_img.img }}" alt="{{ feat_img.alt }}">
+			{% if feat_img.capt  %}
 			<figcaption id="capt-1" class="caption">
-				{{ capt | safe }}
+				{{ feat_img.capt | safe }}
 			</figcaption>
 			{% endif %}
 		</figure>
@@ -109,6 +109,7 @@ This is v2.
 {% if notes %}
 	<p class="lede p-summary">{{ notes | safe }}</p>
 {% endif %}
+{{ related }}
 
 {% if related %}
 		<div class="related">
