@@ -3,9 +3,7 @@ layout: layouts/v2.njk
 type: recipe
 tags:
   - baking
-related: I was supposed to be a carpenter. My father was a carpenter. His
-  father— well, he owned a hammer, and building codes were pretty lax back in
-  his day.
+related: A Woodworker’s Guide to Knife Sharpening
 feat_img:
   img: /img/basic-sourdough.jpg
   alt: A bread.
