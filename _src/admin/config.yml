@@ -37,9 +37,13 @@ collections:
             widget: "list"
             summary: '{{fields.amt}} {{fields.measure}} {{fields.ing}}'
             fields:
-              - {label: Amount, name: amt, widget: string }
+              - {label: Amount (whole), name: amt_whole, widget: string }
+              - {label: Amount (fraction), name: amt_frac, widget: string }
               - {label: Measure, name: measure, widget: string }
               - {label: Ingredient, name: ing, widget: string }
+              - {label: Note, name: notes, widget: string }
+              - {label: Note HREF, name: notehref, widget: string }
+              - {label: Optional, name: optional, widget: boolean, default: false }
       - label: "Steps"
         name: "steps"
         widget: "list"
