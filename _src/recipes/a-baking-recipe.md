@@ -3,7 +3,7 @@ layout: layouts/v2.njk
 type: recipe
 tags:
   - baking
-related: The Electric Waffle-Maker Acid Test
+related: Care and Feeding of Your Sourdough Starter
 feat_img:
   img: /img/basic-sourdough.jpg
   alt: A bread.
