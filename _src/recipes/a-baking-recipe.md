@@ -3,7 +3,7 @@ layout: layouts/v2.njk
 type: recipe
 tags:
   - baking
-related: A Woodworker’s Guide to Knife Sharpening
+related: The Best Chef’s Knife
 feat_img:
   img: /img/basic-sourdough.jpg
   alt: A bread.
