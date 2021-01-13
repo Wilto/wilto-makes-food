@@ -5,7 +5,7 @@ tags:
   - baking
 related: The Electric Waffle-Maker Acid Test
 feat_img:
-  img: /_src/img/baguette.jpg
+  img: /img/basic-sourdough.jpg
   alt: A bread.
   capt: This is the caption for the bread.
 title: A Baking Recipe
