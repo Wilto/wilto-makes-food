@@ -26,6 +26,7 @@ ingredient_steps:
         amt_whole: "1"
         amt_frac: 1/2
         notes: any kind
+        optional: true
 steps:
   - body: Mix the flour and the water together; serve.
 V2: true
