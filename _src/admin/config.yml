@@ -45,7 +45,7 @@ collections:
           - label: "Ingredients"
             name: "ingredients"
             widget: "list"
-            summary: '{{fields.amt}} {{fields.measure}} {{fields.ing}}'
+            summary: '{{fields.amt_whole}}{{fields.amt_frac}} {{fields.measure}} {{fields.name}}'
             fields:
               - {label: Amount (whole), name: amt_whole, widget: string }
               - {label: Amount (fraction), name: amt_frac, widget: string, required: false  }
@@ -63,7 +63,7 @@ collections:
           - label: "Instructions"
             name: "instructions"
             widget: "list"
-            summary: '{{fields.body}}'
+            summary: '{{fields.instruction}}'
             fields:
               - {label: Instruction, name: instruction, widget: markdown }
 

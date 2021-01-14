@@ -1011,3 +1011,15 @@ p.recipe-credit {
 p.recipe-credit a {
 	color: #333;
 }
+
+figure p.alt-overlay {
+	position: absolute;
+	top: .25em;
+	z-index: 3;
+	left: 0;
+	right: 0;
+	background: rgba(255,255,255,.5);
+	margin: 0;
+	padding: .5em 0 .2em .5em;
+	font-size: .9em;
+}
