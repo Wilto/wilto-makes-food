@@ -8,7 +8,7 @@ meta:
   total: 2 hours
   serves: "4"
 instruction_steps:
-  - title: ""
+  - title: For the Thing
     instructions:
       - instruction: Mix the stuff together.
       - instruction: Cook it all.
@@ -26,9 +26,9 @@ feat_img:
 title: A Baking Recipe
 lede: Should be a pretty good one, I think.
 ingredient_steps:
-  - title: ""
+  - title: Levain
     ingredients:
-      - amt_whole: "1"
+      - amt_whole: "2"
         optional: true
         notes: any kind
         ing: sugar
