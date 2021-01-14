@@ -8,10 +8,9 @@ meta:
   total: 2 hours
   serves: "4"
 instruction_steps:
-  - title: For the Thing
+  - title: The Step
     instructions:
-      - instruction: Mix the stuff together.
-      - instruction: Cook it all.
+      - instruction: Do the thing.
 recipe_meta:
   active: 30 minutes
   total: 2 hours
@@ -37,11 +36,6 @@ ingredient_steps:
         name: Sugar
         notehref: hire.wil.to
         measure: cup
-  - title: Ham
-    ingredients:
-      - optional: false
-        amt_whole: "1"
-        name: Ham
 V2: true
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
