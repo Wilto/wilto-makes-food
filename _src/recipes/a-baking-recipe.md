@@ -1,6 +1,6 @@
 ---
 layout: layouts/v2.njk
-related: The Best Chef’s Knife
+related: The Field Skillet
 subhed: The Big Bread
 notes: Tastes like bread, mostly.
 meta:
