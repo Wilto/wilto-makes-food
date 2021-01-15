@@ -22,7 +22,8 @@
   "homepage": "https://wiltomakesfood.com",
   "dependencies": {
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "luxon": "^0.3.1"
+    "luxon": "^0.3.1",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
