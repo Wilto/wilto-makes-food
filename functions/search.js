@@ -1,15 +1,13 @@
-const querystring = require('querystring');
-
 exports.handler = function(event, context, callback) {
-  const post = querystring.parse( event.body );
-  const query = post['q'];
+  const params = event.queryStringParameters;
+  const query = params['q'];
 
-  if( !post || event.httpMethod !== 'GET' ) {
+  if( !post /* || event.httpMethod !== 'POST' */ ) {
     return;
   }
 
   callback(null, {
     statusCode: 200,
-    body: `Query was: ${ post }.`
+    body: `Params were ${ params }. Query was: ${ query }.`
   });
 };
