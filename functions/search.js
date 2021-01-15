@@ -12,9 +12,14 @@ exports.handler = function(event, context, callback) {
     return fetch( `https://mystifying-poitras-33e02f.netlify.app/posts.json` )
       .then( res => res.json() )
       .then( json => {
+
+        let results = json.filter( post => {
+          return record.post.title;
+        });
+
         callback(null, {
           statusCode: 200,
-          body: `Query was: ${ query }. JSON is ${ json }`
+          body: `Query was: ${ query }. JSON results are ${ results }`
         });
       })
       .catch(err => {
