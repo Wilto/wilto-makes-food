@@ -104,32 +104,7 @@
 		<link rel="preload" href="/_assets/css/fonts/fanwood_text_italic-webfont.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="/_assets/css/fonts/OpenSans-Bold-webfont.woff2" as="font" type="font/woff2" crossorigin>
 
-<!--#if expr='v("HTTP_COOKIE") !~ /primed/' -->
-	<!--#if expr='v("SERVER_PROTOCOL") =~ /2\.0/' -->
-	<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}">
-	<!--#else -->
-	{% if type == "landing" %}
-		<style>
-		<!--#include virtual="/_assets/css/crit/landing.css" -->
-		</style>
-		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}" media="print" onload="this.media='all'">
-	{% elseif type == "article" or type == "review" or type == "recipe" %}
-		<style>
-		<!--#include virtual="/_assets/css/crit/post.css" -->
-		</style>
-		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}" media="print" onload="this.media='all'">
-	{% elseif page.url == "/" %}
-		<style>
-		<!--#include virtual="/_assets/css/crit/home.css" -->
-		</style>
-		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}" media="print" onload="this.media='all'">
-	{% else %}
 		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}">
-	{% endif %}
-	<!--#endif -->
-<!--#else -->
-		<link rel="stylesheet" href="/_assets/css/all.css?{{ metadata.build }}">
-<!--#endif -->
 
 		<!-- RSS Feed(s): -->
 		<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
@@ -236,7 +211,7 @@
 		<script src="/_assets/js/lazyimg.min.js?{{ metadata.build }}"></script>
 		{% if page.url != "/offline/" %}<script src="/_assets/js/offline-toggle.min.js?{{ metadata.build }}"></script>{% endif %}
 		<script src="/_assets/js/analytics.min.js?{{ metadata.build }}"></script>
-		<script src="sw-init.js?{{ metadata.build }}"></script>
+		<script src="/sw-init.js?{{ metadata.build }}"></script>
 
 		<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
 			<g fill-rule="nonzero" fill="none" id="wmf-logo">

@@ -1,0 +1,123 @@
+@media print {
+	body {
+		background: none;
+	}
+
+	header.site-head {
+		position: relative;
+		grid-template-columns: 100%;
+		margin-bottom: -8em;
+	}
+	header.site-head > h1.site-hed {
+		position: absolute;
+		top: 0;
+		right: 0;
+		max-width: 2.5em;
+		margin: 1em 1em 0 0;
+	}
+
+	.intro {
+		padding-top: 7.5em;
+	}
+
+	.fonts .recipe-subhed {
+		font-weight: 700;
+	}
+	.ingredients {
+		border-left: 0;
+	}
+	.ingredients li {
+		margin: 0.25em 0;
+		padding-left: 0;
+		font-size: 14pt;
+	}
+	.ingredients li::before {
+		background: rgba(0,0,0,0.33);
+	}
+	.recipe-subhed::after {
+		background: rgba(0,0,0,0.33);
+	}
+	.steps li {
+		padding-left: 1em;
+	}
+	.steps li::before {
+		background: rgba(0,0,0,0.33);
+		text-shadow: 1px 1px rgba(0,0,0,0.33);
+		top: 0.75em;
+	}
+
+	footer.site-foot {
+		background: none;
+		margin-top: 0;
+	}
+	footer.site-foot > .footwrap > div {
+		display: none;
+	}
+	footer.site-foot > .footwrap > .foot-nav {
+		display: block;
+		margin-top: 0;
+	}
+	footer.site-foot > .footwrap > .foot-nav > .footnav {
+		display: none;
+	}
+
+	footer.site-foot > .footwrap > .foot-nav > .footnav {
+		display: none;
+	}
+
+	.site-head a.patreon {
+		display: none;
+	}
+
+	.site-head .bar {
+		background: none;
+		border: none;
+		border: 2px solid red;
+	}
+	.site-head .bar .sitenav {
+		display: none;
+	}
+
+	header.site-head > h1.site-hed + div {
+		display: none;
+	}
+	.intro .recipeheader {
+
+		margin-top: 0;
+	}
+	.intro .recipeheader ~ * {
+		display: none;
+	}
+	.intro figure.feat-thumb {
+		display: none;
+	}
+	.intro h3 .direct {
+		display: none;
+	}
+	main {
+		margin-top: 0.25em;
+	}
+	main .intro {
+		order: 100;
+		margin-bottom: 0;
+	}
+
+	#main .intro > * {
+		max-width: 100%;
+	}
+	.intro p {
+		font-size: 14pt;
+	}
+	.fonts .intro h3 {
+		font-weight: 900;
+		border-left-width: 1em;
+		margin-left: -1.25em;
+		padding-left: 0.25em;
+	}
+	.col {
+		margin-bottom: 0;
+	}
+	p {
+		line-height: 1.2345;
+	}
+}
