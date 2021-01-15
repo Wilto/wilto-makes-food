@@ -14,7 +14,7 @@ exports.handler = function(event, context, callback) {
       .then( json => {
         callback(null, {
           statusCode: 200,
-          body: `Query was: ${ query }. JSON is ${ json.stringify() }. Results are ${ ret }`
+          body: `Query was: ${ query }. JSON is ${ json }. Results are ${ ret }`
         });
       })
       .catch(err => {
