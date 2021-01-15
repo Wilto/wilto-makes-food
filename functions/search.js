@@ -6,8 +6,18 @@ exports.handler = function(event, context, callback) {
     return;
   }
 
-  callback(null, {
-    statusCode: 200,
-    body: `Params were ${ params }. Query was: ${ query }.`
+
+fetch( `posts.json` )
+  .then( res => res.json() )
+  .then( json => {
+    callback(null, {
+      statusCode: 200,
+      body: `Query was: ${ query }. JSON is ${ json }`
+    });
+  })
+  .catch(err => {
+    callback(null, {
+      statusCode: 200,
+      body: `I am Error: ${ err }. Query was: ${ query }.`
+    });
   });
-};
