@@ -12,7 +12,7 @@ exports.handler = function(event, context, callback) {
     coc = post['coc'];
 
   if (!post || event.httpMethod !== 'POST') {
-    return;
+    //return;
   }
 
   callback(null, {
