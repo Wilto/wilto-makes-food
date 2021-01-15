@@ -6,18 +6,22 @@ exports.handler = function(event, context, callback) {
     return;
   }
 
+  function search(){
+    return fetch( `posts.json` )
+      .then( res => res.json() )
+      .then( json => {
+        callback(null, {
+          statusCode: 200,
+          body: `Query was: ${ query }. JSON is ${ json }`
+        });
+      })
+      .catch(err => {
+        callback(null, {
+          statusCode: 200,
+          body: `I am Error: ${ err }. Query was: ${ query }.`
+        });
+      })
+    }
 
-fetch( `posts.json` )
-  .then( res => res.json() )
-  .then( json => {
-    callback(null, {
-      statusCode: 200,
-      body: `Query was: ${ query }. JSON is ${ json }`
-    });
-  })
-  .catch(err => {
-    callback(null, {
-      statusCode: 200,
-      body: `I am Error: ${ err }. Query was: ${ query }.`
-    });
-  });
+  search();
+};
