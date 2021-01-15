@@ -9,7 +9,7 @@ exports.handler = function(event, context, callback) {
   }
 
   function search(){
-    return fetch( `/posts.json` )
+    return fetch( `https://mystifying-poitras-33e02f.netlify.app/posts.json` )
       .then( res => res.json() )
       .then( json => {
         callback(null, {
