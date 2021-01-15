@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+const fetch = require( 'node-fetch' );
 
 exports.handler = function(event, context, callback) {
   const params = event.queryStringParameters;
@@ -9,7 +9,7 @@ exports.handler = function(event, context, callback) {
   }
 
   function search(){
-    return fetch( `posts.json` )
+    return fetch( `/posts.json` )
       .then( res => res.json() )
       .then( json => {
         callback(null, {
