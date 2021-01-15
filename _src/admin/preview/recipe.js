@@ -5,24 +5,37 @@ const html = htm.bind(h);
 // Preview component for a Page
 const Recipe = createClass({
 	render() {
-		const entry = this.props.entry;
+		const {entry, fieldsMetaData} = this.props;
 
 		// Image
-		let image = entry.getIn([ 'data', 'feat_img', 'img' ], null );
+		const image = entry.getIn([ 'data', 'feat_img', 'img' ], null );
 		const img = this.props.getAsset( image );
 		const alt = entry.getIn([ 'data', 'feat_img', 'alt' ], null );
-		const imgEl = h('img', {
+		let imgEl = h('img', {
 			src: img.toString(),
 			alt: alt
 		});
 
-		// Related Articles
-		const rels= entry.getIn([ 'data', 'related' ], null );
+		let ret = [];
+		const rMeta = fieldsMetaData.getIn([ 'related' ], null ) || [];
+
+		rMeta && rMeta.forEach( r => {
+			let title = Object.keys( r.toJS() )[ 0 ],
+				fullMeta = r.get( title );
+
+			ret.push(
+				h( 'div', { className: 'related' }, 
+					h( 'a', { href: '#' }, title ),
+					h( 'p', {}, fullMeta.get( 'subhed' ) )
+				)
+			)
+		});
+
+		console.log( ret.length );
 		let related = h( 'div', { className: 'related' }, 
-			h( 'h3', { className: 'subhed' }, "Related Article" + ( rels.length > 1 ? "s" : "" ) ),
-			h( 'a', {
-				href: '#'
-			}, rels )
+				h( 'h3', { className: 'subhed' }, "Related Article" + ( ret.length > 1 ? "s" : "" ),
+				ret
+			)
 		);
 
 		// Ingredients
@@ -57,8 +70,8 @@ const Recipe = createClass({
 			return ret;
 		};
 		let ingsteps = ings.map( ing => {
-			let title = ing.get( 'title' );
-			let ingList = ing.get( 'ingredients' );
+			const title = ing.get( 'title' );
+			const ingList = ing.get( 'ingredients' );
 
 			return h( 'div', {}, 
 				( title ? h( 'h4', { className: 'recipe-subhed' }, ing.get( 'title' ) ) : "" ),
@@ -88,8 +101,8 @@ const Recipe = createClass({
 			return ret;
 		};
 		let inststeps = inst.map( inst => {
-			let title = inst.get( 'title' );
-			let instList = inst.get( 'instructions' );
+			const title = inst.get( 'title' );
+			const instList = inst.get( 'instructions' );
 
 			return h( 'div', {}, 
 				( title ? h( 'h4', { className: 'recipe-subhed' }, inst.get( 'title' ) ) : "" ),
