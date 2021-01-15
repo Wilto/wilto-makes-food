@@ -20,7 +20,7 @@ exports.handler = function(event, context, callback) {
       .catch(err => {
         callback(null, {
           statusCode: 200,
-          body: `I am Error: ${ err }. Query was: ${ query }. JSON is ${ json.stringify() }.`
+          body: `I am Error: ${ err }. Query was: ${ query }.`
         });
       })
     }
