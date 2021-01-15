@@ -12,9 +12,8 @@ exports.handler = function(event, context, callback) {
     return fetch( `https://mystifying-poitras-33e02f.netlify.app/posts.json` )
       .then( res => res.json() )
       .then( json => {
-
-        let results = json.filter( post => {
-          return record.post.title;
+        let results = JSON.parse( json ).filter( post => {
+          return post.title;
         });
 
         callback(null, {
