@@ -14,12 +14,16 @@ exports.handler = function(event, context, callback) {
       .then( json => {
         let ret = []
         json.posts.forEach( post => {
-          ret.push( post.title );
+          if( post.title.search( new RegExp( query, "i" ) ) > -1 ) {
+            if( post.type == "recipe" || post.type == "article" ) {
+              ret.push([ post.title, post.url ]);
+            }
+          }
         });
 
         callback(null, {
           statusCode: 200,
-          body: `Query was: ${ query }. JSON is ${ json }. Results are ${ results }`
+          body: `Query was: ${ query }. Results are ${ ret }`
         });
       })
       .catch(err => {

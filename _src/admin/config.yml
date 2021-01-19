@@ -5,6 +5,12 @@ backend:
 media_folder: "_src/img" # Media files will be stored in the repo under images/uploads
 public_folder: "/img"
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: wilto
+    api_key: 536243896247346
+
 collections:
   - name: "recipes" # Used in routes, e.g., /admin/collections/blog
     label: "Recipes" # Used in the UI

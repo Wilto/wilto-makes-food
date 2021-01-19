@@ -1,8 +1,14 @@
 const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginRespimg = require( "eleventy-plugin-respimg" );
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
+
+  eleventyConfig.cloudinaryCloudName = 'your-cloud-name-here';
+  eleventyConfig.srcsetWidths = [ 320, 640, 960, 1280, 1600, 1920, 2240, 2560 ];
+  eleventyConfig.fallbackWidth = 640;
+  eleventyConfig.addPlugin( pluginRespimg );
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
@@ -62,6 +68,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("relatedFilter", function(collection, needle) {
     return collection.filter(function(item) {
+      console.log( item.data );
       return item.data.title == needle;
     });
   });
