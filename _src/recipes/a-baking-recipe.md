@@ -23,7 +23,7 @@ type: recipe
 tags:
   - baking
 feat_img:
-  img: /img/basic-sourdough.jpg
+  img: https://res.cloudinary.com/wilto/image/upload/v1611080471/nachos.jpg
   alt: A bread.
   capt: This is the caption for the bread.
 title: A Baking Recipe
