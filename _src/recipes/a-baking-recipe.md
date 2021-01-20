@@ -1,6 +1,6 @@
 ---
 layout: layouts/v2.njk
-related: ""
+related: The Field Skillet
 subhed: The Big Bread
 notes: Tastes like bread, mostly.
 meta:
@@ -23,7 +23,7 @@ type: recipe
 tags:
   - baking
 feat_img:
-  img: https://res.cloudinary.com/wilto/image/upload/v1611080471/nachos.jpg
+  img: https://res.cloudinary.com/wilto/image/upload/v1611080678/basic-sourdough.jpg
   alt: A bread.
   capt: This is the caption for the bread.
 title: A Baking Recipe
