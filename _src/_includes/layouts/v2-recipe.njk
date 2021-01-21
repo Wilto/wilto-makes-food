@@ -104,29 +104,31 @@ templateClass: tmpl-post
 		{{ layoutContent | safe }}
 
 {% if related %}
-{% set rels = collections.articles | relatedFilter( related ) %}
 		<div class="related-articles">
-			<h3 class="related-hed">Related Article{% if rels.length > 1 %}s{% endif %}:</h3>
-			{% for rel in rels %}
-			<article class="related-article">
-				{% if rel.data.img %}
-					<a href="{{ rel.data.page.url }}">
-					{{ respimg('/img/', rel.data.img, '10em', rel.data.alt )  }}
-					</a>
-				{% endif %}
-				{% if rel.data.feat_img.img %}
-				{% cloudrespimg
-					feat_img.img,
-					feat_img.alt,
-					"10em"
-				%}
-				<img src="{{ feat_img.img }}" alt="{{ feat_img.alt }}">
-				{% endif %}
-				<div>
-					<h4 class="rel-hed"><a href="{{ rel.data.page.url }}">{{ rel.data.title }}</a></h4>
-					<p class="rel-lede">{{ rel.data.subhed | safe }}</p>
-				</dio>
-			</article>
+			<h3 class="related-hed">Related Article{% if related.length > 1 %}s{% endif %}:</h3>
+			{% for relation in related %}
+				{% set rels = collections.articles | relatedFilter( relation ) %}
+				{% for rel in rels %}
+				<article class="related-article">
+					{% if rel.data.img %}
+						<a href="{{ rel.data.page.url }}">
+						{{ respimg('/img/', rel.data.img, '10em', rel.data.alt )  }}
+						</a>
+					{% endif %}
+					{% if rel.data.feat_img.img %}
+					{% cloudrespimg
+						feat_img.img,
+						feat_img.alt,
+						"10em"
+					%}
+					<img src="{{ feat_img.img }}" alt="{{ feat_img.alt }}">
+					{% endif %}
+					<div>
+						<h4 class="rel-hed"><a href="{{ rel.data.page.url }}">{{ rel.data.title }}</a></h4>
+						<p class="rel-lede">{{ rel.data.subhed | safe }}</p>
+					</dio>
+				</article>
+				{% endfor %}
 			{% endfor %}
 		</div>
 {% endif %}

@@ -22,16 +22,15 @@ const Article = createClass({
 		}
 
 		let ret = [];
-		const rMeta = fieldsMetaData.getIn([ 'related' ], null ) || [];
+		const rMeta = fieldsMetaData.getIn([ 'related', 'recipes'], null ) || [];
 
 		rMeta && rMeta.forEach( r => {
-			let title = Object.keys( r.toJS() )[ 0 ],
-				fullMeta = r.get( title ),
-				relImg = ( fullMeta ) => {
-					let oldImg = fullMeta.get( 'img' ),
-						newImg = fullMeta.getIn(['feat_img', 'img' ]),
-						alt = entry.getIn(['data', 'alt']) || entry.getIn([ 'data', 'feat_img', 'alt' ], null ) || '';
-
+			let title = r.get('title'),
+				relImg = ( r ) => {
+					let oldImg = r.get( 'img' ),
+						newImg = r.getIn(['feat_img', 'img' ]),
+						alt = r.getIn(['data', 'alt']) || r.getIn([ 'data', 'feat_img', 'alt' ], null ) || '';
+						console.log( "IMG: " + alt );
 						if( oldImg ) {
 							return h( 'img', { src: '/img/' + oldImg + '-1.jpg', alt: alt });
 						}
@@ -43,12 +42,11 @@ const Article = createClass({
  
 			ret.push(
 				h( 'article', { className: 'related-article' },
-					relImg( fullMeta ),
+					relImg( r ),
 					h( 'div', {}, 
 						h( 'h4', { className: 'rel-hed' }, 
 							h( 'a', { href: "#" }, title ),
-						),
-						h( 'p', { className: 'rel-lede' }, fullMeta.get( 'subhed' ) )
+						)
 					)
 				)
 			)
@@ -86,6 +84,7 @@ const Article = createClass({
 				</figure>
 				<div className="lede">${this.props.widgetFor("lede")}</div>
 				${this.props.widgetFor("body")}
+				${ related }
 			</div>
 		</main>`;
 	}

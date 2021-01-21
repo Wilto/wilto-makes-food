@@ -18,10 +18,10 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "layout", name: "layout", widget: "select", options: [{ label: "V2", value: "layouts/v2.njk" }], default: "layouts/v2.njk", required: false }
+      - {label: "layout", name: "layout", widget: "select", options: [{ label: "V2", value: "layouts/v2-recipe.njk" }], default: "layouts/v2.njk", required: false }
       - {label: "Type", name: "type", widget: "hidden", default: "recipe"}
       - {label: "Tags", name: "tags", widget: "list" }
-      - {label: "Related", name: "related", required: false, widget: "relation", collection: "articles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+      - {label: "Related", name: "related", required: false,  multiple: true, widget: "relation", collection: "articles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
       - label: "Featured Image"
         name: "feat_img"
         widget: "object"
@@ -79,6 +79,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
+      - {label: "layout", name: "layout", widget: "select", options: [{ label: "V2", value: "layouts/v2-article.njk" }], default: "layouts/v2.njk", required: false }
       - {label: "Type", name: "type", widget: "hidden", default: "article"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subhed", name: "subhed", widget: "markdown"}
@@ -90,5 +91,5 @@ collections:
         - {label: "Image", name: "img", widget: "image"}
         - {label: "alt", name: "alt", widget: "string"}
         - {label: "Caption", name: "capt", widget: "markdown"}
-      - {label: "Related", name: "related", required: false, widget: "relation", collection: "recipes", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+      - {label: "Related", name: "related", required: false, multiple: true, widget: "relation", collection: "recipes", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
       - {label: "Body", name: "body", widget: "markdown"}

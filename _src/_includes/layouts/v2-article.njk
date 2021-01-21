@@ -1,0 +1,81 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+
+{% macro respimg(path, img, sizes, alt, capt) %}
+<img 
+	sizes="{{ sizes }}"
+	srcset="
+		{{ path }}{{ img }}-1.jpg 320w,
+		{{ path }}{{ img }}-2.jpg 450w,
+		{{ path }}{{ img }}-3.jpg 640w,
+		{{ path }}{{ img }}-4.jpg 820w,
+		{{ path }}{{ img }}-5.jpg 1024w"
+	src="{{ path }}{{ img }}-4.jpg" 
+	{% if capt %}
+	aria-describedby="capt-1"
+	{% endif %}
+	alt="{{ alt }}">
+{% endmacro %}
+
+{% macro featrespimg(path, img, sizes, alt, capt) %}
+<img 
+	src="{{ path }}feat/{{ featimg }}-7.jpg" 
+	{% if capt %}
+	aria-describedby="capt-1"
+	{% endif %}
+	alt="{{ alt }}">
+{% endmacro %}
+
+<div class="col">
+	{% if featimg %}
+	<figure class="featured-image">
+		{{ featrespimg('/img/', img, '(min-width: 560px) 38vw, 100vw', alt, capt ) }}
+		{% if capt %}
+		<figcaption id="capt-1" class="caption">
+			{{capt | safe}}
+		</figcaption>
+		{% endif %}
+	</figure>
+	{% endif %}
+	<div class="intro">
+		<header role="banner" class="recipeheader">
+			<h2 class="recipe-hed" itemprop="name">{{ title }}</h2>
+			<span class="meta"></span>
+		</header>
+
+		{% if img %}
+		<figure class="feat-thumb">
+			{{ respimg('/img/', img, '(min-width: 560px) 38vw, 100vw', alt, capt ) }}
+			{% if capt %}
+			<figcaption id="capt-1" class="caption">
+				{{capt | safe}}
+			</figcaption>
+			{% endif %}
+		</figure>
+		{% endif %}
+
+		{% if video %}
+		<figure aria-describedby="pagevid">
+			<video controls>
+				<source src="/_assets/media/{{video}}.mp4" type="video/mp4">
+				<track kind="captions" src="/_assets/media/{{video}}.vtt">
+				Sorry, I’m having trouble loading this video.
+			</video>
+			{% if capt %}
+			<figcaption id="pagevid" class="caption">
+				{{capt | safe}}
+			</figcaption>
+			{% endif %}
+		</figure>
+		{% endif %}
+
+		{% if lede %}
+		<p class="lede" itemprop="description">{{ lede | safe }}</p>
+		{% endif %}
+
+		{{ layoutContent | safe }}
+
+	</div>
+</div>
