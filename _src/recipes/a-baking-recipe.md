@@ -1,5 +1,6 @@
 ---
 layout: layouts/v2-recipe.njk
+feat: true
 related:
   - The Best Chef’s Knife
   - A Woodworker’s Guide to Knife Sharpening
