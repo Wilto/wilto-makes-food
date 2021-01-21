@@ -19,9 +19,11 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "layout", name: "layout", widget: "select", options: [{ label: "V2", value: "layouts/v2-recipe.njk" }], default: "layouts/v2.njk", required: false }
+      - {label: "Feature", name: "feat", widget: "boolean", default: false }
       - {label: "Type", name: "type", widget: "hidden", default: "recipe"}
       - {label: "Tags", name: "tags", widget: "list" }
-      - {label: "Related", name: "related", required: false,  multiple: true, widget: "relation", collection: "articles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Lede", name: "lede", widget: "markdown"}
       - label: "Featured Image"
         name: "feat_img"
         widget: "object"
@@ -29,10 +31,8 @@ collections:
         - {label: "Image", name: "img", widget: "image"}
         - {label: "alt", name: "alt", widget: "string"}
         - {label: "Caption", name: "capt", widget: "markdown"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Lede", name: "lede", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
-
+      - {label: "Related", name: "related", required: false,  multiple: true, widget: "relation", collection: "articles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
       - {label: "Recipe Subhed", name: "subhed", widget: "string"}
       - {label: "Recipe Notes", name: "notes", widget: "markdown"}
       - label: "Recipe Meta"

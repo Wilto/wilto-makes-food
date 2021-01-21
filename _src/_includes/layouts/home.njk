@@ -1,9 +1,6 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
-pagination:
-  data: collections.truncrecipes
-  size: 8
 ---
 
 {% macro respimg(path, img, sizes, alt, lazy=false) %}
@@ -79,23 +76,18 @@ pagination:
 	</article>
 {% endmacro %}
 
-{% set postslist = collections.posts %}
-{% set otherarticles = collections.truncarticles %}
-{% set otherrecipes = collections.truncrecipes %}
+{% set features = collections.features %}
+{% set otherarticles = collections.truncarticles | limit( 4 ) %}
+{% set otherrecipes = collections.truncrecipes | limit( 8 ) %}
 
 <h2 class="section-hed a11y-only" id="features">Features</h2>
 <section class="col features" role="region" aria-labelledby="features">
-{% for post in postslist  %}
-	{% if post.data.feat %}
+	{% for post in features | reverse | limit(1) %}
 		{{ homeitem(post, true, 'feat', '(min-width: 1480px) 935px, (min-width: 800px) 64vw, 98vw') }}
-	{% endif %}
-{% endfor %}
-
+	{% endfor %}
 	<div class="subfeat">
-	{% for post in postslist | reverse %}
-		{% if post.data.subfeat %}
-			{{ homeitem(post, false, 'sub', '(min-width: 1480px) 465px, (min-width: 800px) 33vw, (min-width: 650px) 48vw, 98vw' ) }}
-		{% endif %}
+	{% for post in features | reverse | limit( 3, 1 ) %}
+		{{ homeitem(post, false, 'sub', '(min-width: 1480px) 465px, (min-width: 800px) 33vw, (min-width: 650px) 48vw, 98vw' ) }}
 	{% endfor %}
 	</div>
 </section>
@@ -103,7 +95,7 @@ pagination:
 <h2 class="section-hed" id="latest-rec">Latest Recipes</h2>
 <section class="col" role="region" aria-labelledby="latest-rec">
 	<div class="highlights">
-{%- for post in pagination.items %}
+{%- for post in otherrecipes %}
 {% if ( post.data.feat != true ) and ( post.data.subfeat != true ) and ( post.data.type == "recipe" ) %}
 	{{ homeitem(post,'','','(min-width: 1560px) calc(-1.25vw + 358px), (min-width: 760px) calc(21.03vw + 14px), (min-width: 500px) 47.5vw, 97.22vw', true) }}
 {% endif %}

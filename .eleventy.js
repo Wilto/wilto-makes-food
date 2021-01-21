@@ -38,6 +38,10 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addNunjucksFilter( "limit", ( arr, limitend, limitstart = 0 ) => {
+    return arr.slice( limitstart, limitend );
+  });
+
   // only content in the `recipes` directory
   eleventyConfig.addCollection("truncrecipes", function(collection) {
     let ret = [];
@@ -62,22 +66,21 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addCollection("truncarticles", function(collection) {
-    let i = 0;
-    let ret = [];
-
     let sortedCollection = collection.getAll().sort( ( a, b ) => {
       return new Date(b.data.page.date) - new Date(a.data.page.date);
     });
 
-    sortedCollection.filter(function(item) {
+    return sortedCollection.filter(function(item) {
       if( ( item.data.img != null || item.data.feat_img ) && item.data.feat != true && item.data.subfeat != true && item.inputPath.match(/^\.\/_src\/articles\//) !== null ) {
-        if( i < 4  ) {
-          ret.push( item );
-          i++;
-        }
+        return item;
       }
     });
-    return ret;
+  });
+
+  eleventyConfig.addCollection("features", function(collection) {
+    return collection.getAllSorted().filter(function(item) {
+      return item.data.feat === true;
+    });
   });
 
   eleventyConfig.addFilter("relatedFilter", function(collection, needle) {
