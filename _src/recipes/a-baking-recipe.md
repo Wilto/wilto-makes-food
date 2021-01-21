@@ -1,6 +1,6 @@
 ---
 layout: layouts/v2-recipe.njk
-feat: true
+feat: false
 related:
   - The Best Chef’s Knife
   - A Woodworker’s Guide to Knife Sharpening
@@ -25,12 +25,12 @@ recipe_meta:
 type: recipe
 tags:
   - baking
+title: A Baking Recipe
+lede: Should be a pretty good one, I think.
 feat_img:
   img: https://res.cloudinary.com/wilto/image/upload/v1611080678/basic-sourdough.jpg
   alt: A bread.
   capt: This is the caption for the bread.
-title: A Baking Recipe
-lede: Should be a pretty good one, I think.
 ingredient_steps:
   - ingredients:
       - optional: false
