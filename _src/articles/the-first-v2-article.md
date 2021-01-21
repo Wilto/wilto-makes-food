@@ -1,4 +1,5 @@
 ---
+layout: layouts/v2-article.njk
 type: article
 title: The First V2 Article
 subhed: It’s an article, alright.
