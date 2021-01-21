@@ -1,6 +1,8 @@
 ---
 layout: layouts/v2.njk
-related: A Woodworker’s Guide to Knife Sharpening
+related:
+  - The Best Chef’s Knife
+  - A Woodworker’s Guide to Knife Sharpening
 subhed: The Big Bread
 notes: Tastes like bread, mostly.
 meta:
