@@ -2,7 +2,6 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-
 {% macro respimg(path, img, sizes, alt, capt) %}
 <picture>
 	<source
@@ -30,7 +29,6 @@ templateClass: tmpl-post
 		alt="{{ alt }}">
 </picture>
 {% endmacro %}
-
 <div class="col" itemscope itemtype="http://schema.org/Recipe" class="h-recipe">
 	<div class="intro">
 		<header role="banner" class="recipeheader">
@@ -71,11 +69,11 @@ templateClass: tmpl-post
 
 		{% if feat_img.img %}
 		<figure class="feat-thumb">
-			{% respimg
-	feat_img.img,
-	feat_img.alt,
-	"(min-width: 48em) 48em, 100vw"
-%}
+			{% cloudrespimg
+				feat_img.img,
+				feat_img.alt,
+				"(min-width: 1260px) 370px, (min-width: 720px) calc(28.46vw + 17px), (min-width: 560px) 37.86vw, 99.58vw"
+			%}
 			{% if feat_img.capt  %}
 			<figcaption id="capt-1" class="caption">
 				{{ feat_img.capt | safe }}
@@ -117,6 +115,11 @@ templateClass: tmpl-post
 					</a>
 				{% endif %}
 				{% if rel.data.feat_img.img %}
+				{% cloudrespimg
+					feat_img.img,
+					feat_img.alt,
+					"10em"
+				%}
 				<img src="{{ feat_img.img }}" alt="{{ feat_img.alt }}">
 				{% endif %}
 				<div>

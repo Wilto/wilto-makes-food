@@ -8,34 +8,55 @@ const Recipe = createClass({
 		const {entry, fieldsMetaData} = this.props;
 
 		// Image
-		const image = entry.getIn([ 'data', 'feat_img', 'img' ], null );
-		const img = this.props.getAsset( image );
-		const alt = entry.getIn([ 'data', 'feat_img', 'alt' ], null );
-		let imgEl = h('img', {
-			src: img.toString(),
-			alt: alt
-		});
+		let imgEl = ( entry ) => {
+			let oldImg = entry.getIn(['data', 'img']),
+				newImg = entry.getIn(['data', 'feat_img', 'img' ]),
+				alt = entry.getIn(['data', 'alt']) || entry.getIn([ 'data', 'feat_img', 'alt' ], null ) || '';
+
+				if( oldImg ) {
+					return h( 'img', { src: '/img/' + oldImg + '-1.jpg', alt: alt });
+				}
+				if( newImg ) {
+					return h( 'img', { src: newImg, alt: alt });
+				}
+		}
 
 		let ret = [];
 		const rMeta = fieldsMetaData.getIn([ 'related' ], null ) || [];
 
 		rMeta && rMeta.forEach( r => {
 			let title = Object.keys( r.toJS() )[ 0 ],
-				fullMeta = r.get( title );
+				fullMeta = r.get( title ),
+				relImg = ( fullMeta ) => {
+					let oldImg = fullMeta.get( 'img' ),
+						newImg = fullMeta.getIn(['feat_img', 'img' ]),
+						alt = fullMeta.getIn(['alt']) || fullMeta.getIn([ 'feat_img', 'alt' ], null ) || '';
 
+						if( oldImg ) {
+							return h( 'img', { src: '/img/' + oldImg + '-1.jpg', alt: alt });
+						}
+						if( newImg ) {
+							return h( 'img', { src: newImg, alt: alt });
+						}
+				};
+
+ 
 			ret.push(
-				h( 'div', { className: 'related' }, 
-					h( 'a', { href: '#' }, title ),
-					h( 'p', {}, fullMeta.get( 'subhed' ) )
+				h( 'article', { className: 'related-article' },
+					relImg( fullMeta ),
+					h( 'div', {}, 
+						h( 'h4', { className: 'rel-hed' }, 
+							h( 'a', { href: "#" }, title ),
+						),
+						h( 'p', { className: 'rel-lede' }, fullMeta.get( 'subhed' ) )
+					)
 				)
 			)
 		});
 
-		console.log( ret.length );
-		let related = h( 'div', { className: 'related' }, 
-				h( 'h3', { className: 'subhed' }, "Related Article" + ( ret.length > 1 ? "s" : "" ),
+		let related = ret.length > 0 && h( 'div', { className: 'related-articles' }, 
+				h( 'h3', { className: 'related-hed' }, "Related Article" + ( ret.length > 1 ? "s" : "" )),
 				ret
-			)
 		);
 
 		// Ingredients
@@ -116,6 +137,15 @@ const Recipe = createClass({
 			inststeps
 		);
 
+		let caption = ( entry ) => {
+			let capt = entry.getIn([ 'data', 'feat_img', 'capt' ], null ) || entry.getIn([ 'data', 'capt' ]);
+			return capt && h( 'figcaption', { className: 'caption' }, 
+				entry.getIn([ 'data', 'feat_img', 'capt' ], null )
+			);
+		}
+
+		let alt = entry.getIn(['data', 'alt']) || entry.getIn([ 'data', 'feat_img', 'alt' ], null ) || '';
+
 		return html`
 		<main className="col fonts">
 			<div className="intro">
@@ -132,16 +162,19 @@ const Recipe = createClass({
 				</header>
 
 				<figure className="feat-thumb">
-					<p class="alt-overlay">alt: ${ alt }</p>
-					${ imgEl }
-					<figcaption class="caption">
-						${ entry.getIn([ 'data', 'feat_img', 'capt' ], null ) }
-					</figcaption>
+					${ h('p', { className: 'alt-overlay'}, 
+						h('span', {}, "alt: "),
+						h('code', {}, alt )
+					)}
+					${ imgEl( entry ) }
+					${ caption( entry ) }
 				</figure>
 				<div className="lede">${this.props.widgetFor("lede")}</div>
 				${this.props.widgetFor("body")}
+
+				${ related }
 			</div>
-			${ related }
+
 			<h3 class="article-hed jump-hed" id="recipe"><span>Recipe:</span>${entry.getIn(["data", "subhed"], null)}</h3>
 			<p class="lede p-summary">${entry.getIn(["data", "notes"], null)}</p>
 

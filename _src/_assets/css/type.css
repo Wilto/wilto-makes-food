@@ -960,7 +960,7 @@ p.table-note {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: .5em;
-	padding: .375em 1em .375em 0;
+	padding: 0 1em 0 0;
 }
 .related-article div {
 	display: flex;
@@ -969,7 +969,7 @@ p.table-note {
 	padding: 0 0 0 .75em;
 }
 .related-article picture {
-	line-height: .8;
+	line-height: .65;
 	float: left;
 }
 .related-article img {
@@ -1055,14 +1055,19 @@ p.recipe-credit a {
 	color: #333;
 }
 
-figure p.alt-overlay {
+figure .alt-overlay {
 	position: absolute;
-	top: .25em;
-	z-index: 3;
+	top: .265em;
 	left: 0;
 	right: 0;
-	background: rgba(255,255,255,.5);
+	z-index: 3;
+	background: rgba(255,255,255,.8);
 	margin: 0;
-	padding: .5em 0 .2em .5em;
+	display: block;
+	padding: .35em 1.25em .225em .85em;
 	font-size: .9em;
+	line-height: 1.1;
+}
+.alt-overlay span {
+	font-style: italic;
 }

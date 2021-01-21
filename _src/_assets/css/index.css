@@ -1251,6 +1251,7 @@ img.take-your-time {
 .feat-thumb {
 	width: 106.5%;
 	margin: 0 0 5% -2.5%;
+	position: relative;
 }
 .caption {
 	padding: 0 1.5%;

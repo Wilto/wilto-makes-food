@@ -5,10 +5,20 @@ const pluginRespimg = require( "eleventy-plugin-respimg" );
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
-  eleventyConfig.cloudinaryCloudName = 'your-cloud-name-here';
+  eleventyConfig.cloudinaryCloudName = 'wilto';
   eleventyConfig.srcsetWidths = [ 320, 640, 960, 1280, 1600, 1920, 2240, 2560 ];
   eleventyConfig.fallbackWidth = 640;
-  eleventyConfig.addPlugin( pluginRespimg );
+  eleventyConfig.fallbackWidth = 640;
+
+  eleventyConfig.addShortcode('cloudrespimg', (path, alt, sizes) => {
+    const fetchBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/fetch/`;
+    const src = `${fetchBase}q_auto,f_auto,w_${eleventyConfig.fallbackWidth}/${path}`;
+    const srcset = eleventyConfig.srcsetWidths.map(w => {
+      return `${fetchBase}q_auto,f_auto,w_${w}/${path} ${w}w`;
+    }).join(', ');
+
+    return `<img src="${src}" srcset="${srcset}" sizes="${sizes ? sizes : '100vw'}" alt="${alt ? alt : ''}">`;
+  });
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
@@ -68,7 +78,6 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("relatedFilter", function(collection, needle) {
     return collection.filter(function(item) {
-      console.log( item.data );
       return item.data.title == needle;
     });
   });
