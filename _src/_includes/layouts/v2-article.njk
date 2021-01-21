@@ -41,16 +41,20 @@ templateClass: tmpl-post
 	{% endif %}
 	<div class="intro">
 		<header role="banner" class="recipeheader">
-			<h2 class="recipe-hed" itemprop="name">V2 Article: {{ title }}</h2>
+			<h2 class="recipe-hed" itemprop="name">{{ title }}</h2>
 			<span class="meta"></span>
 		</header>
 
-		{% if img %}
+		{% if feat_img.img %}
 		<figure class="feat-thumb">
-			{{ respimg('/img/', img, '(min-width: 560px) 38vw, 100vw', alt, capt ) }}
-			{% if capt %}
+			{% cloudrespimg
+				feat_img.img,
+				feat_img.alt,
+				"(min-width: 1260px) 370px, (min-width: 720px) calc(28.46vw + 17px), (min-width: 560px) 37.86vw, 99.58vw"
+			%}
+			{% if feat_img.capt  %}
 			<figcaption id="capt-1" class="caption">
-				{{capt | safe}}
+				{{ feat_img.capt | safe }}
 			</figcaption>
 			{% endif %}
 		</figure>
@@ -65,7 +69,7 @@ templateClass: tmpl-post
 			</video>
 			{% if capt %}
 			<figcaption id="pagevid" class="caption">
-				{{capt | safe}}
+				{{ capt | safe}}
 			</figcaption>
 			{% endif %}
 		</figure>
@@ -76,6 +80,36 @@ templateClass: tmpl-post
 		{% endif %}
 
 		{{ layoutContent | safe }}
+
+		{% if related %}
+		<div class="related-articles">
+			<h3 class="related-hed">Related Recipe{% if related.length > 1 %}s{% endif %}:</h3>
+			{% for relation in related %}
+				{% set rels = collections.recipes | relatedFilter( relation ) %}
+				{% for rel in rels %}
+				<article class="related-article">
+					{% if rel.data.img %}
+						<a href="{{ rel.data.page.url }}">
+						{{ respimg('/img/', rel.data.img, '10em', rel.data.alt )  }}
+						</a>
+					{% endif %}
+					{% if rel.data.feat_img.img %}
+					{% cloudrespimg
+						feat_img.img,
+						feat_img.alt,
+						"10em"
+					%}
+					<img src="{{ feat_img.img }}" alt="{{ feat_img.alt }}">
+					{% endif %}
+					<div>
+						<h4 class="rel-hed"><a href="{{ rel.data.page.url }}">{{ rel.data.title }}</a></h4>
+						<p class="rel-lede">{{ rel.data.subhed | safe }}</p>
+					</dio>
+				</article>
+				{% endfor %}
+			{% endfor %}
+		</div>
+{% endif %}
 
 	</div>
 </div>

@@ -10,14 +10,14 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.fallbackWidth = 640;
   eleventyConfig.fallbackWidth = 640;
 
-  eleventyConfig.addShortcode('cloudrespimg', (path, alt, sizes) => {
+  eleventyConfig.addShortcode('cloudrespimg', (path, alt, sizes, lazy = false) => {
     const fetchBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/fetch/`;
     const src = `${fetchBase}q_auto,f_auto,w_${eleventyConfig.fallbackWidth}/${path}`;
     const srcset = eleventyConfig.srcsetWidths.map(w => {
       return `${fetchBase}q_auto,f_auto,w_${w}/${path} ${w}w`;
     }).join(', ');
 
-    return `<img src="${src}" srcset="${srcset}" sizes="${sizes ? sizes : '100vw'}" alt="${alt ? alt : ''}">`;
+    return `<img src="${src}" srcset="${srcset}" sizes="${sizes ? sizes : '100vw'}" alt="${alt ? alt : ''}"${lazy ? ' loading="lazy"' : ''}>`;
   });
 
   eleventyConfig.addFilter("readableDate", dateObj => {
@@ -40,15 +40,15 @@ module.exports = function(eleventyConfig) {
 
   // only content in the `recipes` directory
   eleventyConfig.addCollection("truncrecipes", function(collection) {
-    let i = 0;
     let ret = [];
 
-    collection.getAllSorted().reverse().filter(function(item) {
-      if( item.data.img != null && item.data.feat != true && item.data.subfeat != true && item.inputPath.match(/^\.\/_src\/recipes\//) !== null ) {
-        if( i <= 7 ) {
+    let sortedCollection = collection.getAll().sort( ( a, b ) => {
+      return new Date(b.data.page.date) - new Date(a.data.page.date);
+    });
+
+    sortedCollection.filter(function(item) {
+      if( ( item.data.img != null || item.data.feat_img ) && item.data.feat != true && item.data.subfeat != true && item.inputPath.match(/^\.\/_src\/recipes\//) !== null ) {
           ret.push( item );
-          i++;
-        }
       }
     });
     return ret;
@@ -65,8 +65,12 @@ module.exports = function(eleventyConfig) {
     let i = 0;
     let ret = [];
 
-    collection.getAllSorted().reverse().filter(function(item) {
-      if( item.data.img != null && item.data.feat != true && item.data.subfeat != true && item.inputPath.match(/^\.\/_src\/articles\//) !== null ) {
+    let sortedCollection = collection.getAll().sort( ( a, b ) => {
+      return new Date(b.data.page.date) - new Date(a.data.page.date);
+    });
+
+    sortedCollection.filter(function(item) {
+      if( ( item.data.img != null || item.data.feat_img ) && item.data.feat != true && item.data.subfeat != true && item.inputPath.match(/^\.\/_src\/articles\//) !== null ) {
         if( i < 4  ) {
           ret.push( item );
           i++;
