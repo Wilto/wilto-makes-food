@@ -1,7 +1,7 @@
 ---
 title: French Macaron Shells
 tags:
-  - Baking
+  - baking
 lede: Less fuss, minimal muss.
 type: recipe
 date: 2018-09-01

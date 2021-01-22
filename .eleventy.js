@@ -46,9 +46,10 @@ module.exports = function(eleventyConfig) {
     let tagSet = new Set();
     collection.getAll().forEach(function(item) {
       if( "tags" in item.data ) {
-        let tags = item.data.tags;
+        let tags = item.data.tags.map( tag => tag.toLowerCase() );
 
         tags = tags.filter(function(item) {
+          item = item.toLowerCase();
           switch(item) {
             // this list should match the `filter` list in tags.njk
             case "all":
