@@ -57,6 +57,8 @@ module.exports = function(eleventyConfig) {
             case "posts":
             case "tagList":
             case "tag":
+            case "subnav":
+            case "footnav":
             case "base":
               return false;
           }

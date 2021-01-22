@@ -1,7 +1,7 @@
 ---
 title: Quick & Easy Taco Seasoning
 tags: 
-    - Mexican
+    - mexican
 lede: "Listen, it ain’t all frilly-footed macarons and ingredients set in italics around here."
 type: recipe
 img: nachos
