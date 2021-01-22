@@ -76,18 +76,19 @@ module.exports = function(eleventyConfig) {
     return [...tagSet ];
   });
 
-
   eleventyConfig.addFilter("searchJSON", ( collection ) => {
     let index = [];
     collection.forEach((page) => {
-      let type = page.template.frontMatter.data.type;
+      let type = page.template.frontMatter.data.type,
+        imgPath;
       if( type === "recipe" || type === "article" ) {
+        imgPath = ( page.template.frontMatter.data.img && "/img/" + page.template.frontMatter.data.img + "-1.jpg" ) || page.template.frontMatter.data.feat_img.img;
         index.push({
           id: page.url,
           title: page.template.frontMatter.data.title,
           lede: page.template.frontMatter.data.lede,
           tags: page.template.frontMatter.data.tags,
-          img: page.template.frontMatter.data.img || page.template.frontMatter.data.feat_img.img
+          img: imgPath
         });
       }
     });
