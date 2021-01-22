@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+permalink: /recipes/tagged/{{ tag }}/
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - footnav
+    - subnav
+    - post
+    - posts
+    - tagList
+addAllPagesToCollections: true
+---
+
+{% set postslist = collections[ tag ] %}
+
+<h2 class="section-hed" id="results">Recipes Tagged: <b>{{ tag }}</b></h2>
+
+<div class="results" aria-labelledby="results">
+	{% for post in postslist %}
+	<div>
+		{{ post.data.title }}
+	</div>
+	<!--<article class="item result-split">
+		<a href="/recipes/leblanc-curry/">
+		</a>
+		<div class="art-content">
+			<h3 class="article-hed"><a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h3>
+			<p class="lede">{{ post.data.lede | safe }}</p>
+		</div>
+	</article>-->
+	{% endfor %}
+</div>

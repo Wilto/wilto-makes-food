@@ -1,7 +1,7 @@
 ---
 title: Raspberry Oat Bars
 tags: 
-    - Baking
+    - baking
 lede: "You know those ads for marshmallow-centric breakfast cereals where they say they’re “part of a complete breakfast,” then show a tiny bowl of cereal, two grapefruits, six bran muffins, a ceasar salad, and a fistful of multivitamins sandwiched between two blocks of tofu?"
 type: recipe
 img: raspberry-bars

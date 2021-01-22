@@ -1,7 +1,7 @@
 ---
 title: Chili Oil
 tags: 
-    - Sichuan
+    - sichuan
 lede: If you’re ever in North Cambridge, make a point of stopping by my old apartment.
 type: recipe
 img: chili-oil

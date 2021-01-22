@@ -1,0 +1,12 @@
+---
+permalink: /tags/
+layout: layouts/base.njk
+tags:
+  - tag
+---
+<h1>Tags</h1>
+<p>All items are tagged with lowercase, except one: “French Macaron Shells” use the tag <code>- Baking</code>.</p>
+{% for tag in collections.tagList %}
+  {% set tagUrl %}/recipes/tagged/{{ tag }}/{% endset %}
+  <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+{% endfor %}

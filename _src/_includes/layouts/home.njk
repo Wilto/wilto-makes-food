@@ -86,7 +86,7 @@ templateClass: tmpl-home
 		{{ homeitem(post, true, 'feat', '(min-width: 1480px) 935px, (min-width: 800px) 64vw, 98vw') }}
 	{% endfor %}
 	<div class="subfeat">
-	{% for post in features | reverse | limit( 3, 1 ) %}
+	{% for post in features | reverse | limit( 4, 1 ) %}
 		{{ homeitem(post, false, 'sub', '(min-width: 1480px) 465px, (min-width: 800px) 33vw, (min-width: 650px) 48vw, 98vw' ) }}
 	{% endfor %}
 	</div>
