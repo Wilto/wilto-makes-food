@@ -77,6 +77,21 @@ module.exports = function(eleventyConfig) {
   });
 
 
+  eleventyConfig.addFilter("searchJSON", ( collection ) => {
+    let index = [];
+    collection.forEach((page) => {
+      let type = page.template.frontMatter.data.type;
+      if( type === "recipe" || type === "article" ) {
+        index.push({
+          id: page.url,
+          title: page.template.frontMatter.data.title,
+          lede:  page.template.frontMatter.data.lede
+        });
+      }
+    });
+    return index;
+  });
+
   // only content in the `recipes` directory
   eleventyConfig.addCollection("truncrecipes", function(collection) {
     let ret = [];
