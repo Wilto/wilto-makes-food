@@ -85,8 +85,9 @@ module.exports = function(eleventyConfig) {
         index.push({
           id: page.url,
           title: page.template.frontMatter.data.title,
-          lede:  page.template.frontMatter.data.lede,
-          tags:  page.template.frontMatter.data.tags
+          lede: page.template.frontMatter.data.lede,
+          tags: page.template.frontMatter.data.tags,
+          img: page.template.frontMatter.data.img || page.template.frontMatter.data.feat_img.img
         });
       }
     });
