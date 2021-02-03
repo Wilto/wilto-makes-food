@@ -81,9 +81,9 @@ ingredient_steps:
         name: salted butter
         notes: melted
       - optional: true
-        amt_whole: Some
+        amt_whole: ""
         notes: ""
-        name: roughly chopped parsley or cilantro
+        name: Roughly chopped parsley or cilantro
         measure: ""
 V2: true
 ---
