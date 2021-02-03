@@ -148,7 +148,7 @@ templateClass: tmpl-post
 		<ul class="ingredients ingredients-step" aria-labelledby="recipe-sub0">
 			{%- for ing in ingstep.ingredients -%}
 			<li itemprop="recipeIngredient" class="p-ingredient">
-				<p><span class="amt">{{ing.amt_whole}}{% if ing.amt_frac %}<b class="frac" role="presentation">{{ing.amt_frac}}</b>{% endif %}{{ing.measure}}</span>
+				<p><span class="amt">{{ing.amt_whole}}{% if ing.amt_frac %}<b class="frac" role="presentation">{{ing.amt_frac}}</b>{% endif %} {{ing.measure}}</span>
 				{{ing.name}}
 				{% if ing.notes %},&nbsp;{% if ing.notehref %}<a href="{{ing.notehref}}">{%- endif -%}{{ing.notes | safe }}{% if ing.notehref %}</a>{%- endif -%}{%- endif -%}</p>
 				{% if ing.optional %}<span class="opt">Optional</span>{%- endif -%}
