@@ -53,12 +53,12 @@ collections:
             widget: "list"
             summary: '{{fields.amt_whole}}{{fields.amt_frac}} {{fields.measure}} {{fields.name}}'
             fields:
-              - {label: Amount (whole), name: amt_whole, widget: string }
-              - {label: Amount (fraction), name: amt_frac, widget: string, required: false  }
-              - {label: Measure, name: measure, widget: string, required: false  }
+              - {label: Amount (whole), name: amt_whole, widget: string, required: false }
+              - {label: Amount (fraction), name: amt_frac, widget: string, required: false }
+              - {label: Measure, name: measure, widget: string, required: false }
               - {label: Ingredient, name: name, widget: string }
-              - {label: Note, name: notes, widget: string, required: false  }
-              - {label: Note URL, name: notehref, widget: string, required: false  }
+              - {label: Note, name: notes, widget: string, required: false }
+              - {label: Note URL, name: notehref, widget: string, required: false }
               - {label: Optional, name: optional, widget: boolean, default: false }
       - label: "Instruction Steps"
         name: "instruction_steps"
