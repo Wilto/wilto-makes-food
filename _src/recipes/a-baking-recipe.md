@@ -36,7 +36,7 @@ type: recipe
 tags:
   - baking
 title: Naan
-lede: You can just, like, *make naan.* It doesn’t have to be a whole *thing*.
+lede: You can just, like, *make naan*. It doesn’t have to be a whole *thing*.
 feat_img:
   img: https://res.cloudinary.com/wilto/image/upload/v1612205511/naan.jpg
   alt: Several torn-off peices of naan atop a bowl of rice and aloo paneer.
@@ -64,7 +64,7 @@ ingredient_steps:
         amt_frac: 1/4
         measure: C.
         name: yogurt
-        amt_whole: "0"
+        amt_whole: ""
       - optional: false
         amt_whole: "1"
         measure: Tbsp.
@@ -74,7 +74,7 @@ ingredient_steps:
         measure: C.
         name: water
         notes: 90–110℉
-        amt_whole: "0"
+        amt_whole: ""
       - optional: false
         amt_whole: "2"
         measure: Tbsp.
