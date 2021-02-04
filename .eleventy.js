@@ -42,7 +42,7 @@ module.exports = function(eleventyConfig) {
     return arr.slice( limitstart, limitend );
   });
 
-    eleventyConfig.addCollection("tagList", function(collection) {
+  eleventyConfig.addCollection("tagList", function(collection) {
     let tagSet = new Set();
     collection.getAll().forEach(function(item) {
       if( "tags" in item.data ) {
@@ -82,7 +82,7 @@ module.exports = function(eleventyConfig) {
       let type = page.template.frontMatter.data.type,
         imgPath;
       if( type === "recipe" || type === "article" ) {
-        imgPath = ( page.template.frontMatter.data.img && "/img/" + page.template.frontMatter.data.img + "-1.jpg" ) || page.template.frontMatter.data.feat_img.img;
+        imgPath = ( page.template.frontMatter.data.img && "/img/" + page.template.frontMatter.data.img + "-2.jpg" ) || page.template.frontMatter.data.feat_img.img;
         index.push({
           id: page.url,
           title: page.template.frontMatter.data.title,

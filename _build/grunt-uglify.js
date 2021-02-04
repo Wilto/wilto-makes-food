@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 			files: {
 				'_site/_assets/js/offline.min.js': ['_src/_assets/js/offline.js'],
 				'_site/_assets/js/offline-toggle.min.js': ['_src/_assets/js/offline-toggle.js'],
-				'_site/_assets/js/lazyimg.min.js': ['_src/_assets/js/lazyimg.js'],
+				'_site/_assets/js/sitesearch.min.js': ['_src/_assets/js/sitesearch.js'],
 				'_site/_assets/js/analytics.min.js': ['_src/_assets/js/analytics.js']
 			}
 		},

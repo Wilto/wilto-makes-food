@@ -33,15 +33,15 @@ collections:
         - {label: "Caption", name: "capt", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Related", name: "related", required: false,  multiple: true, widget: "relation", collection: "articles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
-      - {label: "Recipe Subhed", name: "subhed", widget: "string"}
-      - {label: "Recipe Notes", name: "notes", widget: "markdown"}
+      - {label: "Recipe Subhed", name: "subhed", widget: "string", required: false}
+      - {label: "Recipe Notes", name: "notes", widget: "markdown", required: false}
       - label: "Recipe Meta"
         name: "meta"
         widget: "object"
         fields:
-        - {label: "Active Time", name: "active", widget: "string"}
-        - {label: "Total Time", name: "total", widget: "string"}
-        - {label: "Serves", name: "serves", widget: "string"}
+        - {label: "Active Time", name: "active", widget: "string", required: false}
+        - {label: "Total Time", name: "total", widget: "string", required: false}
+        - {label: "Serves", name: "serves", widget: "string", required: false}
       - label: "Ingredient Steps"
         name: "ingredient_steps"
         widget: "list"

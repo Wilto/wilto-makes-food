@@ -64,21 +64,18 @@
 		<meta name="twitter:description" content="{{ metadata.description }}">
 		<meta property="og:description" content="{{ metadata.description }}">
 {% endif %}
-{% if (img == null) and (feat_img.img.length == null) %}
-		<meta name="twitter:image" content="https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg">
-		<meta property="og:image" content="https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg">
-{% endif %}
 {% if img %}
 		<meta name="twitter:image" content="https://wiltomakesfood.com/img/{{img}}-5.jpg">
 		<meta property="og:image" content="https://wiltomakesfood.com/img/{{img}}-5.jpg">
-{% endif %}
-{% if feat_img.img %}
-		<meta name="twitter:image" content="{{ feat_img.img }}">
-		<meta property="og:image" content="{{ feat_img.img }}">
-{% endif %}
 {% if alt %}
 		<meta name="twitter:image:alt" content="{{alt}}">
 		<meta property="og:image:alt" content="{{alt}}">
+{% endif %}
+{% else %}
+		<meta name="twitter:image" content="https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg">
+		<meta name="twitter:image:alt" content="">
+		<meta property="og:image" content="https://wiltomakesfood.com/_assets/img/wmf-placeholder.jpg">
+		<meta property="og:image:alt" content="">
 {% endif %}
 
 {% if type == "article" or type == "review" %}
@@ -147,16 +144,7 @@
 								<input type="submit" class="a11y-only">
 							</label>
 						</form>
-
 					</div>
-					<ol class="search-results results"><li class="item result-split"><img src="/img/mantou-1.jpg"><div class="art-content"><h3 class="article-hed"><a href="/recipes/mantou/">Baozi (Mantou) Dough</a></h3><p>The key to all your favorite <i>dim sum</i> classics is much easier than you think.</p></div></li><li class="item result-split"><img src="/img/gai-mei-bao-done-1.jpg">
-							<div class="art-content">
-								<h3 class="article-hed"><a href="/recipes/gai-mei-bao/">Gai Mei Bao</a></h3>
-								<div class="result-lede">
-									<p>Today we’re making a sweet, pillowy dough, with a custardy coconut filling. Along the way, we’re gonna learn a highly advanced bread-making technique—and maybe, just maybe… <em>a little something about ourselves</em>?</p>
-								</div>
-							</div>
-					</li></ol>
 				</div>
 				<ul class="subnav">
 					{% set subnavs = collections.subnav | reverse %}
