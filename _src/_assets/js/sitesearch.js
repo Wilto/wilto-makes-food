@@ -59,7 +59,6 @@
 
 					link.setAttribute( "href", res.id );
 					link.innerHTML = res.title;
-					link.setAttribute( "tabindex", 0 );
 
 					img.setAttribute( "src", res.img );
 					img.setAttribute( "aria-labelledby", "res-" + ind );
