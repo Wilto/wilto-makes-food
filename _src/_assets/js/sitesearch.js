@@ -22,9 +22,10 @@
 			searchWrap.appendChild( resultContainer );
 		},
 		fetchResults = function( e ) {
-			var query = this.value;
+			var query = e.target.value;
 
-			if( !this.value ) {
+			if( !query || query.length <= 1 || ( typeof e.key !== undefined && e.key === "Escape" ) ) {
+				closeResults();
 				return;
 			}
 
@@ -84,20 +85,13 @@
 		},
 		searchIndex;
 
-	searchInput.addEventListener( "keyup", function() {
-		if( e.key === "Escape" || this.value.length === 0 ) {
-			closeResults();
-		} else {
-			fetchResults();
-		}
-	});
+	searchInput.addEventListener( "keyup", fetchResults );
+	searchInput.addEventListener( "click", fetchResults );
 
 	document.addEventListener( "click", function( e ) {
 		if( !e.target.closest( ".search" ) && !e.target.closest( ".search-results" ) ) {
 			closeResults();
 		}
 	});
-
-	searchInput.addEventListener( "click", fetchResults );
 
 }());
