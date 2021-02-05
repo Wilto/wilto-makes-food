@@ -93,6 +93,10 @@
 	searchInput.addEventListener( "keyup", fetchResults );
 	searchInput.addEventListener( "click", fetchResults );
 
+	searchWrap.querySelector( "form" ).addEventListener( "submit", function( e ) {
+		e.preventDefault();
+	})
+
 	document.addEventListener( "click", function( e ) {
 		if( !e.target.closest( ".search" ) && !e.target.closest( ".search-results" ) ) {
 			closeResults();
