@@ -131,11 +131,12 @@
 						</ul>
 					</nav>
 					<div class="search" role="region" aria-label="Site">
-						<form method="post" action="">
+						<form method="get" action="https://duckduckgo.com/">
 							<label for="search">
 								<span class="a11y-only">Search</span>
-								<input type="search" id="q" name="q" placeholder="Search for&hellip;">
+								<input type="text" name="q" placeholder="Search for…" />
 							</label>
+							<input type="hidden" name="sites" value="wiltomakesfood.com" />
 							<label>
 								<span class="a11y-only">Submit search query</span>
 								<svg class="icon icon-search" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 60 75" enable-background="new 0 0 60 60" xml:space="preserve">

@@ -1838,13 +1838,21 @@ a.patreon svg {
 	padding: 0;
 	right: 0;
 	left: 0;
+	width: 100%;
 	top: 100%;
+	margin: 0;
 	z-index: 4;
 }
 
-@media( min-width: 25em) {
-	.results.search-results .result-split {
-		flex-direction: row;
+.results.search-results .result-split {
+	flex-direction: row;
+}
+
+@media( min-width: 55em) {
+	.search-results.results {
+		left: auto;
+		right: 10%;
+		max-width: 40.25em;
 	}
 }
 
@@ -1854,11 +1862,10 @@ a.patreon svg {
 	font-size: .725em;
 	align-items: center;
 }
-@media( min-width: 25em) {
-	.search-results img {
-		max-width: 15em;
-		width: 25%;
-	}
+.search-results img {
+	max-width: 11.5em;
+	width: 15%;
+	min-width: 7.5em;
 }
 .search-results.results .article-hed {
 	font-size: 1.8em;

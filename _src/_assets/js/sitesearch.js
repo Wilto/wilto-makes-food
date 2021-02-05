@@ -1,6 +1,6 @@
 (function() {
 	var searchWrap = document.querySelector( ".search" ).parentElement,
-		searchInput = searchWrap.querySelector( "form input" ),
+		searchInput = searchWrap.querySelector( 'form input[name="q"]' ),
 		el = function( el ) {
 			return document.createElement( el );
 		},
@@ -52,15 +52,11 @@
 					var resultItem = el( "li" ),
 						img  = el( "img" ),
 						hed  = el( "h3" ),
-						lede = el( "div" ),
 						link = el( "a" ),
 						copy = el( "div" );
 
 					link.setAttribute( "href", res.id );
 					link.innerHTML = res.title;
-
-					lede.classList.add( "result-lede" );
-					lede.innerHTML = "<p>" + res.lede + "</p>"; // Listen, nobody is keeping score here.
 
 					img.setAttribute( "src", res.img );
 
@@ -70,7 +66,6 @@
 
 					hed.appendChild( link );
 					copy.appendChild( hed );
-					copy.appendChild( lede );
 
 					resultItem.appendChild( img );
 					resultItem.appendChild( copy );
