@@ -84,22 +84,16 @@
 		},
 		searchIndex;
 
-	searchInput.addEventListener( "keyup", fetchResults );
+	searchInput.addEventListener( "keyup", function() {
+		if( e.key === "Escape" || this.value.length === 0 ) {
+			closeResults();
+		} else {
+			fetchResults();
+		}
+	});
 
 	document.addEventListener( "click", function( e ) {
 		if( !e.target.closest( ".search" ) && !e.target.closest( ".search-results" ) ) {
-			closeResults();
-		}
-	});
-
-	document.addEventListener( "keyup", function( e ) {
-		if( e.key === "Escape" ) {
-			closeResults();
-		}
-	});
-
-	searchInput.addEventListener( "keyup", function( e ) {
-		if( this.value.length === 0 ) {
 			closeResults();
 		}
 	});
