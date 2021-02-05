@@ -5,7 +5,8 @@
 			return document.createElement( el );
 		},
 		closeResults = function() {
-			var oldResults = document.querySelector( ".search-results" );
+			var oldResults = document.querySelector( ".search-results" ),
+				searchInput = oldResults && oldResults.querySelector( '[name="q"]' );
 
 			oldResults && searchWrap.removeChild( oldResults );
 		},
@@ -49,7 +50,7 @@
 		},
 		renderResults = function( results ) {
 			var resultContainer = el( 'ol' ),
-				createResult = function( res ) {
+				createResult = function( res, ind ) {
 					var resultItem = el( "li" ),
 						img  = el( "img" ),
 						hed  = el( "h3" ),
@@ -58,11 +59,15 @@
 
 					link.setAttribute( "href", res.id );
 					link.innerHTML = res.title;
+					link.setAttribute( "tabindex", 0 );
 
 					img.setAttribute( "src", res.img );
+					img.setAttribute( "aria-labelledby", "res-" + ind );
 
 					resultItem.classList.add( "item", "result-split" );
 					hed.classList.add( "article-hed" );
+					hed.id = "res-" + ind;
+
 					copy.classList.add( "art-content" );
 
 					hed.appendChild( link );
@@ -76,8 +81,8 @@
 
 			resultContainer.classList.add( "search-results", "results" );
 
-			results.forEach( res => {
-				resultContainer.appendChild( createResult( res ) );
+			results.forEach( ( res, i ) => {
+				resultContainer.appendChild( createResult( res, i ) );
 			});
 
 			closeResults();

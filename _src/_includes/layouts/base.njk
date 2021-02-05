@@ -111,14 +111,15 @@
 	</head>
 	<body>
 		<a href="#main" class="a11y-only focusable skiplink">Skip to Main Content</a>
-
-		<header role="banner" class="site-head">
-			<h1 class="site-hed{% if featimg %} feat-site-hed{% endif %}"><a href="{{ '/' | url }}">
-				<span class="a11y-only">Wilto Makes Food</span>
-				<svg width="150" viewBox="0 0 250 206" xmlns="http://www.w3.org/2000/svg">
-					<use xlink:href="#wmf-logo"></use>
-				</svg>
-			</a></h1>
+		<div class="site-head">
+			<header role="banner">
+				<h1 class="site-hed{% if featimg %} feat-site-hed{% endif %}"><a href="{{ '/' | url }}">
+					<span class="a11y-only">Wilto Makes Food</span>
+					<svg width="150" viewBox="0 0 250 206" xmlns="http://www.w3.org/2000/svg">
+						<use xlink:href="#wmf-logo"></use>
+					</svg>
+				</a></h1>
+			</header>
 			<div>
 				<div class="bar">
 					<nav role="navigation" class="sitenav">
@@ -130,11 +131,11 @@
 							{%- endfor -%}
 						</ul>
 					</nav>
-					<div class="search" role="region" aria-label="Site">
-						<form method="get" action="https://duckduckgo.com/">
+					<div class="search">
+						<form method="get" action="https://duckduckgo.com/" autocomplete="off">
 							<label for="search">
-								<span class="a11y-only">Search</span>
-								<input type="text" name="q" placeholder="Search for…" />
+								<span class="a11y-only">Site</span>
+								<input type="search" name="q" placeholder="Search for…" aria-expanded="false" />
 							</label>
 							<input type="hidden" name="sites" value="wiltomakesfood.com" />
 							<label>
@@ -162,7 +163,7 @@
 					</svg>
 				</span>
 			</a>
-		</header>
+		</div>
 
 
 		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
