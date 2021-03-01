@@ -1,5 +1,6 @@
 ---
 title: Mapo Tofu
+date: 2019-10-20
 tags:
   - sichuan
 lede: "Listen. Warning, disclaimer, whatever: yes, this is spicy stuff. I mean, <em>look</em> at it; it’s practically glowing. I’ve got the under-eye sweats just thinking about it."

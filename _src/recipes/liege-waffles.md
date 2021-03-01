@@ -1,5 +1,6 @@
 ---
 title: Liège Waffles
+date: 2019-10-22
 tags:
   - baking
 lede: Anything can be part of a complete breakfast if you believe in yourself.

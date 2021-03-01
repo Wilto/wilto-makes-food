@@ -1,5 +1,6 @@
 ---
 title: Utility Stock
+date: 2015-01-01
 tags:
   - staples
 lede: I’ve spent a lot of time trying to turn freezer section ingredients into ramen-caliber stock, and this is the result.

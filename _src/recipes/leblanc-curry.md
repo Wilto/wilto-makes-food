@@ -1,5 +1,6 @@
 ---
 title: Leblanc Curry
+date: 2021-02-01
 tags:
   - yoshoku
 type: recipe
