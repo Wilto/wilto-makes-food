@@ -3,7 +3,7 @@ layout: layouts/v2-recipe.njk
 feat: true
 type: recipe
 title: Char Siu
-lede: This… is the *lede*.
+lede: This… is the *lede!*
 feat_img:
   img: https://res.cloudinary.com/wilto/image/upload/v1614626845/chashu.jpg
   alt: A bowl of noodles topped with a handful of green onions and strips of
