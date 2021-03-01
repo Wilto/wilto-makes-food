@@ -1,5 +1,5 @@
 ---
-permalink: ""
+permalink: naan
 layout: layouts/v2-recipe.njk
 feat: false
 related: []
