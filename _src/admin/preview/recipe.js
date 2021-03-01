@@ -77,10 +77,10 @@ const Recipe = createClass({
 								ingItem.get( 'amt_whole' ),
 								h( 'b', { className: "frac" }, ingItem.get( 'amt_frac' ) ), " ",
 								ingItem.get( 'measure' ), " ",
-								ingItem.get( 'name' ), " ",
-								ingItem.get( 'notes' ) ? " (" : '',
+								ingItem.get( 'name' ),
+								ingItem.get( 'notes' ) ? ", " : '',
 								ingItem.get( 'notes' ) ? returnNote( ingItem ) : '',
-								ingItem.get( 'notes' ) ? ")" : '', // WHATEVER
+								ingItem.get( 'notes' ) ? "" : '', // WHATEVER
 								( ingItem.get( 'optional' ) ? h( 'span', { className: 'opt' }, 'Optional' ) : '' )
 							)
 						)
