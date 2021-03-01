@@ -1,4 +1,5 @@
 ---
+date: 2021-03-01
 layout: layouts/v2-recipe.njk
 feat: false
 type: recipe
