@@ -5,7 +5,7 @@ tags:
 lede: "Today we’re making a sweet, pillowy dough, with a custardy coconut filling. Along the way, we’re gonna learn a highly advanced bread-making technique—and maybe, just maybe… <em>a little something about ourselves</em>?"
 type: recipe
 img: gai-mei-bao-done
-date: 2019-05-13
+date: 2019-10-19
 alt: Three rows of golden brown baked bao, speckled with white sesame seeds, on a parchment-lined baking sheet.
 ---
 

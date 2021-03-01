@@ -1,5 +1,6 @@
 ---
 title: Refried Beans
+date: 2018-12-30
 tags: 
     - mexican
 lede: "A lot of people will tell you that <em>really</em> good refried beans can’t be made from canned beans. Well, I am here to tell you: okay, yeah, they’re probably right."

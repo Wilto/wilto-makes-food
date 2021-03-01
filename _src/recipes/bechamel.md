@@ -1,5 +1,6 @@
 ---
 title: Béchamel
+date: 2018-10-30
 tags:
   - staples
 lede: Shut up; Julia Child rules.

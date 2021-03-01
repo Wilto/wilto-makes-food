@@ -3,7 +3,7 @@ title: French Onion Soup
 tags:
   - french
 lede: This is the best French onion soup I’ve ever had. The secret ingredient, well, it isn’t onions.
-date: 2019-01-09
+date: 2019-03-29
 type: recipe
 img: onion-soup
 subfeat: false

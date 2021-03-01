@@ -1,5 +1,6 @@
 ---
 title: Pizza Dough
+date: 2019-02-25
 tags:
   - staples
 lede: Here at Wilto Makes Food Headquarters, we hold some pizza truths to be self-evident.

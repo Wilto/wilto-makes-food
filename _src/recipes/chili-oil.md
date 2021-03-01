@@ -1,5 +1,6 @@
 ---
 title: Chili Oil
+date: 2018-11-30
 tags: 
     - sichuan
 lede: If you’re ever in North Cambridge, make a point of stopping by my old apartment.

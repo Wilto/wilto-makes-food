@@ -1,5 +1,6 @@
 ---
 title: Curry Pan
+date: 2018-12-30
 tags: 
     - yoshoku
 lede: This is a recipe for soft, chewy bread rolls, filled with <a href="/recipes/curry-rice/">curry</a>, breaded <em>more</em>, and deep-fried. So, y’know. Strap in.

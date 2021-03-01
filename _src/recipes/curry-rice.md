@@ -1,5 +1,6 @@
 ---
 title: Curry Rice
+date: 2018-12-29
 tags:
   - yoshoku
 type: recipe

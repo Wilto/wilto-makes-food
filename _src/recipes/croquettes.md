@@ -1,5 +1,6 @@
 ---
 title: Croquettes
+date: 2019-06-30
 tags:
   - yoshoku
 subfeat: false

@@ -7,7 +7,7 @@ type: recipe
 img: basic-sourdough
 related: Understanding Sourdough
 relatedhref: /articles/understanding-sourdough
-date: 2019-01-25
+date: 2019-04-01
 alt: A rich, reddish-brown sourdough boule with a blistered crust and a wide “grigne”—a slash down the center, split open by the bread rising in the oven.
 ---
 
