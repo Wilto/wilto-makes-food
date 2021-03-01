@@ -40,7 +40,7 @@ lede: You can just, like, *make naan*. It doesn’t have to be a whole *thing*.
 feat_img:
   img: https://res.cloudinary.com/wilto/image/upload/v1612205511/naan.jpg
   alt: Several torn-off peices of naan atop a bowl of rice and aloo paneer.
-  capt: It’s just bread.
+  capt: It’s just **bread**.
 ingredient_steps:
   - ingredients:
       - optional: false
@@ -87,4 +87,4 @@ ingredient_steps:
         measure: ""
 V2: true
 ---
-don’t make me type things, *website*
+don’t make me type things, *website.*
