@@ -19,7 +19,7 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Permalink", name: "permalink", widget: "string", required: false }
-      - {label: "Date", name: "date", widget: "date", default: 'Last Modified', format: 'YYYY-MM-DD' }
+      - {label: "Date", name: "date", widget: "date", format: 'YYYY-MM-DD' }
       - {label: "layout", name: "layout", widget: "select", options: [{ label: "V2", value: "layouts/v2-recipe.njk" }], default: "layouts/v2.njk", required: false }
       - {label: "Feature", name: "feat", widget: "boolean", default: false }
       - {label: "Type", name: "type", widget: "hidden", default: "recipe"}
@@ -83,6 +83,8 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
+      - {label: "Permalink", name: "permalink", widget: "string", required: false }
+      - {label: "Date", name: "date", widget: "date", format: 'YYYY-MM-DD' }
       - {label: "layout", name: "layout", widget: "select", options: [{ label: "V2", value: "layouts/v2-article.njk" }], default: "layouts/v2.njk", required: false }
       - {label: "Type", name: "type", widget: "hidden", default: "article"}
       - {label: "Title", name: "title", widget: "string"}
