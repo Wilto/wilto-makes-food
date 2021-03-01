@@ -185,6 +185,15 @@ module.exports = function(eleventyConfig) {
     permalinkSymbol: ''
   };
 
+  const md = require('markdown-it')({
+    html: false,
+    breaks: true,
+    linkify: true,
+  });
+  eleventyConfig.addNunjucksFilter('markdownify', markdownString =>
+    md.render(markdownString),
+  );
+
   eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItAnchor, opts));
   eleventyConfig.addPassthroughCopy("_src/_assets/img");
   eleventyConfig.addPassthroughCopy("_src/admin");

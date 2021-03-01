@@ -146,6 +146,14 @@ const Recipe = createClass({
 
 		let alt = entry.getIn(['data', 'alt']) || entry.getIn([ 'data', 'feat_img', 'alt' ], null ) || '';
 
+		let subhed = () => {
+			let subhed = entry.getIn(["data", "subhed"], null);
+			return subhed && h( 'h3', { className: "article-hed jump-hed", id : "recipe" },
+				h( 'span' , {}, "Recipe:", null),
+				subhed
+			)
+		};
+
 		return html`
 		<main className="col fonts">
 			<div className="intro">
@@ -175,14 +183,12 @@ const Recipe = createClass({
 				${ related }
 			</div>
 
-			${ entry.getIn(["data", "subhed"], null) && `<h3 class="article-hed jump-hed" id="recipe"><span>Recipe:</span>${entry.getIn(["data", "subhed"], null)}</h3>`}
-		
+			${ subhed( entry ) }
 			<p class="lede p-summary">${entry.getIn(["data", "notes"], null)}</p>
 
 			${ ingredients }
 
 			${ instructions }
-
 		</main>`;
 	}
 });
