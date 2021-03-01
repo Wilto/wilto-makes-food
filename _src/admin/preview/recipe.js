@@ -175,7 +175,8 @@ const Recipe = createClass({
 				${ related }
 			</div>
 
-			<h3 class="article-hed jump-hed" id="recipe"><span>Recipe:</span>${entry.getIn(["data", "subhed"], null)}</h3>
+			${ entry.getIn(["data", "subhed"], null) && `<h3 class="article-hed jump-hed" id="recipe"><span>Recipe:</span>${entry.getIn(["data", "subhed"], null)}</h3>`}
+		
 			<p class="lede p-summary">${entry.getIn(["data", "notes"], null)}</p>
 
 			${ ingredients }
