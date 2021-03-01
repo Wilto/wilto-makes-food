@@ -1,6 +1,11 @@
 (function() {
 	var searchWrap = document.querySelector( ".search" ).parentElement,
 		searchInput = searchWrap.querySelector( 'form input[name="q"]' ),
+		getSiblings = function( all, target ) {
+			return [].filter.call( all, function( el, i, all ) {
+				return el !== target;
+			});
+		},
 		el = function( el ) {
 			return document.createElement( el );
 		},
@@ -24,8 +29,11 @@
 		},
 		fetchResults = function( e ) {
 			var query = e.target.value;
+			if( e.key === "Escape" ){
+				closeResults();
+			}
 
-			if( !query || query.length <= 1 || ( typeof e.key !== undefined && e.key === "Escape" ) ) {
+			if( !query || query.length <= 1 ) {
 				closeResults();
 				return;
 			}
@@ -43,7 +51,7 @@
 					if( results.length === 0 ) {
 						renderError();
 					} else {
-						renderResults( results );
+						renderResults( results, this );
 					}
 				})
 				.catch( err => console.log( err ) );
@@ -61,11 +69,10 @@
 					link.innerHTML = res.title;
 
 					img.setAttribute( "src", res.img );
-					img.setAttribute( "aria-labelledby", "res-" + ind );
+					img.setAttribute( "aria-hidden", true );
 
 					resultItem.classList.add( "item", "result-split" );
 					hed.classList.add( "article-hed" );
-					hed.id = "res-" + ind;
 
 					copy.classList.add( "art-content" );
 
@@ -75,10 +82,14 @@
 					resultItem.appendChild( img );
 					resultItem.appendChild( copy );
 
+					resultItem.id = "res-" + ind;
 					return resultItem;
 				};
 
 			resultContainer.classList.add( "search-results", "results" );
+			resultContainer.id = "search-results";
+			resultContainer.setAttribute( "aria-live", "polite" );
+			resultContainer.setAttribute( "aria-label", results.length + " results found" );
 
 			results.forEach( ( res, i ) => {
 				resultContainer.appendChild( createResult( res, i ) );
@@ -90,16 +101,26 @@
 		searchIndex;
 
 	searchInput.addEventListener( "keyup", fetchResults );
-	searchInput.addEventListener( "click", fetchResults );
+	searchInput.addEventListener( "focus", fetchResults );
+	searchInput.setAttribute( "aria-controls", "search-results" );
 
 	searchWrap.querySelector( "form" ).addEventListener( "submit", function( e ) {
 		e.preventDefault();
-	})
+	});
 
 	document.addEventListener( "click", function( e ) {
 		if( !e.target.closest( ".search" ) && !e.target.closest( ".search-results" ) ) {
 			closeResults();
 		}
+	});
+
+	searchWrap.addEventListener( "focusout", function( e ) {
+		var el = this;
+		setTimeout(function() {
+			if( el.contains( document.activeElement ) === false ) {
+				closeResults();
+			}
+		}, 0);
 	});
 
 }());

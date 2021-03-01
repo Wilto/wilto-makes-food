@@ -1833,7 +1833,7 @@ a.patreon svg {
 	border-top: 4px solid rgba(255,150,0, .5);
 	border-bottom: 1px solid rgba(255,150,0, .8);
 	list-style: none;
-	background: rgba(255,255,255,.95);
+	background: rgba(255,255,255,1);
 	position: absolute;
 	padding: 0;
 	right: 0;

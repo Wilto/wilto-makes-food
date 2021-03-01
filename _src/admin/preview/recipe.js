@@ -89,7 +89,7 @@ const Recipe = createClass({
 			});
 			return ret;
 		};
-		let ingsteps = ings.map( ing => {
+		let ingsteps = ings && ings.map( ing => {
 			const title = ing.get( 'title' );
 			const ingList = ing.get( 'ingredients' );
 
@@ -120,7 +120,8 @@ const Recipe = createClass({
 			});
 			return ret;
 		};
-		let inststeps = inst.map( inst => {
+		let inststeps = inst && inst.map( inst => {
+
 			const title = inst.get( 'title' );
 			const instList = inst.get( 'instructions' );
 

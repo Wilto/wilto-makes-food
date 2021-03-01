@@ -21,17 +21,17 @@ collections:
       - {label: "layout", name: "layout", widget: "select", options: [{ label: "V2", value: "layouts/v2-recipe.njk" }], default: "layouts/v2.njk", required: false }
       - {label: "Feature", name: "feat", widget: "boolean", default: false }
       - {label: "Type", name: "type", widget: "hidden", default: "recipe"}
-      - {label: "Tags", name: "tags", widget: "list" }
+      - {label: "Tags", name: "tags", widget: "list", required: false }
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Lede", name: "lede", widget: "markdown"}
+      - {label: "Lede", name: "lede", widget: "markdown", required: false}
       - label: "Featured Image"
         name: "feat_img"
         widget: "object"
         fields:
-        - {label: "Image", name: "img", widget: "image"}
-        - {label: "alt", name: "alt", widget: "string"}
-        - {label: "Caption", name: "capt", widget: "markdown"}
-      - {label: "Body", name: "body", widget: "markdown"}
+        - {label: "Image", name: "img", widget: "image", required: false }
+        - {label: "alt", name: "alt", widget: "string", required: false}
+        - {label: "Caption", name: "capt", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Related", name: "related", required: false,  multiple: true, widget: "relation", collection: "articles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
       - {label: "Recipe Subhed", name: "subhed", widget: "string", required: false}
       - {label: "Recipe Notes", name: "notes", widget: "markdown", required: false}
@@ -46,6 +46,7 @@ collections:
         name: "ingredient_steps"
         widget: "list"
         summary: '{{fields.title}}'
+        required: false
         fields:
           - {label: "Title", name: "title", widget : "string", required: false }
           - label: "Ingredients"
@@ -56,13 +57,14 @@ collections:
               - {label: Amount (whole), name: amt_whole, widget: string, required: false }
               - {label: Amount (fraction), name: amt_frac, widget: string, required: false }
               - {label: Measure, name: measure, widget: string, required: false }
-              - {label: Ingredient, name: name, widget: string }
+              - {label: Ingredient, name: name, widget: string, required: false }
               - {label: Note, name: notes, widget: string, required: false }
               - {label: Note URL, name: notehref, widget: string, required: false }
               - {label: Optional, name: optional, widget: boolean, default: false }
       - label: "Instruction Steps"
         name: "instruction_steps"
         widget: "list"
+        required: false
         summary: '{{fields.title}}'
         fields:
           - {label: Step, name: title, widget: "string", required: false }
