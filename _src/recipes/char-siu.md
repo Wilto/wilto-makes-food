@@ -3,6 +3,10 @@ layout: layouts/v2-recipe.njk
 feat: false
 type: recipe
 title: Char Siu
+feat_img:
+  img: https://res.cloudinary.com/wilto/image/upload/v1614626845/chashu.jpg
+  alt: A bowl of noodles topped with a handful of green onions and strips of
+    sticky red tofu
 ingredient_steps:
   - ingredients:
       - optional: false
