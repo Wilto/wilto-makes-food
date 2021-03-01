@@ -3,16 +3,18 @@ layout: layouts/v2-recipe.njk
 feat: false
 type: recipe
 title: Char Siu
+lede: This… is the *lede*.
 feat_img:
   img: https://res.cloudinary.com/wilto/image/upload/v1614626845/chashu.jpg
   alt: A bowl of noodles topped with a handful of green onions and strips of
-    sticky red tofu
+    sticky red tofu.
+subhed: Subhed test.
 ingredient_steps:
   - ingredients:
       - optional: false
         amt_whole: "10"
         measure: G.
-        name: Doubanjiang
+        name: doubanjiang
       - optional: false
         amt_whole: "2"
         measure: Tbsp.
@@ -20,20 +22,20 @@ ingredient_steps:
       - optional: false
         amt_whole: "4"
         measure: Tbsp.
-        name: Light soy sauce
+        name: Chinese light soy sauce
       - optional: false
         amt_whole: "1"
         measure: tsp.
-        name: Dark soy sauce
+        name: Chinese dark soy sauce
       - optional: false
         amt_whole: "1"
         measure: tsp.
-        name: Oyster sauce
+        name: oyster sauce
         notes: the vegetarian kind works fine
       - optional: false
         amt_frac: 1/4
         measure: tsp.
-        name: Five-spice
+        name: five-spice
       - optional: false
         amt_whole: "3"
         measure: cloves
