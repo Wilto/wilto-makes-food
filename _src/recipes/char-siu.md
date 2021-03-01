@@ -8,7 +8,7 @@ lede: This… is the *lede!*
 feat_img:
   img: https://res.cloudinary.com/wilto/image/upload/v1614635403/chashu.jpg
   alt: A bowl of noodles topped with a handful of green onions and strips of
-    sticky red tofu.
+    sticky red tofu
 subhed: Subhed test.
 ingredient_steps:
   - ingredients:
