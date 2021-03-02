@@ -1,9 +1,9 @@
 ---
 date: 2021-03-01
 layout: layouts/v2-recipe.njk
-feat: true
+feat: false
 type: recipe
-title: Char Siu
+title: Tofu Char Siu
 lede: This… is the *lede!*
 feat_img:
   img: https://res.cloudinary.com/wilto/image/upload/v1614635613/charsiu.jpg
