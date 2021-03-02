@@ -103,11 +103,7 @@
 		{
 			"name" : "Large Eggs",
 			"amt" : {
-				"whole" : "2",
-				"measure" : {
-					"abbr" : "Tbsp.",
-					"full" : "Tablespoons"
-				}
+				"whole" : "2"
 			},
 			"notes" : "straight from the fridge"
 		},
