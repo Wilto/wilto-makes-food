@@ -9,7 +9,10 @@ feat_img:
   img: https://res.cloudinary.com/wilto/image/upload/v1614635613/charsiu.jpg
   alt: A bowl of noodles topped with a handful of green onions and strips of
     sticky red tofu
+  capt: Use the sauce as an overnight marinade if you’re doing ramen-style “chashu.”
 subhed: Subhed test.
+notes: No law that says you *can’t* put this on pork, if you happen to be a
+  couple rungs higher on the food chain than I am.
 ingredient_steps:
   - ingredients:
       - optional: false
@@ -50,4 +53,5 @@ ingredient_steps:
         amt_whole: "3"
         measure: Tbsp.
         name: honey
+    title: For the Sauce
 ---
