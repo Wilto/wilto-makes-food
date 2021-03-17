@@ -4,7 +4,6 @@ layout: layouts/v2-recipe.njk
 feat: false
 type: recipe
 title: Tofu Char Siu
-lede: This… is the *lede!*
 feat_img:
   img: https://res.cloudinary.com/wilto/image/upload/v1614635613/charsiu.jpg
   alt: A bowl of noodles topped with a handful of green onions and strips of
@@ -24,11 +23,11 @@ ingredient_steps:
         measure: Tbsp.
         name: Shaoxing wine
       - optional: false
-        amt_whole: "4"
+        amt_whole: "3"
         measure: Tbsp.
         name: Chinese light soy sauce
       - optional: false
-        amt_whole: "1"
+        amt_frac: "1/2"
         measure: tsp.
         name: Chinese dark soy sauce
       - optional: false
@@ -53,5 +52,4 @@ ingredient_steps:
         amt_whole: "3"
         measure: Tbsp.
         name: honey
-    title: For the Sauce
 ---
