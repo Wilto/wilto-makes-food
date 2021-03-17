@@ -140,7 +140,9 @@ templateClass: tmpl-post
 	<h3 class="article-hed jump-hed" id="recipe"><span>Recipe:</span> {{ subhed }}</h3>
 {% endif %}
 {% if notes %}
-	<p class="lede p-summary">{{ notes | safe }}</p>
+	<div class="lede p-summary">
+		{{ notes |  markdownify | safe }}
+	</div>
 {% endif %}
 
 {% if ingredient_steps %}

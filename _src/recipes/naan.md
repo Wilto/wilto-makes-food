@@ -1,11 +1,10 @@
 ---
-permalink: naan
 date: 2021-02-28
 layout: layouts/v2-recipe.njk
 feat: false
 related: []
 subhed: Plain Naan
-notes: I guess I made notes required, huh.
+notes: I guess I made notes _required_, huh.
 meta:
   active: 30 minutes
   total: 1.5–2 hours
