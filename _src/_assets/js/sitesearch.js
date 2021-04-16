@@ -27,11 +27,30 @@
 			closeResults();
 			searchWrap.appendChild( resultContainer );
 		},
-		fetchResults = function( e ) {
-			var query = e.target.value;
+		keyHandler = function( e ) {
+			var resultList = document.querySelector( "#search-results" );
+
 			if( e.key === "Escape" ){
 				closeResults();
 			}
+			switch( e.key ) {
+				case "Escape":
+					closeResults();
+					break;
+				case "ArrowDown":
+				case "ArrowRight":
+					resultList.firstElementChild.querySelector( "a" ).focus();
+					break;
+				case "ArrowUp":
+				case "ArrowLeft":
+					resultList.lastElementChild.firstElementChild.querySelector( "a" ).focus();
+					break;
+				default:
+					fetchResults( e );
+			}
+		},
+		fetchResults = function( e ) {
+			var query = e.target.value;
 
 			if( !query || query.length <= 1 ) {
 				closeResults();
@@ -79,6 +98,22 @@
 					hed.appendChild( link );
 					copy.appendChild( hed );
 
+					resultItem.addEventListener( "keydown", function( e ) {
+						var moveTo;
+
+						if( e.key === "ArrowDown" || e.key === "ArrowRight" ) {
+							moveTo = this.nextElementSibling || this.parentNode.firstElementChild;
+						}
+						if( e.key === "ArrowUp" || e.key === "ArrowLeft" ) {
+							moveTo = this.previousElementSibling || this.parentNode.lastElementChild;
+						}
+
+						if( moveTo ) {
+							moveTo.querySelector( "a" ).focus();
+							e.preventDefault();
+						}
+					});
+
 					resultItem.appendChild( img );
 					resultItem.appendChild( copy );
 
@@ -100,7 +135,7 @@
 		},
 		searchIndex;
 
-	searchInput.addEventListener( "keyup", fetchResults );
+	searchInput.addEventListener( "keyup", keyHandler );
 	searchInput.addEventListener( "focus", fetchResults );
 	searchInput.setAttribute( "aria-controls", "search-results" );
 

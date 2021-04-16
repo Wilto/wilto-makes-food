@@ -659,6 +659,7 @@ a.cta-prod {
 
 .recipeheader {
 	position: relative;
+	padding-bottom: 1em;
 	margin-bottom: 2em;
 }
 
@@ -704,14 +705,7 @@ a.recipe-jump {
 	position: absolute;
 	z-index: 2;
 	right: 4.25em;
-	bottom: -1.75em;
-}
-
-@media(min-width: 35em) {
-	.recipe-jump-txt,
-	.recipe-jump-txt:active {
-		bottom: -.75em;
-	}
+	bottom: -.75em;
 }
 
 @-webkit-keyframes bounce {
@@ -1296,11 +1290,13 @@ img.take-your-time {
 }
 
 .meta {
-	position: relative;
+	position: absolute;
 	clear: both;
 	width: 100%;
 	float: left;
+	bottom: 0;
 	margin: 0;
+	min-height: 1.5em;
 }
 .meta:after {
 	background: rgba(255,150,0, .45);
@@ -1846,6 +1842,11 @@ a.patreon svg {
 
 .results.search-results .result-split {
 	flex-direction: row;
+}
+
+.results.search-results .result-split:focus { 
+	outline: none;
+	border: 1px solid red;
 }
 
 @media( min-width: 55em) {
