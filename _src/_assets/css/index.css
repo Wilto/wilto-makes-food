@@ -1840,13 +1840,16 @@ a.patreon svg {
 	z-index: 4;
 }
 
+
 .results.search-results .result-split {
 	flex-direction: row;
 }
-
-.results.search-results .result-split:focus { 
-	outline: none;
-	border: 1px solid red;
+.search-results .result-split .art-content {
+	background: none;
+}
+.search-results .result-split:focus-within {
+	background: rgba(255,150,0, .075);
+	border-color: rgba(255,150,0, .8);
 }
 
 @media( min-width: 55em) {
@@ -1862,6 +1865,8 @@ a.patreon svg {
 	border-top: none;
 	font-size: .725em;
 	align-items: center;
+	border-top: 1px solid rgba(255,150,0, .35);
+	border-bottom: 2px solid rgba(255,150,0, .35);
 }
 .search-results img {
 	max-width: 11.5em;
