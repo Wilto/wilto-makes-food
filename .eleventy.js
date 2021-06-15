@@ -34,7 +34,7 @@ module.exports = function(eleventyConfig) {
   // only content in the `recipes` directory
   eleventyConfig.addCollection("recipes", function(collection) {
     return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/_src\/recipes\//) !== null;
+      return item.inputPath.match(/^\.\/_src\/recipes\//) !== null && item.data.draft !== true;
     });
   });
 

@@ -8,7 +8,6 @@ feat: true
 date: 2019-05-23
 img: knife
 alt: "A bunka knife with a hammered-texture dark grey cladding."
-draft: true
 ---
 
 Gross. Gross gross gross.
