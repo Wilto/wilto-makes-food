@@ -1,8 +1,8 @@
 ---
+draft: false
 date: 2021-02-28
 layout: layouts/v2-recipe.njk
 feat: false
-draft: true
 related: []
 subhed: Plain Naan
 notes: I guess I made notes _required_, huh.
