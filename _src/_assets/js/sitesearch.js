@@ -137,7 +137,6 @@
 
 	searchInput.addEventListener( "keyup", keyHandler );
 	searchInput.addEventListener( "focus", fetchResults );
-	searchInput.setAttribute( "aria-controls", "search-results" );
 
 	searchWrap.querySelector( "form" ).addEventListener( "submit", function( e ) {
 		e.preventDefault();
