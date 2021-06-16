@@ -16,6 +16,7 @@ templateClass: tmpl-home
 		<img 
 			{% if lazy %}loading="lazy"{% endif %}
 			sizes="{{ sizes }}"
+			height="1000" width="1000"
 			srcset="
 				{{ path }}{{ img }}-1.jpg 320w,
 				{{ path }}{{ img }}-2.jpg 450w,

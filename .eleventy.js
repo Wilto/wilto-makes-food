@@ -17,7 +17,7 @@ module.exports = function(eleventyConfig) {
       return `${fetchBase}q_auto,f_auto,w_${w}/${path} ${w}w`;
     }).join(', ');
 
-    return `<img src="${src}" srcset="${srcset}" sizes="${sizes ? sizes : '100vw'}" alt="${alt ? alt : ''}"${lazy ? ' loading="lazy"' : ''}>`;
+    return `<img height="1000" width="1000" src="${src}" srcset="${srcset}" sizes="${sizes ? sizes : '100vw'}" alt="${alt ? alt : ''}"${lazy ? ' loading="lazy"' : ''}>`;
   });
 
   eleventyConfig.addFilter("readableDate", dateObj => {
