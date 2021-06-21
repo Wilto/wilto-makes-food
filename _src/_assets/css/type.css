@@ -757,8 +757,8 @@ p.table-note {
 }
 @supports( transform: translate(-50%, -50%) ) {
 	.highlights .item img,
-	.subfeat .item > img,
-	.feat.item > img,
+	.subfeat .item > a img,
+	.feat.item > a img,
 	.highlights .item > svg,
 	.subfeat .item > svg,
 	.feat.item > svg {
