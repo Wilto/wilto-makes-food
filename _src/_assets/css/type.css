@@ -682,7 +682,7 @@ p.table-note {
 
 
 .feat {
-	min-height: 30em;
+	min-height: 25em;
 }
 
 .subfeat {
@@ -750,13 +750,10 @@ p.table-note {
 .highlights .item > svg,
 .subfeat .item > svg,
 .feat.item > svg {
-	background: #eaeaea;
 	position: absolute;
 	top: 0;
-	min-width: 100%;
 	left: 0;
-	max-width: 175%;
-	min-height: 100%;
+	background: #eaeaea;
 }
 @supports( transform: translate(-50%, -50%) ) {
 	.highlights .item img,

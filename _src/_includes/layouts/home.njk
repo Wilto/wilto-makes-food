@@ -42,13 +42,6 @@ templateClass: tmpl-home
 
 			<h3 class="article-hed"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
 			<p class="lede">{{ post.data.subhed | safe }}</p>
-			{% if feat %}
-				{% if post.data.minilede %}
-			<p>{{ post.data.minilede | safe }}</p>
-				{% else %}
-			<p>{{ post.data.lede | safe }}</p>
-				{% endif %}
-			{% endif %}
 		</div>
 		{% else %}
 		{% if feat or classes == "sub" %}

@@ -88,6 +88,7 @@ collections:
       - {label: "Permalink", name: "permalink", widget: "string", required: false }
       - {label: "Date", name: "date", widget: "date", format: 'YYYY-MM-DD' }
       - {label: "layout", name: "layout", widget: "select", options: [{ label: "V2", value: "layouts/v2-article.njk" }], default: "layouts/v2.njk", required: false }
+      - {label: "Feature", name: "feat", widget: "boolean", default: false }
       - {label: "Type", name: "type", widget: "hidden", default: "article"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subhed", name: "subhed", widget: "markdown"}
