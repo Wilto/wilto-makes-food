@@ -97,8 +97,8 @@ collections:
         name: "feat_img"
         widget: "object"
         fields:
-        - {label: "Image", name: "img", widget: "image"}
-        - {label: "alt", name: "alt", widget: "string"}
-        - {label: "Caption", name: "capt", widget: "markdown"}
+        - {label: "Image", name: "img", widget: "image", required: false}
+        - {label: "alt", name: "alt", widget: "string", required: false}
+        - {label: "Caption", name: "capt", widget: "markdown", required: false}
       - {label: "Related", name: "related", required: false, multiple: true, widget: "relation", collection: "recipes", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
       - {label: "Body", name: "body", widget: "markdown"}
