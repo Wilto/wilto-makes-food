@@ -134,6 +134,7 @@
 		min-height: 15em;
 		margin-top: 1.5%;
 	}
+	.subfeat .item,
 	.subfeat .item:first-of-type,
 	.subfeat .item:nth-last-child(n+3) {
 		min-height: 25em;
