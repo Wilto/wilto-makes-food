@@ -227,6 +227,15 @@ abbr {
 	z-index: 2;
 	transition: width .2s ease-in-out, height .2s ease-in-out;
 }
+.subfeat .article-hed a:before,
+.subfeat .article-hed a:after {
+	display: none;
+}
+.subfeat .article-hed,
+.subfeat .article-hed a {
+	margin-bottom: 0;
+	padding-bottom: .05em;
+}
 .article-hed a:focus {
 	outline: none;
 }
@@ -682,7 +691,7 @@ p.table-note {
 
 
 .feat {
-	min-height: 25em;
+	min-height: 30em;
 }
 
 .subfeat {
@@ -764,6 +773,7 @@ p.table-note {
 	.feat.item > svg {
 		left: 50%;
 		top: 50%;
+
 		transform: translate(-50%, -50%);
 	}
 }

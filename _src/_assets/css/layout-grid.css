@@ -150,8 +150,10 @@
 		.subfeat > .item {
 			margin-top: 1%;
 		}
-		.subfeat .item:first-of-type {
-			min-height: 20em;
+		.subfeat .item:first-of-type,
+		.subfeat .item:nth-last-child(n+3),
+		.subfeat .item {
+			min-height: 23em;
 		}
 		.subfeat .item:nth-last-child(n+3),
 		.subfeat .item:first-of-type:last-of-type,
