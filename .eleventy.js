@@ -1,3 +1,4 @@
+const path = require('path');
 const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginRespimg = require( "eleventy-plugin-respimg" );
@@ -10,11 +11,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.fallbackWidth = 640;
   eleventyConfig.fallbackWidth = 640;
 
-  eleventyConfig.addShortcode('cloudrespimg', (path, alt, sizes, lazy = false) => {
-    const fetchBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/fetch/`;
-    const src = `${fetchBase}q_auto,f_auto,w_${eleventyConfig.fallbackWidth}/${path}`;
+  eleventyConfig.addShortcode('cloudrespimg', (filepath, alt, sizes, lazy = false) => {
+    const fetchBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/upload/`;
+    const ext = path.extname( filepath );
+    const name = path.basename( filepath, ext );
+    const src = `${fetchBase}q_auto,f_auto,w_${eleventyConfig.fallbackWidth}/${name}.jpg`;
     const srcset = eleventyConfig.srcsetWidths.map(w => {
-      return `${fetchBase}q_auto,f_auto,w_${w}/${path} ${w}w`;
+      return `${fetchBase}q_auto,f_auto,w_${w}/${name}.jpg ${w}w`;
     }).join(', ');
 
     return `<img height="1000" width="1000" src="${src}" srcset="${srcset}" sizes="${sizes ? sizes : '100vw'}" alt="${alt ? alt : ''}"${lazy ? ' loading="lazy"' : ''}>`;

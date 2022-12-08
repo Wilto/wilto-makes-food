@@ -12,11 +12,12 @@ media_library:
     api_key: 536243896247346
 
 collections:
-  - name: "recipes" # Used in routes, e.g., /admin/collections/blog
-    label: "Recipes" # Used in the UI
-    folder: "_src/recipes" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  - name: "recipes"
+    label: "Recipes"
+    folder: "_src/recipes"
+    create: true
+    delete: true
+    slug: "{{slug}}"
     fields: # The fields for each document, usually in front matter
       - {label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
       - {label: "Permalink", name: "permalink", widget: "string", required: false }

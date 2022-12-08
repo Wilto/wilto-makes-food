@@ -102,7 +102,7 @@
 						var moveTo;
 
 						if( e.key === "ArrowDown" || e.key === "ArrowRight" ) {
-							moveTo = this.nextElementSibling || this.parentNode.firstElementChild;
+							moveTo = [this.nextElementSibling].filter(n => n.textContent.includes('foo')) || this.parentNode.firstElementChild;
 						}
 						if( e.key === "ArrowUp" || e.key === "ArrowLeft" ) {
 							moveTo = this.previousElementSibling || this.parentNode.lastElementChild;
